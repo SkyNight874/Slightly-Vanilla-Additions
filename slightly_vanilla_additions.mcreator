@@ -35,6 +35,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "snowy_highlands"
+    },
+    {
+      "name": "EndFarlands",
+      "type": "dimension",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "end_farlands"
     }
   ],
   "variable_elements": [],
@@ -42,6 +51,7 @@
   "language_map": {
     "en_us": {
       "biome.slightly_vanilla_additions.snowy_highlands": "Snowy Highlands",
+      "item.slightly_vanilla_additions.end_farlands": "End Farlands Portal Igniter",
       "block.slightly_vanilla_additions.powder_snow": "Powder Snow"
     }
   },
