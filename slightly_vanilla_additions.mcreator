@@ -1,0 +1,65 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "PowderSnowEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "powder_snow_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PowderSnow",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "powder_snow"
+    },
+    {
+      "name": "SnowyHighlands",
+      "type": "biome",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "snowy_highlands"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "biome.slightly_vanilla_additions.snowy_highlands": "Snowy Highlands",
+      "block.slightly_vanilla_additions.powder_snow": "Powder Snow"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "slightly_vanilla_additions",
+    "modName": "Slightly Vanilla Additions",
+    "version": "1.0.0",
+    "author": "puikw, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.15.2",
+    "modElementsPackage": "net.mcreator.slightlyvanillaadditions",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000546519
+}
