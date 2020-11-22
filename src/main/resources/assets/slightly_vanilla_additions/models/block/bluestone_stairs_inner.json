@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "slightly_vanilla_additions:blocks/bluestone",
+    "top": "slightly_vanilla_additions:blocks/bluestone",
+    "side": "slightly_vanilla_additions:blocks/bluestone"
+  }
+}

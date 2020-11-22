@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "slightly_vanilla_additions:block/polished_bluestone_slab"
+    },
+    "type=top": {
+      "model": "slightly_vanilla_additions:block/polished_bluestone_slab_top"
+    },
+    "type=double": {
+      "model": "slightly_vanilla_additions:block/polished_bluestone_slab_full"
+    }
+  }
+}

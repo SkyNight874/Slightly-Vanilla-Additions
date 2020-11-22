@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_side",
+  "textures": {
+    "wall": "slightly_vanilla_additions:blocks/bluestone",
+    "particle": "slightly_vanilla_additions:blocks/bluestone"
+  }
+}

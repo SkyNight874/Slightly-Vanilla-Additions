@@ -62,17 +62,95 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "polished_bluestone"
+    },
+    {
+      "name": "BluestoneSlab",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bluestone_slab"
+    },
+    {
+      "name": "BluestoneStairs",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bluestone_stairs"
+    },
+    {
+      "name": "BluestoneWall",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bluestone_wall"
+    },
+    {
+      "name": "PolishedBluestoneSmelting",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_bluestone_smelting"
+    },
+    {
+      "name": "PolishedBluestoneSlab",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_bluestone_slab"
+    },
+    {
+      "name": "PolishedBluestoneStairs",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_bluestone_stairs"
+    },
+    {
+      "name": "PolishedBluestoneWall",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_bluestone_wall"
+    },
+    {
+      "name": "BluestoneSmelting",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bluestone_smelting"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.slightly_vanilla_additions.bluestone_slab": "Bluestone",
+      "block.slightly_vanilla_additions.polished_bluestone_slab": "Bluestone",
+      "block.slightly_vanilla_additions.bluestone_stairs": "Bluestone",
       "biome.slightly_vanilla_additions.snowy_highlands": "Snowy Highlands",
       "item.slightly_vanilla_additions.end_farlands": "End Farlands Portal Igniter",
       "block.slightly_vanilla_additions.polished_bluestone": "Bluestone",
+      "block.slightly_vanilla_additions.polished_bluestone_stairs": "Bluestone",
       "block.slightly_vanilla_additions.powder_snow": "Powder Snow",
-      "block.slightly_vanilla_additions.bluestone": "Bluestone"
+      "block.slightly_vanilla_additions.bluestone": "Bluestone",
+      "block.slightly_vanilla_additions.polished_bluestone_wall": "Bluestone",
+      "block.slightly_vanilla_additions.bluestone_wall": "Bluestone"
     }
   },
   "workspaceSettings": {

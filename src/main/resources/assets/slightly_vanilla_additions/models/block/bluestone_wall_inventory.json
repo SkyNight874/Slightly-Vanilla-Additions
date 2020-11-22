@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "slightly_vanilla_additions:blocks/bluestone",
+    "particle": "slightly_vanilla_additions:blocks/bluestone"
+  }
+}
