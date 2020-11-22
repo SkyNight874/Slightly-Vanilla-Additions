@@ -140,17 +140,17 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.slightly_vanilla_additions.bluestone_slab": "Bluestone",
-      "block.slightly_vanilla_additions.polished_bluestone_slab": "Bluestone",
-      "block.slightly_vanilla_additions.bluestone_stairs": "Bluestone",
+      "block.slightly_vanilla_additions.bluestone_slab": "Bluestone Slab",
+      "block.slightly_vanilla_additions.polished_bluestone_slab": "Polished Bluestone Slab",
+      "block.slightly_vanilla_additions.bluestone_stairs": "Bluestone Stairs",
       "biome.slightly_vanilla_additions.snowy_highlands": "Snowy Highlands",
       "item.slightly_vanilla_additions.end_farlands": "End Farlands Portal Igniter",
-      "block.slightly_vanilla_additions.polished_bluestone": "Bluestone",
-      "block.slightly_vanilla_additions.polished_bluestone_stairs": "Bluestone",
+      "block.slightly_vanilla_additions.polished_bluestone": "Polished Bluestone",
+      "block.slightly_vanilla_additions.polished_bluestone_stairs": "Polished Bluestone Stairs",
       "block.slightly_vanilla_additions.powder_snow": "Powder Snow",
       "block.slightly_vanilla_additions.bluestone": "Bluestone",
-      "block.slightly_vanilla_additions.polished_bluestone_wall": "Bluestone",
-      "block.slightly_vanilla_additions.bluestone_wall": "Bluestone"
+      "block.slightly_vanilla_additions.polished_bluestone_wall": "Polished Bluestone Wall",
+      "block.slightly_vanilla_additions.bluestone_wall": "Bluestone Wall"
     }
   },
   "workspaceSettings": {
