@@ -44,6 +44,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "end_farlands"
+    },
+    {
+      "name": "Bluestone",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bluestone"
+    },
+    {
+      "name": "PolishedBluestone",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_bluestone"
     }
   ],
   "variable_elements": [],
@@ -52,7 +70,9 @@
     "en_us": {
       "biome.slightly_vanilla_additions.snowy_highlands": "Snowy Highlands",
       "item.slightly_vanilla_additions.end_farlands": "End Farlands Portal Igniter",
-      "block.slightly_vanilla_additions.powder_snow": "Powder Snow"
+      "block.slightly_vanilla_additions.polished_bluestone": "Bluestone",
+      "block.slightly_vanilla_additions.powder_snow": "Powder Snow",
+      "block.slightly_vanilla_additions.bluestone": "Bluestone"
     }
   },
   "workspaceSettings": {

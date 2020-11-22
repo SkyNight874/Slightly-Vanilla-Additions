@@ -14,9 +14,9 @@ import net.minecraft.world.gen.feature.IFeatureConfig;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.block.Blocks;
 
 import net.mcreator.slightlyvanillaadditions.block.PowderSnowBlock;
+import net.mcreator.slightlyvanillaadditions.block.BluestoneBlock;
 import net.mcreator.slightlyvanillaadditions.SlightlyVanillaAdditionsModElements;
 
 @SlightlyVanillaAdditionsModElements.ModElement.Tag
@@ -42,7 +42,7 @@ public class SnowyHighlandsBiome extends SlightlyVanillaAdditionsModElements.Mod
 			super(new Biome.Builder().downfall(0.5f).depth(10f).scale(0.7f).temperature(-1f).precipitation(Biome.RainType.SNOW)
 					.category(Biome.Category.EXTREME_HILLS).waterColor(4159204).waterFogColor(329011)
 					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(PowderSnowBlock.block.getDefaultState(),
-							Blocks.BLUE_ICE.getDefaultState(), Blocks.BLUE_ICE.getDefaultState())));
+							BluestoneBlock.block.getDefaultState(), BluestoneBlock.block.getDefaultState())));
 			setRegistryName("snowy_highlands");
 			DefaultBiomeFeatures.addCarvers(this);
 			DefaultBiomeFeatures.addMonsterRooms(this);

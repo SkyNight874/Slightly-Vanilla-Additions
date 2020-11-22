@@ -1,5 +1,7 @@
 {
   "biome.slightly_vanilla_additions.snowy_highlands": "Snowy Highlands",
   "item.slightly_vanilla_additions.end_farlands": "End Farlands Portal Igniter",
-  "block.slightly_vanilla_additions.powder_snow": "Powder Snow"
+  "block.slightly_vanilla_additions.polished_bluestone": "Bluestone",
+  "block.slightly_vanilla_additions.powder_snow": "Powder Snow",
+  "block.slightly_vanilla_additions.bluestone": "Bluestone"
 }

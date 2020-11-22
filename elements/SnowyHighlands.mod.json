@@ -7,7 +7,7 @@
       "value": "CUSTOM:PowderSnow"
     },
     "undergroundBlock": {
-      "value": "Blocks.BLUE_ICE"
+      "value": "CUSTOM:Bluestone"
     },
     "treeType": 0,
     "vanillaTreeType": "Default",
