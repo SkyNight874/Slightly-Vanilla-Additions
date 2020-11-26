@@ -108,7 +108,7 @@ public class BackPackItemItem extends SlightlyVanillaAdditionsModElements.ModEle
 				NetworkHooks.openGui((ServerPlayerEntity) entity, new INamedContainerProvider() {
 					@Override
 					public ITextComponent getDisplayName() {
-						return new StringTextComponent("Back Pack Item");
+						return new StringTextComponent("BackPack");
 					}
 
 					@Override

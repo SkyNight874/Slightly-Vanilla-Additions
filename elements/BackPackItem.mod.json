@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "imported_piskel_2",
     "customModelName": "Normal",
-    "name": "Back Pack Item",
+    "name": "BackPack",
     "rarity": "UNCOMMON",
     "creativeTab": {
       "value": "MISC"
