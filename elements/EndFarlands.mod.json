@@ -3,28 +3,34 @@
   "_type": "dimension",
   "definition": {
     "portalFrame": {
-      "value": ""
+      "value": "Blocks.END_BRICKS"
     },
     "portalParticles": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "PORTAL"
     },
     "portalLuminance": 0.0,
     "portalSound": {
       "value": "block.portal.ambient"
     },
-    "igniterName": "End Farlands Portal Igniter",
+    "igniterName": "Dragon Flint And Steel",
     "igniterTab": {
       "value": "TOOLS"
     },
-    "texture": "",
-    "portalTexture": "",
-    "enablePortal": false,
+    "texture": "crystal_flintandsteel",
+    "portalTexture": "endportal",
+    "enablePortal": true,
     "biomesInDimension": [
       {
-        "value": "the_end"
+        "value": "small_end_islands"
       },
       {
         "value": "end_highlands"
+      },
+      {
+        "value": "end_midlands"
+      },
+      {
+        "value": "void"
       }
     ],
     "worldGenType": "End like gen",
@@ -32,15 +38,15 @@
       "value": "Blocks.END_STONE"
     },
     "fluidBlock": {
-      "value": "Blocks.FLOWING_WATER"
+      "value": "Blocks.WATER"
     },
     "airColor": {
-      "value": -10092442,
+      "value": -3407668,
       "falpha": 0.0
     },
-    "canRespawnHere": false,
+    "canRespawnHere": true,
     "hasFog": false,
-    "hasWeather": true,
+    "hasWeather": false,
     "isDark": true,
     "doesWaterVaporize": false,
     "sleepResult": "BED_EXPLODES",

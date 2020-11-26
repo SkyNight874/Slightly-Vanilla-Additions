@@ -1,0 +1,16 @@
+{
+  "group": "slightly_vanilla_additions",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:dragon_egg"
+    }
+  },
+  "result": {
+    "item": "slightly_vanilla_additions:dragon_scale",
+    "count": 9
+  }
+}

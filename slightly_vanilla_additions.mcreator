@@ -37,15 +37,6 @@
       "registry_name": "snowy_highlands"
     },
     {
-      "name": "EndFarlands",
-      "type": "dimension",
-      "sortid": 3,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "end_farlands"
-    },
-    {
       "name": "Bluestone",
       "type": "block",
       "sortid": 4,
@@ -242,6 +233,42 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "dragon_fang_loot"
+    },
+    {
+      "name": "EndFarlands",
+      "type": "dimension",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "end_farlands"
+    },
+    {
+      "name": "DragonScale",
+      "type": "item",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dragon_scale"
+    },
+    {
+      "name": "DragonScaleRecipe",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dragon_scale_recipe"
+    },
+    {
+      "name": "DragonFlintAndSteelRecipe",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dragon_flint_and_steel_recipe"
     }
   ],
   "variable_elements": [],
@@ -249,8 +276,8 @@
   "language_map": {
     "en_us": {
       "item.slightly_vanilla_additions.dragon_sword": "Dragon Sword",
-      "block.slightly_vanilla_additions.polished_bluestone_slab": "Polished Bluestone Slab",
       "item.slightly_vanilla_additions.dragon_hoe": "Dragon Hoe",
+      "block.slightly_vanilla_additions.polished_bluestone_slab": "Polished Bluestone Slab",
       "block.slightly_vanilla_additions.bluestone_stairs": "Bluestone Stairs",
       "item.slightly_vanilla_additions.dragon_pickaxe": "Dragon Pickaxe",
       "biome.slightly_vanilla_additions.snowy_highlands": "Snowy Highlands",
@@ -261,8 +288,9 @@
       "block.slightly_vanilla_additions.bluestone_slab": "Bluestone Slab",
       "item.slightly_vanilla_additions.dragon_axe": "Dragon Axe",
       "item.slightly_vanilla_additions.dragon_shovel": "Dragon Shovel",
+      "item.slightly_vanilla_additions.dragon_scale": "Dragon Scale",
       "item.slightly_vanilla_additions.dragon_fang": "Dragon Fang",
-      "item.slightly_vanilla_additions.end_farlands": "End Farlands Portal Igniter",
+      "item.slightly_vanilla_additions.end_farlands": "Dragon Flint And Steel",
       "block.slightly_vanilla_additions.bluestone": "Bluestone",
       "block.slightly_vanilla_additions.polished_bluestone_wall": "Polished Bluestone Wall"
     }
@@ -283,5 +311,5 @@
     "modElementsPackage": "net.mcreator.slightlyvanillaadditions",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202000546519
+  "mcreatorVersion": 202000547520
 }
