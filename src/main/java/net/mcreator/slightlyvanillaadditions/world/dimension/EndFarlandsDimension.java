@@ -68,6 +68,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.slightlyvanillaadditions.item.EndFarlandsItem;
+import net.mcreator.slightlyvanillaadditions.block.PoisonousFluidBlock;
 import net.mcreator.slightlyvanillaadditions.SlightlyVanillaAdditionsModElements;
 
 import javax.annotation.Nullable;
@@ -122,7 +123,9 @@ public class EndFarlandsDimension extends SlightlyVanillaAdditionsModElements.Mo
 		dimensionBiomes = new Biome[]{ForgeRegistries.BIOMES.getValue(new ResourceLocation("small_end_islands")),
 				ForgeRegistries.BIOMES.getValue(new ResourceLocation("end_highlands")),
 				ForgeRegistries.BIOMES.getValue(new ResourceLocation("end_midlands")),
-				ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_void")),};
+				ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_void")),
+				ForgeRegistries.BIOMES.getValue(new ResourceLocation("slightly_vanilla_additions:chorus_forest")),
+				ForgeRegistries.BIOMES.getValue(new ResourceLocation("slightly_vanilla_additions:poison_swamp")),};
 	}
 
 	@Override
@@ -667,7 +670,7 @@ public class EndFarlandsDimension extends SlightlyVanillaAdditionsModElements.Mo
 	public static class CustomDimension extends Dimension {
 		private BiomeProviderCustom biomeProviderCustom = null;
 		public CustomDimension(World world, DimensionType type) {
-			super(world, type, 0);
+			super(world, type, 0.5f);
 			this.nether = false;
 		}
 
@@ -692,7 +695,7 @@ public class EndFarlandsDimension extends SlightlyVanillaAdditionsModElements.Mo
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public Vec3d getFogColor(float cangle, float ticks) {
-			return new Vec3d(0.8, 0, 0.8);
+			return new Vec3d(0.8, 0.8, 1);
 		}
 
 		@Override
@@ -758,7 +761,7 @@ public class EndFarlandsDimension extends SlightlyVanillaAdditionsModElements.Mo
 				}
 
 				public BlockState getDefaultFluid() {
-					return Blocks.WATER.getDefaultState();
+					return PoisonousFluidBlock.block.getDefaultState();
 				}
 			});
 			this.randomSeed.skip(3946);

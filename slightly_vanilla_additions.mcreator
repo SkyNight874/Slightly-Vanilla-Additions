@@ -467,6 +467,42 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "back_pack_recipe"
+    },
+    {
+      "name": "PoisonMushroom",
+      "type": "block",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "poison_mushroom"
+    },
+    {
+      "name": "PoisonousFluid",
+      "type": "fluid",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "poisonous_fluid"
+    },
+    {
+      "name": "PoisonMushroomStructure",
+      "type": "structure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "poison_mushroom_structure"
+    },
+    {
+      "name": "PoisonSwamp",
+      "type": "biome",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "poison_swamp"
     }
   ],
   "variable_elements": [],
@@ -495,10 +531,14 @@
       "block.slightly_vanilla_additions.chorus_grass": "Chorus Grass",
       "block.slightly_vanilla_additions.polished_bluestone_stairs": "Polished Bluestone Stairs",
       "block.slightly_vanilla_additions.powder_snow": "Powder Snow",
+      "item.slightly_vanilla_additions.poisonous_fluid_bucket": "PoisonousFluid Bucket",
       "block.slightly_vanilla_additions.bluestone_slab": "Bluestone Slab",
       "block.slightly_vanilla_additions.poison_nylium": "Poison Nylium",
+      "block.slightly_vanilla_additions.poison_mushroom": "Poison Mushroom Block",
+      "fluid.poisonous_fluid": "PoisonousFluid",
       "item.slightly_vanilla_additions.dragon_scale": "Dragon Scale",
       "item.slightly_vanilla_additions.dragon_fang": "Dragon Fang",
+      "biome.slightly_vanilla_additions.poison_swamp": "Poison Swamp",
       "block.slightly_vanilla_additions.chorus_log": "Chorus Log",
       "item.slightly_vanilla_additions.end_farlands": "Dragon Flint And Steel",
       "block.slightly_vanilla_additions.chorus_slab": "Chorus Slab",

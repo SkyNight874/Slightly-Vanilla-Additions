@@ -31,6 +31,12 @@
       },
       {
         "value": "void"
+      },
+      {
+        "value": "CUSTOM:ChorusForest"
+      },
+      {
+        "value": "CUSTOM:PoisonSwamp"
       }
     ],
     "worldGenType": "End like gen",
@@ -38,16 +44,16 @@
       "value": "Blocks.END_STONE"
     },
     "fluidBlock": {
-      "value": "Blocks.WATER"
+      "value": "CUSTOM:PoisonousFluid"
     },
     "airColor": {
-      "value": -3407668,
+      "value": -3355393,
       "falpha": 0.0
     },
     "canRespawnHere": true,
     "hasFog": false,
     "hasWeather": false,
-    "isDark": true,
+    "isDark": false,
     "doesWaterVaporize": false,
     "sleepResult": "BED_EXPLODES",
     "hasSkyLight": false,
