@@ -1,0 +1,24 @@
+{
+  "group": "slightly_vanilla_additions",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "slightly_vanilla_additions:dragon_fang"
+    },
+    "1": {
+      "item": "slightly_vanilla_additions:dragon_fang"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "slightly_vanilla_additions:dragon_sword",
+    "count": 1
+  }
+}

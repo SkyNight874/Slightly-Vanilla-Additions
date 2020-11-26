@@ -134,23 +134,137 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "bluestone_smelting"
+    },
+    {
+      "name": "DragonFang",
+      "type": "item",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dragon_fang"
+    },
+    {
+      "name": "DragonPickaxe",
+      "type": "tool",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dragon_pickaxe"
+    },
+    {
+      "name": "DragonAxe",
+      "type": "tool",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dragon_axe"
+    },
+    {
+      "name": "DragonSword",
+      "type": "tool",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dragon_sword"
+    },
+    {
+      "name": "DragonShovel",
+      "type": "tool",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dragon_shovel"
+    },
+    {
+      "name": "DragonHoe",
+      "type": "tool",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dragon_hoe"
+    },
+    {
+      "name": "DragonPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dragon_pickaxe_recipe"
+    },
+    {
+      "name": "DragonAxeRecipe",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dragon_axe_recipe"
+    },
+    {
+      "name": "DragonSwordRecipe",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dragon_sword_recipe"
+    },
+    {
+      "name": "DragonShovelRecipe",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dragon_shovel_recipe"
+    },
+    {
+      "name": "DragonHoeRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dragon_hoe_recipe"
+    },
+    {
+      "name": "DragonFangLoot",
+      "type": "loottable",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dragon_fang_loot"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.slightly_vanilla_additions.bluestone_slab": "Bluestone Slab",
+      "item.slightly_vanilla_additions.dragon_sword": "Dragon Sword",
       "block.slightly_vanilla_additions.polished_bluestone_slab": "Polished Bluestone Slab",
+      "item.slightly_vanilla_additions.dragon_hoe": "Dragon Hoe",
       "block.slightly_vanilla_additions.bluestone_stairs": "Bluestone Stairs",
+      "item.slightly_vanilla_additions.dragon_pickaxe": "Dragon Pickaxe",
       "biome.slightly_vanilla_additions.snowy_highlands": "Snowy Highlands",
-      "item.slightly_vanilla_additions.end_farlands": "End Farlands Portal Igniter",
       "block.slightly_vanilla_additions.polished_bluestone": "Polished Bluestone",
       "block.slightly_vanilla_additions.polished_bluestone_stairs": "Polished Bluestone Stairs",
       "block.slightly_vanilla_additions.powder_snow": "Powder Snow",
+      "block.slightly_vanilla_additions.bluestone_wall": "Bluestone Wall",
+      "block.slightly_vanilla_additions.bluestone_slab": "Bluestone Slab",
+      "item.slightly_vanilla_additions.dragon_axe": "Dragon Axe",
+      "item.slightly_vanilla_additions.dragon_shovel": "Dragon Shovel",
+      "item.slightly_vanilla_additions.dragon_fang": "Dragon Fang",
+      "item.slightly_vanilla_additions.end_farlands": "End Farlands Portal Igniter",
       "block.slightly_vanilla_additions.bluestone": "Bluestone",
-      "block.slightly_vanilla_additions.polished_bluestone_wall": "Polished Bluestone Wall",
-      "block.slightly_vanilla_additions.bluestone_wall": "Bluestone Wall"
+      "block.slightly_vanilla_additions.polished_bluestone_wall": "Polished Bluestone Wall"
     }
   },
   "workspaceSettings": {

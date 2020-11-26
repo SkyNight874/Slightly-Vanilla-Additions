@@ -1,13 +1,19 @@
 {
-  "block.slightly_vanilla_additions.bluestone_slab": "Bluestone Slab",
+  "item.slightly_vanilla_additions.dragon_sword": "Dragon Sword",
   "block.slightly_vanilla_additions.polished_bluestone_slab": "Polished Bluestone Slab",
+  "item.slightly_vanilla_additions.dragon_hoe": "Dragon Hoe",
   "block.slightly_vanilla_additions.bluestone_stairs": "Bluestone Stairs",
+  "item.slightly_vanilla_additions.dragon_pickaxe": "Dragon Pickaxe",
   "biome.slightly_vanilla_additions.snowy_highlands": "Snowy Highlands",
-  "item.slightly_vanilla_additions.end_farlands": "End Farlands Portal Igniter",
   "block.slightly_vanilla_additions.polished_bluestone": "Polished Bluestone",
   "block.slightly_vanilla_additions.polished_bluestone_stairs": "Polished Bluestone Stairs",
   "block.slightly_vanilla_additions.powder_snow": "Powder Snow",
+  "block.slightly_vanilla_additions.bluestone_wall": "Bluestone Wall",
+  "block.slightly_vanilla_additions.bluestone_slab": "Bluestone Slab",
+  "item.slightly_vanilla_additions.dragon_axe": "Dragon Axe",
+  "item.slightly_vanilla_additions.dragon_shovel": "Dragon Shovel",
+  "item.slightly_vanilla_additions.dragon_fang": "Dragon Fang",
+  "item.slightly_vanilla_additions.end_farlands": "End Farlands Portal Igniter",
   "block.slightly_vanilla_additions.bluestone": "Bluestone",
-  "block.slightly_vanilla_additions.polished_bluestone_wall": "Polished Bluestone Wall",
-  "block.slightly_vanilla_additions.bluestone_wall": "Bluestone Wall"
+  "block.slightly_vanilla_additions.polished_bluestone_wall": "Polished Bluestone Wall"
 }
