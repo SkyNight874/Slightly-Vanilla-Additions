@@ -269,6 +269,195 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "dragon_flint_and_steel_recipe"
+    },
+    {
+      "name": "PoisonNylium",
+      "type": "block",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "poison_nylium"
+    },
+    {
+      "name": "ChorusWood",
+      "type": "block",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chorus_wood"
+    },
+    {
+      "name": "ChorusLog",
+      "type": "block",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chorus_log"
+    },
+    {
+      "name": "ChorusPlanks",
+      "type": "block",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chorus_planks"
+    },
+    {
+      "name": "ChorusLeaves",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chorus_leaves"
+    },
+    {
+      "name": "ChorusStairs",
+      "type": "block",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chorus_stairs"
+    },
+    {
+      "name": "ChorusSlab",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chorus_slab"
+    },
+    {
+      "name": "ChorusFence",
+      "type": "block",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chorus_fence"
+    },
+    {
+      "name": "ChorusFenceGate",
+      "type": "block",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chorus_fence_gate"
+    },
+    {
+      "name": "ChorusItemsTag",
+      "type": "tag",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chorus_items_tag"
+    },
+    {
+      "name": "ChorusWoodRecipe",
+      "type": "recipe",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chorus_wood_recipe"
+    },
+    {
+      "name": "ChorusPlanksRecipe",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chorus_planks_recipe"
+    },
+    {
+      "name": "ChorusStairsRecipe",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chorus_stairs_recipe"
+    },
+    {
+      "name": "ChorusSlabRecipe",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chorus_slab_recipe"
+    },
+    {
+      "name": "ChorusFenceRecipe",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chorus_fence_recipe"
+    },
+    {
+      "name": "ChorusFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chorus_fence_gate_recipe"
+    },
+    {
+      "name": "ChorusStickRecipe",
+      "type": "recipe",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chorus_stick_recipe"
+    },
+    {
+      "name": "ChorusGrass",
+      "type": "plant",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chorus_grass"
+    },
+    {
+      "name": "ChorusForest",
+      "type": "biome",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chorus_forest"
+    },
+    {
+      "name": "BackPack",
+      "type": "gui",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "back_pack"
+    },
+    {
+      "name": "BackPackItem",
+      "type": "item",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "back_pack_item"
     }
   ],
   "variable_elements": [],
@@ -277,22 +466,34 @@
     "en_us": {
       "item.slightly_vanilla_additions.dragon_sword": "Dragon Sword",
       "item.slightly_vanilla_additions.dragon_hoe": "Dragon Hoe",
+      "block.slightly_vanilla_additions.polished_bluestone": "Polished Bluestone",
+      "block.slightly_vanilla_additions.chorus_wood": "Chorus Wood",
+      "block.slightly_vanilla_additions.bluestone_wall": "Bluestone Wall",
+      "block.slightly_vanilla_additions.chorus_stairs": "Chorus Stairs",
+      "item.slightly_vanilla_additions.dragon_axe": "Dragon Axe",
+      "biome.slightly_vanilla_additions.chorus_forest": "Chorus Forest",
+      "item.slightly_vanilla_additions.dragon_shovel": "Dragon Shovel",
+      "block.slightly_vanilla_additions.chorus_planks": "Chorus Planks",
+      "block.slightly_vanilla_additions.chorus_fence": "Chorus Fence",
+      "block.slightly_vanilla_additions.bluestone": "Bluestone",
+      "block.slightly_vanilla_additions.polished_bluestone_wall": "Polished Bluestone Wall",
       "block.slightly_vanilla_additions.polished_bluestone_slab": "Polished Bluestone Slab",
+      "block.slightly_vanilla_additions.chorus_fence_gate": "Chorus Fence Gate",
       "block.slightly_vanilla_additions.bluestone_stairs": "Bluestone Stairs",
       "item.slightly_vanilla_additions.dragon_pickaxe": "Dragon Pickaxe",
       "biome.slightly_vanilla_additions.snowy_highlands": "Snowy Highlands",
-      "block.slightly_vanilla_additions.polished_bluestone": "Polished Bluestone",
+      "block.slightly_vanilla_additions.chorus_leaves": "Chorus Block",
+      "block.slightly_vanilla_additions.chorus_grass": "Chorus Grass",
       "block.slightly_vanilla_additions.polished_bluestone_stairs": "Polished Bluestone Stairs",
       "block.slightly_vanilla_additions.powder_snow": "Powder Snow",
-      "block.slightly_vanilla_additions.bluestone_wall": "Bluestone Wall",
       "block.slightly_vanilla_additions.bluestone_slab": "Bluestone Slab",
-      "item.slightly_vanilla_additions.dragon_axe": "Dragon Axe",
-      "item.slightly_vanilla_additions.dragon_shovel": "Dragon Shovel",
+      "block.slightly_vanilla_additions.poison_nylium": "Poison Nylium",
       "item.slightly_vanilla_additions.dragon_scale": "Dragon Scale",
       "item.slightly_vanilla_additions.dragon_fang": "Dragon Fang",
+      "block.slightly_vanilla_additions.chorus_log": "Chorus Log",
       "item.slightly_vanilla_additions.end_farlands": "Dragon Flint And Steel",
-      "block.slightly_vanilla_additions.bluestone": "Bluestone",
-      "block.slightly_vanilla_additions.polished_bluestone_wall": "Polished Bluestone Wall"
+      "block.slightly_vanilla_additions.chorus_slab": "Chorus Slab",
+      "item.slightly_vanilla_additions.back_pack_item": "Back Pack Item"
     }
   },
   "workspaceSettings": {
