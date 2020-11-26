@@ -167,7 +167,7 @@ public class BackPackItemItem extends SlightlyVanillaAdditionsModElements.ModEle
 		}
 
 		private ItemStackHandler createItemHandler() {
-			return new ItemStackHandler(17) {
+			return new ItemStackHandler(18) {
 				@Override
 				public int getSlotLimit(int slot) {
 					return 64;

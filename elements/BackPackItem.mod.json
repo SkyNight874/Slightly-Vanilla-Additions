@@ -28,7 +28,7 @@
     ],
     "hasGlow": false,
     "guiBoundTo": "BackPack",
-    "inventorySize": 17,
+    "inventorySize": 18,
     "inventoryStackSize": 64
   }
 }
