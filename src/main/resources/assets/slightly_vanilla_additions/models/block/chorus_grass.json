@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "slightly_vanilla_additions:blocks/chorus_grass",
+    "particle": "slightly_vanilla_additions:blocks/chorus_grass"
+  }
+}

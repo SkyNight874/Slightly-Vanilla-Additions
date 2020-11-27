@@ -1,0 +1,26 @@
+{
+  "group": "slightly_vanilla_additions",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:diamond"
+    },
+    "1": {
+      "item": "slightly_vanilla_additions:unknown_element"
+    },
+    "2": {
+      "item": "slightly_vanilla_additions:unknown_element"
+    },
+    "3": {
+      "item": "minecraft:flint_and_steel"
+    }
+  },
+  "result": {
+    "item": "slightly_vanilla_additions:end_farlands",
+    "count": 1
+  }
+}

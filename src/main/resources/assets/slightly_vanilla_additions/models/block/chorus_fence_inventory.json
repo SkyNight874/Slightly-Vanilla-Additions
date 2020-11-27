@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "slightly_vanilla_additions:blocks/chorusplanks",
+    "particle": "slightly_vanilla_additions:blocks/chorusplanks"
+  }
+}

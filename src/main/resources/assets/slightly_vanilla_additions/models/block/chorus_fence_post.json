@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "slightly_vanilla_additions:blocks/chorusplanks",
+    "particle": "slightly_vanilla_additions:blocks/chorusplanks"
+  }
+}
