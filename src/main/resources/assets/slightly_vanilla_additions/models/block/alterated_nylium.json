@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "slightly_vanilla_additions:blocks/endstone",
+    "up": "slightly_vanilla_additions:blocks/alterated_nylium_top",
+    "north": "slightly_vanilla_additions:blocks/alterated_nylium",
+    "east": "slightly_vanilla_additions:blocks/alterated_nylium",
+    "south": "slightly_vanilla_additions:blocks/alterated_nylium",
+    "west": "slightly_vanilla_additions:blocks/alterated_nylium",
+    "particle": "slightly_vanilla_additions:blocks/endstone"
+  }
+}

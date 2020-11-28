@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "slightly_vanilla_additions:blocks/logtop",
+    "up": "slightly_vanilla_additions:blocks/logtop",
+    "north": "slightly_vanilla_additions:blocks/alterated_stem",
+    "east": "slightly_vanilla_additions:blocks/alterated_stem",
+    "south": "slightly_vanilla_additions:blocks/alterated_stem",
+    "west": "slightly_vanilla_additions:blocks/alterated_stem",
+    "particle": "slightly_vanilla_additions:blocks/logtop"
+  }
+}

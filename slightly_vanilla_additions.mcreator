@@ -545,6 +545,168 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "obsidian_hammer"
+    },
+    {
+      "name": "AlteratedWood",
+      "type": "block",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_wood"
+    },
+    {
+      "name": "AlteratedLog",
+      "type": "block",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_log"
+    },
+    {
+      "name": "AlteratedPlanks",
+      "type": "block",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_planks"
+    },
+    {
+      "name": "AlteratedLeaves",
+      "type": "block",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_leaves"
+    },
+    {
+      "name": "AlteratedStairs",
+      "type": "block",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_stairs"
+    },
+    {
+      "name": "AlteratedSlab",
+      "type": "block",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_slab"
+    },
+    {
+      "name": "AlteratedFence",
+      "type": "block",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_fence"
+    },
+    {
+      "name": "AlteratedFenceGate",
+      "type": "block",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_fence_gate"
+    },
+    {
+      "name": "AlteratedItemsTag",
+      "type": "tag",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_items_tag"
+    },
+    {
+      "name": "AlteratedWoodRecipe",
+      "type": "recipe",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_wood_recipe"
+    },
+    {
+      "name": "AlteratedPlanksRecipe",
+      "type": "recipe",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_planks_recipe"
+    },
+    {
+      "name": "AlteratedStairsRecipe",
+      "type": "recipe",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_stairs_recipe"
+    },
+    {
+      "name": "AlteratedSlabRecipe",
+      "type": "recipe",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_slab_recipe"
+    },
+    {
+      "name": "AlteratedFenceRecipe",
+      "type": "recipe",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_fence_recipe"
+    },
+    {
+      "name": "AlteratedFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_fence_gate_recipe"
+    },
+    {
+      "name": "AlteratedStickRecipe",
+      "type": "recipe",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_stick_recipe"
+    },
+    {
+      "name": "AlteratedNylium",
+      "type": "block",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_nylium"
+    },
+    {
+      "name": "AlteratedForest",
+      "type": "biome",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_forest"
     }
   ],
   "variable_elements": [],
@@ -553,17 +715,23 @@
     "en_us": {
       "item.slightly_vanilla_additions.dragon_sword": "Dragon Sword",
       "item.slightly_vanilla_additions.dragon_hoe": "Dragon Hoe",
+      "block.slightly_vanilla_additions.alterated_log": "Alterated Log",
       "block.slightly_vanilla_additions.polished_bluestone": "Polished Bluestone",
+      "block.slightly_vanilla_additions.alterated_slab": "Alterated Slab",
       "block.slightly_vanilla_additions.chorus_wood": "Chorus Wood",
       "block.slightly_vanilla_additions.bluestone_wall": "Bluestone Wall",
       "block.slightly_vanilla_additions.chorus_stairs": "Chorus Stairs",
       "item.slightly_vanilla_additions.dragon_axe": "Dragon Axe",
       "biome.slightly_vanilla_additions.chorus_forest": "Chorus Forest",
+      "block.slightly_vanilla_additions.alterated_nylium": "Poison Nylium",
       "item.slightly_vanilla_additions.dragon_shovel": "Dragon Shovel",
+      "block.slightly_vanilla_additions.alterated_fence": "Alterated Fence",
+      "block.slightly_vanilla_additions.alterated_wood": "Alterated Wood",
       "block.slightly_vanilla_additions.chorus_planks": "Chorus Planks",
       "block.slightly_vanilla_additions.chorus_fence": "Chorus Fence",
       "block.slightly_vanilla_additions.bluestone": "Bluestone",
       "block.slightly_vanilla_additions.polished_bluestone_wall": "Polished Bluestone Wall",
+      "item.slightly_vanilla_additions.obsidian_hammer": "Obsidian Hammer",
       "block.slightly_vanilla_additions.polished_bluestone_slab": "Polished Bluestone Slab",
       "block.slightly_vanilla_additions.chorus_fence_gate": "Chorus Fence Gate",
       "block.slightly_vanilla_additions.bluestone_stairs": "Bluestone Stairs",
@@ -573,7 +741,9 @@
       "block.slightly_vanilla_additions.chorus_leaves": "Chorus Block",
       "block.slightly_vanilla_additions.polished_bluestone_stairs": "Polished Bluestone Stairs",
       "block.slightly_vanilla_additions.powder_snow": "Powder Snow",
+      "block.slightly_vanilla_additions.alterated_fence_gate": "Alterated Fence Gate",
       "item.slightly_vanilla_additions.poisonous_fluid_bucket": "PoisonousFluid Bucket",
+      "block.slightly_vanilla_additions.alterated_planks": "Alterated Planks",
       "block.slightly_vanilla_additions.bluestone_slab": "Bluestone Slab",
       "block.slightly_vanilla_additions.poison_nylium": "Poison Nylium",
       "block.slightly_vanilla_additions.poison_mushroom": "Poison Mushroom Block",
@@ -582,7 +752,10 @@
       "item.slightly_vanilla_additions.dragon_fang": "Dragon Fang",
       "biome.slightly_vanilla_additions.poison_swamp": "Poison Swamp",
       "block.slightly_vanilla_additions.chorus_log": "Chorus Log",
+      "block.slightly_vanilla_additions.alterated_leaves": "Alterated Leaves",
       "item.slightly_vanilla_additions.end_farlands": "Dragon Flint And Steel",
+      "biome.slightly_vanilla_additions.alterated_forest": "Alterated Forest",
+      "block.slightly_vanilla_additions.alterated_stairs": "Alterated Stairs",
       "block.slightly_vanilla_additions.chorus_slab": "Chorus Slab",
       "item.slightly_vanilla_additions.back_pack_item": "BackPack"
     }
@@ -603,5 +776,5 @@
     "modElementsPackage": "net.mcreator.slightlyvanillaadditions",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202000546519
+  "mcreatorVersion": 202000547520
 }

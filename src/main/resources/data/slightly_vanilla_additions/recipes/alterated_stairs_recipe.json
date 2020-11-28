@@ -1,0 +1,33 @@
+{
+  "group": "slightly_vanilla_additions",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "slightly_vanilla_additions:alterated_planks"
+    },
+    "3": {
+      "item": "slightly_vanilla_additions:alterated_planks"
+    },
+    "4": {
+      "item": "slightly_vanilla_additions:alterated_planks"
+    },
+    "6": {
+      "item": "slightly_vanilla_additions:alterated_planks"
+    },
+    "7": {
+      "item": "slightly_vanilla_additions:alterated_planks"
+    },
+    "8": {
+      "item": "slightly_vanilla_additions:alterated_planks"
+    }
+  },
+  "result": {
+    "item": "slightly_vanilla_additions:alterated_stairs",
+    "count": 4
+  }
+}

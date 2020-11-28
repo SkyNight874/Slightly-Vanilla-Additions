@@ -1,0 +1,22 @@
+{
+  "group": "slightly_vanilla_additions",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "slightly_vanilla_additions:alterated_planks"
+    },
+    "1": {
+      "item": "slightly_vanilla_additions:alterated_planks"
+    },
+    "2": {
+      "item": "slightly_vanilla_additions:alterated_planks"
+    }
+  },
+  "result": {
+    "item": "slightly_vanilla_additions:alterated_slab",
+    "count": 6
+  }
+}

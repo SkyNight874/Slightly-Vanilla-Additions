@@ -40,6 +40,9 @@
       },
       {
         "value": "void"
+      },
+      {
+        "value": "CUSTOM:AlteratedForest"
       }
     ],
     "worldGenType": "End like gen",
