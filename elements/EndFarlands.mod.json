@@ -43,6 +43,9 @@
       },
       {
         "value": "CUSTOM:AlteratedForest"
+      },
+      {
+        "value": "CUSTOM:AlteratedForest"
       }
     ],
     "worldGenType": "End like gen",
