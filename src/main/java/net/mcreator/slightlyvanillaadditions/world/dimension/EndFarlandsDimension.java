@@ -100,7 +100,7 @@ public class EndFarlandsDimension extends SlightlyVanillaAdditionsModElements.Mo
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public EndFarlandsDimension(SlightlyVanillaAdditionsModElements instance) {
-		super(instance, 26);
+		super(instance, 3);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
