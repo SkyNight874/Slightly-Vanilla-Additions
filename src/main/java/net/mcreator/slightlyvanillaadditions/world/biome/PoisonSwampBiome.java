@@ -37,7 +37,7 @@ public class PoisonSwampBiome extends SlightlyVanillaAdditionsModElements.ModEle
 	static class CustomBiome extends Biome {
 		public CustomBiome() {
 			super(new Biome.Builder().downfall(0f).depth(0.1f).scale(0.2f).temperature(0.5f).precipitation(Biome.RainType.NONE)
-					.category(Biome.Category.NONE).waterColor(4159204).waterFogColor(329011)
+					.category(Biome.Category.NONE).waterColor(4159204).waterFogColor(329011).parent("slightly_vanilla_additions:chorus_forest")
 					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(PoisonousFluidBlock.block.getDefaultState(),
 							Blocks.END_STONE.getDefaultState(), Blocks.END_STONE.getDefaultState())));
 			setRegistryName("poison_swamp");

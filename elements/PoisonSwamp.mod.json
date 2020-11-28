@@ -40,11 +40,11 @@
     "baseHeight": 0.1,
     "heightVariation": 0.2,
     "spawnBiome": false,
-    "biomeWeight": 200,
+    "biomeWeight": 300,
     "biomeType": "WARM",
     "biomeCategory": "NONE",
     "parent": {
-      "value": "No parent"
+      "value": "CUSTOM:ChorusForest"
     },
     "spawnStronghold": false,
     "spawnMineshaft": false,
