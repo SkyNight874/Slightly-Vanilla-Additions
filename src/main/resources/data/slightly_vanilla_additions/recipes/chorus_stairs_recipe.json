@@ -8,26 +8,26 @@
   ],
   "key": {
     "0": {
-      "item": "slightly_vanilla_additions:unknown_element"
+      "item": "slightly_vanilla_additions:chorus_planks"
     },
     "3": {
-      "item": "slightly_vanilla_additions:unknown_element"
+      "item": "slightly_vanilla_additions:chorus_planks"
     },
     "4": {
-      "item": "slightly_vanilla_additions:unknown_element"
+      "item": "slightly_vanilla_additions:chorus_planks"
     },
     "6": {
-      "item": "slightly_vanilla_additions:unknown_element"
+      "item": "slightly_vanilla_additions:chorus_planks"
     },
     "7": {
-      "item": "slightly_vanilla_additions:unknown_element"
+      "item": "slightly_vanilla_additions:chorus_planks"
     },
     "8": {
-      "item": "slightly_vanilla_additions:unknown_element"
+      "item": "slightly_vanilla_additions:chorus_planks"
     }
   },
   "result": {
-    "item": "slightly_vanilla_additions:unknown_element",
+    "item": "slightly_vanilla_additions:chorus_stairs",
     "count": 4
   }
 }

@@ -556,15 +556,6 @@
       "registry_name": "blue_berriesbushnofruit"
     },
     {
-      "name": "BlueBerryBush",
-      "type": "plant",
-      "sortid": 58,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "blue_berry_bush"
-    },
-    {
       "name": "BlueBerriesLorsDunClickDroitSurUnBloc",
       "type": "procedure",
       "sortid": 59,
@@ -605,23 +596,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "blue_berries"
-    },
-    {
-      "name": "BlueBerryBushLorsDunClicDroitSurLaPlante",
-      "type": "procedure",
-      "sortid": 60,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "blue_berry_bush_lors_dun_clic_droit_sur_la_plante",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
     },
     {
       "name": "BlueBerriesbushnofruitQuandLaPlanteEstDetruiteParUnJoueur",
@@ -668,6 +642,194 @@
           }
         ]
       }
+    },
+    {
+      "name": "BlueBerryBushLorsDunClicDroitSurLaPlante",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_berry_bush_lors_dun_clic_droit_sur_la_plante",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BlueBerryBush",
+      "type": "plant",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_berry_bush"
+    },
+    {
+      "name": "AlteratedStairsRecipe",
+      "type": "recipe",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_stairs_recipe"
+    },
+    {
+      "name": "AlteratedWood",
+      "type": "block",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_wood"
+    },
+    {
+      "name": "AlteratedStickRecipe",
+      "type": "recipe",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_stick_recipe"
+    },
+    {
+      "name": "AlteratedPlanks",
+      "type": "block",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_planks"
+    },
+    {
+      "name": "AlteratedNylium",
+      "type": "block",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_nylium"
+    },
+    {
+      "name": "AlteratedFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_fence_gate_recipe"
+    },
+    {
+      "name": "AlteratedItemsTag",
+      "type": "tag",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_items_tag"
+    },
+    {
+      "name": "AlteratedStairs",
+      "type": "block",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_stairs"
+    },
+    {
+      "name": "AlteratedForest",
+      "type": "biome",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_forest"
+    },
+    {
+      "name": "AlteratedLog",
+      "type": "block",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_log"
+    },
+    {
+      "name": "AlteratedSlab",
+      "type": "block",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_slab"
+    },
+    {
+      "name": "AlteratedPlanksRecipe",
+      "type": "recipe",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_planks_recipe"
+    },
+    {
+      "name": "AlteratedFenceRecipe",
+      "type": "recipe",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_fence_recipe"
+    },
+    {
+      "name": "AlteratedFence",
+      "type": "block",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_fence"
+    },
+    {
+      "name": "AlteratedWoodRecipe",
+      "type": "recipe",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_wood_recipe"
+    },
+    {
+      "name": "AlteratedLeaves",
+      "type": "block",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_leaves"
+    },
+    {
+      "name": "AlteratedSlabRecipe",
+      "type": "recipe",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_slab_recipe"
+    },
+    {
+      "name": "AlteratedFenceGate",
+      "type": "block",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_fence_gate"
     }
   ],
   "variable_elements": [],
@@ -689,7 +851,6 @@
       "block.slightly_vanilla_additions.bluestone": "Bluestone",
       "block.slightly_vanilla_additions.polished_bluestone_wall": "Polished Bluestone Wall",
       "item.slightly_vanilla_additions.obsidian_hammer": "Obsidian Hammer",
-      "block.slightly_vanilla_additions.blue_berry_bush": "Blueberry Bush",
       "block.slightly_vanilla_additions.polished_bluestone_slab": "Polished Bluestone Slab",
       "block.slightly_vanilla_additions.chorus_fence_gate": "Chorus Fence Gate",
       "block.slightly_vanilla_additions.bluestone_stairs": "Bluestone Stairs",
@@ -709,7 +870,6 @@
       "biome.slightly_vanilla_additions.poison_swamp": "Poison Swamp",
       "block.slightly_vanilla_additions.chorus_log": "Chorus Log",
       "item.slightly_vanilla_additions.end_farlands": "Dragon Flint And Steel",
-      "item.slightly_vanilla_additions.blue_berries": "Blue Berries",
       "block.slightly_vanilla_additions.chorus_slab": "Chorus Slab",
       "item.slightly_vanilla_additions.back_pack_item": "BackPack"
     }

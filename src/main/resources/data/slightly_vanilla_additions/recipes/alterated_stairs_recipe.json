@@ -1,0 +1,33 @@
+{
+  "group": "slightly_vanilla_additions",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "slightly_vanilla_additions:unknown_element"
+    },
+    "3": {
+      "item": "slightly_vanilla_additions:unknown_element"
+    },
+    "4": {
+      "item": "slightly_vanilla_additions:unknown_element"
+    },
+    "6": {
+      "item": "slightly_vanilla_additions:unknown_element"
+    },
+    "7": {
+      "item": "slightly_vanilla_additions:unknown_element"
+    },
+    "8": {
+      "item": "slightly_vanilla_additions:unknown_element"
+    }
+  },
+  "result": {
+    "item": "slightly_vanilla_additions:unknown_element",
+    "count": 4
+  }
+}

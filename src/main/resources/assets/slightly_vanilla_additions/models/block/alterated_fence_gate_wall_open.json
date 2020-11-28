@@ -1,0 +1,6 @@
+{
+  "parent": "block/template_fence_gate_wall_open",
+  "textures": {
+    "texture": "slightly_vanilla_additions:blocks/alterated_planks"
+  }
+}

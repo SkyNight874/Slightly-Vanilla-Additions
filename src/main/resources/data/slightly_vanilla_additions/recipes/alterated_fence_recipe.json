@@ -1,0 +1,32 @@
+{
+  "group": "slightly_vanilla_additions",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "slightly_vanilla_additions:alterated_planks"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "slightly_vanilla_additions:alterated_planks"
+    },
+    "3": {
+      "item": "slightly_vanilla_additions:alterated_planks"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "slightly_vanilla_additions:alterated_planks"
+    }
+  },
+  "result": {
+    "item": "slightly_vanilla_additions:unknown_element",
+    "count": 3
+  }
+}
