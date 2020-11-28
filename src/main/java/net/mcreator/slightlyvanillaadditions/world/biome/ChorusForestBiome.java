@@ -1,46 +1,14 @@
 
 package net.mcreator.slightlyvanillaadditions.world.biome;
 
-import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
-import net.minecraft.world.gen.placement.Placement;
-import net.minecraft.world.gen.placement.IPlacementConfig;
-import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
-import net.minecraft.world.gen.feature.SeaGrassConfig;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
-import net.minecraft.world.gen.feature.AbstractTreeFeature;
-import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
-import net.minecraft.world.gen.IWorldGenerationReader;
-import net.minecraft.world.gen.GenerationStage;
-import net.minecraft.world.biome.DefaultBiomeFeatures;
-import net.minecraft.world.biome.Biome;
-import net.minecraft.world.IWorldWriter;
-import net.minecraft.world.IWorld;
-import net.minecraft.util.math.MutableBoundingBox;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.Direction;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Block;
-
-import net.mcreator.slightlyvanillaadditions.block.PoisonNyliumBlock;
-import net.mcreator.slightlyvanillaadditions.block.ChorusLogBlock;
-import net.mcreator.slightlyvanillaadditions.block.ChorusLeavesBlock;
-import net.mcreator.slightlyvanillaadditions.SlightlyVanillaAdditionsModElements;
-
-import java.util.Set;
-import java.util.Random;
 
 @SlightlyVanillaAdditionsModElements.ModElement.Tag
 public class ChorusForestBiome extends SlightlyVanillaAdditionsModElements.ModElement {
+
 	@ObjectHolder("slightly_vanilla_additions:chorus_forest")
 	public static final CustomBiome biome = null;
+
 	public ChorusForestBiome(SlightlyVanillaAdditionsModElements instance) {
 		super(instance, 48);
 	}
@@ -53,25 +21,35 @@ public class ChorusForestBiome extends SlightlyVanillaAdditionsModElements.ModEl
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 	}
+
 	static class CustomBiome extends Biome {
+
 		public CustomBiome() {
 			super(new Biome.Builder().downfall(0.5f).depth(0.1f).scale(0.2f).temperature(0.5f).precipitation(Biome.RainType.RAIN)
 					.category(Biome.Category.NONE).waterColor(4159204).waterFogColor(329011)
-					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(PoisonNyliumBlock.block.getDefaultState(),
+					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(PoisonNyliumItem.block.getDefaultState(),
 							Blocks.END_STONE.getDefaultState(), Blocks.END_STONE.getDefaultState())));
+
 			setRegistryName("chorus_forest");
+
 			DefaultBiomeFeatures.addStructures(this);
+
 			this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.SEAGRASS.withConfiguration(new SeaGrassConfig(20, 0.3D))
 					.withPlacement(Placement.TOP_SOLID_HEIGHTMAP.configure(IPlacementConfig.NO_PLACEMENT_CONFIG)));
-			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, new CustomTreeFeature()
-					.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(ChorusLogBlock.block.getDefaultState()),
-							new SimpleBlockStateProvider(ChorusLeavesBlock.block.getDefaultState()))).baseHeight(7)
-									.setSapling((net.minecraftforge.common.IPlantable) Blocks.JUNGLE_SAPLING).build())
-					.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(3, 0.1F, 1))));
+
+			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
+					new CustomTreeFeature()
+							.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(ChorusLogItem.block.getDefaultState()),
+									new SimpleBlockStateProvider(ChorusLeavesItem.block.getDefaultState()))).baseHeight(7)
+											.setSapling((net.minecraftforge.common.IPlantable) Blocks.JUNGLE_SAPLING).build())
+							.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(3, 0.1F, 1))));
+
 		}
+
 	}
 
 	static class CustomTreeFeature extends AbstractTreeFeature<BaseTreeFeatureConfig> {
+
 		CustomTreeFeature() {
 			super(BaseTreeFeatureConfig::deserialize);
 		}
@@ -81,16 +59,22 @@ public class ChorusForestBiome extends SlightlyVanillaAdditionsModElements.ModEl
 				Set<BlockPos> changedBlocks2, MutableBoundingBox bbox, BaseTreeFeatureConfig conf) {
 			if (!(worldgen instanceof IWorld))
 				return false;
+
 			IWorld world = (IWorld) worldgen;
+
 			int height = rand.nextInt(5) + 7;
 			boolean spawnTree = true;
+
 			if (position.getY() >= 1 && position.getY() + height + 1 <= world.getHeight()) {
 				for (int j = position.getY(); j <= position.getY() + 1 + height; j++) {
 					int k = 1;
+
 					if (j == position.getY())
 						k = 0;
+
 					if (j >= position.getY() + height - 1)
 						k = 2;
+
 					for (int px = position.getX() - k; px <= position.getX() + k && spawnTree; px++) {
 						for (int pz = position.getZ() - k; pz <= position.getZ() + k && spawnTree; pz++) {
 							if (j >= 0 && j < world.getHeight()) {
@@ -108,40 +92,50 @@ public class ChorusForestBiome extends SlightlyVanillaAdditionsModElements.ModEl
 				} else {
 					Block ground = world.getBlockState(position.add(0, -1, 0)).getBlock();
 					Block ground2 = world.getBlockState(position.add(0, -2, 0)).getBlock();
-					if (!((ground == PoisonNyliumBlock.block.getDefaultState().getBlock() || ground == Blocks.END_STONE.getDefaultState().getBlock())
-							&& (ground2 == PoisonNyliumBlock.block.getDefaultState().getBlock()
+					if (!((ground == PoisonNyliumItem.block.getDefaultState().getBlock() || ground == Blocks.END_STONE.getDefaultState().getBlock())
+							&& (ground2 == PoisonNyliumItem.block.getDefaultState().getBlock()
 									|| ground2 == Blocks.END_STONE.getDefaultState().getBlock())))
 						return false;
+
 					BlockState state = world.getBlockState(position.down());
 					if (position.getY() < world.getHeight() - height - 1) {
 						setTreeBlockState(changedBlocks, world, position.down(), Blocks.END_STONE.getDefaultState(), bbox);
+
 						for (int genh = position.getY() - 3 + height; genh <= position.getY() + height; genh++) {
 							int i4 = genh - (position.getY() + height);
 							int j1 = (int) (1 - i4 * 0.5);
+
 							for (int k1 = position.getX() - j1; k1 <= position.getX() + j1; ++k1) {
 								for (int i2 = position.getZ() - j1; i2 <= position.getZ() + j1; ++i2) {
 									int j2 = i2 - position.getZ();
+
 									if (Math.abs(position.getX()) != j1 || Math.abs(j2) != j1 || rand.nextInt(2) != 0 && i4 != 0) {
 										BlockPos blockpos = new BlockPos(k1, genh, i2);
 										state = world.getBlockState(blockpos);
+
 										if (state.getBlock().isAir(state, world, blockpos) || state.getMaterial().blocksMovement()
 												|| state.isIn(BlockTags.LEAVES) || state.getBlock() == Blocks.CAVE_AIR.getDefaultState().getBlock()
-												|| state.getBlock() == ChorusLeavesBlock.block.getDefaultState().getBlock()) {
-											setTreeBlockState(changedBlocks, world, blockpos, ChorusLeavesBlock.block.getDefaultState(), bbox);
+												|| state.getBlock() == ChorusLeavesItem.block.getDefaultState().getBlock()) {
+											setTreeBlockState(changedBlocks, world, blockpos, ChorusLeavesItem.block.getDefaultState(), bbox);
 										}
 									}
 								}
 							}
 						}
+
 						for (int genh = 0; genh < height; genh++) {
 							BlockPos genhPos = position.up(genh);
 							state = world.getBlockState(genhPos);
-							setTreeBlockState(changedBlocks, world, genhPos, ChorusLogBlock.block.getDefaultState(), bbox);
+
+							setTreeBlockState(changedBlocks, world, genhPos, ChorusLogItem.block.getDefaultState(), bbox);
+
 							if (state.getBlock().isAir(state, world, genhPos) || state.getMaterial().blocksMovement() || state.isIn(BlockTags.LEAVES)
 									|| state.getBlock() == Blocks.CAVE_AIR.getDefaultState().getBlock()
-									|| state.getBlock() == ChorusLeavesBlock.block.getDefaultState().getBlock()) {
+									|| state.getBlock() == ChorusLeavesItem.block.getDefaultState().getBlock()) {
+
 							}
 						}
+
 						if (rand.nextInt(4) == 0 && height > 5) {
 							for (int hlevel = 0; hlevel < 2; hlevel++) {
 								for (Direction Direction : Direction.Plane.HORIZONTAL) {
@@ -153,6 +147,7 @@ public class ChorusForestBiome extends SlightlyVanillaAdditionsModElements.ModEl
 								}
 							}
 						}
+
 						return true;
 					} else {
 						return false;
@@ -173,10 +168,9 @@ public class ChorusForestBiome extends SlightlyVanillaAdditionsModElements.ModEl
 		}
 
 		private boolean canGrowInto(Block blockType) {
-			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == ChorusLogBlock.block.getDefaultState().getBlock()
-					|| blockType == ChorusLeavesBlock.block.getDefaultState().getBlock()
-					|| blockType == PoisonNyliumBlock.block.getDefaultState().getBlock()
-					|| blockType == Blocks.END_STONE.getDefaultState().getBlock();
+			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == ChorusLogItem.block.getDefaultState().getBlock()
+					|| blockType == ChorusLeavesItem.block.getDefaultState().getBlock()
+					|| blockType == PoisonNyliumItem.block.getDefaultState().getBlock() || blockType == Blocks.END_STONE.getDefaultState().getBlock();
 		}
 
 		private boolean isReplaceable(IWorld world, BlockPos pos) {
@@ -188,5 +182,7 @@ public class ChorusForestBiome extends SlightlyVanillaAdditionsModElements.ModEl
 			super.func_227217_a_(world, pos, state, mbb);
 			changedBlocks.add(pos.toImmutable());
 		}
+
 	}
+
 }
