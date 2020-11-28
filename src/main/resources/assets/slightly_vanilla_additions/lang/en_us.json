@@ -1,4 +1,5 @@
 {
+  "block.slightly_vanilla_additions.blue_berriesbushnofruit": "Blue Berries Bush No Fruit",
   "item.slightly_vanilla_additions.dragon_sword": "Dragon Sword",
   "item.slightly_vanilla_additions.dragon_hoe": "Dragon Hoe",
   "block.slightly_vanilla_additions.polished_bluestone": "Polished Bluestone",
@@ -13,6 +14,7 @@
   "block.slightly_vanilla_additions.bluestone": "Bluestone",
   "block.slightly_vanilla_additions.polished_bluestone_wall": "Polished Bluestone Wall",
   "item.slightly_vanilla_additions.obsidian_hammer": "Obsidian Hammer",
+  "block.slightly_vanilla_additions.blue_berry_bush": "Blueberry Bush",
   "block.slightly_vanilla_additions.polished_bluestone_slab": "Polished Bluestone Slab",
   "block.slightly_vanilla_additions.chorus_fence_gate": "Chorus Fence Gate",
   "block.slightly_vanilla_additions.bluestone_stairs": "Bluestone Stairs",
@@ -32,6 +34,7 @@
   "biome.slightly_vanilla_additions.poison_swamp": "Poison Swamp",
   "block.slightly_vanilla_additions.chorus_log": "Chorus Log",
   "item.slightly_vanilla_additions.end_farlands": "Dragon Flint And Steel",
+  "item.slightly_vanilla_additions.blue_berries": "Blue Berries",
   "block.slightly_vanilla_additions.chorus_slab": "Chorus Slab",
   "item.slightly_vanilla_additions.back_pack_item": "BackPack"
 }

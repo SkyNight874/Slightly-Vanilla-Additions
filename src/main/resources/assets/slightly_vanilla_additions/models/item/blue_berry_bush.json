@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "slightly_vanilla_additions:blocks/blue_berries_bush"
+  }
+}

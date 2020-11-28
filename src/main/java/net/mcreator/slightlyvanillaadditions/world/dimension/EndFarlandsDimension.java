@@ -696,7 +696,7 @@ public class EndFarlandsDimension extends SlightlyVanillaAdditionsModElements.Mo
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public Vec3d getFogColor(float cangle, float ticks) {
-			return new Vec3d(0.8, 0.8, 1);
+			return new Vec3d(0.8, 0.2, 1);
 		}
 
 		@Override
