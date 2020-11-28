@@ -21,22 +21,25 @@
     "enablePortal": true,
     "biomesInDimension": [
       {
-        "value": "small_end_islands"
-      },
-      {
         "value": "end_highlands"
       },
       {
         "value": "end_midlands"
       },
       {
-        "value": "void"
-      },
-      {
         "value": "CUSTOM:ChorusForest"
       },
       {
         "value": "CUSTOM:PoisonSwamp"
+      },
+      {
+        "value": "small_end_islands"
+      },
+      {
+        "value": "end_midlands"
+      },
+      {
+        "value": "void"
       }
     ],
     "worldGenType": "End like gen",

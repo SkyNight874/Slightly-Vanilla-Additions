@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "slightly_vanilla_additions:items/imported_piskel_3"
+  }
+}
