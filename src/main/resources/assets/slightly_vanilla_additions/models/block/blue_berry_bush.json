@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "slightly_vanilla_additions:blocks/blue_berries_bush",
+    "particle": "slightly_vanilla_additions:blocks/blue_berries_bush"
+  }
+}

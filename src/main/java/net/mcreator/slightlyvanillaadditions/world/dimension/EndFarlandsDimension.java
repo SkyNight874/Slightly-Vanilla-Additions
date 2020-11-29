@@ -100,7 +100,7 @@ public class EndFarlandsDimension extends SlightlyVanillaAdditionsModElements.Mo
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public EndFarlandsDimension(SlightlyVanillaAdditionsModElements instance) {
-		super(instance, 3);
+		super(instance, 26);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
@@ -127,6 +127,7 @@ public class EndFarlandsDimension extends SlightlyVanillaAdditionsModElements.Mo
 				ForgeRegistries.BIOMES.getValue(new ResourceLocation("small_end_islands")),
 				ForgeRegistries.BIOMES.getValue(new ResourceLocation("end_midlands")),
 				ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_void")),
+				ForgeRegistries.BIOMES.getValue(new ResourceLocation("slightly_vanilla_additions:alterated_forest")),
 				ForgeRegistries.BIOMES.getValue(new ResourceLocation("slightly_vanilla_additions:alterated_forest")),};
 	}
 
@@ -697,7 +698,7 @@ public class EndFarlandsDimension extends SlightlyVanillaAdditionsModElements.Mo
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public Vec3d getFogColor(float cangle, float ticks) {
-			return new Vec3d(0.8, 0.8, 1);
+			return new Vec3d(0.8, 0.2, 1);
 		}
 
 		@Override

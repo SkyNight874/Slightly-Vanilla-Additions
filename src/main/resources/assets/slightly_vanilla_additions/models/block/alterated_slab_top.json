@@ -1,8 +1,8 @@
 {
   "parent": "block/slab_top",
   "textures": {
-    "bottom": "slightly_vanilla_additions:blocks/alterated_planks",
-    "top": "slightly_vanilla_additions:blocks/alterated_planks",
-    "side": "slightly_vanilla_additions:blocks/alterated_planks"
+    "bottom": "slightly_vanilla_additions:blocks/al",
+    "top": "slightly_vanilla_additions:blocks/al",
+    "side": "slightly_vanilla_additions:blocks/al"
   }
 }

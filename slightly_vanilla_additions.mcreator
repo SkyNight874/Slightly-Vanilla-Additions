@@ -707,12 +707,136 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "alterated_forest"
+    },
+    {
+      "name": "BlueBerriesbushnofruit",
+      "type": "plant",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_berriesbushnofruit"
+    },
+    {
+      "name": "BlueBerriesLorsDunClickDroitSurUnBloc",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_berries_lors_dun_click_droit_sur_un_bloc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BlueBerries",
+      "type": "item",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_berries"
+    },
+    {
+      "name": "BlueBerriesbushnofruitQuandLaPlanteEstDetruiteParUnJoueur",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_berriesbushnofruit_quand_la_plante_est_detruite_par_un_joueur",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BlueBerriesbushnofruitMiseAJourDuTick",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_berriesbushnofruit_mise_a_jour_du_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BlueBerryBushLorsDunClicDroitSurLaPlante",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_berry_bush_lors_dun_clic_droit_sur_la_plante",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BlueBerryBush",
+      "type": "plant",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_berry_bush"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.slightly_vanilla_additions.blue_berriesbushnofruit": "Blue Berries Bush No Fruit",
       "item.slightly_vanilla_additions.dragon_sword": "Dragon Sword",
       "item.slightly_vanilla_additions.dragon_hoe": "Dragon Hoe",
       "block.slightly_vanilla_additions.alterated_log": "Alterated Log",

@@ -43,6 +43,9 @@
       },
       {
         "value": "CUSTOM:AlteratedForest"
+      },
+      {
+        "value": "CUSTOM:AlteratedForest"
       }
     ],
     "worldGenType": "End like gen",
@@ -53,7 +56,7 @@
       "value": "CUSTOM:PoisonousFluid"
     },
     "airColor": {
-      "value": -3355393,
+      "value": -3394561,
       "falpha": 0.0
     },
     "canRespawnHere": true,

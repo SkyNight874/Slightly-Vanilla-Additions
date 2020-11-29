@@ -1,7 +1,7 @@
 {
   "parent": "block/fence_post",
   "textures": {
-    "texture": "slightly_vanilla_additions:blocks/alterated_planks",
-    "particle": "slightly_vanilla_additions:blocks/alterated_planks"
+    "texture": "slightly_vanilla_additions:blocks/al",
+    "particle": "slightly_vanilla_additions:blocks/al"
   }
 }

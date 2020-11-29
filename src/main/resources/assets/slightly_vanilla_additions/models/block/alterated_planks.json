@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "slightly_vanilla_additions:blocks/alterated_planks",
-    "particle": "slightly_vanilla_additions:blocks/alterated_planks"
+    "all": "slightly_vanilla_additions:blocks/al",
+    "particle": "slightly_vanilla_additions:blocks/al"
   }
 }
