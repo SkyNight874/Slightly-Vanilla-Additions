@@ -1,7 +1,12 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube",
   "textures": {
-    "all": "slightly_vanilla_additions:blocks/leaf",
+    "down": "slightly_vanilla_additions:blocks/leaf",
+    "up": "slightly_vanilla_additions:blocks/leaf",
+    "north": "slightly_vanilla_additions:blocks/leaf",
+    "east": "slightly_vanilla_additions:blocks/leaf",
+    "south": "slightly_vanilla_additions:blocks/leaf",
+    "west": "slightly_vanilla_additions:blocks/leaf",
     "particle": "slightly_vanilla_additions:blocks/leaf"
   }
 }
