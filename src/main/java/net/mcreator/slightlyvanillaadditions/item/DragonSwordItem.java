@@ -32,7 +32,7 @@ public class DragonSwordItem extends SlightlyVanillaAdditionsModElements.ModElem
 			}
 
 			public float getAttackDamage() {
-				return 4f;
+				return 7f;
 			}
 
 			public int getHarvestLevel() {
@@ -46,7 +46,7 @@ public class DragonSwordItem extends SlightlyVanillaAdditionsModElements.ModElem
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks(new ItemStack(DragonFangItem.block, (int) (1)));
 			}
-		}, 3, -3f, new Item.Properties().group(ItemGroup.COMBAT)) {
+		}, 3, -2f, new Item.Properties().group(ItemGroup.COMBAT)) {
 		}.setRegistryName("dragon_sword"));
 	}
 }

@@ -9,13 +9,17 @@
     "minCountPerChunk": 1,
     "maxCountPerChunk": 2,
     "spawnLocation": "Ground",
-    "spawnHeightOffset": 0,
+    "spawnHeightOffset": 64,
     "spawnXOffset": 0,
     "spawnZOffset": 0,
     "spawnWorldTypes": [
       "CUSTOM:EndFarlands"
     ],
-    "restrictionBlocks": [],
+    "restrictionBlocks": [
+      {
+        "value": "Blocks.END_STONE"
+      }
+    ],
     "restrictionBiomes": [],
     "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK"
   }
