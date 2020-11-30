@@ -1,0 +1,29 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "slightly_vanilla_additions:dragon_scale"
+    },
+    "title": {
+      "translate": "advancements.another_dimension.title"
+    },
+    "description": {
+      "translate": "advancements.another_dimension.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "another_dimension": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "slightly_vanilla_additions:end_farlands"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "slightly_vanilla_additions:chorus_log"
+    },
+    "title": {
+      "translate": "advancements.achorusforest.title"
+    },
+    "description": {
+      "translate": "advancements.achorusforest.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "achorusforest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "biome": "slightly_vanilla_additions:chorus_forest"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "slightly_vanilla_additions:another_dimension"
+}

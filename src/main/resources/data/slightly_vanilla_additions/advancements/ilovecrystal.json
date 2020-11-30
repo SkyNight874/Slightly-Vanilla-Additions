@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "slightly_vanilla_additions:crystal_gem"
+    },
+    "title": {
+      "translate": "advancements.ilovecrystal.title"
+    },
+    "description": {
+      "translate": "advancements.ilovecrystal.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ilovecrystal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "slightly_vanilla_additions:crystal_gem",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "slightly_vanilla_additions:another_dimension"
+}

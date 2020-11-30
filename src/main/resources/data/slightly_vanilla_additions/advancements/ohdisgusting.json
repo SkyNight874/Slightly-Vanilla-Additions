@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "slightly_vanilla_additions:alterated_nylium"
+    },
+    "title": {
+      "translate": "advancements.ohdisgusting.title"
+    },
+    "description": {
+      "translate": "advancements.ohdisgusting.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ohdisgusting": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "biome": "slightly_vanilla_additions:alterated_forest"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "slightly_vanilla_additions:another_dimension"
+}
