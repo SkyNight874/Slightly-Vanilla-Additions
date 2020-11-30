@@ -871,6 +871,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "warp"
+    },
+    {
+      "name": "CrystalGem",
+      "type": "item",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crystal_gem"
     }
   ],
   "variable_elements": [],
@@ -879,8 +888,9 @@
     "en_us": {
       "item.slightly_vanilla_additions.dragon_sword": "Dragon Sword",
       "item.slightly_vanilla_additions.fire_pearl_shoot": "Fire Pearl Shoot",
-      "block.slightly_vanilla_additions.alterated_slab": "Alterated Slab",
       "block.slightly_vanilla_additions.polished_bluestone": "Polished Bluestone",
+      "block.slightly_vanilla_additions.alterated_slab": "Alterated Slab",
+      "item.slightly_vanilla_additions.crystal_gem": "Crystal Gem",
       "item.slightly_vanilla_additions.fire_pearl": "Fire Pearl",
       "block.slightly_vanilla_additions.bluestone_wall": "Bluestone Wall",
       "block.slightly_vanilla_additions.chorus_stairs": "Chorus Stairs",
@@ -891,8 +901,8 @@
       "block.slightly_vanilla_additions.bluestone": "Bluestone",
       "block.slightly_vanilla_additions.crystal": "Crystal",
       "block.slightly_vanilla_additions.chorus_fence_gate": "Chorus Fence Gate",
-      "block.slightly_vanilla_additions.chorus_grass": "Chorus Grass",
       "block.slightly_vanilla_additions.chorus_leaves": "Chorus Block",
+      "block.slightly_vanilla_additions.chorus_grass": "Chorus Grass",
       "block.slightly_vanilla_additions.powder_snow": "Powder Snow",
       "block.slightly_vanilla_additions.alterated_fence_gate": "Alterated Fence Gate",
       "item.slightly_vanilla_additions.poisonous_fluid_bucket": "PoisonousFluid Bucket",

@@ -27,9 +27,9 @@
     },
     "useLootTableForDrops": false,
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:CrystalGem"
     },
-    "dropAmount": 1,
+    "dropAmount": 3,
     "forceTicking": false,
     "emissiveRendering": false,
     "hasTileEntity": false,
