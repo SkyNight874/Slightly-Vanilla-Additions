@@ -28,7 +28,7 @@ public class AlteratedSlabBlock extends SlightlyVanillaAdditionsModElements.ModE
 	@ObjectHolder("slightly_vanilla_additions:alterated_slab")
 	public static final Block block = null;
 	public AlteratedSlabBlock(SlightlyVanillaAdditionsModElements instance) {
-		super(instance, 62);
+		super(instance, 68);
 	}
 
 	@Override
@@ -39,14 +39,13 @@ public class AlteratedSlabBlock extends SlightlyVanillaAdditionsModElements.ModE
 	}
 	public static class CustomBlock extends SlabBlock {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2.4000000000000004f, 3.6000000000000005f)
-					.lightValue(0));
+			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 3f).lightValue(0));
 			setRegistryName("alterated_slab");
 		}
 
 		@Override
 		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
-			return 6;
+			return 5;
 		}
 
 		@Override

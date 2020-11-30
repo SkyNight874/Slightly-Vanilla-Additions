@@ -120,15 +120,12 @@ public class EndFarlandsDimension extends SlightlyVanillaAdditionsModElements.Mo
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		dimensionBiomes = new Biome[]{ForgeRegistries.BIOMES.getValue(new ResourceLocation("end_highlands")),
-				ForgeRegistries.BIOMES.getValue(new ResourceLocation("end_midlands")),
-				ForgeRegistries.BIOMES.getValue(new ResourceLocation("slightly_vanilla_additions:chorus_forest")),
+		dimensionBiomes = new Biome[]{ForgeRegistries.BIOMES.getValue(new ResourceLocation("slightly_vanilla_additions:chorus_forest")),
 				ForgeRegistries.BIOMES.getValue(new ResourceLocation("slightly_vanilla_additions:poison_swamp")),
-				ForgeRegistries.BIOMES.getValue(new ResourceLocation("small_end_islands")),
-				ForgeRegistries.BIOMES.getValue(new ResourceLocation("end_midlands")),
-				ForgeRegistries.BIOMES.getValue(new ResourceLocation("the_void")),
 				ForgeRegistries.BIOMES.getValue(new ResourceLocation("slightly_vanilla_additions:alterated_forest")),
-				ForgeRegistries.BIOMES.getValue(new ResourceLocation("slightly_vanilla_additions:alterated_forest")),};
+				ForgeRegistries.BIOMES.getValue(new ResourceLocation("end_highlands")),
+				ForgeRegistries.BIOMES.getValue(new ResourceLocation("end_midlands")),
+				ForgeRegistries.BIOMES.getValue(new ResourceLocation("small_end_islands")),};
 	}
 
 	@Override

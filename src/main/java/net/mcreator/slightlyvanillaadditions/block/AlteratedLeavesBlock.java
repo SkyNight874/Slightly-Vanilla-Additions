@@ -13,7 +13,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.LeavesBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -27,7 +26,7 @@ public class AlteratedLeavesBlock extends SlightlyVanillaAdditionsModElements.Mo
 	@ObjectHolder("slightly_vanilla_additions:alterated_leaves")
 	public static final Block block = null;
 	public AlteratedLeavesBlock(SlightlyVanillaAdditionsModElements instance) {
-		super(instance, 60);
+		super(instance, 66);
 	}
 
 	@Override
@@ -36,15 +35,15 @@ public class AlteratedLeavesBlock extends SlightlyVanillaAdditionsModElements.Mo
 		elements.items
 				.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(block.getRegistryName()));
 	}
-	public static class CustomBlock extends LeavesBlock {
+	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(0.24f, 0.24f).lightValue(0).notSolid());
+			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(0.2f, 0.2f).lightValue(0));
 			setRegistryName("alterated_leaves");
 		}
 
 		@Override
 		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
-			return 36;
+			return 30;
 		}
 
 		@Override

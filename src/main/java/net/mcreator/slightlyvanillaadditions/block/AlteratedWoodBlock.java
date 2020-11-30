@@ -28,7 +28,7 @@ public class AlteratedWoodBlock extends SlightlyVanillaAdditionsModElements.ModE
 	@ObjectHolder("slightly_vanilla_additions:alterated_wood")
 	public static final Block block = null;
 	public AlteratedWoodBlock(SlightlyVanillaAdditionsModElements instance) {
-		super(instance, 57);
+		super(instance, 63);
 	}
 
 	@Override
@@ -39,14 +39,14 @@ public class AlteratedWoodBlock extends SlightlyVanillaAdditionsModElements.ModE
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2.4000000000000004f, 2.3140620096063054f)
-					.lightValue(0).harvestLevel(0).harvestTool(ToolType.AXE));
+			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 2f).lightValue(0).harvestLevel(0)
+					.harvestTool(ToolType.AXE));
 			setRegistryName("alterated_wood");
 		}
 
 		@Override
 		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
-			return 6;
+			return 5;
 		}
 
 		@Override

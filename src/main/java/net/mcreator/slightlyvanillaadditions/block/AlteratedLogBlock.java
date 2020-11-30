@@ -28,7 +28,7 @@ public class AlteratedLogBlock extends SlightlyVanillaAdditionsModElements.ModEl
 	@ObjectHolder("slightly_vanilla_additions:alterated_log")
 	public static final Block block = null;
 	public AlteratedLogBlock(SlightlyVanillaAdditionsModElements instance) {
-		super(instance, 58);
+		super(instance, 64);
 	}
 
 	@Override
@@ -39,14 +39,14 @@ public class AlteratedLogBlock extends SlightlyVanillaAdditionsModElements.ModEl
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2.4000000000000004f, 2.3140620096063054f)
-					.lightValue(0).harvestLevel(0).harvestTool(ToolType.AXE));
+			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 2f).lightValue(0).harvestLevel(0)
+					.harvestTool(ToolType.AXE));
 			setRegistryName("alterated_log");
 		}
 
 		@Override
 		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
-			return 6;
+			return 5;
 		}
 
 		@Override

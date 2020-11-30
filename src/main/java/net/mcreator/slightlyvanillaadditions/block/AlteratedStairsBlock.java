@@ -27,7 +27,7 @@ public class AlteratedStairsBlock extends SlightlyVanillaAdditionsModElements.Mo
 	@ObjectHolder("slightly_vanilla_additions:alterated_stairs")
 	public static final Block block = null;
 	public AlteratedStairsBlock(SlightlyVanillaAdditionsModElements instance) {
-		super(instance, 61);
+		super(instance, 67);
 	}
 
 	@Override
@@ -38,15 +38,14 @@ public class AlteratedStairsBlock extends SlightlyVanillaAdditionsModElements.Mo
 	}
 	public static class CustomBlock extends StairsBlock {
 		public CustomBlock() {
-			super(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.6000000000000005f, 2.4000000000000004f)).getDefaultState(),
-					Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(3.6000000000000005f, 2.4000000000000004f)
-							.lightValue(0));
+			super(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3f, 2f)).getDefaultState(),
+					Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(3f, 2f).lightValue(0));
 			setRegistryName("alterated_stairs");
 		}
 
 		@Override
 		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
-			return 6;
+			return 5;
 		}
 
 		@Override

@@ -85,7 +85,7 @@ public class ChorusGrassBlock extends SlightlyVanillaAdditionsModElements.ModEle
 					feature.withConfiguration(
 							(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer()))
 									.tries(64).build())
-							.withPlacement(Placement.NOISE_HEIGHTMAP_32.configure(new NoiseDependant(-0.8, 0, 3))));
+							.withPlacement(Placement.NOISE_HEIGHTMAP_32.configure(new NoiseDependant(-0.8, 0, 1))));
 		}
 	}
 	public static class BlockCustomFlower extends FlowerBlock {
@@ -115,7 +115,7 @@ public class ChorusGrassBlock extends SlightlyVanillaAdditionsModElements.ModEle
 
 		@Override
 		public PlantType getPlantType(IBlockReader world, BlockPos pos) {
-			return PlantType.Plains;
+			return PlantType.Cave;
 		}
 	}
 }

@@ -24,7 +24,7 @@ public class AlteratedNyliumBlock extends SlightlyVanillaAdditionsModElements.Mo
 	@ObjectHolder("slightly_vanilla_additions:alterated_nylium")
 	public static final Block block = null;
 	public AlteratedNyliumBlock(SlightlyVanillaAdditionsModElements instance) {
-		super(instance, 73);
+		super(instance, 82);
 	}
 
 	@Override

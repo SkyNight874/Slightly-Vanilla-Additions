@@ -478,15 +478,6 @@
       "registry_name": "poison_mushroom"
     },
     {
-      "name": "PoisonousFluid",
-      "type": "fluid",
-      "sortid": 53,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "poisonous_fluid"
-    },
-    {
       "name": "PoisonMushroomStructure",
       "type": "structure",
       "sortid": 54,
@@ -670,166 +661,193 @@
       "registry_name": "blue_berry_bush"
     },
     {
-      "name": "AlteratedStairsRecipe",
-      "type": "recipe",
-      "sortid": 68,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "alterated_stairs_recipe"
-    },
-    {
       "name": "AlteratedWood",
       "type": "block",
-      "sortid": 57,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "alterated_wood"
     },
     {
-      "name": "AlteratedStickRecipe",
-      "type": "recipe",
-      "sortid": 72,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "alterated_stick_recipe"
-    },
-    {
-      "name": "AlteratedPlanks",
-      "type": "block",
-      "sortid": 59,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "alterated_planks"
-    },
-    {
-      "name": "AlteratedNylium",
-      "type": "block",
-      "sortid": 73,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "alterated_nylium"
-    },
-    {
-      "name": "AlteratedFenceGateRecipe",
-      "type": "recipe",
-      "sortid": 71,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "alterated_fence_gate_recipe"
-    },
-    {
-      "name": "AlteratedItemsTag",
-      "type": "tag",
-      "sortid": 65,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "alterated_items_tag"
-    },
-    {
-      "name": "AlteratedStairs",
-      "type": "block",
-      "sortid": 61,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "alterated_stairs"
-    },
-    {
-      "name": "AlteratedForest",
-      "type": "biome",
-      "sortid": 74,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "alterated_forest"
-    },
-    {
       "name": "AlteratedLog",
       "type": "block",
-      "sortid": 58,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "alterated_log"
     },
     {
-      "name": "AlteratedSlab",
+      "name": "AlteratedPlanks",
       "type": "block",
-      "sortid": 62,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "alterated_slab"
-    },
-    {
-      "name": "AlteratedPlanksRecipe",
-      "type": "recipe",
-      "sortid": 67,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "alterated_planks_recipe"
-    },
-    {
-      "name": "AlteratedFenceRecipe",
-      "type": "recipe",
-      "sortid": 70,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "alterated_fence_recipe"
-    },
-    {
-      "name": "AlteratedFence",
-      "type": "block",
-      "sortid": 63,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "alterated_fence"
-    },
-    {
-      "name": "AlteratedWoodRecipe",
-      "type": "recipe",
-      "sortid": 66,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "alterated_wood_recipe"
+      "registry_name": "alterated_planks"
     },
     {
       "name": "AlteratedLeaves",
       "type": "block",
-      "sortid": 60,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "alterated_leaves"
     },
     {
+      "name": "AlteratedStairs",
+      "type": "block",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_stairs"
+    },
+    {
+      "name": "AlteratedSlab",
+      "type": "block",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_slab"
+    },
+    {
+      "name": "AlteratedFence",
+      "type": "block",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_fence"
+    },
+    {
+      "name": "AlteratedFenceGate",
+      "type": "block",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_fence_gate"
+    },
+    {
+      "name": "AlteratedItemsTag",
+      "type": "tag",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_items_tag"
+    },
+    {
+      "name": "AlteratedWoodRecipe",
+      "type": "recipe",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_wood_recipe"
+    },
+    {
+      "name": "AlteratedPlanksRecipe",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_planks_recipe"
+    },
+    {
+      "name": "AlteratedStairsRecipe",
+      "type": "recipe",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_stairs_recipe"
+    },
+    {
       "name": "AlteratedSlabRecipe",
       "type": "recipe",
-      "sortid": 69,
+      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "alterated_slab_recipe"
     },
     {
-      "name": "AlteratedFenceGate",
-      "type": "block",
-      "sortid": 64,
+      "name": "AlteratedFenceRecipe",
+      "type": "recipe",
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "alterated_fence_gate"
+      "registry_name": "alterated_fence_recipe"
+    },
+    {
+      "name": "AlteratedFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_fence_gate_recipe"
+    },
+    {
+      "name": "AlteratedStickRecipe",
+      "type": "recipe",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_stick_recipe"
+    },
+    {
+      "name": "FirePearl",
+      "type": "gun",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fire_pearl"
+    },
+    {
+      "name": "FirePearlShoot",
+      "type": "item",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fire_pearl_shoot"
+    },
+    {
+      "name": "PoisonousFluid",
+      "type": "fluid",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "poisonous_fluid"
+    },
+    {
+      "name": "AlteratedNylium",
+      "type": "block",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_nylium"
+    },
+    {
+      "name": "AlteratedForest",
+      "type": "biome",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alterated_forest"
     }
   ],
   "variable_elements": [],
@@ -837,18 +855,20 @@
   "language_map": {
     "en_us": {
       "item.slightly_vanilla_additions.dragon_sword": "Dragon Sword",
+      "item.slightly_vanilla_additions.fire_pearl_shoot": "Fire Pearl Shoot",
       "block.slightly_vanilla_additions.alterated_slab": "Alterated Slab",
       "block.slightly_vanilla_additions.polished_bluestone": "Polished Bluestone",
+      "item.slightly_vanilla_additions.fire_pearl": "Fire Pearl",
       "block.slightly_vanilla_additions.bluestone_wall": "Bluestone Wall",
       "block.slightly_vanilla_additions.chorus_stairs": "Chorus Stairs",
       "item.slightly_vanilla_additions.dragon_axe": "Dragon Axe",
       "block.slightly_vanilla_additions.alterated_wood": "Alterated Wood",
-      "block.slightly_vanilla_additions.bluestone": "Bluestone",
-      "block.slightly_vanilla_additions.polished_bluestone_wall": "Polished Bluestone Wall",
       "item.slightly_vanilla_additions.obsidian_hammer": "Obsidian Hammer",
+      "block.slightly_vanilla_additions.polished_bluestone_wall": "Polished Bluestone Wall",
+      "block.slightly_vanilla_additions.bluestone": "Bluestone",
       "block.slightly_vanilla_additions.chorus_fence_gate": "Chorus Fence Gate",
-      "block.slightly_vanilla_additions.chorus_grass": "Chorus Grass",
       "block.slightly_vanilla_additions.chorus_leaves": "Chorus Block",
+      "block.slightly_vanilla_additions.chorus_grass": "Chorus Grass",
       "block.slightly_vanilla_additions.powder_snow": "Powder Snow",
       "block.slightly_vanilla_additions.alterated_fence_gate": "Alterated Fence Gate",
       "item.slightly_vanilla_additions.poisonous_fluid_bucket": "PoisonousFluid Bucket",
@@ -862,7 +882,7 @@
       "block.slightly_vanilla_additions.alterated_log": "Alterated Log",
       "block.slightly_vanilla_additions.chorus_wood": "Chorus Wood",
       "biome.slightly_vanilla_additions.chorus_forest": "Chorus Forest",
-      "block.slightly_vanilla_additions.alterated_nylium": "Poison Nylium",
+      "block.slightly_vanilla_additions.alterated_nylium": "Alterated Nylium",
       "item.slightly_vanilla_additions.dragon_shovel": "Dragon Shovel",
       "block.slightly_vanilla_additions.alterated_fence": "Alterated Fence",
       "block.slightly_vanilla_additions.chorus_planks": "Chorus Planks",
@@ -882,8 +902,8 @@
       "biome.slightly_vanilla_additions.poison_swamp": "Poison Swamp",
       "block.slightly_vanilla_additions.alterated_leaves": "Alterated Leaves",
       "biome.slightly_vanilla_additions.alterated_forest": "Alterated Forest",
-      "block.slightly_vanilla_additions.alterated_stairs": "Alterated Stairs",
-      "item.slightly_vanilla_additions.blue_berries": "Blue Berries"
+      "item.slightly_vanilla_additions.blue_berries": "Blue Berries",
+      "block.slightly_vanilla_additions.alterated_stairs": "Alterated Stairs"
     }
   },
   "workspaceSettings": {

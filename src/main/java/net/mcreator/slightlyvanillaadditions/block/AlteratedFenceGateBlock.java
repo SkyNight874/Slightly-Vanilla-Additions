@@ -27,7 +27,7 @@ public class AlteratedFenceGateBlock extends SlightlyVanillaAdditionsModElements
 	@ObjectHolder("slightly_vanilla_additions:alterated_fence_gate")
 	public static final Block block = null;
 	public AlteratedFenceGateBlock(SlightlyVanillaAdditionsModElements instance) {
-		super(instance, 64);
+		super(instance, 70);
 	}
 
 	@Override
@@ -38,14 +38,13 @@ public class AlteratedFenceGateBlock extends SlightlyVanillaAdditionsModElements
 	}
 	public static class CustomBlock extends FenceGateBlock {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2.4000000000000004f, 3.6000000000000005f)
-					.lightValue(0));
+			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 3f).lightValue(0));
 			setRegistryName("alterated_fence_gate");
 		}
 
 		@Override
 		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
-			return 6;
+			return 5;
 		}
 
 		@Override

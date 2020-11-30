@@ -15,13 +15,7 @@
       "value": "MISC"
     },
     "frequencyOnChunks": 1,
-    "spawnWorldTypes": [
-      "CUSTOM:EndFarlands"
-    ],
-    "restrictionBiomes": [
-      {
-        "value": "end_highlands"
-      }
-    ]
+    "spawnWorldTypes": [],
+    "restrictionBiomes": []
   }
 }

@@ -11,8 +11,8 @@
     },
     "treeType": 1,
     "vanillaTreeType": "Default",
-    "minHeight": 11,
-    "spawnVines": false,
+    "minHeight": 7,
+    "spawnVines": true,
     "treeVines": {
       "value": "Blocks.VINE"
     },
@@ -25,26 +25,26 @@
     "treeFruits": {
       "value": "CUSTOM:AlteratedLeaves"
     },
-    "treesPerChunk": 4,
-    "grassPerChunk": 5,
-    "seagrassPerChunk": 0,
-    "flowersPerChunk": 0,
+    "treesPerChunk": 3,
+    "grassPerChunk": 4,
+    "seagrassPerChunk": 20,
+    "flowersPerChunk": 4,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
     "sandPathcesPerChunk": 0,
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "rainingPossibility": 0.0,
+    "rainingPossibility": 0.5,
     "temperature": 0.5,
     "baseHeight": 0.1,
     "heightVariation": 0.2,
     "spawnBiome": false,
-    "biomeWeight": 200,
-    "biomeType": "DESERT",
+    "biomeWeight": 150,
+    "biomeType": "WARM",
     "biomeCategory": "NONE",
     "parent": {
-      "value": "CUSTOM:ChorusForest"
+      "value": "No parent"
     },
     "spawnStronghold": false,
     "spawnMineshaft": false,
@@ -64,16 +64,6 @@
       "Structures",
       "Ores"
     ],
-    "spawnEntries": [
-      {
-        "entity": {
-          "value": "EntityEnderman"
-        },
-        "minGroup": 4,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "monster"
-      }
-    ]
+    "spawnEntries": []
   }
 }

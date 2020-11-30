@@ -27,7 +27,7 @@ public class AlteratedPlanksBlock extends SlightlyVanillaAdditionsModElements.Mo
 	@ObjectHolder("slightly_vanilla_additions:alterated_planks")
 	public static final Block block = null;
 	public AlteratedPlanksBlock(SlightlyVanillaAdditionsModElements instance) {
-		super(instance, 59);
+		super(instance, 65);
 	}
 
 	@Override
@@ -38,14 +38,14 @@ public class AlteratedPlanksBlock extends SlightlyVanillaAdditionsModElements.Mo
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2.4000000000000004f, 3.4710930144094583f)
-					.lightValue(0).harvestLevel(0).harvestTool(ToolType.AXE));
+			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 3f).lightValue(0).harvestLevel(0)
+					.harvestTool(ToolType.AXE));
 			setRegistryName("alterated_planks");
 		}
 
 		@Override
 		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
-			return 6;
+			return 5;
 		}
 
 		@Override

@@ -7,8 +7,10 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraft.world.gen.placement.Placement;
+import net.minecraft.world.gen.placement.IPlacementConfig;
 import net.minecraft.world.gen.placement.FrequencyConfig;
 import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
+import net.minecraft.world.gen.feature.SeaGrassConfig;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
 import net.minecraft.world.gen.feature.AbstractTreeFeature;
@@ -23,8 +25,6 @@ import net.minecraft.util.math.MutableBoundingBox;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Direction;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.EntityClassification;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
@@ -43,7 +43,7 @@ public class AlteratedForestBiome extends SlightlyVanillaAdditionsModElements.Mo
 	@ObjectHolder("slightly_vanilla_additions:alterated_forest")
 	public static final CustomBiome biome = null;
 	public AlteratedForestBiome(SlightlyVanillaAdditionsModElements instance) {
-		super(instance, 74);
+		super(instance, 82);
 	}
 
 	@Override
@@ -56,8 +56,8 @@ public class AlteratedForestBiome extends SlightlyVanillaAdditionsModElements.Mo
 	}
 	static class CustomBiome extends Biome {
 		public CustomBiome() {
-			super(new Biome.Builder().downfall(0f).depth(0.1f).scale(0.2f).temperature(0.5f).precipitation(Biome.RainType.NONE)
-					.category(Biome.Category.NONE).waterColor(4159204).waterFogColor(329011).parent("slightly_vanilla_additions:chorus_forest")
+			super(new Biome.Builder().downfall(0.5f).depth(0.1f).scale(0.2f).temperature(0.5f).precipitation(Biome.RainType.RAIN)
+					.category(Biome.Category.NONE).waterColor(4159204).waterFogColor(329011)
 					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(AlteratedNyliumBlock.block.getDefaultState(),
 							Blocks.END_STONE.getDefaultState(), Blocks.END_STONE.getDefaultState())));
 			setRegistryName("alterated_forest");
@@ -65,14 +65,17 @@ public class AlteratedForestBiome extends SlightlyVanillaAdditionsModElements.Mo
 			DefaultBiomeFeatures.addMonsterRooms(this);
 			DefaultBiomeFeatures.addStructures(this);
 			DefaultBiomeFeatures.addOres(this);
+			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.FLOWER.withConfiguration(DefaultBiomeFeatures.DEFAULT_FLOWER_CONFIG)
+					.withPlacement(Placement.COUNT_HEIGHTMAP_32.configure(new FrequencyConfig(4))));
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_PATCH.withConfiguration(DefaultBiomeFeatures.GRASS_CONFIG)
-					.withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(5))));
+					.withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(4))));
+			this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.SEAGRASS.withConfiguration(new SeaGrassConfig(20, 0.3D))
+					.withPlacement(Placement.TOP_SOLID_HEIGHTMAP.configure(IPlacementConfig.NO_PLACEMENT_CONFIG)));
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, new CustomTreeFeature()
 					.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(AlteratedLogBlock.block.getDefaultState()),
-							new SimpleBlockStateProvider(AlteratedLeavesBlock.block.getDefaultState()))).baseHeight(11)
+							new SimpleBlockStateProvider(AlteratedLeavesBlock.block.getDefaultState()))).baseHeight(7)
 									.setSapling((net.minecraftforge.common.IPlantable) Blocks.JUNGLE_SAPLING).build())
-					.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(4, 0.1F, 1))));
-			this.addSpawn(EntityClassification.MONSTER, new Biome.SpawnListEntry(EntityType.ENDERMAN, 20, 4, 4));
+					.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(3, 0.1F, 1))));
 		}
 	}
 
@@ -87,7 +90,7 @@ public class AlteratedForestBiome extends SlightlyVanillaAdditionsModElements.Mo
 			if (!(worldgen instanceof IWorld))
 				return false;
 			IWorld world = (IWorld) worldgen;
-			int height = rand.nextInt(5) + 11;
+			int height = rand.nextInt(5) + 7;
 			boolean spawnTree = true;
 			if (position.getY() >= 1 && position.getY() + height + 1 <= world.getHeight()) {
 				for (int j = position.getY(); j <= position.getY() + 1 + height; j++) {
@@ -146,6 +149,39 @@ public class AlteratedForestBiome extends SlightlyVanillaAdditionsModElements.Mo
 							if (state.getBlock().isAir(state, world, genhPos) || state.getMaterial().blocksMovement() || state.isIn(BlockTags.LEAVES)
 									|| state.getBlock() == Blocks.VINE.getDefaultState().getBlock()
 									|| state.getBlock() == AlteratedLeavesBlock.block.getDefaultState().getBlock()) {
+								if (genh > 0) {
+									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(-1, genh, 0)))
+										setTreeBlockState(changedBlocks, world, position.add(-1, genh, 0), Blocks.VINE.getDefaultState(), bbox);
+									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(1, genh, 0)))
+										setTreeBlockState(changedBlocks, world, position.add(1, genh, 0), Blocks.VINE.getDefaultState(), bbox);
+									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(0, genh, -1)))
+										setTreeBlockState(changedBlocks, world, position.add(0, genh, -1), Blocks.VINE.getDefaultState(), bbox);
+									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(0, genh, 1)))
+										setTreeBlockState(changedBlocks, world, position.add(0, genh, 1), Blocks.VINE.getDefaultState(), bbox);
+								}
+							}
+						}
+						for (int genh = position.getY() - 3 + height; genh <= position.getY() + height; genh++) {
+							int k4 = (int) (1 - (genh - (position.getY() + height)) * 0.5);
+							for (int genx = position.getX() - k4; genx <= position.getX() + k4; genx++) {
+								for (int genz = position.getZ() - k4; genz <= position.getZ() + k4; genz++) {
+									BlockPos bpos = new BlockPos(genx, genh, genz);
+									state = world.getBlockState(bpos);
+									if (state.isIn(BlockTags.LEAVES) || state.getBlock() == AlteratedLeavesBlock.block.getDefaultState().getBlock()) {
+										BlockPos blockpos1 = bpos.south();
+										BlockPos blockpos2 = bpos.west();
+										BlockPos blockpos3 = bpos.east();
+										BlockPos blockpos4 = bpos.north();
+										if (rand.nextInt(4) == 0 && world.isAirBlock(blockpos2))
+											this.addVines(world, blockpos2, changedBlocks, bbox);
+										if (rand.nextInt(4) == 0 && world.isAirBlock(blockpos3))
+											this.addVines(world, blockpos3, changedBlocks, bbox);
+										if (rand.nextInt(4) == 0 && world.isAirBlock(blockpos4))
+											this.addVines(world, blockpos4, changedBlocks, bbox);
+										if (rand.nextInt(4) == 0 && world.isAirBlock(blockpos1))
+											this.addVines(world, blockpos1, changedBlocks, bbox);
+									}
+								}
 							}
 						}
 						if (rand.nextInt(4) == 0 && height > 5) {

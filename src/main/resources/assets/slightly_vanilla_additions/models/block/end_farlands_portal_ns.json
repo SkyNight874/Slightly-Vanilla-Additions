@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "slightly_vanilla_additions:blocks/endportal",
-    "portal": "slightly_vanilla_additions:blocks/endportal"
+    "particle": "slightly_vanilla_additions:blocks/endfarlands_portaltexture",
+    "portal": "slightly_vanilla_additions:blocks/endfarlands_portaltexture"
   },
   "elements": [
     {

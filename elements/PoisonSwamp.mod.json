@@ -40,7 +40,7 @@
     "baseHeight": 0.1,
     "heightVariation": 0.2,
     "spawnBiome": false,
-    "biomeWeight": 300,
+    "biomeWeight": 200,
     "biomeType": "WARM",
     "biomeCategory": "NONE",
     "parent": {

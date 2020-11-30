@@ -17,15 +17,9 @@
       "value": "TOOLS"
     },
     "texture": "crystal_flintandsteel",
-    "portalTexture": "endportal",
+    "portalTexture": "endfarlands_portaltexture",
     "enablePortal": true,
     "biomesInDimension": [
-      {
-        "value": "end_highlands"
-      },
-      {
-        "value": "end_midlands"
-      },
       {
         "value": "CUSTOM:ChorusForest"
       },
@@ -33,19 +27,16 @@
         "value": "CUSTOM:PoisonSwamp"
       },
       {
-        "value": "small_end_islands"
+        "value": "CUSTOM:AlteratedForest"
+      },
+      {
+        "value": "end_highlands"
       },
       {
         "value": "end_midlands"
       },
       {
-        "value": "void"
-      },
-      {
-        "value": "CUSTOM:AlteratedForest"
-      },
-      {
-        "value": "CUSTOM:AlteratedForest"
+        "value": "small_end_islands"
       }
     ],
     "worldGenType": "End like gen",
