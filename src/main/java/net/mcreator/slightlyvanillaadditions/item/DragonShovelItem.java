@@ -32,7 +32,7 @@ public class DragonShovelItem extends SlightlyVanillaAdditionsModElements.ModEle
 			}
 
 			public float getAttackDamage() {
-				return 4f;
+				return 5f;
 			}
 
 			public int getHarvestLevel() {
@@ -46,7 +46,7 @@ public class DragonShovelItem extends SlightlyVanillaAdditionsModElements.ModEle
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks(new ItemStack(DragonFangItem.block, (int) (1)));
 			}
-		}, 1, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
+		}, 1, -2.5f, new Item.Properties().group(ItemGroup.TOOLS)) {
 		}.setRegistryName("dragon_shovel"));
 	}
 }

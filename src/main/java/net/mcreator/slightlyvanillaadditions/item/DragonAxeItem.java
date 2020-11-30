@@ -28,11 +28,11 @@ public class DragonAxeItem extends SlightlyVanillaAdditionsModElements.ModElemen
 			}
 
 			public float getEfficiency() {
-				return 12f;
+				return 15f;
 			}
 
 			public float getAttackDamage() {
-				return 4f;
+				return 10f;
 			}
 
 			public int getHarvestLevel() {
