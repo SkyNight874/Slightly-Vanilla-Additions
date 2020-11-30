@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "slightly_vanilla_additions:blocks/sweet_berry_bush_stage0",
-    "particle": "slightly_vanilla_additions:blocks/sweet_berry_bush_stage0"
-  }
-}

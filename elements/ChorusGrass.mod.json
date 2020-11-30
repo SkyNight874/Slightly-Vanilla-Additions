@@ -47,6 +47,22 @@
       "CUSTOM:EndFarlands",
       "End"
     ],
-    "restrictionBiomes": []
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:ChorusForest"
+      },
+      {
+        "value": "end_highlands"
+      },
+      {
+        "value": "small_end_islands"
+      },
+      {
+        "value": "end_barrens"
+      },
+      {
+        "value": "end_midlands"
+      }
+    ]
   }
 }

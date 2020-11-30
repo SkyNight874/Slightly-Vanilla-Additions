@@ -37,6 +37,9 @@
       },
       {
         "value": "small_end_islands"
+      },
+      {
+        "value": "CUSTOM:CrystalPlains"
       }
     ],
     "worldGenType": "End like gen",

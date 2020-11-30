@@ -1,0 +1,71 @@
+{
+  "_fv": 13,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "Warp to the Nether",
+          "onClick": {
+            "name": "WarpNether"
+          },
+          "width": 115,
+          "height": 20,
+          "name": "Warp to the Nether",
+          "x": 150,
+          "y": 89
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Warp to the End",
+          "onClick": {
+            "name": "WarpEnd"
+          },
+          "width": 100,
+          "height": 20,
+          "name": "Warp to the End",
+          "x": 150,
+          "y": 125
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Warp to the EndFarlands",
+          "onClick": {
+            "name": "WarpEndFarlands"
+          },
+          "width": 145,
+          "height": 20,
+          "name": "Warp to the EndFarlands",
+          "x": 150,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Warp to the Overworld",
+          "onClick": {
+            "name": "WarpOverworld"
+          },
+          "width": 130,
+          "height": 20,
+          "name": "Warp to the Overworld",
+          "x": 150,
+          "y": 53
+        }
+      }
+    ]
+  }
+}

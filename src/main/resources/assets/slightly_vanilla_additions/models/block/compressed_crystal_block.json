@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "slightly_vanilla_additions:blocks/amethyst_block",
+    "particle": "slightly_vanilla_additions:blocks/amethyst_block"
+  }
+}

@@ -547,129 +547,6 @@
       "registry_name": "obsidian_hammer"
     },
     {
-      "name": "BlueBerriesbushnofruit",
-      "type": "plant",
-      "sortid": 57,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "blue_berriesbushnofruit"
-    },
-    {
-      "name": "BlueBerriesLorsDunClickDroitSurUnBloc",
-      "type": "procedure",
-      "sortid": 59,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "blue_berries_lors_dun_click_droit_sur_un_bloc",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "BlueBerries",
-      "type": "item",
-      "sortid": 59,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "blue_berries"
-    },
-    {
-      "name": "BlueBerriesbushnofruitQuandLaPlanteEstDetruiteParUnJoueur",
-      "type": "procedure",
-      "sortid": 61,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "blue_berriesbushnofruit_quand_la_plante_est_detruite_par_un_joueur",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "BlueBerriesbushnofruitMiseAJourDuTick",
-      "type": "procedure",
-      "sortid": 62,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "blue_berriesbushnofruit_mise_a_jour_du_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "BlueBerryBushLorsDunClicDroitSurLaPlante",
-      "type": "procedure",
-      "sortid": 60,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "blue_berry_bush_lors_dun_clic_droit_sur_la_plante",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "BlueBerryBush",
-      "type": "plant",
-      "sortid": 58,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "blue_berry_bush"
-    },
-    {
       "name": "AlteratedStairsRecipe",
       "type": "recipe",
       "sortid": 68,
@@ -848,6 +725,152 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "fire_pearl_shoot"
+    },
+    {
+      "name": "CompressedCrystalBlock",
+      "type": "block",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "compressed_crystal_block"
+    },
+    {
+      "name": "CrystalPlains",
+      "type": "biome",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crystal_plains"
+    },
+    {
+      "name": "Crystal",
+      "type": "plant",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crystal"
+    },
+    {
+      "name": "WarpGUI",
+      "type": "gui",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warp_gui"
+    },
+    {
+      "name": "WarpOverworld",
+      "type": "procedure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warp_overworld",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WarpNether",
+      "type": "procedure",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warp_nether",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WarpEnd",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warp_end",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WarpEndFarlands",
+      "type": "procedure",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warp_end_farlands",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WarpQuandUneCommandeEstExecutee",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warp_quand_une_commande_est_executee",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Warp",
+      "type": "command",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warp"
     }
   ],
   "variable_elements": [],
@@ -855,8 +878,10 @@
   "language_map": {
     "en_us": {
       "item.slightly_vanilla_additions.dragon_sword": "Dragon Sword",
-      "block.slightly_vanilla_additions.polished_bluestone": "Polished Bluestone",
+      "item.slightly_vanilla_additions.fire_pearl_shoot": "Fire Pearl Shoot",
       "block.slightly_vanilla_additions.alterated_slab": "Alterated Slab",
+      "block.slightly_vanilla_additions.polished_bluestone": "Polished Bluestone",
+      "item.slightly_vanilla_additions.fire_pearl": "Fire Pearl",
       "block.slightly_vanilla_additions.bluestone_wall": "Bluestone Wall",
       "block.slightly_vanilla_additions.chorus_stairs": "Chorus Stairs",
       "item.slightly_vanilla_additions.dragon_axe": "Dragon Axe",
@@ -864,18 +889,19 @@
       "item.slightly_vanilla_additions.obsidian_hammer": "Obsidian Hammer",
       "block.slightly_vanilla_additions.polished_bluestone_wall": "Polished Bluestone Wall",
       "block.slightly_vanilla_additions.bluestone": "Bluestone",
+      "block.slightly_vanilla_additions.crystal": "Crystal",
       "block.slightly_vanilla_additions.chorus_fence_gate": "Chorus Fence Gate",
-      "block.slightly_vanilla_additions.chorus_leaves": "Chorus Block",
       "block.slightly_vanilla_additions.chorus_grass": "Chorus Grass",
+      "block.slightly_vanilla_additions.chorus_leaves": "Chorus Block",
       "block.slightly_vanilla_additions.powder_snow": "Powder Snow",
       "block.slightly_vanilla_additions.alterated_fence_gate": "Alterated Fence Gate",
       "item.slightly_vanilla_additions.poisonous_fluid_bucket": "PoisonousFluid Bucket",
       "item.slightly_vanilla_additions.dragon_fang": "Dragon Fang",
       "block.slightly_vanilla_additions.chorus_log": "Chorus Log",
       "item.slightly_vanilla_additions.end_farlands": "Dragon Flint And Steel",
+      "biome.slightly_vanilla_additions.crystal_plains": "Crystal Plains",
       "block.slightly_vanilla_additions.chorus_slab": "Chorus Slab",
       "item.slightly_vanilla_additions.back_pack_item": "BackPack",
-      "block.slightly_vanilla_additions.blue_berriesbushnofruit": "Blue Berries Bush No Fruit",
       "item.slightly_vanilla_additions.dragon_hoe": "Dragon Hoe",
       "block.slightly_vanilla_additions.alterated_log": "Alterated Log",
       "block.slightly_vanilla_additions.chorus_wood": "Chorus Wood",
@@ -890,6 +916,7 @@
       "item.slightly_vanilla_additions.dragon_pickaxe": "Dragon Pickaxe",
       "biome.slightly_vanilla_additions.snowy_highlands": "Snowy Highlands",
       "block.slightly_vanilla_additions.polished_bluestone_stairs": "Polished Bluestone Stairs",
+      "block.slightly_vanilla_additions.compressed_crystal_block": "Compressed Crystal Block",
       "block.slightly_vanilla_additions.alterated_planks": "Alterated Planks",
       "block.slightly_vanilla_additions.bluestone_slab": "Bluestone Slab",
       "block.slightly_vanilla_additions.poison_nylium": "Poison Nylium",

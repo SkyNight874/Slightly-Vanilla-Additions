@@ -14,7 +14,7 @@
     "minHeight": 7,
     "spawnVines": true,
     "treeVines": {
-      "value": "Blocks.VINE"
+      "value": "CUSTOM:AlteratedLeaves"
     },
     "treeStem": {
       "value": "CUSTOM:AlteratedLog"
