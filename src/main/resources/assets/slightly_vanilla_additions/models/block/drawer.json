@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "slightly_vanilla_additions:blocks/barrel_bottom",
+    "up": "slightly_vanilla_additions:blocks/drawer_top",
+    "north": "slightly_vanilla_additions:blocks/drawer",
+    "east": "slightly_vanilla_additions:blocks/drawer",
+    "south": "slightly_vanilla_additions:blocks/drawer",
+    "west": "slightly_vanilla_additions:blocks/drawer",
+    "particle": "slightly_vanilla_additions:blocks/barrel_bottom"
+  }
+}

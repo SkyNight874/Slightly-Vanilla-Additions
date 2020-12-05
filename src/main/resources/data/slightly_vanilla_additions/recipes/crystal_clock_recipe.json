@@ -1,0 +1,42 @@
+{
+  "group": "slightly_vanilla_additions",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "slightly_vanilla_additions:crystal_gem"
+    },
+    "1": {
+      "item": "slightly_vanilla_additions:crystal_gem"
+    },
+    "2": {
+      "item": "slightly_vanilla_additions:dragon_scale"
+    },
+    "3": {
+      "item": "slightly_vanilla_additions:crystal_gem"
+    },
+    "4": {
+      "item": "minecraft:clock"
+    },
+    "5": {
+      "item": "slightly_vanilla_additions:crystal_gem"
+    },
+    "6": {
+      "item": "slightly_vanilla_additions:dragon_scale"
+    },
+    "7": {
+      "item": "slightly_vanilla_additions:crystal_gem"
+    },
+    "8": {
+      "item": "slightly_vanilla_additions:crystal_gem"
+    }
+  },
+  "result": {
+    "item": "slightly_vanilla_additions:crystal_clock",
+    "count": 1
+  }
+}

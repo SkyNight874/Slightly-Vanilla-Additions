@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "slightly_vanilla_additions:block/bubble_plant"
+    },
+    "half=lower": {
+      "model": "slightly_vanilla_additions:block/bubble_plant_bottom"
+    }
+  }
+}

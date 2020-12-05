@@ -27,6 +27,8 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.slightlyvanillaadditions.world.dimension.EndFarlandsDimension;
+import net.mcreator.slightlyvanillaadditions.block.PoisonNyliumBlock;
+import net.mcreator.slightlyvanillaadditions.block.AlteratedNyliumBlock;
 import net.mcreator.slightlyvanillaadditions.SlightlyVanillaAdditionsModElements;
 
 import java.util.Random;
@@ -55,17 +57,21 @@ public class PoisonMushroomStructureStructure extends SlightlyVanillaAdditionsMo
 					for (int a = 0; a < count; a++) {
 						int i = ci + random.nextInt(16);
 						int k = ck + random.nextInt(16);
-						int j = world.getHeight(Heightmap.Type.WORLD_SURFACE_WG, i, k);
+						int j = world.getHeight(Heightmap.Type.OCEAN_FLOOR_WG, i, k);
 						j -= 1;
 						BlockState blockAt = world.getBlockState(new BlockPos(i, j, k));
 						boolean blockCriteria = false;
+						if (blockAt.getBlock() == PoisonNyliumBlock.block.getDefaultState().getBlock())
+							blockCriteria = true;
+						if (blockAt.getBlock() == AlteratedNyliumBlock.block.getDefaultState().getBlock())
+							blockCriteria = true;
 						if (blockAt.getBlock() == Blocks.END_STONE.getDefaultState().getBlock())
 							blockCriteria = true;
 						if (!blockCriteria)
 							continue;
 						Rotation rotation = Rotation.values()[random.nextInt(3)];
 						Mirror mirror = Mirror.values()[random.nextInt(2)];
-						BlockPos spawnTo = new BlockPos(i + 0, j + 64, k + 0);
+						BlockPos spawnTo = new BlockPos(i + 0, j + 0, k + 0);
 						int x = spawnTo.getX();
 						int y = spawnTo.getY();
 						int z = spawnTo.getZ();

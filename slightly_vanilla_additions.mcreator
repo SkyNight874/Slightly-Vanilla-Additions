@@ -916,13 +916,282 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "ohdisgusting"
+    },
+    {
+      "name": "CrystalClockGUI",
+      "type": "gui",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crystal_clock_gui"
+    },
+    {
+      "name": "CrystalClock",
+      "type": "item",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crystal_clock"
+    },
+    {
+      "name": "SetTimeDay",
+      "type": "procedure",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "set_time_day",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SetTimeNight",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "set_time_night",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SetTimeSunSet",
+      "type": "procedure",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "set_time_sun_set",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SetTimeSunRise",
+      "type": "procedure",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "set_time_sun_rise",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Drawer",
+      "type": "block",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drawer"
+    },
+    {
+      "name": "IronDrawerSound",
+      "type": "procedure",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_drawer_sound",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IronDrawerOpenSound",
+      "type": "procedure",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_drawer_open_sound",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DrawerGUI",
+      "type": "gui",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drawer_gui"
+    },
+    {
+      "name": "CrystalClockRecipe",
+      "type": "recipe",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crystal_clock_recipe"
+    },
+    {
+      "name": "DrawerRecipe",
+      "type": "recipe",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drawer_recipe"
+    },
+    {
+      "name": "Saphir",
+      "type": "musicdisc",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "saphir"
+    },
+    {
+      "name": "EnderFire",
+      "type": "block",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ender_fire"
+    },
+    {
+      "name": "EnderFireQuandLentiteEntreEnCollisionAvecLeBloc",
+      "type": "procedure",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ender_fire_quand_lentite_entre_en_collision_avec_le_bloc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EnderCrown",
+      "type": "plant",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ender_crown"
+    },
+    {
+      "name": "BubblePlant",
+      "type": "plant",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bubble_plant"
+    },
+    {
+      "name": "BubbleQuandLaNourritureEstMangee",
+      "type": "procedure",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bubble_quand_la_nourriture_est_mangee",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bubble",
+      "type": "food",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bubble"
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "saphir_music",
+      "files": [
+        "saphir"
+      ],
+      "category": "music",
+      "subtitle": ""
+    }
+  ],
   "language_map": {
     "en_us": {
       "item.slightly_vanilla_additions.dragon_sword": "Dragon Sword",
+      "item.slightly_vanilla_additions.saphir": "Music Disc",
       "item.slightly_vanilla_additions.fire_pearl_shoot": "Fire Pearl Shoot",
       "item.slightly_vanilla_additions.crystal_gem": "Crystal Gem",
       "block.slightly_vanilla_additions.alterated_slab": "Alterated Slab",
@@ -934,6 +1203,8 @@
       "block.slightly_vanilla_additions.chorus_stairs": "Chorus Stairs",
       "advancements.ohdisgusting.descr": "Its the Alterated Forest !",
       "item.slightly_vanilla_additions.dragon_axe": "Dragon Axe",
+      "item.slightly_vanilla_additions.crystal_clock": "Crystal Clock",
+      "item.slightly_vanilla_additions.bubble": "Bubble Gum",
       "advancements.another_dimension.title": "Another Dimension !?",
       "block.slightly_vanilla_additions.alterated_wood": "Alterated Wood",
       "item.slightly_vanilla_additions.obsidian_hammer": "Obsidian Hammer",
@@ -945,8 +1216,10 @@
       "block.slightly_vanilla_additions.chorus_grass": "Chorus Grass",
       "block.slightly_vanilla_additions.chorus_leaves": "Chorus Block",
       "block.slightly_vanilla_additions.powder_snow": "Powder Snow",
+      "item.slightly_vanilla_additions.saphir.desc": "J2RMY - Saphir",
       "block.slightly_vanilla_additions.alterated_fence_gate": "Alterated Fence Gate",
       "item.slightly_vanilla_additions.poisonous_fluid_bucket": "PoisonousFluid Bucket",
+      "block.slightly_vanilla_additions.bubble_plant": "Bubble Plant",
       "item.slightly_vanilla_additions.dragon_fang": "Dragon Fang",
       "block.slightly_vanilla_additions.chorus_log": "Chorus Log",
       "item.slightly_vanilla_additions.end_farlands": "Dragon Flint And Steel",
@@ -955,16 +1228,20 @@
       "item.slightly_vanilla_additions.back_pack_item": "BackPack",
       "item.slightly_vanilla_additions.dragon_hoe": "Dragon Hoe",
       "block.slightly_vanilla_additions.alterated_log": "Alterated Log",
+      "block.slightly_vanilla_additions.ender_fire": "Ender Fire",
       "block.slightly_vanilla_additions.chorus_wood": "Chorus Wood",
       "biome.slightly_vanilla_additions.chorus_forest": "Chorus Forest",
       "block.slightly_vanilla_additions.alterated_nylium": "Poison Nylium",
       "item.slightly_vanilla_additions.dragon_shovel": "Dragon Shovel",
       "block.slightly_vanilla_additions.alterated_fence": "Alterated Fence",
       "advancements.ilovecrystal.title": "I love crystal !",
+      "block.slightly_vanilla_additions.drawer": " Iron Drawer",
+      "subtitles.saphir_music": "",
       "block.slightly_vanilla_additions.chorus_planks": "Chorus Planks",
       "block.slightly_vanilla_additions.chorus_fence": "Chorus Fence",
       "advancements.ilovecrystal.descr": "You discovered the Crystal Gem !",
       "advancements.another_dimension.descr": "You unlocked the EndFarlands !",
+      "block.slightly_vanilla_additions.ender_crown": "Ender Crown",
       "block.slightly_vanilla_additions.polished_bluestone_slab": "Polished Bluestone Slab",
       "block.slightly_vanilla_additions.bluestone_stairs": "Bluestone Stairs",
       "item.slightly_vanilla_additions.dragon_pickaxe": "Dragon Pickaxe",

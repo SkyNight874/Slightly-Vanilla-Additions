@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CrystalGem"
+      },
+      {
+        "value": "CUSTOM:CrystalGem"
+      },
+      {
+        "value": "CUSTOM:DragonScale"
+      },
+      {
+        "value": "CUSTOM:CrystalGem"
+      },
+      {
+        "value": "Items.CLOCK"
+      },
+      {
+        "value": "CUSTOM:CrystalGem"
+      },
+      {
+        "value": "CUSTOM:DragonScale"
+      },
+      {
+        "value": "CUSTOM:CrystalGem"
+      },
+      {
+        "value": "CUSTOM:CrystalGem"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CrystalClock"
+    },
+    "name": "crystal_clock_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,1 +1,11 @@
-{}
+{
+  "saphir_music": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "slightly_vanilla_additions:saphir",
+        "stream": true
+      }
+    ]
+  }
+}

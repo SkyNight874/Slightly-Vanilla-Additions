@@ -141,6 +141,43 @@ public class ChorusForestBiome extends SlightlyVanillaAdditionsModElements.ModEl
 							if (state.getBlock().isAir(state, world, genhPos) || state.getMaterial().blocksMovement() || state.isIn(BlockTags.LEAVES)
 									|| state.getBlock() == ChorusLeavesBlock.block.getDefaultState().getBlock()
 									|| state.getBlock() == ChorusLeavesBlock.block.getDefaultState().getBlock()) {
+								if (genh > 0) {
+									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(-1, genh, 0)))
+										setTreeBlockState(changedBlocks, world, position.add(-1, genh, 0), ChorusLeavesBlock.block.getDefaultState(),
+												bbox);
+									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(1, genh, 0)))
+										setTreeBlockState(changedBlocks, world, position.add(1, genh, 0), ChorusLeavesBlock.block.getDefaultState(),
+												bbox);
+									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(0, genh, -1)))
+										setTreeBlockState(changedBlocks, world, position.add(0, genh, -1), ChorusLeavesBlock.block.getDefaultState(),
+												bbox);
+									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(0, genh, 1)))
+										setTreeBlockState(changedBlocks, world, position.add(0, genh, 1), ChorusLeavesBlock.block.getDefaultState(),
+												bbox);
+								}
+							}
+						}
+						for (int genh = position.getY() - 3 + height; genh <= position.getY() + height; genh++) {
+							int k4 = (int) (1 - (genh - (position.getY() + height)) * 0.5);
+							for (int genx = position.getX() - k4; genx <= position.getX() + k4; genx++) {
+								for (int genz = position.getZ() - k4; genz <= position.getZ() + k4; genz++) {
+									BlockPos bpos = new BlockPos(genx, genh, genz);
+									state = world.getBlockState(bpos);
+									if (state.isIn(BlockTags.LEAVES) || state.getBlock() == ChorusLeavesBlock.block.getDefaultState().getBlock()) {
+										BlockPos blockpos1 = bpos.south();
+										BlockPos blockpos2 = bpos.west();
+										BlockPos blockpos3 = bpos.east();
+										BlockPos blockpos4 = bpos.north();
+										if (rand.nextInt(4) == 0 && world.isAirBlock(blockpos2))
+											this.addVines(world, blockpos2, changedBlocks, bbox);
+										if (rand.nextInt(4) == 0 && world.isAirBlock(blockpos3))
+											this.addVines(world, blockpos3, changedBlocks, bbox);
+										if (rand.nextInt(4) == 0 && world.isAirBlock(blockpos4))
+											this.addVines(world, blockpos4, changedBlocks, bbox);
+										if (rand.nextInt(4) == 0 && world.isAirBlock(blockpos1))
+											this.addVines(world, blockpos1, changedBlocks, bbox);
+									}
+								}
 							}
 						}
 						if (rand.nextInt(4) == 0 && height > 5) {

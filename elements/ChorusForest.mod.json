@@ -12,7 +12,7 @@
     "treeType": 1,
     "vanillaTreeType": "Big trees",
     "minHeight": 7,
-    "spawnVines": false,
+    "spawnVines": true,
     "treeVines": {
       "value": "CUSTOM:ChorusLeaves"
     },

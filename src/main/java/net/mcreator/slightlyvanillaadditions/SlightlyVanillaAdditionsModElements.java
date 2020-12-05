@@ -47,6 +47,8 @@ public class SlightlyVanillaAdditionsModElements {
 	public final List<Supplier<Enchantment>> enchantments = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public SlightlyVanillaAdditionsModElements() {
+		sounds.put(new ResourceLocation("slightly_vanilla_additions", "saphir_music"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("slightly_vanilla_additions", "saphir_music")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("slightly_vanilla_additions").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

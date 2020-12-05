@@ -4,18 +4,24 @@
   "definition": {
     "structure": "poison_mushroom",
     "randomlyRotateStructure": true,
-    "surfaceDetectionType": "First block",
+    "surfaceDetectionType": "First motion blocking block",
     "spawnProbability": 100000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 2,
     "spawnLocation": "Ground",
-    "spawnHeightOffset": 64,
+    "spawnHeightOffset": 0,
     "spawnXOffset": 0,
     "spawnZOffset": 0,
     "spawnWorldTypes": [
       "CUSTOM:EndFarlands"
     ],
     "restrictionBlocks": [
+      {
+        "value": "CUSTOM:PoisonNylium"
+      },
+      {
+        "value": "CUSTOM:AlteratedNylium"
+      },
       {
         "value": "Blocks.END_STONE"
       }
