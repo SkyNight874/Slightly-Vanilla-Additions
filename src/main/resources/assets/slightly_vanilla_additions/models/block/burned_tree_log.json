@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "slightly_vanilla_additions:blocks/basalt_top",
+    "up": "slightly_vanilla_additions:blocks/basalt_top",
+    "north": "slightly_vanilla_additions:blocks/basalt_side",
+    "east": "slightly_vanilla_additions:blocks/basalt_side",
+    "south": "slightly_vanilla_additions:blocks/basalt_side",
+    "west": "slightly_vanilla_additions:blocks/basalt_side",
+    "particle": "slightly_vanilla_additions:blocks/basalt_top"
+  }
+}

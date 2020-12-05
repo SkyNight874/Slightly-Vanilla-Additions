@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "slightly_vanilla_additions:moss_block"
+    },
+    "title": {
+      "translate": "advancements.best_jungle_ever.title"
+    },
+    "description": {
+      "translate": "advancements.best_jungle_ever.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "best_jungle_ever": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "biome": "slightly_vanilla_additions:mossy_jungle"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "slightly_vanilla_additions:another_dimension"
+}

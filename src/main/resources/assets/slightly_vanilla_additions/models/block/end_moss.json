@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "slightly_vanilla_additions:blocks/endstone",
+    "up": "slightly_vanilla_additions:blocks/end_moss_top",
+    "north": "slightly_vanilla_additions:blocks/end_moss_side",
+    "east": "slightly_vanilla_additions:blocks/end_moss_side",
+    "south": "slightly_vanilla_additions:blocks/end_moss_side",
+    "west": "slightly_vanilla_additions:blocks/end_moss_side",
+    "particle": "slightly_vanilla_additions:blocks/endstone"
+  }
+}

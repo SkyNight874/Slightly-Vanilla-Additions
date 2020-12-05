@@ -126,7 +126,9 @@ public class EndFarlandsDimension extends SlightlyVanillaAdditionsModElements.Mo
 				ForgeRegistries.BIOMES.getValue(new ResourceLocation("end_highlands")),
 				ForgeRegistries.BIOMES.getValue(new ResourceLocation("end_midlands")),
 				ForgeRegistries.BIOMES.getValue(new ResourceLocation("small_end_islands")),
-				ForgeRegistries.BIOMES.getValue(new ResourceLocation("slightly_vanilla_additions:crystal_plains")),};
+				ForgeRegistries.BIOMES.getValue(new ResourceLocation("slightly_vanilla_additions:crystal_plains")),
+				ForgeRegistries.BIOMES.getValue(new ResourceLocation("slightly_vanilla_additions:burned_desert")),
+				ForgeRegistries.BIOMES.getValue(new ResourceLocation("slightly_vanilla_additions:mossy_jungle")),};
 	}
 
 	@Override

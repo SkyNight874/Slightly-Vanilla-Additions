@@ -17,7 +17,7 @@
       "value": "TOOLS"
     },
     "texture": "crystal_flintandsteel",
-    "portalTexture": "endfarlands_portaltexture",
+    "portalTexture": "end_portal",
     "enablePortal": true,
     "biomesInDimension": [
       {
@@ -40,6 +40,12 @@
       },
       {
         "value": "CUSTOM:CrystalPlains"
+      },
+      {
+        "value": "CUSTOM:BurnedDesert"
+      },
+      {
+        "value": "CUSTOM:MossyJungle"
       }
     ],
     "worldGenType": "End like gen",

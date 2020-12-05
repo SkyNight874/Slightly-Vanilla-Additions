@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "slightly_vanilla_additions:blocks/twisted_moss",
+    "particle": "slightly_vanilla_additions:blocks/twisted_moss"
+  }
+}

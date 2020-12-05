@@ -1175,6 +1175,150 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "bubble"
+    },
+    {
+      "name": "BurnedTreePowder",
+      "type": "item",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "burned_tree_powder"
+    },
+    {
+      "name": "BurnedTreeLog",
+      "type": "block",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "burned_tree_log"
+    },
+    {
+      "name": "BurnedDesert",
+      "type": "biome",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "burned_desert"
+    },
+    {
+      "name": "CrystalBlock",
+      "type": "block",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crystal_block"
+    },
+    {
+      "name": "CrystalPlant",
+      "type": "plant",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crystal_plant"
+    },
+    {
+      "name": "EndLily",
+      "type": "plant",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "end_lily"
+    },
+    {
+      "name": "EndMycelium",
+      "type": "block",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "end_mycelium"
+    },
+    {
+      "name": "EndMoss",
+      "type": "block",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "end_moss"
+    },
+    {
+      "name": "CyanMoss",
+      "type": "plant",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cyan_moss"
+    },
+    {
+      "name": "AngelicGrass",
+      "type": "plant",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "angelic_grass"
+    },
+    {
+      "name": "CrystalMoss",
+      "type": "plant",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crystal_moss"
+    },
+    {
+      "name": "MossBlock",
+      "type": "block",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "moss_block"
+    },
+    {
+      "name": "MossyJungle",
+      "type": "biome",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mossy_jungle"
+    },
+    {
+      "name": "BestJungleEver",
+      "type": "achievement",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "best_jungle_ever"
+    },
+    {
+      "name": "MossyMushroomBlock",
+      "type": "block",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mossy_mushroom_block"
+    },
+    {
+      "name": "AngelicSlimeBlock",
+      "type": "block",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "angelic_slime_block"
     }
   ],
   "variable_elements": [],
@@ -1197,9 +1341,12 @@
       "block.slightly_vanilla_additions.alterated_slab": "Alterated Slab",
       "item.slightly_vanilla_additions.crystal_gem": "Crystal Gem",
       "advancements.achorusforest.descr": "You discovered the Chorus Forest !",
+      "biome.slightly_vanilla_additions.mossy_jungle": "Mossy Jungle",
       "advancements.achorusforest.title": "A Chorus...Forest ?",
       "item.slightly_vanilla_additions.fire_pearl": "Fire Pearl",
+      "block.slightly_vanilla_additions.angelic_grass": "Angelic Grass",
       "block.slightly_vanilla_additions.bluestone_wall": "Bluestone Wall",
+      "block.slightly_vanilla_additions.end_moss": "End Moss",
       "block.slightly_vanilla_additions.chorus_stairs": "Chorus Stairs",
       "advancements.ohdisgusting.descr": "Its the Alterated Forest !",
       "item.slightly_vanilla_additions.dragon_axe": "Dragon Axe",
@@ -1218,20 +1365,30 @@
       "block.slightly_vanilla_additions.powder_snow": "Powder Snow",
       "item.slightly_vanilla_additions.saphir.desc": "J2RMY - Saphir",
       "block.slightly_vanilla_additions.alterated_fence_gate": "Alterated Fence Gate",
+      "block.slightly_vanilla_additions.moss_block": "Moss Block",
+      "biome.slightly_vanilla_additions.burned_desert": "Burned Desert",
       "item.slightly_vanilla_additions.poisonous_fluid_bucket": "PoisonousFluid Bucket",
+      "block.slightly_vanilla_additions.mossy_mushroom_block": "Mossy Mushroom Block",
+      "block.slightly_vanilla_additions.end_mycelium": "End Mycelium",
       "block.slightly_vanilla_additions.bubble_plant": "Bubble Plant",
       "item.slightly_vanilla_additions.dragon_fang": "Dragon Fang",
       "block.slightly_vanilla_additions.chorus_log": "Chorus Log",
+      "item.slightly_vanilla_additions.burned_tree_powder": "Burned Tree Powder",
+      "block.slightly_vanilla_additions.burned_tree_log": "Burned Tree Log",
       "item.slightly_vanilla_additions.end_farlands": "Dragon Flint And Steel",
       "biome.slightly_vanilla_additions.crystal_plains": "Crystal Plains",
       "block.slightly_vanilla_additions.chorus_slab": "Chorus Slab",
       "item.slightly_vanilla_additions.back_pack_item": "BackPack",
+      "block.slightly_vanilla_additions.cyan_moss": "Cyan Moss",
       "item.slightly_vanilla_additions.dragon_hoe": "Dragon Hoe",
       "block.slightly_vanilla_additions.alterated_log": "Alterated Log",
+      "advancements.best_jungle_ever.descr": "Wow ! You discovered the Mossy Jungle",
       "block.slightly_vanilla_additions.ender_fire": "Ender Fire",
+      "block.slightly_vanilla_additions.crystal_plant": "Crystal Plant",
       "block.slightly_vanilla_additions.chorus_wood": "Chorus Wood",
       "biome.slightly_vanilla_additions.chorus_forest": "Chorus Forest",
       "block.slightly_vanilla_additions.alterated_nylium": "Poison Nylium",
+      "advancements.best_jungle_ever.title": "Best Jungle Ever !",
       "item.slightly_vanilla_additions.dragon_shovel": "Dragon Shovel",
       "block.slightly_vanilla_additions.alterated_fence": "Alterated Fence",
       "advancements.ilovecrystal.title": "I love crystal !",
@@ -1246,8 +1403,11 @@
       "block.slightly_vanilla_additions.bluestone_stairs": "Bluestone Stairs",
       "item.slightly_vanilla_additions.dragon_pickaxe": "Dragon Pickaxe",
       "biome.slightly_vanilla_additions.snowy_highlands": "Snowy Highlands",
+      "block.slightly_vanilla_additions.end_lily": "End Lily Flower",
       "block.slightly_vanilla_additions.polished_bluestone_stairs": "Polished Bluestone Stairs",
       "block.slightly_vanilla_additions.compressed_crystal_block": "Compressed Crystal Block",
+      "block.slightly_vanilla_additions.angelic_slime_block": "Angelic Slime Block",
+      "block.slightly_vanilla_additions.crystal_block": "Crystal Block",
       "block.slightly_vanilla_additions.alterated_planks": "Alterated Planks",
       "block.slightly_vanilla_additions.bluestone_slab": "Bluestone Slab",
       "block.slightly_vanilla_additions.poison_nylium": "Poison Nylium",
@@ -1257,7 +1417,8 @@
       "biome.slightly_vanilla_additions.poison_swamp": "Poison Swamp",
       "block.slightly_vanilla_additions.alterated_leaves": "Alterated Leaves",
       "biome.slightly_vanilla_additions.alterated_forest": "Alterated Forest",
-      "block.slightly_vanilla_additions.alterated_stairs": "Alterated Stairs"
+      "block.slightly_vanilla_additions.alterated_stairs": "Alterated Stairs",
+      "block.slightly_vanilla_additions.crystal_moss": "Crystal Moss"
     }
   },
   "workspaceSettings": {

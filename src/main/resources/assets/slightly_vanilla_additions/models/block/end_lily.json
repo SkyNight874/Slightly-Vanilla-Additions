@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "slightly_vanilla_additions:blocks/end_lily_flower",
+    "particle": "slightly_vanilla_additions:blocks/end_lily_flower"
+  }
+}
