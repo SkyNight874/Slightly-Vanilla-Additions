@@ -1,7 +1,7 @@
 {
   "parent": "block/cross",
   "textures": {
-    "cross": "slightly_vanilla_additions:blocks/ender_fire_0",
-    "particle": "slightly_vanilla_additions:blocks/ender_fire_0"
+    "cross": "slightly_vanilla_additions:blocks/enderfire",
+    "particle": "slightly_vanilla_additions:blocks/enderfire"
   }
 }
