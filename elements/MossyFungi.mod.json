@@ -3,17 +3,17 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "twisted_moss",
+    "texture": "mossy_glowshroom_sapling",
     "textureBottom": "",
     "customModelName": "Cross model",
     "itemTexture": "",
     "particleTexture": "",
     "plantType": "normal",
     "staticPlantGenerationType": "Flower",
-    "growapableSpawnType": "Plains",
+    "growapableSpawnType": "Cave",
     "growapableMaxHeight": 3,
     "doublePlantGenerationType": "Flower",
-    "name": "Crystal Moss",
+    "name": "Mossy Fungi",
     "specialInfo": [],
     "creativeTab": {
       "value": "DECORATIONS"
@@ -42,19 +42,16 @@
     "aiPathNodeType": "DEFAULT",
     "flammability": 100,
     "fireSpreadSpeed": 60,
-    "frequencyOnChunks": 2,
+    "frequencyOnChunks": 3,
     "spawnWorldTypes": [
       "CUSTOM:EndFarlands"
     ],
     "restrictionBiomes": [
       {
+        "value": "CUSTOM:AngelicSwamp"
+      },
+      {
         "value": "CUSTOM:MossyJungle"
-      },
-      {
-        "value": "CUSTOM:ChorusForest"
-      },
-      {
-        "value": "CUSTOM:AlteratedForest"
       }
     ]
   }

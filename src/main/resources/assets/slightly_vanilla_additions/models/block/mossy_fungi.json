@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "slightly_vanilla_additions:blocks/mossy_glowshroom_sapling",
+    "particle": "slightly_vanilla_additions:blocks/mossy_glowshroom_sapling"
+  }
+}

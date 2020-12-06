@@ -83,6 +83,8 @@ public class CyanMossBlock extends SlightlyVanillaAdditionsModElements.ModElemen
 			boolean biomeCriteria = false;
 			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("slightly_vanilla_additions:mossy_jungle")))
 				biomeCriteria = true;
+			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("slightly_vanilla_additions:angelic_swamp")))
+				biomeCriteria = true;
 			if (!biomeCriteria)
 				continue;
 			biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION,

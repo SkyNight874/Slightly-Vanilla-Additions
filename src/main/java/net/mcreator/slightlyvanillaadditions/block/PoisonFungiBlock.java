@@ -47,11 +47,11 @@ import java.util.List;
 import java.util.Collections;
 
 @SlightlyVanillaAdditionsModElements.ModElement.Tag
-public class CrystalMossBlock extends SlightlyVanillaAdditionsModElements.ModElement {
-	@ObjectHolder("slightly_vanilla_additions:crystal_moss")
+public class PoisonFungiBlock extends SlightlyVanillaAdditionsModElements.ModElement {
+	@ObjectHolder("slightly_vanilla_additions:poison_fungi")
 	public static final Block block = null;
-	public CrystalMossBlock(SlightlyVanillaAdditionsModElements instance) {
-		super(instance, 121);
+	public PoisonFungiBlock(SlightlyVanillaAdditionsModElements instance) {
+		super(instance, 139);
 	}
 
 	@Override
@@ -87,11 +87,11 @@ public class CrystalMossBlock extends SlightlyVanillaAdditionsModElements.ModEle
 		};
 		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
 			boolean biomeCriteria = false;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("slightly_vanilla_additions:mossy_jungle")))
-				biomeCriteria = true;
 			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("slightly_vanilla_additions:chorus_forest")))
 				biomeCriteria = true;
 			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("slightly_vanilla_additions:alterated_forest")))
+				biomeCriteria = true;
+			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("slightly_vanilla_additions:mossy_jungle")))
 				biomeCriteria = true;
 			if (!biomeCriteria)
 				continue;
@@ -106,7 +106,7 @@ public class CrystalMossBlock extends SlightlyVanillaAdditionsModElements.ModEle
 		public BlockCustomFlower() {
 			super(Effects.SATURATION, 0, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.PLANT)
 					.hardnessAndResistance(0f, 0f).lightValue(0));
-			setRegistryName("crystal_moss");
+			setRegistryName("poison_fungi");
 		}
 
 		@Override
@@ -129,7 +129,7 @@ public class CrystalMossBlock extends SlightlyVanillaAdditionsModElements.ModEle
 
 		@Override
 		public PlantType getPlantType(IBlockReader world, BlockPos pos) {
-			return PlantType.Plains;
+			return PlantType.Cave;
 		}
 	}
 }

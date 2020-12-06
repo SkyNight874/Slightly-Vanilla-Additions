@@ -1,4 +1,5 @@
 {
+  "block.slightly_vanilla_additions.mossy_fungi": "Mossy Fungi",
   "item.slightly_vanilla_additions.dragon_sword": "Dragon Sword",
   "item.slightly_vanilla_additions.saphir": "Music Disc",
   "item.slightly_vanilla_additions.fire_pearl_shoot": "Fire Pearl Shoot",
@@ -53,6 +54,7 @@
   "advancements.best_jungle_ever.descr": "Wow ! You discovered the Mossy Jungle",
   "block.slightly_vanilla_additions.ender_fire": "Ender Fire",
   "block.slightly_vanilla_additions.crystal_plant": "Crystal Plant",
+  "block.slightly_vanilla_additions.alterated_fungi": "Alterated Fungi",
   "block.slightly_vanilla_additions.chorus_wood": "Chorus Wood",
   "block.slightly_vanilla_additions.mushroom_lantern": "Mushroom Lantern",
   "biome.slightly_vanilla_additions.chorus_forest": "Chorus Forest",
@@ -90,5 +92,6 @@
   "block.slightly_vanilla_additions.alterated_leaves": "Alterated Leaves",
   "biome.slightly_vanilla_additions.alterated_forest": "Alterated Forest",
   "block.slightly_vanilla_additions.alterated_stairs": "Alterated Stairs",
-  "block.slightly_vanilla_additions.crystal_moss": "Crystal Moss"
+  "block.slightly_vanilla_additions.crystal_moss": "Crystal Moss",
+  "block.slightly_vanilla_additions.poison_fungi": "Poison Fungi"
 }

@@ -3,17 +3,17 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "twisted_moss",
+    "texture": "alterated_fungi",
     "textureBottom": "",
     "customModelName": "Cross model",
     "itemTexture": "",
     "particleTexture": "",
     "plantType": "normal",
     "staticPlantGenerationType": "Flower",
-    "growapableSpawnType": "Plains",
+    "growapableSpawnType": "Cave",
     "growapableMaxHeight": 3,
     "doublePlantGenerationType": "Flower",
-    "name": "Crystal Moss",
+    "name": "Alterated Fungi",
     "specialInfo": [],
     "creativeTab": {
       "value": "DECORATIONS"
@@ -48,10 +48,10 @@
     ],
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:MossyJungle"
+        "value": "CUSTOM:ChorusForest"
       },
       {
-        "value": "CUSTOM:ChorusForest"
+        "value": "CUSTOM:MossyJungle"
       },
       {
         "value": "CUSTOM:AlteratedForest"

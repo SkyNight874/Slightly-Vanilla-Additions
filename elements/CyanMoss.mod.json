@@ -49,6 +49,9 @@
     "restrictionBiomes": [
       {
         "value": "CUSTOM:MossyJungle"
+      },
+      {
+        "value": "CUSTOM:AngelicSwamp"
       }
     ]
   }
