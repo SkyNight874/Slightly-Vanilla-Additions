@@ -121,14 +121,12 @@ public class EndFarlandsDimension extends SlightlyVanillaAdditionsModElements.Mo
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		dimensionBiomes = new Biome[]{ForgeRegistries.BIOMES.getValue(new ResourceLocation("slightly_vanilla_additions:chorus_forest")),
-				ForgeRegistries.BIOMES.getValue(new ResourceLocation("slightly_vanilla_additions:poison_swamp")),
 				ForgeRegistries.BIOMES.getValue(new ResourceLocation("slightly_vanilla_additions:alterated_forest")),
-				ForgeRegistries.BIOMES.getValue(new ResourceLocation("end_highlands")),
-				ForgeRegistries.BIOMES.getValue(new ResourceLocation("end_midlands")),
-				ForgeRegistries.BIOMES.getValue(new ResourceLocation("small_end_islands")),
+				ForgeRegistries.BIOMES.getValue(new ResourceLocation("slightly_vanilla_additions:poison_swamp")),
 				ForgeRegistries.BIOMES.getValue(new ResourceLocation("slightly_vanilla_additions:crystal_plains")),
 				ForgeRegistries.BIOMES.getValue(new ResourceLocation("slightly_vanilla_additions:burned_desert")),
-				ForgeRegistries.BIOMES.getValue(new ResourceLocation("slightly_vanilla_additions:mossy_jungle")),};
+				ForgeRegistries.BIOMES.getValue(new ResourceLocation("slightly_vanilla_additions:mossy_jungle")),
+				ForgeRegistries.BIOMES.getValue(new ResourceLocation("slightly_vanilla_additions:angelic_swamp")),};
 	}
 
 	@Override
@@ -698,7 +696,7 @@ public class EndFarlandsDimension extends SlightlyVanillaAdditionsModElements.Mo
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public Vec3d getFogColor(float cangle, float ticks) {
-			return new Vec3d(0.8, 0.2, 1);
+			return new Vec3d(0, 0, 0);
 		}
 
 		@Override

@@ -1319,6 +1319,164 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "angelic_slime_block"
+    },
+    {
+      "name": "AngelicSwamp",
+      "type": "biome",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "angelic_swamp"
+    },
+    {
+      "name": "MossyMushroomSmall",
+      "type": "structure",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mossy_mushroom_small"
+    },
+    {
+      "name": "MossyMushroomBig",
+      "type": "structure",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mossy_mushroom_big"
+    },
+    {
+      "name": "MossyBush",
+      "type": "structure",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mossy_bush"
+    },
+    {
+      "name": "AngelicWaterLorsqueLeMobjoueurEntreEnCollisionAvecLeBloc",
+      "type": "procedure",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "angelic_water_lorsque_le_mobjoueur_entre_en_collision_avec_le_bloc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AngelicWater",
+      "type": "fluid",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "angelic_water"
+    },
+    {
+      "name": "DenseVine",
+      "type": "block",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dense_vine"
+    },
+    {
+      "name": "MushroomLantern",
+      "type": "block",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mushroom_lantern"
+    },
+    {
+      "name": "MossySlime",
+      "type": "mob",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mossy_slime"
+    },
+    {
+      "name": "MossySlimeGUI",
+      "type": "gui",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mossy_slime_gui"
+    },
+    {
+      "name": "MossySlimeQuandLeJoueurFaitUnClicDroitSurLentite",
+      "type": "procedure",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mossy_slime_quand_le_joueur_fait_un_clic_droit_sur_lentite",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MushroomLanternBig",
+      "type": "structure",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mushroom_lantern_big"
+    },
+    {
+      "name": "MushroomLanternSmall",
+      "type": "structure",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mushroom_lantern_small"
+    },
+    {
+      "name": "MushroomLanternMoyen",
+      "type": "structure",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mushroom_lantern_moyen"
     }
   ],
   "variable_elements": [],
@@ -1342,6 +1500,7 @@
       "item.slightly_vanilla_additions.crystal_gem": "Crystal Gem",
       "advancements.achorusforest.descr": "You discovered the Chorus Forest !",
       "biome.slightly_vanilla_additions.mossy_jungle": "Mossy Jungle",
+      "fluid.angelic_water": "AngelicWater",
       "advancements.achorusforest.title": "A Chorus...Forest ?",
       "item.slightly_vanilla_additions.fire_pearl": "Fire Pearl",
       "block.slightly_vanilla_additions.angelic_grass": "Angelic Grass",
@@ -1352,6 +1511,7 @@
       "item.slightly_vanilla_additions.dragon_axe": "Dragon Axe",
       "item.slightly_vanilla_additions.crystal_clock": "Crystal Clock",
       "item.slightly_vanilla_additions.bubble": "Bubble Gum",
+      "entity.slightly_vanilla_additions.mossy_slime": "Mossy Slime",
       "advancements.another_dimension.title": "Another Dimension !?",
       "block.slightly_vanilla_additions.alterated_wood": "Alterated Wood",
       "item.slightly_vanilla_additions.obsidian_hammer": "Obsidian Hammer",
@@ -1377,6 +1537,7 @@
       "block.slightly_vanilla_additions.burned_tree_log": "Burned Tree Log",
       "item.slightly_vanilla_additions.end_farlands": "Dragon Flint And Steel",
       "biome.slightly_vanilla_additions.crystal_plains": "Crystal Plains",
+      "biome.slightly_vanilla_additions.angelic_swamp": "Angelic Swamp",
       "block.slightly_vanilla_additions.chorus_slab": "Chorus Slab",
       "item.slightly_vanilla_additions.back_pack_item": "BackPack",
       "block.slightly_vanilla_additions.cyan_moss": "Cyan Moss",
@@ -1386,6 +1547,7 @@
       "block.slightly_vanilla_additions.ender_fire": "Ender Fire",
       "block.slightly_vanilla_additions.crystal_plant": "Crystal Plant",
       "block.slightly_vanilla_additions.chorus_wood": "Chorus Wood",
+      "block.slightly_vanilla_additions.mushroom_lantern": "Mushroom Lantern",
       "biome.slightly_vanilla_additions.chorus_forest": "Chorus Forest",
       "block.slightly_vanilla_additions.alterated_nylium": "Poison Nylium",
       "advancements.best_jungle_ever.title": "Best Jungle Ever !",
@@ -1397,6 +1559,8 @@
       "block.slightly_vanilla_additions.chorus_planks": "Chorus Planks",
       "block.slightly_vanilla_additions.chorus_fence": "Chorus Fence",
       "advancements.ilovecrystal.descr": "You discovered the Crystal Gem !",
+      "item.slightly_vanilla_additions.angelic_water_bucket": "AngelicWater Bucket",
+      "item.slightly_vanilla_additions.mossy_slime_spawn_egg": "Mossy Slime Spawn Egg",
       "advancements.another_dimension.descr": "You unlocked the EndFarlands !",
       "block.slightly_vanilla_additions.ender_crown": "Ender Crown",
       "block.slightly_vanilla_additions.polished_bluestone_slab": "Polished Bluestone Slab",
@@ -1413,6 +1577,7 @@
       "block.slightly_vanilla_additions.poison_nylium": "Poison Nylium",
       "block.slightly_vanilla_additions.poison_mushroom": "Poison Mushroom Block",
       "fluid.poisonous_fluid": "PoisonousFluid",
+      "block.slightly_vanilla_additions.dense_vine": "Dense Vine",
       "item.slightly_vanilla_additions.dragon_scale": "Dragon Scale",
       "biome.slightly_vanilla_additions.poison_swamp": "Poison Swamp",
       "block.slightly_vanilla_additions.alterated_leaves": "Alterated Leaves",

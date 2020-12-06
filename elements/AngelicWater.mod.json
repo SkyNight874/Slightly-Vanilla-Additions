@@ -1,0 +1,33 @@
+{
+  "_fv": 13,
+  "_type": "fluid",
+  "definition": {
+    "name": "AngelicWater",
+    "textureStill": "angelic_water_still",
+    "textureFlowing": "_angelic_water_still",
+    "luminosity": 0,
+    "density": 1000,
+    "viscosity": 1000,
+    "isGas": false,
+    "type": "WATER",
+    "generateBucket": true,
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "frequencyOnChunks": 5,
+    "spawnWorldTypes": [
+      "CUSTOM:EndFarlands"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:AngelicSwamp"
+      },
+      {
+        "value": "CUSTOM:MossyJungle"
+      }
+    ],
+    "onEntityCollides": {
+      "name": "AngelicWaterLorsqueLeMobjoueurEntreEnCollisionAvecLeBloc"
+    }
+  }
+}

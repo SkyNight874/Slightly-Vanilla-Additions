@@ -24,19 +24,10 @@
         "value": "CUSTOM:ChorusForest"
       },
       {
-        "value": "CUSTOM:PoisonSwamp"
-      },
-      {
         "value": "CUSTOM:AlteratedForest"
       },
       {
-        "value": "end_highlands"
-      },
-      {
-        "value": "end_midlands"
-      },
-      {
-        "value": "small_end_islands"
+        "value": "CUSTOM:PoisonSwamp"
       },
       {
         "value": "CUSTOM:CrystalPlains"
@@ -46,6 +37,9 @@
       },
       {
         "value": "CUSTOM:MossyJungle"
+      },
+      {
+        "value": "CUSTOM:AngelicSwamp"
       }
     ],
     "worldGenType": "End like gen",
@@ -56,7 +50,7 @@
       "value": "CUSTOM:PoisonousFluid"
     },
     "airColor": {
-      "value": -3394561,
+      "value": -16777216,
       "falpha": 0.0
     },
     "canRespawnHere": true,
