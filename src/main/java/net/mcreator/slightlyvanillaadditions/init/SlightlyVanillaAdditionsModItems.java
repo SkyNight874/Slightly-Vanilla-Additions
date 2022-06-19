@@ -15,6 +15,7 @@ import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.slightlyvanillaadditions.item.StealthBladeItem;
 import net.mcreator.slightlyvanillaadditions.item.SaphirItem;
 import net.mcreator.slightlyvanillaadditions.item.PoisonousFluidItem;
 import net.mcreator.slightlyvanillaadditions.item.ObsidianHammerItem;
@@ -140,6 +141,7 @@ public class SlightlyVanillaAdditionsModItems {
 	public static final RegistryObject<Item> ALTERATED_FUNGI = block(SlightlyVanillaAdditionsModBlocks.ALTERATED_FUNGI,
 			CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> BUBBLE = REGISTRY.register("bubble", () -> new BubbleItem());
+	public static final RegistryObject<Item> STEALTH_BLADE = REGISTRY.register("stealth_blade", () -> new StealthBladeItem());
 	public static final RegistryObject<Item> END_FARLANDS = REGISTRY.register("end_farlands", () -> new EndFarlandsItem());
 	public static final RegistryObject<Item> END_CUBE = REGISTRY.register("end_cube_spawn_egg",
 			() -> new ForgeSpawnEggItem(SlightlyVanillaAdditionsModEntities.END_CUBE, -16777216, -10092442,

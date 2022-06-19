@@ -209,6 +209,17 @@
       "registry_name": "dragon_fang_loot"
     },
     {
+      "name": "EndFarlands",
+      "type": "dimension",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_farlands",
+      "metadata": {
+        "ep": true
+      }
+    },
+    {
       "name": "DragonScale",
       "type": "item",
       "sortid": 27,
@@ -367,6 +378,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "chorus_grass"
+    },
+    {
+      "name": "ChorusForest",
+      "type": "biome",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_forest"
     },
     {
       "name": "BackPack",
@@ -532,6 +551,14 @@
       "registry_name": "alterated_stairs"
     },
     {
+      "name": "AlteratedForest",
+      "type": "biome",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alterated_forest"
+    },
+    {
       "name": "AlteratedLog",
       "type": "block",
       "sortid": 58,
@@ -626,6 +653,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "compressed_crystal_block"
+    },
+    {
+      "name": "CrystalPlains",
+      "type": "biome",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_plains"
     },
     {
       "name": "Crystal",
@@ -1279,33 +1314,6 @@
       "registry_name": "bubble"
     },
     {
-      "name": "ChorusForest",
-      "type": "biome",
-      "sortid": 144,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chorus_forest"
-    },
-    {
-      "name": "EndFarlands",
-      "type": "dimension",
-      "sortid": 145,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "end_farlands",
-      "metadata": {
-        "ep": true
-      }
-    },
-    {
-      "name": "DirtBlocks",
-      "type": "tag",
-      "sortid": 146,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dirt_blocks"
-    },
-    {
       "name": "LogBlocks",
       "type": "tag",
       "sortid": 147,
@@ -1314,20 +1322,12 @@
       "registry_name": "log_blocks"
     },
     {
-      "name": "AlteratedForest",
-      "type": "biome",
-      "sortid": 148,
+      "name": "EndCube",
+      "type": "livingentity",
+      "sortid": 152,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alterated_forest"
-    },
-    {
-      "name": "CrystalPlains",
-      "type": "biome",
-      "sortid": 149,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystal_plains"
+      "registry_name": "end_cube"
     },
     {
       "name": "MinecraftDirt",
@@ -1370,12 +1370,42 @@
       }
     },
     {
-      "name": "EndCube",
-      "type": "livingentity",
-      "sortid": 152,
+      "name": "DirtBlocks",
+      "type": "tag",
+      "sortid": 146,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "end_cube"
+      "registry_name": "dirt_blocks"
+    },
+    {
+      "name": "StealthBlade",
+      "type": "tool",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stealth_blade",
+      "path": "~/Dagger"
+    },
+    {
+      "name": "StealthBladeLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stealth_blade_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dagger"
     }
   ],
   "variable_elements": [],
@@ -1404,7 +1434,6 @@
       "block.slightly_vanilla_additions.polished_bluestone_wall": "Polished Bluestone Wall",
       "block.slightly_vanilla_additions.crystal": "Crystal",
       "block.slightly_vanilla_additions.chorus_fence_gate": "Chorus Fence Gate",
-      "entity.slightly_vanilla_additions.end_cube": "End Cube",
       "block.slightly_vanilla_additions.chorus_leaves": "Chorus Block",
       "block.slightly_vanilla_additions.moss_block": "Moss Block",
       "block.slightly_vanilla_additions.end_mycelium": "End Mycelium",
@@ -1424,6 +1453,7 @@
       "item.slightly_vanilla_additions.dragon_shovel": "Dragon Shovel",
       "block.slightly_vanilla_additions.alterated_fence": "Alterated Fence",
       "block.slightly_vanilla_additions.drawer": " Iron Drawer",
+      "item.slightly_vanilla_additions.mossy_slime_spawn_egg": "Mossy Slime Spawn Egg",
       "advancements.another_dimension.descr": "You unlocked the EndFarlands !",
       "block.slightly_vanilla_additions.ender_crown": "Ender Crown",
       "block.slightly_vanilla_additions.polished_bluestone_slab": "Polished Bluestone Slab",
@@ -1448,6 +1478,7 @@
       "block.slightly_vanilla_additions.angelic_grass": "Angelic Grass",
       "block.slightly_vanilla_additions.bluestone_wall": "Bluestone Wall",
       "item.slightly_vanilla_additions.dragon_axe": "Dragon Axe",
+      "entity.slightly_vanilla_additions.mossy_slime": "Mossy Slime",
       "advancements.another_dimension.title": "Another Dimension !?",
       "block.slightly_vanilla_additions.bluestone": "Bluestone",
       "item.slightly_vanilla_additions.obsidian_hammer": "Obsidian Hammer",
@@ -1479,7 +1510,6 @@
       "block.slightly_vanilla_additions.chorus_planks": "Chorus Planks",
       "block.slightly_vanilla_additions.bluestone_stairs": "Bluestone Stairs",
       "item.slightly_vanilla_additions.dragon_pickaxe": "Dragon Pickaxe",
-      "item.slightly_vanilla_additions.end_cube_spawn_egg": "End Cube Spawn Egg",
       "biome.slightly_vanilla_additions.snowy_highlands": "Snowy Highlands",
       "block.slightly_vanilla_additions.alterated_planks": "Alterated Planks",
       "block.slightly_vanilla_additions.poison_nylium": "Poison Nylium",
@@ -1494,7 +1524,12 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Dagger",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "slightly_vanilla_additions",
