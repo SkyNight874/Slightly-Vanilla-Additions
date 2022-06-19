@@ -1,5 +1,6 @@
 modLoader="javafml"
-loaderVersion="[31,)"
+loaderVersion="[40,)"
+license="Not specified"
 
 [[mods]]
 modId="slightly_vanilla_additions"
@@ -12,7 +13,7 @@ authors="puikw, MCreator"
 [[dependencies.slightly_vanilla_additions]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.15.2]"
+    versionRange="[1.18.2]"
     ordering="NONE"
     side="BOTH"
 

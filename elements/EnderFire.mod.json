@@ -1,5 +1,5 @@
 {
-  "_fv": 13,
+  "_fv": 28,
   "_type": "block",
   "definition": {
     "texture": "enderfire",
@@ -15,15 +15,23 @@
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "CUTOUT",
-    "mx": 0.0,
-    "my": 0.0,
-    "mz": 0.0,
-    "Mx": 1.0,
-    "My": 1.0,
-    "Mz": 1.0,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 16.0,
+        "Mz": 16.0,
+        "subtract": false
+      }
+    ],
     "name": "Ender Fire",
     "specialInfo": [],
     "hardness": 1.0,
@@ -39,10 +47,9 @@
     },
     "dropAmount": 0,
     "useLootTableForDrops": false,
-    "isBeaconBase": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canProvidePower": false,
+    "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
       "value": "FIRE"
@@ -50,6 +57,7 @@
     "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": true,
+    "canProvidePower": false,
     "colorOnMap": "PURPLE",
     "creativePickItem": {
       "value": ""
@@ -60,12 +68,15 @@
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
     "reactionToPushing": "DESTROY",
     "isNotColidable": true,
+    "isCustomSoundType": false,
     "soundOnStep": {
       "value": "CLOTH"
     },
-    "luminance": 0.0,
+    "luminance": 0,
     "unbreakable": true,
     "breakHarvestLevel": 1,
     "spawnParticles": true,
@@ -102,6 +113,7 @@
         "value": "Blocks.STONE"
       }
     ],
+    "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,

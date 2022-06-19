@@ -1,46 +1,41 @@
 
 package net.mcreator.slightlyvanillaadditions.command;
 
-import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
+import org.checkerframework.checker.units.qual.s;
+
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.common.util.FakePlayerFactory;
 
-import net.minecraft.world.server.ServerWorld;
-import net.minecraft.entity.Entity;
-import net.minecraft.command.Commands;
-import net.minecraft.command.CommandSource;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.commands.Commands;
+import net.minecraft.commands.CommandSourceStack;
 
 import net.mcreator.slightlyvanillaadditions.procedures.WarpQuandUneCommandeEstExecuteeProcedure;
-import net.mcreator.slightlyvanillaadditions.SlightlyVanillaAdditionsModElements;
 
-import java.util.Map;
 import java.util.HashMap;
 import java.util.Arrays;
 
 import com.mojang.brigadier.context.CommandContext;
-import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import com.mojang.brigadier.arguments.StringArgumentType;
 
-@SlightlyVanillaAdditionsModElements.ModElement.Tag
-public class WarpCommand extends SlightlyVanillaAdditionsModElements.ModElement {
-	public WarpCommand(SlightlyVanillaAdditionsModElements instance) {
-		super(instance, 89);
+@Mod.EventBusSubscriber
+public class WarpCommand {
+	@SubscribeEvent
+	public static void registerCommand(RegisterCommandsEvent event) {
+		event.getDispatcher()
+				.register(Commands.literal("warp").requires(s -> s.hasPermission(2))
+						.then(Commands.argument("arguments", StringArgumentType.greedyString()).executes(WarpCommand::execute))
+						.executes(WarpCommand::execute));
 	}
 
-	@Override
-	public void serverLoad(FMLServerStartingEvent event) {
-		event.getCommandDispatcher().register(customCommand());
-	}
-
-	private LiteralArgumentBuilder<CommandSource> customCommand() {
-		return LiteralArgumentBuilder.<CommandSource>literal("warp").requires(s -> s.hasPermissionLevel(2))
-				.then(Commands.argument("arguments", StringArgumentType.greedyString()).executes(this::execute)).executes(this::execute);
-	}
-
-	private int execute(CommandContext<CommandSource> ctx) {
-		ServerWorld world = ctx.getSource().getWorld();
-		double x = ctx.getSource().getPos().getX();
-		double y = ctx.getSource().getPos().getY();
-		double z = ctx.getSource().getPos().getZ();
+	private static int execute(CommandContext<CommandSourceStack> ctx) {
+		ServerLevel world = ctx.getSource().getLevel();
+		double x = ctx.getSource().getPosition().x();
+		double y = ctx.getSource().getPosition().y();
+		double z = ctx.getSource().getPosition().z();
 		Entity entity = ctx.getSource().getEntity();
 		if (entity == null)
 			entity = FakePlayerFactory.getMinecraft(world);
@@ -51,15 +46,8 @@ public class WarpCommand extends SlightlyVanillaAdditionsModElements.ModElement 
 				cmdparams.put(Integer.toString(index[0]), param);
 			index[0]++;
 		});
-		{
-			Map<String, Object> $_dependencies = new HashMap<>();
-			$_dependencies.put("entity", entity);
-			$_dependencies.put("x", x);
-			$_dependencies.put("y", y);
-			$_dependencies.put("z", z);
-			$_dependencies.put("world", world);
-			WarpQuandUneCommandeEstExecuteeProcedure.executeProcedure($_dependencies);
-		}
+
+		WarpQuandUneCommandeEstExecuteeProcedure.execute(world, x, y, z, entity);
 		return 0;
 	}
 }

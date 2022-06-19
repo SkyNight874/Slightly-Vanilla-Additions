@@ -1,24 +1,7 @@
 {
-  "_fv": 13,
+  "_fv": 28,
   "_type": "dimension",
   "definition": {
-    "portalFrame": {
-      "value": "Blocks.END_BRICKS"
-    },
-    "portalParticles": {
-      "value": "PORTAL"
-    },
-    "portalLuminance": 0.0,
-    "portalSound": {
-      "value": "block.portal.ambient"
-    },
-    "igniterName": "Dragon Flint And Steel",
-    "igniterTab": {
-      "value": "TOOLS"
-    },
-    "texture": "crystal_flintandsteel",
-    "portalTexture": "end_portal",
-    "enablePortal": true,
     "biomesInDimension": [
       {
         "value": "CUSTOM:ChorusForest"
@@ -55,11 +38,27 @@
     },
     "canRespawnHere": true,
     "hasFog": false,
-    "hasWeather": false,
     "isDark": false,
     "doesWaterVaporize": false,
     "sleepResult": "BED_EXPLODES",
     "hasSkyLight": false,
-    "imitateOverworldBehaviour": false
+    "imitateOverworldBehaviour": false,
+    "portalFrame": {
+      "value": "Blocks.END_BRICKS"
+    },
+    "portalParticles": {
+      "value": "PORTAL"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Dragon Flint And Steel",
+    "igniterTab": {
+      "value": "TOOLS"
+    },
+    "texture": "crystal_flintandsteel",
+    "portalTexture": "end_portal",
+    "enablePortal": true
   }
 }

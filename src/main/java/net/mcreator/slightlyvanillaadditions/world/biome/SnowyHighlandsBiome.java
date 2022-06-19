@@ -1,56 +1,33 @@
 
 package net.mcreator.slightlyvanillaadditions.world.biome;
 
-import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.common.BiomeManager;
+import net.minecraft.world.level.biome.MobSpawnSettings;
+import net.minecraft.world.level.biome.Climate;
+import net.minecraft.world.level.biome.BiomeSpecialEffects;
+import net.minecraft.world.level.biome.BiomeGenerationSettings;
+import net.minecraft.world.level.biome.Biome;
+import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
-import net.minecraft.world.gen.feature.structure.VillageConfig;
-import net.minecraft.world.gen.feature.structure.OceanRuinStructure;
-import net.minecraft.world.gen.feature.structure.OceanRuinConfig;
-import net.minecraft.world.gen.feature.IFeatureConfig;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.biome.DefaultBiomeFeatures;
-import net.minecraft.world.biome.Biome;
+public class SnowyHighlandsBiome {
+	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(
+			Climate.Parameter.span(-1.085714285714f, -0.914285714286f), Climate.Parameter.span(-0.085714285714f, 0.085714285714f),
+			Climate.Parameter.span(1.414285714286f, 1.585714285714f), Climate.Parameter.span(0.214285714286f, 0.385714285714f),
+			Climate.Parameter.point(0), Climate.Parameter.span(0.435908208289f, 0.607336779717f), 0);
 
-import net.mcreator.slightlyvanillaadditions.block.PowderSnowBlock;
-import net.mcreator.slightlyvanillaadditions.block.BluestoneBlock;
-import net.mcreator.slightlyvanillaadditions.SlightlyVanillaAdditionsModElements;
-
-@SlightlyVanillaAdditionsModElements.ModElement.Tag
-public class SnowyHighlandsBiome extends SlightlyVanillaAdditionsModElements.ModElement {
-	@ObjectHolder("slightly_vanilla_additions:snowy_highlands")
-	public static final CustomBiome biome = null;
-	public SnowyHighlandsBiome(SlightlyVanillaAdditionsModElements instance) {
-		super(instance, 2);
+	public static Biome createBiome() {
+		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(4159204).waterFogColor(329011).skyColor(7972607)
+				.foliageColorOverride(10387789).grassColorOverride(9470285).build();
+		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
+		BiomeDefaultFeatures.addDefaultCarversAndLakes(biomeGenerationSettings);
+		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
+		BiomeDefaultFeatures.addSurfaceFreezing(biomeGenerationSettings);
+		BiomeDefaultFeatures.addDefaultMonsterRoom(biomeGenerationSettings);
+		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder();
+		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.SNOW).biomeCategory(Biome.BiomeCategory.EXTREME_HILLS).temperature(-1f)
+				.downfall(0.5f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build())
+				.build();
 	}
 
-	@Override
-	public void initElements() {
-		elements.biomes.add(() -> new CustomBiome());
-	}
-
-	@Override
-	public void init(FMLCommonSetupEvent event) {
-		BiomeManager.addSpawnBiome(biome);
-		BiomeManager.addBiome(BiomeManager.BiomeType.ICY, new BiomeManager.BiomeEntry(biome, 6));
-	}
-	static class CustomBiome extends Biome {
-		public CustomBiome() {
-			super(new Biome.Builder().downfall(0.5f).depth(10f).scale(0.7f).temperature(-1f).precipitation(Biome.RainType.SNOW)
-					.category(Biome.Category.EXTREME_HILLS).waterColor(4159204).waterFogColor(329011)
-					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(PowderSnowBlock.block.getDefaultState(),
-							BluestoneBlock.block.getDefaultState(), BluestoneBlock.block.getDefaultState())));
-			setRegistryName("snowy_highlands");
-			DefaultBiomeFeatures.addCarvers(this);
-			DefaultBiomeFeatures.addMonsterRooms(this);
-			DefaultBiomeFeatures.addStructures(this);
-			DefaultBiomeFeatures.addOres(this);
-			this.addStructure(Feature.VILLAGE.withConfiguration(new VillageConfig("village/snowy/town_centers", 6)));
-			this.addStructure(Feature.IGLOO.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
-			this.addStructure(Feature.OCEAN_RUIN.withConfiguration(new OceanRuinConfig(OceanRuinStructure.Type.COLD, 0.3F, 0.9F)));
-		}
+	public static void init() {
 	}
 }

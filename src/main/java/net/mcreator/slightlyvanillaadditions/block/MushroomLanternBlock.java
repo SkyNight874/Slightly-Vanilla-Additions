@@ -1,49 +1,36 @@
 
 package net.mcreator.slightlyvanillaadditions.block;
 
-import net.minecraftforge.registries.ObjectHolder;
+import org.checkerframework.checker.units.qual.s;
 
-import net.minecraft.world.storage.loot.LootContext;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.item.BlockItem;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Block;
-
-import net.mcreator.slightlyvanillaadditions.SlightlyVanillaAdditionsModElements;
+import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.core.BlockPos;
 
 import java.util.List;
 import java.util.Collections;
 
-@SlightlyVanillaAdditionsModElements.ModElement.Tag
-public class MushroomLanternBlock extends SlightlyVanillaAdditionsModElements.ModElement {
-	@ObjectHolder("slightly_vanilla_additions:mushroom_lantern")
-	public static final Block block = null;
-	public MushroomLanternBlock(SlightlyVanillaAdditionsModElements instance) {
-		super(instance, 132);
+public class MushroomLanternBlock extends Block {
+	public MushroomLanternBlock() {
+		super(BlockBehaviour.Properties.of(Material.PLANT).sound(SoundType.SLIME_BLOCK).strength(1f, 10f).lightLevel(s -> 15));
 	}
 
 	@Override
-	public void initElements() {
-		elements.blocks.add(() -> new CustomBlock());
-		elements.items
-				.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(block.getRegistryName()));
+	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+		return 15;
 	}
-	public static class CustomBlock extends Block {
-		public CustomBlock() {
-			super(Block.Properties.create(Material.PLANTS).sound(SoundType.SLIME).hardnessAndResistance(1f, 10f).lightValue(15));
-			setRegistryName("mushroom_lantern");
-		}
 
-		@Override
-		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
-			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-			if (!dropsOriginal.isEmpty())
-				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
-		}
+	@Override
+	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
+		if (!dropsOriginal.isEmpty())
+			return dropsOriginal;
+		return Collections.singletonList(new ItemStack(this, 1));
 	}
 }

@@ -1,74 +1,54 @@
 
 package net.mcreator.slightlyvanillaadditions.item;
 
-import net.minecraftforge.registries.ObjectHolder;
-
-import net.minecraft.world.World;
-import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.item.UseAction;
-import net.minecraft.item.Rarity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.item.Food;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 
 import net.mcreator.slightlyvanillaadditions.procedures.BubbleQuandLaNourritureEstMangeeProcedure;
-import net.mcreator.slightlyvanillaadditions.SlightlyVanillaAdditionsModElements;
 
-import java.util.Map;
 import java.util.List;
-import java.util.HashMap;
 
-@SlightlyVanillaAdditionsModElements.ModElement.Tag
-public class BubbleItem extends SlightlyVanillaAdditionsModElements.ModElement {
-	@ObjectHolder("slightly_vanilla_additions:bubble")
-	public static final Item block = null;
-	public BubbleItem(SlightlyVanillaAdditionsModElements instance) {
-		super(instance, 111);
+public class BubbleItem extends Item {
+	public BubbleItem() {
+		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(64).rarity(Rarity.UNCOMMON)
+				.food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.3f).alwaysEat()
+
+						.build()));
 	}
 
 	@Override
-	public void initElements() {
-		elements.items.add(() -> new FoodItemCustom());
+	public int getUseDuration(ItemStack itemstack) {
+		return 15;
 	}
-	public static class FoodItemCustom extends Item {
-		public FoodItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.UNCOMMON)
-					.food((new Food.Builder()).hunger(4).saturation(0.3f).setAlwaysEdible().build()));
-			setRegistryName("bubble");
-		}
 
-		@Override
-		public int getUseDuration(ItemStack stack) {
-			return 15;
-		}
+	@Override
+	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
+		return 0F;
+	}
 
-		@Override
-		public UseAction getUseAction(ItemStack itemstack) {
-			return UseAction.EAT;
-		}
+	@Override
+	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, world, list, flag);
+		list.add(new TextComponent("Mmmmh Bubble"));
+	}
 
-		@Override
-		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
-			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("Mmmmh Bubble"));
-		}
+	@Override
+	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
+		ItemStack retval = super.finishUsingItem(itemstack, world, entity);
+		double x = entity.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
 
-		@Override
-		public ItemStack onItemUseFinish(ItemStack itemstack, World world, LivingEntity entity) {
-			ItemStack retval = super.onItemUseFinish(itemstack, world, entity);
-			double x = entity.getPosX();
-			double y = entity.getPosY();
-			double z = entity.getPosZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				BubbleQuandLaNourritureEstMangeeProcedure.executeProcedure($_dependencies);
-			}
-			return retval;
-		}
+		BubbleQuandLaNourritureEstMangeeProcedure.execute(entity);
+		return retval;
 	}
 }

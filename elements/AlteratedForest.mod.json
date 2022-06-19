@@ -1,5 +1,5 @@
 {
-  "_fv": 13,
+  "_fv": 28,
   "_type": "biome",
   "definition": {
     "name": "Alterated Forest",
@@ -9,60 +9,70 @@
     "undergroundBlock": {
       "value": "Blocks.END_STONE"
     },
-    "treeType": 1,
+    "moodSoundDelay": 0,
+    "spawnParticles": false,
+    "particlesProbability": 0.0,
+    "biomeCategory": "NONE",
+    "rainingPossibility": 0.5,
+    "temperature": 0.5,
+    "baseHeight": 0.1,
+    "heightVariation": 0.2,
+    "spawnBiome": false,
+    "spawnBiomeNether": false,
+    "spawnInCaves": false,
+    "biomeWeight": 150,
+    "biomeDictionaryTypes": [],
+    "grassPerChunk": 4,
+    "seagrassPerChunk": 20,
+    "flowersPerChunk": 4,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPatchesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 3,
     "vanillaTreeType": "Default",
+    "treeType": 1,
     "minHeight": 7,
-    "spawnVines": true,
-    "treeVines": {
-      "value": "CUSTOM:AlteratedLeaves"
-    },
     "treeStem": {
       "value": "CUSTOM:AlteratedLog"
     },
     "treeBranch": {
       "value": "CUSTOM:AlteratedLeaves"
     },
+    "treeVines": {
+      "value": "CUSTOM:AlteratedLeaves"
+    },
     "treeFruits": {
       "value": "CUSTOM:AlteratedLeaves"
     },
-    "treesPerChunk": 3,
-    "grassPerChunk": 4,
-    "seagrassPerChunk": 20,
-    "flowersPerChunk": 4,
-    "mushroomsPerChunk": 0,
-    "bigMushroomsChunk": 0,
-    "sandPathcesPerChunk": 0,
-    "gravelPatchesPerChunk": 0,
-    "reedsPerChunk": 0,
-    "cactiPerChunk": 0,
-    "rainingPossibility": 0.5,
-    "temperature": 0.5,
-    "baseHeight": 0.1,
-    "heightVariation": 0.2,
-    "spawnBiome": false,
-    "biomeWeight": 150,
-    "biomeType": "WARM",
-    "biomeCategory": "NONE",
-    "parent": {
-      "value": "No parent"
-    },
     "spawnStronghold": false,
     "spawnMineshaft": false,
+    "spawnMineshaftMesa": false,
     "spawnPillagerOutpost": false,
     "villageType": "none",
     "spawnWoodlandMansion": false,
     "spawnJungleTemple": false,
     "spawnDesertPyramid": false,
+    "spawnSwampHut": false,
     "spawnIgloo": false,
     "spawnOceanMonument": false,
     "spawnShipwreck": false,
+    "spawnShipwreckBeached": false,
+    "spawnBuriedTreasure": false,
     "oceanRuinType": "NONE",
-    "biomeDictionaryTypes": [],
+    "spawnNetherBridge": false,
+    "spawnNetherFossil": false,
+    "spawnBastionRemnant": false,
+    "spawnEndCity": false,
+    "spawnRuinedPortal": "NONE",
     "defaultFeatures": [
       "Caves",
       "MonsterRooms",
       "Structures",
-      "Ores"
+      "Ores",
+      "FrozenTopLayer"
     ],
     "spawnEntries": []
   }

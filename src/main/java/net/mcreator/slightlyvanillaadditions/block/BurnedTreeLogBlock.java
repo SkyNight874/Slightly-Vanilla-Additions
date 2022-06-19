@@ -1,93 +1,74 @@
 
 package net.mcreator.slightlyvanillaadditions.block;
 
-import net.minecraftforge.registries.ObjectHolder;
+import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.material.PushReaction;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.Rotation;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.core.Direction;
+import net.minecraft.core.BlockPos;
 
-import net.minecraft.world.storage.loot.LootContext;
-import net.minecraft.util.Rotation;
-import net.minecraft.util.Direction;
-import net.minecraft.state.StateContainer;
-import net.minecraft.state.DirectionProperty;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.item.BlockItemUseContext;
-import net.minecraft.item.BlockItem;
-import net.minecraft.block.material.PushReaction;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.DirectionalBlock;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Block;
-
-import net.mcreator.slightlyvanillaadditions.item.BurnedTreePowderItem;
-import net.mcreator.slightlyvanillaadditions.SlightlyVanillaAdditionsModElements;
+import net.mcreator.slightlyvanillaadditions.init.SlightlyVanillaAdditionsModItems;
 
 import java.util.List;
 import java.util.Collections;
 
-@SlightlyVanillaAdditionsModElements.ModElement.Tag
-public class BurnedTreeLogBlock extends SlightlyVanillaAdditionsModElements.ModElement {
-	@ObjectHolder("slightly_vanilla_additions:burned_tree_log")
-	public static final Block block = null;
-	public BurnedTreeLogBlock(SlightlyVanillaAdditionsModElements instance) {
-		super(instance, 112);
+public class BurnedTreeLogBlock extends Block {
+	public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
+
+	public BurnedTreeLogBlock() {
+		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOL).strength(0f, 10f));
+		this.registerDefaultState(this.stateDefinition.any().setValue(AXIS, Direction.Axis.Y));
 	}
 
 	@Override
-	public void initElements() {
-		elements.blocks.add(() -> new CustomBlock());
-		elements.items
-				.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(block.getRegistryName()));
+	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+		return 15;
 	}
-	public static class CustomBlock extends Block {
-		public static final DirectionProperty FACING = DirectionalBlock.FACING;
-		public CustomBlock() {
-			super(Block.Properties.create(Material.WOOD).sound(SoundType.CLOTH).hardnessAndResistance(0f, 10f).lightValue(0));
-			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.SOUTH));
-			setRegistryName("burned_tree_log");
-		}
 
-		@Override
-		protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
-			builder.add(FACING);
-		}
+	@Override
+	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+		builder.add(AXIS);
+	}
 
-		@Override
-		public BlockState rotate(BlockState state, Rotation rot) {
-			if (rot == Rotation.CLOCKWISE_90 || rot == Rotation.COUNTERCLOCKWISE_90) {
-				if ((Direction) state.get(FACING) == Direction.WEST || (Direction) state.get(FACING) == Direction.EAST) {
-					return state.with(FACING, Direction.UP);
-				} else if ((Direction) state.get(FACING) == Direction.UP || (Direction) state.get(FACING) == Direction.DOWN) {
-					return state.with(FACING, Direction.WEST);
-				}
+	@Override
+	public BlockState rotate(BlockState state, Rotation rot) {
+		if (rot == Rotation.CLOCKWISE_90 || rot == Rotation.COUNTERCLOCKWISE_90) {
+			if ((Direction.Axis) state.getValue(AXIS) == Direction.Axis.X) {
+				return state.setValue(AXIS, Direction.Axis.Z);
+			} else if ((Direction.Axis) state.getValue(AXIS) == Direction.Axis.Z) {
+				return state.setValue(AXIS, Direction.Axis.X);
 			}
-			return state;
 		}
+		return state;
+	}
 
-		@Override
-		public BlockState getStateForPlacement(BlockItemUseContext context) {
-			Direction facing = context.getFace();
-			if (facing == Direction.WEST || facing == Direction.EAST)
-				facing = Direction.UP;
-			else if (facing == Direction.NORTH || facing == Direction.SOUTH)
-				facing = Direction.EAST;
-			else
-				facing = Direction.SOUTH;;
-			return this.getDefaultState().with(FACING, facing);
-		}
+	@Override
+	public BlockState getStateForPlacement(BlockPlaceContext context) {
+		Direction.Axis axis = context.getClickedFace().getAxis();;
+		return this.defaultBlockState().setValue(AXIS, axis);
+	}
 
-		@Override
-		public PushReaction getPushReaction(BlockState state) {
-			return PushReaction.DESTROY;
-		}
+	@Override
+	public PushReaction getPistonPushReaction(BlockState state) {
+		return PushReaction.DESTROY;
+	}
 
-		@Override
-		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
-			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-			if (!dropsOriginal.isEmpty())
-				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(BurnedTreePowderItem.block, (int) (3)));
-		}
+	@Override
+	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
+		if (!dropsOriginal.isEmpty())
+			return dropsOriginal;
+		return Collections.singletonList(new ItemStack(SlightlyVanillaAdditionsModItems.BURNED_TREE_POWDER.get(), 3));
 	}
 }

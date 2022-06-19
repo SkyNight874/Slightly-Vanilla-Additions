@@ -1,50 +1,36 @@
 
 package net.mcreator.slightlyvanillaadditions.block;
 
-import net.minecraftforge.registries.ObjectHolder;
+import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.core.BlockPos;
 
-import net.minecraft.world.storage.loot.LootContext;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.item.BlockItem;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Block;
-
-import net.mcreator.slightlyvanillaadditions.item.CrystalGemItem;
-import net.mcreator.slightlyvanillaadditions.SlightlyVanillaAdditionsModElements;
+import net.mcreator.slightlyvanillaadditions.init.SlightlyVanillaAdditionsModItems;
 
 import java.util.List;
 import java.util.Collections;
 
-@SlightlyVanillaAdditionsModElements.ModElement.Tag
-public class CrystalBlockBlock extends SlightlyVanillaAdditionsModElements.ModElement {
-	@ObjectHolder("slightly_vanilla_additions:crystal_block")
-	public static final Block block = null;
-	public CrystalBlockBlock(SlightlyVanillaAdditionsModElements instance) {
-		super(instance, 114);
+public class CrystalBlockBlock extends Block {
+	public CrystalBlockBlock() {
+		super(BlockBehaviour.Properties.of(Material.GLASS).sound(SoundType.GLASS).strength(0f, 10f));
 	}
 
 	@Override
-	public void initElements() {
-		elements.blocks.add(() -> new CustomBlock());
-		elements.items
-				.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(block.getRegistryName()));
+	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+		return 15;
 	}
-	public static class CustomBlock extends Block {
-		public CustomBlock() {
-			super(Block.Properties.create(Material.GLASS).sound(SoundType.GLASS).hardnessAndResistance(0f, 10f).lightValue(0));
-			setRegistryName("crystal_block");
-		}
 
-		@Override
-		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
-			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-			if (!dropsOriginal.isEmpty())
-				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(CrystalGemItem.block, (int) (3)));
-		}
+	@Override
+	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
+		if (!dropsOriginal.isEmpty())
+			return dropsOriginal;
+		return Collections.singletonList(new ItemStack(SlightlyVanillaAdditionsModItems.CRYSTAL_GEM.get(), 3));
 	}
 }

@@ -1,35 +1,22 @@
 package net.mcreator.slightlyvanillaadditions.procedures;
 
-import net.minecraft.world.World;
-import net.minecraft.world.IWorld;
-import net.minecraft.item.ItemStack;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.server.level.ServerLevel;
 
-import net.mcreator.slightlyvanillaadditions.item.CrystalClockItem;
-import net.mcreator.slightlyvanillaadditions.SlightlyVanillaAdditionsModElements;
+import net.mcreator.slightlyvanillaadditions.init.SlightlyVanillaAdditionsModItems;
 
 import java.util.Random;
-import java.util.Map;
 
-@SlightlyVanillaAdditionsModElements.ModElement.Tag
-public class SetTimeSunSetProcedure extends SlightlyVanillaAdditionsModElements.ModElement {
-	public SetTimeSunSetProcedure(SlightlyVanillaAdditionsModElements instance) {
-		super(instance, 99);
-	}
-
-	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("world") == null) {
-			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure SetTimeSunSet!");
-			return;
-		}
-		IWorld world = (IWorld) dependencies.get("world");
-		if (world instanceof World)
-			world.getWorld().setDayTime((int) 12000);
+public class SetTimeSunSetProcedure {
+	public static void execute(LevelAccessor world) {
+		if (world instanceof ServerLevel _level)
+			_level.setDayTime(12000);
 		{
-			ItemStack _ist = new ItemStack(CrystalClockItem.block, (int) (1));
-			if (_ist.attemptDamageItem((int) 1, new Random(), null)) {
+			ItemStack _ist = new ItemStack(SlightlyVanillaAdditionsModItems.CRYSTAL_CLOCK.get());
+			if (_ist.hurt(1, new Random(), null)) {
 				_ist.shrink(1);
-				_ist.setDamage(0);
+				_ist.setDamageValue(0);
 			}
 		}
 	}

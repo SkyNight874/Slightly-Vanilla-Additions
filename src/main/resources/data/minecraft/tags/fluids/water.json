@@ -2,8 +2,8 @@
   "replace": false,
   "values": [
     "slightly_vanilla_additions:poisonous_fluid",
-    "slightly_vanilla_additions:poisonous_fluid_flowing",
+    "slightly_vanilla_additions:flowing_poisonous_fluid",
     "slightly_vanilla_additions:angelic_water",
-    "slightly_vanilla_additions:angelic_water_flowing"
+    "slightly_vanilla_additions:flowing_angelic_water"
   ]
 }

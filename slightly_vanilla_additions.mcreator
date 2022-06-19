@@ -1,5 +1,4 @@
 {
-  "id_map": {},
   "mod_elements": [
     {
       "name": "PowderSnowEntityWalksOnTheBlock",
@@ -7,7 +6,6 @@
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "powder_snow_entity_walks_on_the_block",
       "metadata": {
         "dependencies": [
@@ -24,7 +22,6 @@
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "powder_snow"
     },
     {
@@ -33,7 +30,6 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "snowy_highlands"
     },
     {
@@ -42,7 +38,6 @@
       "sortid": 4,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "bluestone"
     },
     {
@@ -51,7 +46,6 @@
       "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_bluestone"
     },
     {
@@ -60,7 +54,6 @@
       "sortid": 6,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "bluestone_slab"
     },
     {
@@ -69,7 +62,6 @@
       "sortid": 7,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "bluestone_stairs"
     },
     {
@@ -78,7 +70,6 @@
       "sortid": 8,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "bluestone_wall"
     },
     {
@@ -87,7 +78,6 @@
       "sortid": 9,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_bluestone_smelting"
     },
     {
@@ -96,7 +86,6 @@
       "sortid": 10,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_bluestone_slab"
     },
     {
@@ -105,7 +94,6 @@
       "sortid": 11,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_bluestone_stairs"
     },
     {
@@ -114,7 +102,6 @@
       "sortid": 12,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "polished_bluestone_wall"
     },
     {
@@ -123,7 +110,6 @@
       "sortid": 13,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "bluestone_smelting"
     },
     {
@@ -132,7 +118,6 @@
       "sortid": 14,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "dragon_fang"
     },
     {
@@ -141,7 +126,6 @@
       "sortid": 15,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "dragon_pickaxe"
     },
     {
@@ -150,7 +134,6 @@
       "sortid": 16,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "dragon_axe"
     },
     {
@@ -159,7 +142,6 @@
       "sortid": 17,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "dragon_sword"
     },
     {
@@ -168,7 +150,6 @@
       "sortid": 18,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "dragon_shovel"
     },
     {
@@ -177,7 +158,6 @@
       "sortid": 19,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "dragon_hoe"
     },
     {
@@ -186,7 +166,6 @@
       "sortid": 20,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "dragon_pickaxe_recipe"
     },
     {
@@ -195,7 +174,6 @@
       "sortid": 21,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "dragon_axe_recipe"
     },
     {
@@ -204,7 +182,6 @@
       "sortid": 22,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "dragon_sword_recipe"
     },
     {
@@ -213,7 +190,6 @@
       "sortid": 23,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "dragon_shovel_recipe"
     },
     {
@@ -222,7 +198,6 @@
       "sortid": 24,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "dragon_hoe_recipe"
     },
     {
@@ -231,7 +206,6 @@
       "sortid": 25,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "dragon_fang_loot"
     },
     {
@@ -240,8 +214,10 @@
       "sortid": 26,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "end_farlands"
+      "registry_name": "end_farlands",
+      "metadata": {
+        "ep": true
+      }
     },
     {
       "name": "DragonScale",
@@ -249,7 +225,6 @@
       "sortid": 27,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "dragon_scale"
     },
     {
@@ -258,7 +233,6 @@
       "sortid": 28,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "dragon_scale_recipe"
     },
     {
@@ -267,7 +241,6 @@
       "sortid": 29,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "dragon_flint_and_steel_recipe"
     },
     {
@@ -276,7 +249,6 @@
       "sortid": 30,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "poison_nylium"
     },
     {
@@ -285,7 +257,6 @@
       "sortid": 31,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "chorus_wood"
     },
     {
@@ -294,7 +265,6 @@
       "sortid": 32,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "chorus_log"
     },
     {
@@ -303,7 +273,6 @@
       "sortid": 33,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "chorus_planks"
     },
     {
@@ -312,7 +281,6 @@
       "sortid": 34,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "chorus_leaves"
     },
     {
@@ -321,7 +289,6 @@
       "sortid": 35,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "chorus_stairs"
     },
     {
@@ -330,7 +297,6 @@
       "sortid": 36,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "chorus_slab"
     },
     {
@@ -339,7 +305,6 @@
       "sortid": 37,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "chorus_fence"
     },
     {
@@ -348,7 +313,6 @@
       "sortid": 38,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "chorus_fence_gate"
     },
     {
@@ -357,7 +321,6 @@
       "sortid": 39,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "chorus_items_tag"
     },
     {
@@ -366,7 +329,6 @@
       "sortid": 40,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "chorus_wood_recipe"
     },
     {
@@ -375,7 +337,6 @@
       "sortid": 41,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "chorus_planks_recipe"
     },
     {
@@ -384,7 +345,6 @@
       "sortid": 42,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "chorus_stairs_recipe"
     },
     {
@@ -393,7 +353,6 @@
       "sortid": 43,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "chorus_slab_recipe"
     },
     {
@@ -402,7 +361,6 @@
       "sortid": 44,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "chorus_fence_recipe"
     },
     {
@@ -411,7 +369,6 @@
       "sortid": 45,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "chorus_fence_gate_recipe"
     },
     {
@@ -420,7 +377,6 @@
       "sortid": 46,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "chorus_stick_recipe"
     },
     {
@@ -429,7 +385,6 @@
       "sortid": 47,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "chorus_grass"
     },
     {
@@ -438,7 +393,6 @@
       "sortid": 48,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "chorus_forest"
     },
     {
@@ -447,7 +401,6 @@
       "sortid": 49,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "back_pack"
     },
     {
@@ -456,7 +409,6 @@
       "sortid": 50,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "back_pack_item"
     },
     {
@@ -465,7 +417,6 @@
       "sortid": 51,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "back_pack_recipe"
     },
     {
@@ -474,7 +425,6 @@
       "sortid": 52,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "poison_mushroom"
     },
     {
@@ -483,8 +433,10 @@
       "sortid": 53,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "poisonous_fluid"
+      "registry_name": "poisonous_fluid",
+      "metadata": {
+        "gb": true
+      }
     },
     {
       "name": "PoisonMushroomStructure",
@@ -492,7 +444,6 @@
       "sortid": 54,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "poison_mushroom_structure"
     },
     {
@@ -501,7 +452,6 @@
       "sortid": 55,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "poison_swamp"
     },
     {
@@ -510,7 +460,6 @@
       "sortid": 56,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "obsidian_hammer_block_destroyed_with_tool",
       "metadata": {
         "dependencies": [
@@ -543,7 +492,6 @@
       "sortid": 56,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "obsidian_hammer"
     },
     {
@@ -552,7 +500,6 @@
       "sortid": 68,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "alterated_stairs_recipe"
     },
     {
@@ -561,7 +508,6 @@
       "sortid": 57,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "alterated_wood"
     },
     {
@@ -570,7 +516,6 @@
       "sortid": 72,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "alterated_stick_recipe"
     },
     {
@@ -579,7 +524,6 @@
       "sortid": 59,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "alterated_planks"
     },
     {
@@ -588,7 +532,6 @@
       "sortid": 73,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "alterated_nylium"
     },
     {
@@ -597,7 +540,6 @@
       "sortid": 71,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "alterated_fence_gate_recipe"
     },
     {
@@ -606,7 +548,6 @@
       "sortid": 65,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "alterated_items_tag"
     },
     {
@@ -615,7 +556,6 @@
       "sortid": 61,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "alterated_stairs"
     },
     {
@@ -624,7 +564,6 @@
       "sortid": 74,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "alterated_forest"
     },
     {
@@ -633,7 +572,6 @@
       "sortid": 58,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "alterated_log"
     },
     {
@@ -642,7 +580,6 @@
       "sortid": 62,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "alterated_slab"
     },
     {
@@ -651,7 +588,6 @@
       "sortid": 67,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "alterated_planks_recipe"
     },
     {
@@ -660,7 +596,6 @@
       "sortid": 70,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "alterated_fence_recipe"
     },
     {
@@ -669,7 +604,6 @@
       "sortid": 63,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "alterated_fence"
     },
     {
@@ -678,7 +612,6 @@
       "sortid": 66,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "alterated_wood_recipe"
     },
     {
@@ -687,7 +620,6 @@
       "sortid": 66,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "alterated_leaves"
     },
     {
@@ -696,7 +628,6 @@
       "sortid": 69,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "alterated_slab_recipe"
     },
     {
@@ -705,16 +636,14 @@
       "sortid": 64,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "alterated_fence_gate"
     },
     {
       "name": "FirePearl",
-      "type": "gun",
+      "type": "rangeditem",
       "sortid": 79,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "fire_pearl"
     },
     {
@@ -723,7 +652,6 @@
       "sortid": 80,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "fire_pearl_shoot"
     },
     {
@@ -732,7 +660,6 @@
       "sortid": 81,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "compressed_crystal_block"
     },
     {
@@ -741,7 +668,6 @@
       "sortid": 82,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "crystal_plains"
     },
     {
@@ -750,7 +676,6 @@
       "sortid": 83,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "crystal"
     },
     {
@@ -759,7 +684,6 @@
       "sortid": 84,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "warp_gui"
     },
     {
@@ -768,7 +692,6 @@
       "sortid": 85,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "warp_overworld",
       "metadata": {
         "dependencies": [
@@ -785,7 +708,6 @@
       "sortid": 86,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "warp_nether",
       "metadata": {
         "dependencies": [
@@ -802,7 +724,6 @@
       "sortid": 87,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "warp_end",
       "metadata": {
         "dependencies": [
@@ -819,7 +740,6 @@
       "sortid": 88,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "warp_end_farlands",
       "metadata": {
         "dependencies": [
@@ -836,7 +756,6 @@
       "sortid": 89,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "warp_quand_une_commande_est_executee",
       "metadata": {
         "dependencies": [
@@ -869,7 +788,6 @@
       "sortid": 89,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "warp"
     },
     {
@@ -878,7 +796,6 @@
       "sortid": 90,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "crystal_gem"
     },
     {
@@ -887,7 +804,6 @@
       "sortid": 91,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "another_dimension"
     },
     {
@@ -896,7 +812,6 @@
       "sortid": 92,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "achorusforest"
     },
     {
@@ -905,7 +820,6 @@
       "sortid": 93,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ilovecrystal"
     },
     {
@@ -914,7 +828,6 @@
       "sortid": 94,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ohdisgusting"
     },
     {
@@ -923,7 +836,6 @@
       "sortid": 95,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "crystal_clock_gui"
     },
     {
@@ -932,7 +844,6 @@
       "sortid": 96,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "crystal_clock"
     },
     {
@@ -941,7 +852,6 @@
       "sortid": 97,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "set_time_day",
       "metadata": {
         "dependencies": [
@@ -958,7 +868,6 @@
       "sortid": 98,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "set_time_night",
       "metadata": {
         "dependencies": [
@@ -975,7 +884,6 @@
       "sortid": 99,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "set_time_sun_set",
       "metadata": {
         "dependencies": [
@@ -992,7 +900,6 @@
       "sortid": 100,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "set_time_sun_rise",
       "metadata": {
         "dependencies": [
@@ -1009,7 +916,6 @@
       "sortid": 101,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "drawer"
     },
     {
@@ -1018,7 +924,6 @@
       "sortid": 102,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "iron_drawer_sound",
       "metadata": {
         "dependencies": [
@@ -1047,7 +952,6 @@
       "sortid": 103,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "iron_drawer_open_sound",
       "metadata": {
         "dependencies": [
@@ -1076,7 +980,6 @@
       "sortid": 102,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "drawer_gui"
     },
     {
@@ -1085,7 +988,6 @@
       "sortid": 104,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "crystal_clock_recipe"
     },
     {
@@ -1094,7 +996,6 @@
       "sortid": 105,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "drawer_recipe"
     },
     {
@@ -1103,7 +1004,6 @@
       "sortid": 106,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "saphir"
     },
     {
@@ -1112,7 +1012,6 @@
       "sortid": 107,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ender_fire"
     },
     {
@@ -1121,7 +1020,6 @@
       "sortid": 108,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ender_fire_quand_lentite_entre_en_collision_avec_le_bloc",
       "metadata": {
         "dependencies": [
@@ -1138,7 +1036,6 @@
       "sortid": 109,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ender_crown"
     },
     {
@@ -1147,7 +1044,6 @@
       "sortid": 110,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "bubble_plant"
     },
     {
@@ -1156,7 +1052,6 @@
       "sortid": 111,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "bubble_quand_la_nourriture_est_mangee",
       "metadata": {
         "dependencies": [
@@ -1168,21 +1063,11 @@
       }
     },
     {
-      "name": "Bubble",
-      "type": "food",
-      "sortid": 111,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "bubble"
-    },
-    {
       "name": "BurnedTreePowder",
       "type": "item",
       "sortid": 112,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "burned_tree_powder"
     },
     {
@@ -1191,7 +1076,6 @@
       "sortid": 112,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "burned_tree_log"
     },
     {
@@ -1200,7 +1084,6 @@
       "sortid": 113,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "burned_desert"
     },
     {
@@ -1209,7 +1092,6 @@
       "sortid": 114,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "crystal_block"
     },
     {
@@ -1218,7 +1100,6 @@
       "sortid": 115,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "crystal_plant"
     },
     {
@@ -1227,7 +1108,6 @@
       "sortid": 116,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "end_lily"
     },
     {
@@ -1236,7 +1116,6 @@
       "sortid": 117,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "end_mycelium"
     },
     {
@@ -1245,7 +1124,6 @@
       "sortid": 118,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "end_moss"
     },
     {
@@ -1254,7 +1132,6 @@
       "sortid": 119,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cyan_moss"
     },
     {
@@ -1263,7 +1140,6 @@
       "sortid": 120,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "angelic_grass"
     },
     {
@@ -1272,7 +1148,6 @@
       "sortid": 121,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "crystal_moss"
     },
     {
@@ -1281,7 +1156,6 @@
       "sortid": 122,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "moss_block"
     },
     {
@@ -1290,7 +1164,6 @@
       "sortid": 122,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "mossy_jungle"
     },
     {
@@ -1299,7 +1172,6 @@
       "sortid": 123,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "best_jungle_ever"
     },
     {
@@ -1308,7 +1180,6 @@
       "sortid": 124,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "mossy_mushroom_block"
     },
     {
@@ -1317,7 +1188,6 @@
       "sortid": 125,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "angelic_slime_block"
     },
     {
@@ -1326,7 +1196,6 @@
       "sortid": 126,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "angelic_swamp"
     },
     {
@@ -1335,7 +1204,6 @@
       "sortid": 127,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "mossy_mushroom_small"
     },
     {
@@ -1344,7 +1212,6 @@
       "sortid": 128,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "mossy_mushroom_big"
     },
     {
@@ -1353,7 +1220,6 @@
       "sortid": 129,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "mossy_bush"
     },
     {
@@ -1362,7 +1228,6 @@
       "sortid": 130,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "angelic_water_lorsque_le_mobjoueur_entre_en_collision_avec_le_bloc",
       "metadata": {
         "dependencies": [
@@ -1379,8 +1244,10 @@
       "sortid": 130,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "angelic_water"
+      "registry_name": "angelic_water",
+      "metadata": {
+        "gb": true
+      }
     },
     {
       "name": "DenseVine",
@@ -1388,7 +1255,6 @@
       "sortid": 131,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "dense_vine"
     },
     {
@@ -1397,16 +1263,14 @@
       "sortid": 132,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "mushroom_lantern"
     },
     {
       "name": "MossySlime",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 133,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "mossy_slime"
     },
     {
@@ -1415,7 +1279,6 @@
       "sortid": 134,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "mossy_slime_gui"
     },
     {
@@ -1424,7 +1287,6 @@
       "sortid": 135,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "mossy_slime_quand_le_joueur_fait_un_clic_droit_sur_lentite",
       "metadata": {
         "dependencies": [
@@ -1457,7 +1319,6 @@
       "sortid": 136,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "mushroom_lantern_big"
     },
     {
@@ -1466,7 +1327,6 @@
       "sortid": 137,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "mushroom_lantern_small"
     },
     {
@@ -1475,7 +1335,6 @@
       "sortid": 138,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "mushroom_lantern_moyen"
     },
     {
@@ -1484,7 +1343,6 @@
       "sortid": 139,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "poison_fungi"
     },
     {
@@ -1493,7 +1351,6 @@
       "sortid": 140,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "mossy_fungi"
     },
     {
@@ -1502,8 +1359,15 @@
       "sortid": 141,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "alterated_fungi"
+    },
+    {
+      "name": "Bubble",
+      "type": "item",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bubble"
     }
   ],
   "variable_elements": [],
@@ -1519,102 +1383,110 @@
   ],
   "language_map": {
     "en_us": {
-      "block.slightly_vanilla_additions.mossy_fungi": "Mossy Fungi",
-      "item.slightly_vanilla_additions.dragon_sword": "Dragon Sword",
       "item.slightly_vanilla_additions.saphir": "Music Disc",
-      "item.slightly_vanilla_additions.fire_pearl_shoot": "Fire Pearl Shoot",
       "block.slightly_vanilla_additions.polished_bluestone": "Polished Bluestone",
-      "block.slightly_vanilla_additions.alterated_slab": "Alterated Slab",
-      "item.slightly_vanilla_additions.crystal_gem": "Crystal Gem",
-      "advancements.achorusforest.descr": "You discovered the Chorus Forest !",
-      "biome.slightly_vanilla_additions.mossy_jungle": "Mossy Jungle",
       "fluid.angelic_water": "AngelicWater",
       "advancements.achorusforest.title": "A Chorus...Forest ?",
-      "item.slightly_vanilla_additions.fire_pearl": "Fire Pearl",
-      "block.slightly_vanilla_additions.angelic_grass": "Angelic Grass",
-      "block.slightly_vanilla_additions.bluestone_wall": "Bluestone Wall",
       "block.slightly_vanilla_additions.end_moss": "End Moss",
       "block.slightly_vanilla_additions.chorus_stairs": "Chorus Stairs",
       "advancements.ohdisgusting.descr": "Its the Alterated Forest !",
-      "item.slightly_vanilla_additions.dragon_axe": "Dragon Axe",
       "item.slightly_vanilla_additions.crystal_clock": "Crystal Clock",
       "item.slightly_vanilla_additions.bubble": "Bubble Gum",
-      "entity.slightly_vanilla_additions.mossy_slime": "Mossy Slime",
-      "advancements.another_dimension.title": "Another Dimension !?",
       "block.slightly_vanilla_additions.alterated_wood": "Alterated Wood",
-      "item.slightly_vanilla_additions.obsidian_hammer": "Obsidian Hammer",
-      "block.slightly_vanilla_additions.polished_bluestone_wall": "Polished Bluestone Wall",
-      "block.slightly_vanilla_additions.bluestone": "Bluestone",
       "block.slightly_vanilla_additions.crystal": "Crystal",
-      "advancements.ohdisgusting.title": "Oh... disgusting !",
+      "block.slightly_vanilla_additions.polished_bluestone_wall": "Polished Bluestone Wall",
       "block.slightly_vanilla_additions.chorus_fence_gate": "Chorus Fence Gate",
-      "block.slightly_vanilla_additions.chorus_grass": "Chorus Grass",
       "block.slightly_vanilla_additions.chorus_leaves": "Chorus Block",
-      "block.slightly_vanilla_additions.powder_snow": "Powder Snow",
-      "item.slightly_vanilla_additions.saphir.desc": "J2RMY - Saphir",
-      "block.slightly_vanilla_additions.alterated_fence_gate": "Alterated Fence Gate",
       "block.slightly_vanilla_additions.moss_block": "Moss Block",
-      "biome.slightly_vanilla_additions.burned_desert": "Burned Desert",
-      "item.slightly_vanilla_additions.poisonous_fluid_bucket": "PoisonousFluid Bucket",
-      "block.slightly_vanilla_additions.mossy_mushroom_block": "Mossy Mushroom Block",
       "block.slightly_vanilla_additions.end_mycelium": "End Mycelium",
       "block.slightly_vanilla_additions.bubble_plant": "Bubble Plant",
+      "fluid.slightly_vanilla_additions.poisonous_fluid": "Poisonous Fluid",
       "item.slightly_vanilla_additions.dragon_fang": "Dragon Fang",
       "block.slightly_vanilla_additions.chorus_log": "Chorus Log",
-      "item.slightly_vanilla_additions.burned_tree_powder": "Burned Tree Powder",
       "block.slightly_vanilla_additions.burned_tree_log": "Burned Tree Log",
-      "item.slightly_vanilla_additions.end_farlands": "Dragon Flint And Steel",
-      "biome.slightly_vanilla_additions.crystal_plains": "Crystal Plains",
       "biome.slightly_vanilla_additions.angelic_swamp": "Angelic Swamp",
       "block.slightly_vanilla_additions.chorus_slab": "Chorus Slab",
-      "item.slightly_vanilla_additions.back_pack_item": "BackPack",
       "block.slightly_vanilla_additions.cyan_moss": "Cyan Moss",
       "item.slightly_vanilla_additions.dragon_hoe": "Dragon Hoe",
+      "fluid.slightly_vanilla_additions.angelic_water": "Angelic Water",
       "block.slightly_vanilla_additions.alterated_log": "Alterated Log",
-      "advancements.best_jungle_ever.descr": "Wow ! You discovered the Mossy Jungle",
-      "block.slightly_vanilla_additions.ender_fire": "Ender Fire",
-      "block.slightly_vanilla_additions.crystal_plant": "Crystal Plant",
-      "block.slightly_vanilla_additions.alterated_fungi": "Alterated Fungi",
-      "block.slightly_vanilla_additions.chorus_wood": "Chorus Wood",
       "block.slightly_vanilla_additions.mushroom_lantern": "Mushroom Lantern",
       "biome.slightly_vanilla_additions.chorus_forest": "Chorus Forest",
-      "block.slightly_vanilla_additions.alterated_nylium": "Poison Nylium",
-      "advancements.best_jungle_ever.title": "Best Jungle Ever !",
       "item.slightly_vanilla_additions.dragon_shovel": "Dragon Shovel",
       "block.slightly_vanilla_additions.alterated_fence": "Alterated Fence",
-      "advancements.ilovecrystal.title": "I love crystal !",
       "block.slightly_vanilla_additions.drawer": " Iron Drawer",
-      "subtitles.saphir_music": "",
-      "block.slightly_vanilla_additions.chorus_planks": "Chorus Planks",
-      "block.slightly_vanilla_additions.chorus_fence": "Chorus Fence",
-      "advancements.ilovecrystal.descr": "You discovered the Crystal Gem !",
-      "item.slightly_vanilla_additions.angelic_water_bucket": "AngelicWater Bucket",
       "item.slightly_vanilla_additions.mossy_slime_spawn_egg": "Mossy Slime Spawn Egg",
       "advancements.another_dimension.descr": "You unlocked the EndFarlands !",
       "block.slightly_vanilla_additions.ender_crown": "Ender Crown",
       "block.slightly_vanilla_additions.polished_bluestone_slab": "Polished Bluestone Slab",
-      "block.slightly_vanilla_additions.bluestone_stairs": "Bluestone Stairs",
-      "item.slightly_vanilla_additions.dragon_pickaxe": "Dragon Pickaxe",
-      "biome.slightly_vanilla_additions.snowy_highlands": "Snowy Highlands",
       "block.slightly_vanilla_additions.end_lily": "End Lily Flower",
       "block.slightly_vanilla_additions.polished_bluestone_stairs": "Polished Bluestone Stairs",
       "block.slightly_vanilla_additions.compressed_crystal_block": "Compressed Crystal Block",
       "block.slightly_vanilla_additions.angelic_slime_block": "Angelic Slime Block",
       "block.slightly_vanilla_additions.crystal_block": "Crystal Block",
-      "block.slightly_vanilla_additions.alterated_planks": "Alterated Planks",
       "block.slightly_vanilla_additions.bluestone_slab": "Bluestone Slab",
-      "block.slightly_vanilla_additions.poison_nylium": "Poison Nylium",
       "block.slightly_vanilla_additions.poison_mushroom": "Poison Mushroom Block",
+      "block.slightly_vanilla_additions.alterated_stairs": "Alterated Stairs",
+      "block.slightly_vanilla_additions.crystal_moss": "Crystal Moss",
+      "block.slightly_vanilla_additions.poison_fungi": "Poison Fungi",
+      "block.slightly_vanilla_additions.mossy_fungi": "Mossy Fungi",
+      "item.slightly_vanilla_additions.dragon_sword": "Dragon Sword",
+      "item.slightly_vanilla_additions.fire_pearl_shoot": "Fire Pearl Shoot",
+      "block.slightly_vanilla_additions.alterated_slab": "Alterated Slab",
+      "item.slightly_vanilla_additions.crystal_gem": "Crystal Gem",
+      "biome.slightly_vanilla_additions.mossy_jungle": "Mossy Jungle",
+      "advancements.achorusforest.descr": "You discovered the Chorus Forest !",
+      "item.slightly_vanilla_additions.fire_pearl": "Fire Pearl",
+      "block.slightly_vanilla_additions.angelic_grass": "Angelic Grass",
+      "block.slightly_vanilla_additions.bluestone_wall": "Bluestone Wall",
+      "item.slightly_vanilla_additions.dragon_axe": "Dragon Axe",
+      "entity.slightly_vanilla_additions.mossy_slime": "Mossy Slime",
+      "advancements.another_dimension.title": "Another Dimension !?",
+      "block.slightly_vanilla_additions.bluestone": "Bluestone",
+      "item.slightly_vanilla_additions.obsidian_hammer": "Obsidian Hammer",
+      "advancements.ohdisgusting.title": "Oh... disgusting !",
+      "block.slightly_vanilla_additions.poisonous_fluid": "Poisonous Fluid",
+      "block.slightly_vanilla_additions.chorus_grass": "Chorus Grass",
+      "block.slightly_vanilla_additions.powder_snow": "Powder Snow",
+      "item.slightly_vanilla_additions.saphir.desc": "J2RMY - Saphir",
+      "block.slightly_vanilla_additions.alterated_fence_gate": "Alterated Fence Gate",
+      "biome.slightly_vanilla_additions.burned_desert": "Burned Desert",
+      "item.slightly_vanilla_additions.poisonous_fluid_bucket": "Poisonous Fluid Bucket",
+      "block.slightly_vanilla_additions.mossy_mushroom_block": "Mossy Mushroom Block",
+      "item.slightly_vanilla_additions.burned_tree_powder": "Burned Tree Powder",
+      "item.slightly_vanilla_additions.end_farlands": "Dragon Flint And Steel",
+      "biome.slightly_vanilla_additions.crystal_plains": "Crystal Plains",
+      "item.slightly_vanilla_additions.back_pack_item": "BackPack",
+      "advancements.best_jungle_ever.descr": "Wow ! You discovered the Mossy Jungle",
+      "block.slightly_vanilla_additions.ender_fire": "Ender Fire",
+      "block.slightly_vanilla_additions.crystal_plant": "Crystal Plant",
+      "block.slightly_vanilla_additions.alterated_fungi": "Alterated Fungi",
+      "block.slightly_vanilla_additions.chorus_wood": "Chorus Wood",
+      "block.slightly_vanilla_additions.alterated_nylium": "Alterated Nylium",
+      "advancements.best_jungle_ever.title": "Best Jungle Ever !",
+      "advancements.ilovecrystal.title": "I love crystal !",
+      "subtitles.saphir_music": "",
+      "item.slightly_vanilla_additions.angelic_water_bucket": "Angelic Water Bucket",
+      "advancements.ilovecrystal.descr": "You discovered the Crystal Gem !",
+      "block.slightly_vanilla_additions.chorus_fence": "Chorus Fence",
+      "block.slightly_vanilla_additions.chorus_planks": "Chorus Planks",
+      "block.slightly_vanilla_additions.bluestone_stairs": "Bluestone Stairs",
+      "item.slightly_vanilla_additions.dragon_pickaxe": "Dragon Pickaxe",
+      "biome.slightly_vanilla_additions.snowy_highlands": "Snowy Highlands",
+      "block.slightly_vanilla_additions.alterated_planks": "Alterated Planks",
+      "block.slightly_vanilla_additions.poison_nylium": "Poison Nylium",
       "fluid.poisonous_fluid": "PoisonousFluid",
       "block.slightly_vanilla_additions.dense_vine": "Dense Vine",
       "item.slightly_vanilla_additions.dragon_scale": "Dragon Scale",
       "biome.slightly_vanilla_additions.poison_swamp": "Poison Swamp",
+      "block.slightly_vanilla_additions.angelic_water": "Angelic Water",
       "block.slightly_vanilla_additions.alterated_leaves": "Alterated Leaves",
-      "biome.slightly_vanilla_additions.alterated_forest": "Alterated Forest",
-      "block.slightly_vanilla_additions.alterated_stairs": "Alterated Stairs",
-      "block.slightly_vanilla_additions.crystal_moss": "Crystal Moss",
-      "block.slightly_vanilla_additions.poison_fungi": "Poison Fungi"
+      "biome.slightly_vanilla_additions.alterated_forest": "Alterated Forest"
     }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
   },
   "workspaceSettings": {
     "modid": "slightly_vanilla_additions",
@@ -1628,9 +1500,9 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.15.2",
+    "currentGenerator": "forge-1.18.2",
     "modElementsPackage": "net.mcreator.slightlyvanillaadditions",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202000547520
+  "mcreatorVersion": 202200120510
 }

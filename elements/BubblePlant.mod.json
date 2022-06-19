@@ -1,5 +1,5 @@
 {
-  "_fv": 13,
+  "_fv": 28,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -8,11 +8,18 @@
     "customModelName": "Cross model",
     "itemTexture": "",
     "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
     "plantType": "double",
     "staticPlantGenerationType": "Flower",
+    "suspiciousStewEffect": "SATURATION",
+    "suspiciousStewDuration": 0,
     "growapableSpawnType": "Cave",
     "growapableMaxHeight": 3,
     "doublePlantGenerationType": "Flower",
+    "customBoundingBox": false,
+    "disableOffset": false,
+    "boundingBoxes": [],
     "name": "Bubble Plant",
     "specialInfo": [],
     "creativeTab": {
@@ -20,8 +27,9 @@
     },
     "hardness": 0.0,
     "resistance": 0.0,
-    "luminance": 0.0,
+    "luminance": 0,
     "unbreakable": false,
+    "isCustomSoundType": false,
     "soundOnStep": {
       "value": "PLANT"
     },
@@ -42,6 +50,9 @@
     "aiPathNodeType": "DEFAULT",
     "flammability": 100,
     "fireSpreadSpeed": 60,
+    "jumpFactor": 1.0,
+    "speedFactor": 1.0,
+    "canBePlacedOn": [],
     "frequencyOnChunks": 5,
     "spawnWorldTypes": [
       "CUSTOM:EndFarlands"
@@ -50,6 +61,8 @@
       {
         "value": "CUSTOM:AlteratedForest"
       }
-    ]
+    ],
+    "patchSize": 64,
+    "generateAtAnyHeight": false
   }
 }

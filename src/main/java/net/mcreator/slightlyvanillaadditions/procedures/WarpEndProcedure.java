@@ -1,50 +1,37 @@
 package net.mcreator.slightlyvanillaadditions.procedures;
 
-import net.minecraftforge.fml.common.ObfuscationReflectionHelper;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket;
+import net.minecraft.network.protocol.game.ClientboundPlayerAbilitiesPacket;
+import net.minecraft.network.protocol.game.ClientboundLevelEventPacket;
+import net.minecraft.network.protocol.game.ClientboundGameEventPacket;
+import net.minecraft.core.Registry;
+import net.minecraft.core.BlockPos;
 
-import net.minecraft.world.server.ServerWorld;
-import net.minecraft.world.dimension.DimensionType;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.network.play.server.SPlayerAbilitiesPacket;
-import net.minecraft.network.play.server.SPlaySoundEventPacket;
-import net.minecraft.network.play.server.SPlayEntityEffectPacket;
-import net.minecraft.network.play.server.SChangeGameStatePacket;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.entity.Entity;
-
-import net.mcreator.slightlyvanillaadditions.world.dimension.EndFarlandsDimension;
-import net.mcreator.slightlyvanillaadditions.SlightlyVanillaAdditionsModElements;
-
-import java.util.Map;
-
-@SlightlyVanillaAdditionsModElements.ModElement.Tag
-public class WarpEndProcedure extends SlightlyVanillaAdditionsModElements.ModElement {
-	public WarpEndProcedure(SlightlyVanillaAdditionsModElements instance) {
-		super(instance, 87);
-	}
-
-	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure WarpEnd!");
+public class WarpEndProcedure {
+	public static void execute(Entity entity) {
+		if (entity == null)
 			return;
-		}
-		Entity entity = (Entity) dependencies.get("entity");
-		{
-			Entity _ent = entity;
-			if (!_ent.world.isRemote && _ent instanceof ServerPlayerEntity) {
-				DimensionType destinationType = EndFarlandsDimension.type;
-				ObfuscationReflectionHelper.setPrivateValue(ServerPlayerEntity.class, (ServerPlayerEntity) _ent, true, "field_184851_cj");
-				ServerWorld nextWorld = _ent.getServer().getWorld(destinationType);
-				((ServerPlayerEntity) _ent).connection.sendPacket(new SChangeGameStatePacket(4, 0));
-				((ServerPlayerEntity) _ent).teleport(nextWorld, nextWorld.getSpawnPoint().getX(), nextWorld.getSpawnPoint().getY() + 1,
-						nextWorld.getSpawnPoint().getZ(), _ent.rotationYaw, _ent.rotationPitch);
-				((ServerPlayerEntity) _ent).connection.sendPacket(new SPlayerAbilitiesPacket(((ServerPlayerEntity) _ent).abilities));
-				for (EffectInstance effectinstance : ((ServerPlayerEntity) _ent).getActivePotionEffects()) {
-					((ServerPlayerEntity) _ent).connection.sendPacket(new SPlayEntityEffectPacket(_ent.getEntityId(), effectinstance));
-				}
-				((ServerPlayerEntity) _ent).connection.sendPacket(new SPlaySoundEventPacket(1032, BlockPos.ZERO, 0, false));
+		if (entity instanceof ServerPlayer _player && !_player.level.isClientSide()) {
+			ResourceKey<Level> destinationType = ResourceKey.create(Registry.DIMENSION_REGISTRY,
+					new ResourceLocation("slightly_vanilla_additions:end_farlands"));
+			if (_player.level.dimension() == destinationType)
+				return;
+			ServerLevel nextLevel = _player.server.getLevel(destinationType);
+			if (nextLevel != null) {
+				_player.connection.send(new ClientboundGameEventPacket(ClientboundGameEventPacket.WIN_GAME, 0));
+				_player.teleportTo(nextLevel, nextLevel.getSharedSpawnPos().getX(), nextLevel.getSharedSpawnPos().getY() + 1,
+						nextLevel.getSharedSpawnPos().getZ(), _player.getYRot(), _player.getXRot());
+				_player.connection.send(new ClientboundPlayerAbilitiesPacket(_player.getAbilities()));
+				for (MobEffectInstance _effectinstance : _player.getActiveEffects())
+					_player.connection.send(new ClientboundUpdateMobEffectPacket(_player.getId(), _effectinstance));
+				_player.connection.send(new ClientboundLevelEventPacket(1032, BlockPos.ZERO, 0, false));
 			}
 		}
 	}

@@ -1,55 +1,44 @@
 
 package net.mcreator.slightlyvanillaadditions.world.biome;
 
-import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraft.world.level.levelgen.placement.RarityFilter;
+import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
+import net.minecraft.world.level.levelgen.placement.CountPlacement;
+import net.minecraft.world.level.levelgen.placement.BiomeFilter;
+import net.minecraft.world.level.levelgen.GenerationStep;
+import net.minecraft.world.level.biome.MobSpawnSettings;
+import net.minecraft.world.level.biome.BiomeSpecialEffects;
+import net.minecraft.world.level.biome.BiomeGenerationSettings;
+import net.minecraft.world.level.biome.Biome;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.data.worldgen.placement.AquaticPlacements;
+import net.minecraft.data.worldgen.features.VegetationFeatures;
+import net.minecraft.data.worldgen.features.AquaticFeatures;
+import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
-import net.minecraft.world.gen.placement.Placement;
-import net.minecraft.world.gen.placement.IPlacementConfig;
-import net.minecraft.world.gen.placement.ChanceConfig;
-import net.minecraft.world.gen.feature.SeaGrassConfig;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.GenerationStage;
-import net.minecraft.world.biome.DefaultBiomeFeatures;
-import net.minecraft.world.biome.Biome;
-import net.minecraft.block.Blocks;
+import java.util.List;
 
-import net.mcreator.slightlyvanillaadditions.block.PoisonousFluidBlock;
-import net.mcreator.slightlyvanillaadditions.SlightlyVanillaAdditionsModElements;
-
-@SlightlyVanillaAdditionsModElements.ModElement.Tag
-public class PoisonSwampBiome extends SlightlyVanillaAdditionsModElements.ModElement {
-	@ObjectHolder("slightly_vanilla_additions:poison_swamp")
-	public static final CustomBiome biome = null;
-	public PoisonSwampBiome(SlightlyVanillaAdditionsModElements instance) {
-		super(instance, 55);
+public class PoisonSwampBiome {
+	public static Biome createBiome() {
+		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(4159204).waterFogColor(329011).skyColor(7972607)
+				.foliageColorOverride(10387789).grassColorOverride(9470285).build();
+		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
+		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, PlacementUtils.register(
+				"slightly_vanilla_additions:seagrass_poison_swamp", AquaticFeatures.SEAGRASS_SHORT, AquaticPlacements.seagrassPlacement(20)));
+		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
+				PlacementUtils.register("slightly_vanilla_additions:brown_mushroom_poison_swamp", VegetationFeatures.PATCH_BROWN_MUSHROOM,
+						List.of(CountPlacement.of(1), RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP,
+								BiomeFilter.biome())));
+		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
+				PlacementUtils.register("slightly_vanilla_additions:red_mushroom_poison_swamp", VegetationFeatures.PATCH_RED_MUSHROOM,
+						List.of(CountPlacement.of(1), RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP,
+								BiomeFilter.biome())));
+		BiomeDefaultFeatures.addSurfaceFreezing(biomeGenerationSettings);
+		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder();
+		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.NONE).biomeCategory(Biome.BiomeCategory.NONE).temperature(0.5f).downfall(0f)
+				.specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build()).build();
 	}
 
-	@Override
-	public void initElements() {
-		elements.biomes.add(() -> new CustomBiome());
-	}
-
-	@Override
-	public void init(FMLCommonSetupEvent event) {
-	}
-	static class CustomBiome extends Biome {
-		public CustomBiome() {
-			super(new Biome.Builder().downfall(0f).depth(0.1f).scale(0.2f).temperature(0.5f).precipitation(Biome.RainType.NONE)
-					.category(Biome.Category.NONE).waterColor(4159204).waterFogColor(329011).parent("slightly_vanilla_additions:chorus_forest")
-					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(PoisonousFluidBlock.block.getDefaultState(),
-							Blocks.END_STONE.getDefaultState(), Blocks.END_STONE.getDefaultState())));
-			setRegistryName("poison_swamp");
-			DefaultBiomeFeatures.addStructures(this);
-			this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.SEAGRASS.withConfiguration(new SeaGrassConfig(20, 0.3D))
-					.withPlacement(Placement.TOP_SOLID_HEIGHTMAP.configure(IPlacementConfig.NO_PLACEMENT_CONFIG)));
-			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
-					Feature.RANDOM_PATCH.withConfiguration(DefaultBiomeFeatures.BROWN_MUSHROOM_CONFIG)
-							.withPlacement(Placement.CHANCE_HEIGHTMAP_DOUBLE.configure(new ChanceConfig(1))));
-			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_PATCH.withConfiguration(DefaultBiomeFeatures.RED_MUSHROOM_CONFIG)
-					.withPlacement(Placement.CHANCE_HEIGHTMAP_DOUBLE.configure(new ChanceConfig(1))));
-		}
+	public static void init() {
 	}
 }

@@ -1,28 +1,16 @@
 {
   "variants": {
-    "facing=south": {
-      "model": "slightly_vanilla_additions:block/burned_tree_log"
-    },
-    "facing=north": {
-      "model": "slightly_vanilla_additions:block/burned_tree_log"
-    },
-    "facing=east": {
-      "model": "slightly_vanilla_additions:block/burned_tree_log",
-      "x": 90
-    },
-    "facing=west": {
-      "model": "slightly_vanilla_additions:block/burned_tree_log",
-      "x": 90
-    },
-    "facing=up": {
+    "axis=x": {
       "model": "slightly_vanilla_additions:block/burned_tree_log",
       "x": 90,
       "y": 90
     },
-    "facing=down": {
+    "axis=y": {
+      "model": "slightly_vanilla_additions:block/burned_tree_log"
+    },
+    "axis=z": {
       "model": "slightly_vanilla_additions:block/burned_tree_log",
-      "x": 90,
-      "y": 90
+      "x": 90
     }
   }
 }

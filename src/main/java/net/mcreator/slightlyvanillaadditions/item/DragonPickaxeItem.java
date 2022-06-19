@@ -1,52 +1,41 @@
 
 package net.mcreator.slightlyvanillaadditions.item;
 
-import net.minecraftforge.registries.ObjectHolder;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
 
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.PickaxeItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
+import net.mcreator.slightlyvanillaadditions.init.SlightlyVanillaAdditionsModItems;
 
-import net.mcreator.slightlyvanillaadditions.SlightlyVanillaAdditionsModElements;
-
-@SlightlyVanillaAdditionsModElements.ModElement.Tag
-public class DragonPickaxeItem extends SlightlyVanillaAdditionsModElements.ModElement {
-	@ObjectHolder("slightly_vanilla_additions:dragon_pickaxe")
-	public static final Item block = null;
-	public DragonPickaxeItem(SlightlyVanillaAdditionsModElements instance) {
-		super(instance, 15);
-	}
-
-	@Override
-	public void initElements() {
-		elements.items.add(() -> new PickaxeItem(new IItemTier() {
-			public int getMaxUses() {
+public class DragonPickaxeItem extends PickaxeItem {
+	public DragonPickaxeItem() {
+		super(new Tier() {
+			public int getUses() {
 				return 1164;
 			}
 
-			public float getEfficiency() {
+			public float getSpeed() {
 				return 15f;
 			}
 
-			public float getAttackDamage() {
+			public float getAttackDamageBonus() {
 				return 5f;
 			}
 
-			public int getHarvestLevel() {
+			public int getLevel() {
 				return 6;
 			}
 
-			public int getEnchantability() {
+			public int getEnchantmentValue() {
 				return 42;
 			}
 
-			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(DragonFangItem.block, (int) (1)));
+			public Ingredient getRepairIngredient() {
+				return Ingredient.of(new ItemStack(SlightlyVanillaAdditionsModItems.DRAGON_FANG.get()));
 			}
-		}, 1, -2.5f, new Item.Properties().group(ItemGroup.TOOLS)) {
-		}.setRegistryName("dragon_pickaxe"));
+		}, 1, -2.5f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
 	}
 }
