@@ -1368,6 +1368,15 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "bubble"
+    },
+    {
+      "name": "ThrowingKnife",
+      "type": "rangeditem",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "throwing_knife",
+      "path": "~/ThrowingKnife"
     }
   ],
   "variable_elements": [],
@@ -1384,6 +1393,7 @@
   "language_map": {
     "en_us": {
       "item.slightly_vanilla_additions.saphir": "Music Disc",
+      "item.slightly_vanilla_additions.throwing_knife": "Throwing Knife",
       "block.slightly_vanilla_additions.polished_bluestone": "Polished Bluestone",
       "fluid.angelic_water": "AngelicWater",
       "advancements.achorusforest.title": "A Chorus...Forest ?",
@@ -1393,8 +1403,8 @@
       "item.slightly_vanilla_additions.crystal_clock": "Crystal Clock",
       "item.slightly_vanilla_additions.bubble": "Bubble Gum",
       "block.slightly_vanilla_additions.alterated_wood": "Alterated Wood",
-      "block.slightly_vanilla_additions.crystal": "Crystal",
       "block.slightly_vanilla_additions.polished_bluestone_wall": "Polished Bluestone Wall",
+      "block.slightly_vanilla_additions.crystal": "Crystal",
       "block.slightly_vanilla_additions.chorus_fence_gate": "Chorus Fence Gate",
       "block.slightly_vanilla_additions.chorus_leaves": "Chorus Block",
       "block.slightly_vanilla_additions.moss_block": "Moss Block",
@@ -1402,8 +1412,8 @@
       "block.slightly_vanilla_additions.bubble_plant": "Bubble Plant",
       "fluid.slightly_vanilla_additions.poisonous_fluid": "Poisonous Fluid",
       "item.slightly_vanilla_additions.dragon_fang": "Dragon Fang",
-      "block.slightly_vanilla_additions.chorus_log": "Chorus Log",
       "block.slightly_vanilla_additions.burned_tree_log": "Burned Tree Log",
+      "block.slightly_vanilla_additions.chorus_log": "Chorus Log",
       "biome.slightly_vanilla_additions.angelic_swamp": "Angelic Swamp",
       "block.slightly_vanilla_additions.chorus_slab": "Chorus Slab",
       "block.slightly_vanilla_additions.cyan_moss": "Cyan Moss",
@@ -1486,7 +1496,12 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "ThrowingKnife",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "slightly_vanilla_additions",

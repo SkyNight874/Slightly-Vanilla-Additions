@@ -15,6 +15,7 @@ import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.slightlyvanillaadditions.item.ThrowingKnifeItem;
 import net.mcreator.slightlyvanillaadditions.item.SaphirItem;
 import net.mcreator.slightlyvanillaadditions.item.PoisonousFluidItem;
 import net.mcreator.slightlyvanillaadditions.item.ObsidianHammerItem;
@@ -144,6 +145,7 @@ public class SlightlyVanillaAdditionsModItems {
 	public static final RegistryObject<Item> ALTERATED_FUNGI = block(SlightlyVanillaAdditionsModBlocks.ALTERATED_FUNGI,
 			CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> BUBBLE = REGISTRY.register("bubble", () -> new BubbleItem());
+	public static final RegistryObject<Item> THROWING_KNIFE = REGISTRY.register("throwing_knife", () -> new ThrowingKnifeItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

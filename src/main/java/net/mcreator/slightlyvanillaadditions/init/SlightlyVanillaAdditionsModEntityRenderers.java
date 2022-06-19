@@ -19,5 +19,6 @@ public class SlightlyVanillaAdditionsModEntityRenderers {
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(SlightlyVanillaAdditionsModEntities.FIRE_PEARL.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SlightlyVanillaAdditionsModEntities.MOSSY_SLIME.get(), MossySlimeRenderer::new);
+		event.registerEntityRenderer(SlightlyVanillaAdditionsModEntities.THROWING_KNIFE.get(), ThrownItemRenderer::new);
 	}
 }
