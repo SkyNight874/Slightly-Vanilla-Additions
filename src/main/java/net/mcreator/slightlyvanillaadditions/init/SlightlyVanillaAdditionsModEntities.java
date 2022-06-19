@@ -16,8 +16,8 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.slightlyvanillaadditions.entity.MossySlimeEntity;
 import net.mcreator.slightlyvanillaadditions.entity.FirePearlEntity;
+import net.mcreator.slightlyvanillaadditions.entity.EndCubeEntity;
 import net.mcreator.slightlyvanillaadditions.SlightlyVanillaAdditionsMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -27,11 +27,11 @@ public class SlightlyVanillaAdditionsModEntities {
 	public static final RegistryObject<EntityType<FirePearlEntity>> FIRE_PEARL = register("projectile_fire_pearl",
 			EntityType.Builder.<FirePearlEntity>of(FirePearlEntity::new, MobCategory.MISC).setCustomClientFactory(FirePearlEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<MossySlimeEntity>> MOSSY_SLIME = register("mossy_slime",
-			EntityType.Builder.<MossySlimeEntity>of(MossySlimeEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MossySlimeEntity::new)
+	public static final RegistryObject<EntityType<EndCubeEntity>> END_CUBE = register("end_cube",
+			EntityType.Builder.<EndCubeEntity>of(EndCubeEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(EndCubeEntity::new)
 
-					.sized(1f, 1f));
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -40,12 +40,12 @@ public class SlightlyVanillaAdditionsModEntities {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
-			MossySlimeEntity.init();
+			EndCubeEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
-		event.put(MOSSY_SLIME.get(), MossySlimeEntity.createAttributes().build());
+		event.put(END_CUBE.get(), EndCubeEntity.createAttributes().build());
 	}
 }

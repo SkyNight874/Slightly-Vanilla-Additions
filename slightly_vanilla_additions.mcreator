@@ -209,17 +209,6 @@
       "registry_name": "dragon_fang_loot"
     },
     {
-      "name": "EndFarlands",
-      "type": "dimension",
-      "sortid": 26,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "end_farlands",
-      "metadata": {
-        "ep": true
-      }
-    },
-    {
       "name": "DragonScale",
       "type": "item",
       "sortid": 27,
@@ -316,14 +305,6 @@
       "registry_name": "chorus_fence_gate"
     },
     {
-      "name": "ChorusItemsTag",
-      "type": "tag",
-      "sortid": 39,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chorus_items_tag"
-    },
-    {
       "name": "ChorusWoodRecipe",
       "type": "recipe",
       "sortid": 40,
@@ -386,14 +367,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "chorus_grass"
-    },
-    {
-      "name": "ChorusForest",
-      "type": "biome",
-      "sortid": 48,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chorus_forest"
     },
     {
       "name": "BackPack",
@@ -559,14 +532,6 @@
       "registry_name": "alterated_stairs"
     },
     {
-      "name": "AlteratedForest",
-      "type": "biome",
-      "sortid": 74,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "alterated_forest"
-    },
-    {
       "name": "AlteratedLog",
       "type": "block",
       "sortid": 58,
@@ -661,14 +626,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "compressed_crystal_block"
-    },
-    {
-      "name": "CrystalPlains",
-      "type": "biome",
-      "sortid": 82,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystal_plains"
     },
     {
       "name": "Crystal",
@@ -1266,54 +1223,6 @@
       "registry_name": "mushroom_lantern"
     },
     {
-      "name": "MossySlime",
-      "type": "livingentity",
-      "sortid": 133,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mossy_slime"
-    },
-    {
-      "name": "MossySlimeGUI",
-      "type": "gui",
-      "sortid": 134,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mossy_slime_gui"
-    },
-    {
-      "name": "MossySlimeQuandLeJoueurFaitUnClicDroitSurLentite",
-      "type": "procedure",
-      "sortid": 135,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mossy_slime_quand_le_joueur_fait_un_clic_droit_sur_lentite",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "MushroomLanternBig",
       "type": "structure",
       "sortid": 136,
@@ -1368,6 +1277,105 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "bubble"
+    },
+    {
+      "name": "ChorusForest",
+      "type": "biome",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_forest"
+    },
+    {
+      "name": "EndFarlands",
+      "type": "dimension",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_farlands",
+      "metadata": {
+        "ep": true
+      }
+    },
+    {
+      "name": "DirtBlocks",
+      "type": "tag",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_blocks"
+    },
+    {
+      "name": "LogBlocks",
+      "type": "tag",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "log_blocks"
+    },
+    {
+      "name": "AlteratedForest",
+      "type": "biome",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alterated_forest"
+    },
+    {
+      "name": "CrystalPlains",
+      "type": "biome",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_plains"
+    },
+    {
+      "name": "MinecraftDirt",
+      "type": "tag",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "minecraft_dirt"
+    },
+    {
+      "name": "EndFarlandsPlayerEntersDimension",
+      "type": "procedure",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_farlands_player_enters_dimension",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EndCube",
+      "type": "livingentity",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_cube"
     }
   ],
   "variable_elements": [],
@@ -1393,17 +1401,18 @@
       "item.slightly_vanilla_additions.crystal_clock": "Crystal Clock",
       "item.slightly_vanilla_additions.bubble": "Bubble Gum",
       "block.slightly_vanilla_additions.alterated_wood": "Alterated Wood",
-      "block.slightly_vanilla_additions.crystal": "Crystal",
       "block.slightly_vanilla_additions.polished_bluestone_wall": "Polished Bluestone Wall",
+      "block.slightly_vanilla_additions.crystal": "Crystal",
       "block.slightly_vanilla_additions.chorus_fence_gate": "Chorus Fence Gate",
+      "entity.slightly_vanilla_additions.end_cube": "End Cube",
       "block.slightly_vanilla_additions.chorus_leaves": "Chorus Block",
       "block.slightly_vanilla_additions.moss_block": "Moss Block",
       "block.slightly_vanilla_additions.end_mycelium": "End Mycelium",
       "block.slightly_vanilla_additions.bubble_plant": "Bubble Plant",
       "fluid.slightly_vanilla_additions.poisonous_fluid": "Poisonous Fluid",
       "item.slightly_vanilla_additions.dragon_fang": "Dragon Fang",
-      "block.slightly_vanilla_additions.chorus_log": "Chorus Log",
       "block.slightly_vanilla_additions.burned_tree_log": "Burned Tree Log",
+      "block.slightly_vanilla_additions.chorus_log": "Chorus Log",
       "biome.slightly_vanilla_additions.angelic_swamp": "Angelic Swamp",
       "block.slightly_vanilla_additions.chorus_slab": "Chorus Slab",
       "block.slightly_vanilla_additions.cyan_moss": "Cyan Moss",
@@ -1415,7 +1424,6 @@
       "item.slightly_vanilla_additions.dragon_shovel": "Dragon Shovel",
       "block.slightly_vanilla_additions.alterated_fence": "Alterated Fence",
       "block.slightly_vanilla_additions.drawer": " Iron Drawer",
-      "item.slightly_vanilla_additions.mossy_slime_spawn_egg": "Mossy Slime Spawn Egg",
       "advancements.another_dimension.descr": "You unlocked the EndFarlands !",
       "block.slightly_vanilla_additions.ender_crown": "Ender Crown",
       "block.slightly_vanilla_additions.polished_bluestone_slab": "Polished Bluestone Slab",
@@ -1440,7 +1448,6 @@
       "block.slightly_vanilla_additions.angelic_grass": "Angelic Grass",
       "block.slightly_vanilla_additions.bluestone_wall": "Bluestone Wall",
       "item.slightly_vanilla_additions.dragon_axe": "Dragon Axe",
-      "entity.slightly_vanilla_additions.mossy_slime": "Mossy Slime",
       "advancements.another_dimension.title": "Another Dimension !?",
       "block.slightly_vanilla_additions.bluestone": "Bluestone",
       "item.slightly_vanilla_additions.obsidian_hammer": "Obsidian Hammer",
@@ -1454,7 +1461,7 @@
       "item.slightly_vanilla_additions.poisonous_fluid_bucket": "Poisonous Fluid Bucket",
       "block.slightly_vanilla_additions.mossy_mushroom_block": "Mossy Mushroom Block",
       "item.slightly_vanilla_additions.burned_tree_powder": "Burned Tree Powder",
-      "item.slightly_vanilla_additions.end_farlands": "Dragon Flint And Steel",
+      "item.slightly_vanilla_additions.end_farlands": "End Farlands Portal Igniter",
       "biome.slightly_vanilla_additions.crystal_plains": "Crystal Plains",
       "item.slightly_vanilla_additions.back_pack_item": "BackPack",
       "advancements.best_jungle_ever.descr": "Wow ! You discovered the Mossy Jungle",
@@ -1472,6 +1479,7 @@
       "block.slightly_vanilla_additions.chorus_planks": "Chorus Planks",
       "block.slightly_vanilla_additions.bluestone_stairs": "Bluestone Stairs",
       "item.slightly_vanilla_additions.dragon_pickaxe": "Dragon Pickaxe",
+      "item.slightly_vanilla_additions.end_cube_spawn_egg": "End Cube Spawn Egg",
       "biome.slightly_vanilla_additions.snowy_highlands": "Snowy Highlands",
       "block.slightly_vanilla_additions.alterated_planks": "Alterated Planks",
       "block.slightly_vanilla_additions.poison_nylium": "Poison Nylium",

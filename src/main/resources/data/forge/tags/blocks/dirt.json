@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "slightly_vanilla_additions:end_mycelium",
+    "minecraft:end_stone",
+    "slightly_vanilla_additions:poison_nylium",
+    "slightly_vanilla_additions:alterated_nylium",
+    "slightly_vanilla_additions:end_moss",
+    "slightly_vanilla_additions:compressed_crystal_block"
+  ]
+}

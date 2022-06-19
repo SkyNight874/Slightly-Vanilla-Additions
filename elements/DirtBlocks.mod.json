@@ -1,0 +1,32 @@
+{
+  "_fv": 28,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:PoisonNylium"
+      },
+      {
+        "value": "CUSTOM:EndMycelium"
+      },
+      {
+        "value": "CUSTOM:EndMoss"
+      },
+      {
+        "value": "CUSTOM:AlteratedNylium"
+      },
+      {
+        "value": "CUSTOM:CompressedCrystalBlock"
+      },
+      {
+        "value": "Blocks.END_STONE"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "dirt",
+    "namespace": "forge"
+  }
+}

@@ -13,7 +13,6 @@ import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 
 import net.mcreator.slightlyvanillaadditions.world.inventory.WarpGUIMenu;
-import net.mcreator.slightlyvanillaadditions.world.inventory.MossySlimeGUIMenu;
 import net.mcreator.slightlyvanillaadditions.world.inventory.DrawerGUIMenu;
 import net.mcreator.slightlyvanillaadditions.world.inventory.CrystalClockGUIMenu;
 import net.mcreator.slightlyvanillaadditions.world.inventory.BackPackMenu;
@@ -29,8 +28,6 @@ public class SlightlyVanillaAdditionsModMenus {
 	public static final MenuType<CrystalClockGUIMenu> CRYSTAL_CLOCK_GUI = register("crystal_clock_gui",
 			(id, inv, extraData) -> new CrystalClockGUIMenu(id, inv, extraData));
 	public static final MenuType<DrawerGUIMenu> DRAWER_GUI = register("drawer_gui", (id, inv, extraData) -> new DrawerGUIMenu(id, inv, extraData));
-	public static final MenuType<MossySlimeGUIMenu> MOSSY_SLIME_GUI = register("mossy_slime_gui",
-			(id, inv, extraData) -> new MossySlimeGUIMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

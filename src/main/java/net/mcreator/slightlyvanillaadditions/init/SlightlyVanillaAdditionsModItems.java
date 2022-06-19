@@ -60,7 +60,6 @@ public class SlightlyVanillaAdditionsModItems {
 	public static final RegistryObject<Item> DRAGON_SWORD = REGISTRY.register("dragon_sword", () -> new DragonSwordItem());
 	public static final RegistryObject<Item> DRAGON_SHOVEL = REGISTRY.register("dragon_shovel", () -> new DragonShovelItem());
 	public static final RegistryObject<Item> DRAGON_HOE = REGISTRY.register("dragon_hoe", () -> new DragonHoeItem());
-	public static final RegistryObject<Item> END_FARLANDS = REGISTRY.register("end_farlands", () -> new EndFarlandsItem());
 	public static final RegistryObject<Item> DRAGON_SCALE = REGISTRY.register("dragon_scale", () -> new DragonScaleItem());
 	public static final RegistryObject<Item> POISON_NYLIUM = block(SlightlyVanillaAdditionsModBlocks.POISON_NYLIUM,
 			CreativeModeTab.TAB_BUILDING_BLOCKS);
@@ -136,14 +135,15 @@ public class SlightlyVanillaAdditionsModItems {
 	public static final RegistryObject<Item> DENSE_VINE = block(SlightlyVanillaAdditionsModBlocks.DENSE_VINE, CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> MUSHROOM_LANTERN = block(SlightlyVanillaAdditionsModBlocks.MUSHROOM_LANTERN,
 			CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> MOSSY_SLIME = REGISTRY.register("mossy_slime_spawn_egg",
-			() -> new ForgeSpawnEggItem(SlightlyVanillaAdditionsModEntities.MOSSY_SLIME, -16737793, -13369345,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> POISON_FUNGI = block(SlightlyVanillaAdditionsModBlocks.POISON_FUNGI, CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> MOSSY_FUNGI = block(SlightlyVanillaAdditionsModBlocks.MOSSY_FUNGI, CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> ALTERATED_FUNGI = block(SlightlyVanillaAdditionsModBlocks.ALTERATED_FUNGI,
 			CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> BUBBLE = REGISTRY.register("bubble", () -> new BubbleItem());
+	public static final RegistryObject<Item> END_FARLANDS = REGISTRY.register("end_farlands", () -> new EndFarlandsItem());
+	public static final RegistryObject<Item> END_CUBE = REGISTRY.register("end_cube_spawn_egg",
+			() -> new ForgeSpawnEggItem(SlightlyVanillaAdditionsModEntities.END_CUBE, -16777216, -10092442,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

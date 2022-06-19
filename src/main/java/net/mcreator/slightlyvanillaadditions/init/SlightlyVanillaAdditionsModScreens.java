@@ -12,7 +12,6 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.mcreator.slightlyvanillaadditions.client.gui.WarpGUIScreen;
-import net.mcreator.slightlyvanillaadditions.client.gui.MossySlimeGUIScreen;
 import net.mcreator.slightlyvanillaadditions.client.gui.DrawerGUIScreen;
 import net.mcreator.slightlyvanillaadditions.client.gui.CrystalClockGUIScreen;
 import net.mcreator.slightlyvanillaadditions.client.gui.BackPackScreen;
@@ -26,7 +25,6 @@ public class SlightlyVanillaAdditionsModScreens {
 			MenuScreens.register(SlightlyVanillaAdditionsModMenus.WARP_GUI, WarpGUIScreen::new);
 			MenuScreens.register(SlightlyVanillaAdditionsModMenus.CRYSTAL_CLOCK_GUI, CrystalClockGUIScreen::new);
 			MenuScreens.register(SlightlyVanillaAdditionsModMenus.DRAWER_GUI, DrawerGUIScreen::new);
-			MenuScreens.register(SlightlyVanillaAdditionsModMenus.MOSSY_SLIME_GUI, MossySlimeGUIScreen::new);
 		});
 	}
 }

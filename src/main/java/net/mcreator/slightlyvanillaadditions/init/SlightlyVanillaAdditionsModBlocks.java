@@ -85,7 +85,6 @@ public class SlightlyVanillaAdditionsModBlocks {
 			() -> new PolishedBluestoneStairsBlock());
 	public static final RegistryObject<Block> POLISHED_BLUESTONE_WALL = REGISTRY.register("polished_bluestone_wall",
 			() -> new PolishedBluestoneWallBlock());
-	public static final RegistryObject<Block> END_FARLANDS_PORTAL = REGISTRY.register("end_farlands_portal", () -> new EndFarlandsPortalBlock());
 	public static final RegistryObject<Block> POISON_NYLIUM = REGISTRY.register("poison_nylium", () -> new PoisonNyliumBlock());
 	public static final RegistryObject<Block> CHORUS_WOOD = REGISTRY.register("chorus_wood", () -> new ChorusWoodBlock());
 	public static final RegistryObject<Block> CHORUS_LOG = REGISTRY.register("chorus_log", () -> new ChorusLogBlock());
@@ -132,6 +131,7 @@ public class SlightlyVanillaAdditionsModBlocks {
 	public static final RegistryObject<Block> POISON_FUNGI = REGISTRY.register("poison_fungi", () -> new PoisonFungiBlock());
 	public static final RegistryObject<Block> MOSSY_FUNGI = REGISTRY.register("mossy_fungi", () -> new MossyFungiBlock());
 	public static final RegistryObject<Block> ALTERATED_FUNGI = REGISTRY.register("alterated_fungi", () -> new AlteratedFungiBlock());
+	public static final RegistryObject<Block> END_FARLANDS_PORTAL = REGISTRY.register("end_farlands_portal", () -> new EndFarlandsPortalBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

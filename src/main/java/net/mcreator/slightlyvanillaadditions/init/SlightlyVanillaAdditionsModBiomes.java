@@ -49,25 +49,25 @@ import com.mojang.datafixers.util.Pair;
 public class SlightlyVanillaAdditionsModBiomes {
 	public static final DeferredRegister<Biome> REGISTRY = DeferredRegister.create(ForgeRegistries.BIOMES, SlightlyVanillaAdditionsMod.MODID);
 	public static final RegistryObject<Biome> SNOWY_HIGHLANDS = REGISTRY.register("snowy_highlands", () -> SnowyHighlandsBiome.createBiome());
-	public static final RegistryObject<Biome> CHORUS_FOREST = REGISTRY.register("chorus_forest", () -> ChorusForestBiome.createBiome());
 	public static final RegistryObject<Biome> POISON_SWAMP = REGISTRY.register("poison_swamp", () -> PoisonSwampBiome.createBiome());
-	public static final RegistryObject<Biome> ALTERATED_FOREST = REGISTRY.register("alterated_forest", () -> AlteratedForestBiome.createBiome());
-	public static final RegistryObject<Biome> CRYSTAL_PLAINS = REGISTRY.register("crystal_plains", () -> CrystalPlainsBiome.createBiome());
 	public static final RegistryObject<Biome> BURNED_DESERT = REGISTRY.register("burned_desert", () -> BurnedDesertBiome.createBiome());
 	public static final RegistryObject<Biome> MOSSY_JUNGLE = REGISTRY.register("mossy_jungle", () -> MossyJungleBiome.createBiome());
 	public static final RegistryObject<Biome> ANGELIC_SWAMP = REGISTRY.register("angelic_swamp", () -> AngelicSwampBiome.createBiome());
+	public static final RegistryObject<Biome> CHORUS_FOREST = REGISTRY.register("chorus_forest", () -> ChorusForestBiome.createBiome());
+	public static final RegistryObject<Biome> ALTERATED_FOREST = REGISTRY.register("alterated_forest", () -> AlteratedForestBiome.createBiome());
+	public static final RegistryObject<Biome> CRYSTAL_PLAINS = REGISTRY.register("crystal_plains", () -> CrystalPlainsBiome.createBiome());
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			SnowyHighlandsBiome.init();
-			ChorusForestBiome.init();
 			PoisonSwampBiome.init();
-			AlteratedForestBiome.init();
-			CrystalPlainsBiome.init();
 			BurnedDesertBiome.init();
 			MossyJungleBiome.init();
 			AngelicSwampBiome.init();
+			ChorusForestBiome.init();
+			AlteratedForestBiome.init();
+			CrystalPlainsBiome.init();
 		});
 	}
 
