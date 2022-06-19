@@ -16,7 +16,6 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.slightlyvanillaadditions.entity.ThrowingKnifeEntity;
 import net.mcreator.slightlyvanillaadditions.entity.MossySlimeEntity;
 import net.mcreator.slightlyvanillaadditions.entity.FirePearlEntity;
 import net.mcreator.slightlyvanillaadditions.SlightlyVanillaAdditionsMod;
@@ -33,9 +32,6 @@ public class SlightlyVanillaAdditionsModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MossySlimeEntity::new)
 
 					.sized(1f, 1f));
-	public static final RegistryObject<EntityType<ThrowingKnifeEntity>> THROWING_KNIFE = register("projectile_throwing_knife",
-			EntityType.Builder.<ThrowingKnifeEntity>of(ThrowingKnifeEntity::new, MobCategory.MISC).setCustomClientFactory(ThrowingKnifeEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

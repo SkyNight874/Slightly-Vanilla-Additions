@@ -30,19 +30,7 @@ public class EndFarlandsDimension {
 		public static void registerFillerBlocks(FMLCommonSetupEvent event) {
 			Set<Block> replaceableBlocks = new HashSet<>();
 			replaceableBlocks.add(Blocks.END_STONE);
-			replaceableBlocks.add(Blocks.SAND);
-			replaceableBlocks.add(Blocks.SAND);
-			replaceableBlocks.add(SlightlyVanillaAdditionsModBlocks.POISONOUS_FLUID.get());
-			replaceableBlocks.add(Blocks.END_STONE);
-			replaceableBlocks.add(SlightlyVanillaAdditionsModBlocks.POISON_NYLIUM.get());
-			replaceableBlocks.add(Blocks.END_STONE);
 			replaceableBlocks.add(SlightlyVanillaAdditionsModBlocks.END_MOSS.get());
-			replaceableBlocks.add(Blocks.END_STONE);
-			replaceableBlocks.add(SlightlyVanillaAdditionsModBlocks.ALTERATED_NYLIUM.get());
-			replaceableBlocks.add(Blocks.END_STONE);
-			replaceableBlocks.add(SlightlyVanillaAdditionsModBlocks.COMPRESSED_CRYSTAL_BLOCK.get());
-			replaceableBlocks.add(Blocks.END_STONE);
-			replaceableBlocks.add(SlightlyVanillaAdditionsModBlocks.END_MYCELIUM.get());
 			replaceableBlocks.add(Blocks.END_STONE);
 			event.enqueueWork(() -> {
 				WorldCarver.CAVE.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CAVE.replaceableBlocks)

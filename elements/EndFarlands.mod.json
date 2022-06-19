@@ -4,25 +4,7 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "CUSTOM:ChorusForest"
-      },
-      {
-        "value": "CUSTOM:AlteratedForest"
-      },
-      {
-        "value": "CUSTOM:PoisonSwamp"
-      },
-      {
-        "value": "CUSTOM:CrystalPlains"
-      },
-      {
-        "value": "CUSTOM:BurnedDesert"
-      },
-      {
         "value": "CUSTOM:MossyJungle"
-      },
-      {
-        "value": "CUSTOM:AngelicSwamp"
       }
     ],
     "worldGenType": "End like gen",
