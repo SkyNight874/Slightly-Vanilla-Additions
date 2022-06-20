@@ -39,7 +39,6 @@ import net.mcreator.slightlyvanillaadditions.SlightlyVanillaAdditionsMod;
 
 public class SlightlyVanillaAdditionsModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, SlightlyVanillaAdditionsMod.MODID);
-	public static final RegistryObject<Item> POWDER_SNOW = block(SlightlyVanillaAdditionsModBlocks.POWDER_SNOW, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> BLUESTONE = block(SlightlyVanillaAdditionsModBlocks.BLUESTONE, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> POLISHED_BLUESTONE = block(SlightlyVanillaAdditionsModBlocks.POLISHED_BLUESTONE,
 			CreativeModeTab.TAB_BUILDING_BLOCKS);

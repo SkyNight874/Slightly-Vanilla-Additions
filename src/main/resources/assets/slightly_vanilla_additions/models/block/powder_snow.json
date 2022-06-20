@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "slightly_vanilla_additions:blocks/powder_snow",
-    "particle": "slightly_vanilla_additions:blocks/powder_snow"
-  }
-}

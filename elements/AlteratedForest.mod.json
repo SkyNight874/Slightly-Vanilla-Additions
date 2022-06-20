@@ -9,39 +9,21 @@
     "undergroundBlock": {
       "value": "Blocks.END_STONE"
     },
-    "underwaterBlock": {
-      "value": ""
-    },
-    "ambientSound": {
-      "value": ""
-    },
-    "additionsSound": {
-      "value": ""
-    },
-    "music": {
-      "value": ""
-    },
-    "moodSound": {
-      "value": ""
-    },
-    "moodSoundDelay": 6000,
+    "moodSoundDelay": 0,
     "spawnParticles": false,
-    "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
-    },
-    "particlesProbability": 0.5,
+    "particlesProbability": 0.0,
     "biomeCategory": "NONE",
-    "rainingPossibility": 0.0,
-    "temperature": 1.0,
+    "rainingPossibility": 0.5,
+    "temperature": 0.5,
     "baseHeight": 0.1,
-    "heightVariation": 1.0,
+    "heightVariation": 0.2,
     "spawnBiome": false,
     "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 11,
+    "biomeWeight": 150,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 4,
-    "seagrassPerChunk": 0,
+    "seagrassPerChunk": 20,
     "flowersPerChunk": 4,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
@@ -87,7 +69,10 @@
     "spawnRuinedPortal": "NONE",
     "defaultFeatures": [
       "Caves",
-      "Ores"
+      "MonsterRooms",
+      "Structures",
+      "Ores",
+      "FrozenTopLayer"
     ],
     "spawnEntries": []
   }

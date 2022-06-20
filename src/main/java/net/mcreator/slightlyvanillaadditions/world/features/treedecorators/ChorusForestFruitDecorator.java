@@ -48,7 +48,7 @@ public class ChorusForestFruitDecorator extends CocoaDecorator {
 						Direction direction1 = direction.getOpposite();
 						BlockPos blockpos = p_161728_.offset(direction1.getStepX(), 0, direction1.getStepZ());
 						if (Feature.isAir(level, blockpos)) {
-							biConsumer.accept(blockpos, Blocks.AIR.defaultBlockState());
+							biConsumer.accept(blockpos, Blocks.CAVE_AIR.defaultBlockState());
 						}
 					}
 				}

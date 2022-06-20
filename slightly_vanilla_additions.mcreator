@@ -1,36 +1,13 @@
 {
   "mod_elements": [
     {
-      "name": "PowderSnowEntityWalksOnTheBlock",
-      "type": "procedure",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "powder_snow_entity_walks_on_the_block",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "PowderSnow",
-      "type": "block",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "powder_snow"
-    },
-    {
       "name": "SnowyHighlands",
       "type": "biome",
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "snowy_highlands"
+      "registry_name": "snowy_highlands",
+      "path": "~/Biomes"
     },
     {
       "name": "Bluestone",
@@ -385,7 +362,8 @@
       "sortid": 48,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_forest"
+      "registry_name": "chorus_forest",
+      "path": "~/Biomes"
     },
     {
       "name": "BackPack",
@@ -444,7 +422,8 @@
       "sortid": 55,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "poison_swamp"
+      "registry_name": "poison_swamp",
+      "path": "~/Biomes"
     },
     {
       "name": "ObsidianHammerBlockDestroyedWithTool",
@@ -556,7 +535,8 @@
       "sortid": 74,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alterated_forest"
+      "registry_name": "alterated_forest",
+      "path": "~/Biomes"
     },
     {
       "name": "AlteratedLog",
@@ -660,7 +640,8 @@
       "sortid": 82,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "crystal_plains"
+      "registry_name": "crystal_plains",
+      "path": "~/Biomes"
     },
     {
       "name": "Crystal",
@@ -1076,7 +1057,8 @@
       "sortid": 113,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "burned_desert"
+      "registry_name": "burned_desert",
+      "path": "~/Biomes"
     },
     {
       "name": "CrystalBlock",
@@ -1156,7 +1138,8 @@
       "sortid": 122,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "mossy_jungle"
+      "registry_name": "mossy_jungle",
+      "path": "~/Biomes"
     },
     {
       "name": "BestJungleEver",
@@ -1188,7 +1171,8 @@
       "sortid": 126,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "angelic_swamp"
+      "registry_name": "angelic_swamp",
+      "path": "~/Biomes"
     },
     {
       "name": "MossyMushroomSmall",
@@ -1431,17 +1415,18 @@
       "item.slightly_vanilla_additions.crystal_clock": "Crystal Clock",
       "item.slightly_vanilla_additions.bubble": "Bubble Gum",
       "block.slightly_vanilla_additions.alterated_wood": "Alterated Wood",
-      "block.slightly_vanilla_additions.polished_bluestone_wall": "Polished Bluestone Wall",
       "block.slightly_vanilla_additions.crystal": "Crystal",
+      "block.slightly_vanilla_additions.polished_bluestone_wall": "Polished Bluestone Wall",
       "block.slightly_vanilla_additions.chorus_fence_gate": "Chorus Fence Gate",
+      "entity.slightly_vanilla_additions.end_cube": "End Cube",
       "block.slightly_vanilla_additions.chorus_leaves": "Chorus Block",
       "block.slightly_vanilla_additions.moss_block": "Moss Block",
       "block.slightly_vanilla_additions.end_mycelium": "End Mycelium",
       "block.slightly_vanilla_additions.bubble_plant": "Bubble Plant",
       "fluid.slightly_vanilla_additions.poisonous_fluid": "Poisonous Fluid",
       "item.slightly_vanilla_additions.dragon_fang": "Dragon Fang",
-      "block.slightly_vanilla_additions.burned_tree_log": "Burned Tree Log",
       "block.slightly_vanilla_additions.chorus_log": "Chorus Log",
+      "block.slightly_vanilla_additions.burned_tree_log": "Burned Tree Log",
       "biome.slightly_vanilla_additions.angelic_swamp": "Angelic Swamp",
       "block.slightly_vanilla_additions.chorus_slab": "Chorus Slab",
       "block.slightly_vanilla_additions.cyan_moss": "Cyan Moss",
@@ -1485,14 +1470,13 @@
       "advancements.ohdisgusting.title": "Oh... disgusting !",
       "block.slightly_vanilla_additions.poisonous_fluid": "Poisonous Fluid",
       "block.slightly_vanilla_additions.chorus_grass": "Chorus Grass",
-      "block.slightly_vanilla_additions.powder_snow": "Powder Snow",
       "item.slightly_vanilla_additions.saphir.desc": "J2RMY - Saphir",
       "block.slightly_vanilla_additions.alterated_fence_gate": "Alterated Fence Gate",
       "biome.slightly_vanilla_additions.burned_desert": "Burned Desert",
       "item.slightly_vanilla_additions.poisonous_fluid_bucket": "Poisonous Fluid Bucket",
       "block.slightly_vanilla_additions.mossy_mushroom_block": "Mossy Mushroom Block",
       "item.slightly_vanilla_additions.burned_tree_powder": "Burned Tree Powder",
-      "item.slightly_vanilla_additions.end_farlands": "End Farlands Portal Igniter",
+      "item.slightly_vanilla_additions.end_farlands": "Dragon Flint And Steel",
       "biome.slightly_vanilla_additions.crystal_plains": "Crystal Plains",
       "item.slightly_vanilla_additions.back_pack_item": "BackPack",
       "advancements.best_jungle_ever.descr": "Wow ! You discovered the Mossy Jungle",
@@ -1503,6 +1487,7 @@
       "block.slightly_vanilla_additions.alterated_nylium": "Alterated Nylium",
       "advancements.best_jungle_ever.title": "Best Jungle Ever !",
       "advancements.ilovecrystal.title": "I love crystal !",
+      "item.slightly_vanilla_additions.stealth_blade": "Stealth Blade",
       "subtitles.saphir_music": "",
       "item.slightly_vanilla_additions.angelic_water_bucket": "Angelic Water Bucket",
       "advancements.ilovecrystal.descr": "You discovered the Crystal Gem !",
@@ -1510,6 +1495,7 @@
       "block.slightly_vanilla_additions.chorus_planks": "Chorus Planks",
       "block.slightly_vanilla_additions.bluestone_stairs": "Bluestone Stairs",
       "item.slightly_vanilla_additions.dragon_pickaxe": "Dragon Pickaxe",
+      "item.slightly_vanilla_additions.end_cube_spawn_egg": "End Cube Spawn Egg",
       "biome.slightly_vanilla_additions.snowy_highlands": "Snowy Highlands",
       "block.slightly_vanilla_additions.alterated_planks": "Alterated Planks",
       "block.slightly_vanilla_additions.poison_nylium": "Poison Nylium",
@@ -1527,6 +1513,10 @@
     "children": [
       {
         "name": "Dagger",
+        "children": []
+      },
+      {
+        "name": "Biomes",
         "children": []
       }
     ]

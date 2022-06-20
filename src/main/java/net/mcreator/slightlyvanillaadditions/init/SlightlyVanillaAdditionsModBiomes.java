@@ -21,6 +21,7 @@ import net.minecraft.world.level.dimension.LevelStem;
 import net.minecraft.world.level.dimension.DimensionType;
 import net.minecraft.world.level.chunk.ChunkGenerator;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.biome.MultiNoiseBiomeSource;
 import net.minecraft.world.level.biome.Climate;
 import net.minecraft.world.level.biome.Biome;
@@ -100,11 +101,9 @@ public class SlightlyVanillaAdditionsModBiomes {
 						SurfaceRules.RuleSource currentRuleSource = noiseGeneratorSettings.surfaceRule();
 						if (currentRuleSource instanceof SurfaceRules.SequenceRuleSource sequenceRuleSource) {
 							List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
-							surfaceRules.add(1,
-									preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, SNOWY_HIGHLANDS.getId()),
-											SlightlyVanillaAdditionsModBlocks.POWDER_SNOW.get().defaultBlockState(),
-											SlightlyVanillaAdditionsModBlocks.BLUESTONE.get().defaultBlockState(),
-											SlightlyVanillaAdditionsModBlocks.BLUESTONE.get().defaultBlockState()));
+							surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, SNOWY_HIGHLANDS.getId()),
+									Blocks.POWDER_SNOW.defaultBlockState(), SlightlyVanillaAdditionsModBlocks.BLUESTONE.get().defaultBlockState(),
+									SlightlyVanillaAdditionsModBlocks.BLUESTONE.get().defaultBlockState()));
 							NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),
 									noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
 									noiseGeneratorSettings.noiseRouter(),
