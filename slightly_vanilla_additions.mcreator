@@ -6,8 +6,7 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "snowy_highlands",
-      "path": "~/Biomes"
+      "registry_name": "snowy_highlands"
     },
     {
       "name": "Bluestone",
@@ -15,8 +14,7 @@
       "sortid": 4,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bluestone",
-      "path": "~/Bluestone"
+      "registry_name": "bluestone"
     },
     {
       "name": "PolishedBluestone",
@@ -24,8 +22,7 @@
       "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "polished_bluestone",
-      "path": "~/Bluestone"
+      "registry_name": "polished_bluestone"
     },
     {
       "name": "BluestoneSlab",
@@ -33,8 +30,7 @@
       "sortid": 6,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bluestone_slab",
-      "path": "~/Bluestone"
+      "registry_name": "bluestone_slab"
     },
     {
       "name": "BluestoneStairs",
@@ -42,8 +38,7 @@
       "sortid": 7,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bluestone_stairs",
-      "path": "~/Bluestone"
+      "registry_name": "bluestone_stairs"
     },
     {
       "name": "BluestoneWall",
@@ -51,8 +46,7 @@
       "sortid": 8,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bluestone_wall",
-      "path": "~/Bluestone"
+      "registry_name": "bluestone_wall"
     },
     {
       "name": "PolishedBluestoneSmelting",
@@ -60,8 +54,7 @@
       "sortid": 9,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "polished_bluestone_smelting",
-      "path": "~/Bluestone"
+      "registry_name": "polished_bluestone_smelting"
     },
     {
       "name": "PolishedBluestoneSlab",
@@ -69,8 +62,7 @@
       "sortid": 10,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "polished_bluestone_slab",
-      "path": "~/Bluestone"
+      "registry_name": "polished_bluestone_slab"
     },
     {
       "name": "PolishedBluestoneStairs",
@@ -78,8 +70,7 @@
       "sortid": 11,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "polished_bluestone_stairs",
-      "path": "~/Bluestone"
+      "registry_name": "polished_bluestone_stairs"
     },
     {
       "name": "PolishedBluestoneWall",
@@ -87,8 +78,7 @@
       "sortid": 12,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "polished_bluestone_wall",
-      "path": "~/Bluestone"
+      "registry_name": "polished_bluestone_wall"
     },
     {
       "name": "BluestoneSmelting",
@@ -96,8 +86,7 @@
       "sortid": 13,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bluestone_smelting",
-      "path": "~/Bluestone"
+      "registry_name": "bluestone_smelting"
     },
     {
       "name": "DragonFang",
@@ -105,8 +94,7 @@
       "sortid": 14,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dragon_fang",
-      "path": "~/Dragon Fang"
+      "registry_name": "dragon_fang"
     },
     {
       "name": "DragonPickaxe",
@@ -114,8 +102,7 @@
       "sortid": 15,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dragon_pickaxe",
-      "path": "~/Dragon Fang"
+      "registry_name": "dragon_pickaxe"
     },
     {
       "name": "DragonAxe",
@@ -123,8 +110,7 @@
       "sortid": 16,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dragon_axe",
-      "path": "~/Dragon Fang"
+      "registry_name": "dragon_axe"
     },
     {
       "name": "DragonSword",
@@ -132,8 +118,7 @@
       "sortid": 17,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dragon_sword",
-      "path": "~/Dragon Fang"
+      "registry_name": "dragon_sword"
     },
     {
       "name": "DragonShovel",
@@ -141,8 +126,7 @@
       "sortid": 18,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dragon_shovel",
-      "path": "~/Dragon Fang"
+      "registry_name": "dragon_shovel"
     },
     {
       "name": "DragonHoe",
@@ -150,8 +134,7 @@
       "sortid": 19,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dragon_hoe",
-      "path": "~/Dragon Fang"
+      "registry_name": "dragon_hoe"
     },
     {
       "name": "DragonPickaxeRecipe",
@@ -159,8 +142,7 @@
       "sortid": 20,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dragon_pickaxe_recipe",
-      "path": "~/Dragon Fang"
+      "registry_name": "dragon_pickaxe_recipe"
     },
     {
       "name": "DragonAxeRecipe",
@@ -168,8 +150,7 @@
       "sortid": 21,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dragon_axe_recipe",
-      "path": "~/Dragon Fang"
+      "registry_name": "dragon_axe_recipe"
     },
     {
       "name": "DragonSwordRecipe",
@@ -177,8 +158,7 @@
       "sortid": 22,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dragon_sword_recipe",
-      "path": "~/Dragon Fang"
+      "registry_name": "dragon_sword_recipe"
     },
     {
       "name": "DragonShovelRecipe",
@@ -186,8 +166,7 @@
       "sortid": 23,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dragon_shovel_recipe",
-      "path": "~/Dragon Fang"
+      "registry_name": "dragon_shovel_recipe"
     },
     {
       "name": "DragonHoeRecipe",
@@ -195,8 +174,7 @@
       "sortid": 24,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dragon_hoe_recipe",
-      "path": "~/Dragon Fang"
+      "registry_name": "dragon_hoe_recipe"
     },
     {
       "name": "DragonFangLoot",
@@ -204,8 +182,7 @@
       "sortid": 25,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dragon_fang_loot",
-      "path": "~/Dragon Fang"
+      "registry_name": "dragon_fang_loot"
     },
     {
       "name": "EndFarlands",
@@ -216,8 +193,7 @@
       "registry_name": "end_farlands",
       "metadata": {
         "ep": true
-      },
-      "path": "~/End Farlands Access"
+      }
     },
     {
       "name": "DragonScale",
@@ -225,8 +201,7 @@
       "sortid": 27,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dragon_scale",
-      "path": "~/End Farlands Access"
+      "registry_name": "dragon_scale"
     },
     {
       "name": "DragonScaleRecipe",
@@ -234,8 +209,7 @@
       "sortid": 28,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dragon_scale_recipe",
-      "path": "~/End Farlands Access"
+      "registry_name": "dragon_scale_recipe"
     },
     {
       "name": "DragonFlintAndSteelRecipe",
@@ -243,8 +217,7 @@
       "sortid": 29,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dragon_flint_and_steel_recipe",
-      "path": "~/End Farlands Access"
+      "registry_name": "dragon_flint_and_steel_recipe"
     },
     {
       "name": "PoisonNylium",
@@ -252,8 +225,7 @@
       "sortid": 30,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "poison_nylium",
-      "path": "~/Chorus Forest "
+      "registry_name": "poison_nylium"
     },
     {
       "name": "ChorusWood",
@@ -261,8 +233,7 @@
       "sortid": 31,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_wood",
-      "path": "~/Chorus Forest "
+      "registry_name": "chorus_wood"
     },
     {
       "name": "ChorusLog",
@@ -270,8 +241,7 @@
       "sortid": 32,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_log",
-      "path": "~/Chorus Forest "
+      "registry_name": "chorus_log"
     },
     {
       "name": "ChorusPlanks",
@@ -279,8 +249,7 @@
       "sortid": 33,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_planks",
-      "path": "~/Chorus Forest "
+      "registry_name": "chorus_planks"
     },
     {
       "name": "ChorusLeaves",
@@ -288,8 +257,7 @@
       "sortid": 34,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_leaves",
-      "path": "~/Chorus Forest "
+      "registry_name": "chorus_leaves"
     },
     {
       "name": "ChorusStairs",
@@ -297,8 +265,7 @@
       "sortid": 35,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_stairs",
-      "path": "~/Chorus Forest "
+      "registry_name": "chorus_stairs"
     },
     {
       "name": "ChorusSlab",
@@ -306,8 +273,7 @@
       "sortid": 36,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_slab",
-      "path": "~/Chorus Forest "
+      "registry_name": "chorus_slab"
     },
     {
       "name": "ChorusFence",
@@ -315,8 +281,7 @@
       "sortid": 37,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_fence",
-      "path": "~/Chorus Forest "
+      "registry_name": "chorus_fence"
     },
     {
       "name": "ChorusFenceGate",
@@ -324,8 +289,7 @@
       "sortid": 38,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_fence_gate",
-      "path": "~/Chorus Forest "
+      "registry_name": "chorus_fence_gate"
     },
     {
       "name": "ChorusWoodRecipe",
@@ -333,8 +297,7 @@
       "sortid": 40,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_wood_recipe",
-      "path": "~/Chorus Forest "
+      "registry_name": "chorus_wood_recipe"
     },
     {
       "name": "ChorusPlanksRecipe",
@@ -342,8 +305,7 @@
       "sortid": 41,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_planks_recipe",
-      "path": "~/Chorus Forest "
+      "registry_name": "chorus_planks_recipe"
     },
     {
       "name": "ChorusStairsRecipe",
@@ -351,8 +313,7 @@
       "sortid": 42,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_stairs_recipe",
-      "path": "~/Chorus Forest "
+      "registry_name": "chorus_stairs_recipe"
     },
     {
       "name": "ChorusSlabRecipe",
@@ -360,8 +321,7 @@
       "sortid": 43,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_slab_recipe",
-      "path": "~/Chorus Forest "
+      "registry_name": "chorus_slab_recipe"
     },
     {
       "name": "ChorusFenceRecipe",
@@ -369,8 +329,7 @@
       "sortid": 44,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_fence_recipe",
-      "path": "~/Chorus Forest "
+      "registry_name": "chorus_fence_recipe"
     },
     {
       "name": "ChorusFenceGateRecipe",
@@ -378,8 +337,7 @@
       "sortid": 45,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_fence_gate_recipe",
-      "path": "~/Chorus Forest "
+      "registry_name": "chorus_fence_gate_recipe"
     },
     {
       "name": "ChorusStickRecipe",
@@ -387,8 +345,7 @@
       "sortid": 46,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_stick_recipe",
-      "path": "~/Chorus Forest "
+      "registry_name": "chorus_stick_recipe"
     },
     {
       "name": "ChorusGrass",
@@ -396,8 +353,7 @@
       "sortid": 47,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_grass",
-      "path": "~/Chorus Forest "
+      "registry_name": "chorus_grass"
     },
     {
       "name": "ChorusForest",
@@ -405,8 +361,7 @@
       "sortid": 48,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chorus_forest",
-      "path": "~/Biomes"
+      "registry_name": "chorus_forest"
     },
     {
       "name": "BackPack",
@@ -414,8 +369,7 @@
       "sortid": 49,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "back_pack",
-      "path": "~/New Items"
+      "registry_name": "back_pack"
     },
     {
       "name": "BackPackItem",
@@ -423,8 +377,7 @@
       "sortid": 50,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "back_pack_item",
-      "path": "~/New Items"
+      "registry_name": "back_pack_item"
     },
     {
       "name": "BackPackRecipe",
@@ -432,8 +385,7 @@
       "sortid": 51,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "back_pack_recipe",
-      "path": "~/New Items"
+      "registry_name": "back_pack_recipe"
     },
     {
       "name": "PoisonMushroom",
@@ -441,8 +393,7 @@
       "sortid": 52,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "poison_mushroom",
-      "path": "~/Chorus Forest "
+      "registry_name": "poison_mushroom"
     },
     {
       "name": "PoisonousFluid",
@@ -453,8 +404,7 @@
       "registry_name": "poisonous_fluid",
       "metadata": {
         "gb": true
-      },
-      "path": "~/Chorus Forest "
+      }
     },
     {
       "name": "PoisonMushroomStructure",
@@ -462,8 +412,7 @@
       "sortid": 54,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "poison_mushroom_structure",
-      "path": "~/Chorus Forest "
+      "registry_name": "poison_mushroom_structure"
     },
     {
       "name": "PoisonSwamp",
@@ -471,8 +420,7 @@
       "sortid": 55,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "poison_swamp",
-      "path": "~/Biomes"
+      "registry_name": "poison_swamp"
     },
     {
       "name": "ObsidianHammerBlockDestroyedWithTool",
@@ -504,8 +452,7 @@
             "type": "world"
           }
         ]
-      },
-      "path": "~/New Items"
+      }
     },
     {
       "name": "ObsidianHammer",
@@ -513,8 +460,7 @@
       "sortid": 56,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "obsidian_hammer",
-      "path": "~/New Items"
+      "registry_name": "obsidian_hammer"
     },
     {
       "name": "AlteratedStairsRecipe",
@@ -522,8 +468,7 @@
       "sortid": 68,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alterated_stairs_recipe",
-      "path": "~/Alterated Forest"
+      "registry_name": "alterated_stairs_recipe"
     },
     {
       "name": "AlteratedWood",
@@ -531,8 +476,7 @@
       "sortid": 57,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alterated_wood",
-      "path": "~/Alterated Forest"
+      "registry_name": "alterated_wood"
     },
     {
       "name": "AlteratedStickRecipe",
@@ -540,8 +484,7 @@
       "sortid": 72,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alterated_stick_recipe",
-      "path": "~/Alterated Forest"
+      "registry_name": "alterated_stick_recipe"
     },
     {
       "name": "AlteratedPlanks",
@@ -549,8 +492,7 @@
       "sortid": 59,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alterated_planks",
-      "path": "~/Alterated Forest"
+      "registry_name": "alterated_planks"
     },
     {
       "name": "AlteratedNylium",
@@ -558,8 +500,7 @@
       "sortid": 73,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alterated_nylium",
-      "path": "~/Alterated Forest"
+      "registry_name": "alterated_nylium"
     },
     {
       "name": "AlteratedFenceGateRecipe",
@@ -567,8 +508,7 @@
       "sortid": 71,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alterated_fence_gate_recipe",
-      "path": "~/Alterated Forest"
+      "registry_name": "alterated_fence_gate_recipe"
     },
     {
       "name": "AlteratedItemsTag",
@@ -576,8 +516,7 @@
       "sortid": 65,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alterated_items_tag",
-      "path": "~/Alterated Forest"
+      "registry_name": "alterated_items_tag"
     },
     {
       "name": "AlteratedStairs",
@@ -585,8 +524,7 @@
       "sortid": 61,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alterated_stairs",
-      "path": "~/Alterated Forest"
+      "registry_name": "alterated_stairs"
     },
     {
       "name": "AlteratedForest",
@@ -594,8 +532,7 @@
       "sortid": 74,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alterated_forest",
-      "path": "~/Biomes"
+      "registry_name": "alterated_forest"
     },
     {
       "name": "AlteratedLog",
@@ -603,8 +540,7 @@
       "sortid": 58,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alterated_log",
-      "path": "~/Alterated Forest"
+      "registry_name": "alterated_log"
     },
     {
       "name": "AlteratedSlab",
@@ -612,8 +548,7 @@
       "sortid": 62,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alterated_slab",
-      "path": "~/Alterated Forest"
+      "registry_name": "alterated_slab"
     },
     {
       "name": "AlteratedPlanksRecipe",
@@ -621,8 +556,7 @@
       "sortid": 67,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alterated_planks_recipe",
-      "path": "~/Alterated Forest"
+      "registry_name": "alterated_planks_recipe"
     },
     {
       "name": "AlteratedFenceRecipe",
@@ -630,8 +564,7 @@
       "sortid": 70,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alterated_fence_recipe",
-      "path": "~/Alterated Forest"
+      "registry_name": "alterated_fence_recipe"
     },
     {
       "name": "AlteratedFence",
@@ -639,8 +572,7 @@
       "sortid": 63,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alterated_fence",
-      "path": "~/Alterated Forest"
+      "registry_name": "alterated_fence"
     },
     {
       "name": "AlteratedWoodRecipe",
@@ -648,8 +580,7 @@
       "sortid": 66,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alterated_wood_recipe",
-      "path": "~/Alterated Forest"
+      "registry_name": "alterated_wood_recipe"
     },
     {
       "name": "AlteratedLeaves",
@@ -657,8 +588,7 @@
       "sortid": 66,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alterated_leaves",
-      "path": "~/Alterated Forest"
+      "registry_name": "alterated_leaves"
     },
     {
       "name": "AlteratedSlabRecipe",
@@ -666,8 +596,7 @@
       "sortid": 69,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alterated_slab_recipe",
-      "path": "~/Alterated Forest"
+      "registry_name": "alterated_slab_recipe"
     },
     {
       "name": "AlteratedFenceGate",
@@ -675,8 +604,7 @@
       "sortid": 64,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alterated_fence_gate",
-      "path": "~/Alterated Forest"
+      "registry_name": "alterated_fence_gate"
     },
     {
       "name": "FirePearl",
@@ -708,8 +636,7 @@
       "sortid": 82,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "crystal_plains",
-      "path": "~/Biomes"
+      "registry_name": "crystal_plains"
     },
     {
       "name": "Crystal",
@@ -1125,8 +1052,7 @@
       "sortid": 113,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "burned_desert",
-      "path": "~/Biomes"
+      "registry_name": "burned_desert"
     },
     {
       "name": "CrystalBlock",
@@ -1206,8 +1132,7 @@
       "sortid": 122,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "mossy_jungle",
-      "path": "~/Biomes"
+      "registry_name": "mossy_jungle"
     },
     {
       "name": "BestJungleEver",
@@ -1239,8 +1164,7 @@
       "sortid": 126,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "angelic_swamp",
-      "path": "~/Biomes"
+      "registry_name": "angelic_swamp"
     },
     {
       "name": "MossyMushroomSmall",
@@ -1507,8 +1431,8 @@
       "item.slightly_vanilla_additions.crystal_clock": "Crystal Clock",
       "item.slightly_vanilla_additions.bubble": "Bubble Gum",
       "block.slightly_vanilla_additions.alterated_wood": "Alterated Wood",
-      "block.slightly_vanilla_additions.crystal": "Crystal",
       "block.slightly_vanilla_additions.polished_bluestone_wall": "Polished Bluestone Wall",
+      "block.slightly_vanilla_additions.crystal": "Crystal",
       "block.slightly_vanilla_additions.chorus_fence_gate": "Chorus Fence Gate",
       "entity.slightly_vanilla_additions.end_cube": "End Cube",
       "block.slightly_vanilla_additions.chorus_leaves": "Chorus Block",
@@ -1517,8 +1441,8 @@
       "block.slightly_vanilla_additions.bubble_plant": "Bubble Plant",
       "fluid.slightly_vanilla_additions.poisonous_fluid": "Poisonous Fluid",
       "item.slightly_vanilla_additions.dragon_fang": "Dragon Fang",
-      "block.slightly_vanilla_additions.chorus_log": "Chorus Log",
       "block.slightly_vanilla_additions.burned_tree_log": "Burned Tree Log",
+      "block.slightly_vanilla_additions.chorus_log": "Chorus Log",
       "biome.slightly_vanilla_additions.angelic_swamp": "Angelic Swamp",
       "block.slightly_vanilla_additions.chorus_slab": "Chorus Slab",
       "block.slightly_vanilla_additions.cyan_moss": "Cyan Moss",

@@ -3,10 +3,10 @@
   "textures": {
     "down": "slightly_vanilla_additions:blocks/stripped_chorus_stem",
     "up": "slightly_vanilla_additions:blocks/stripped_chorus_stem",
-    "north": "slightly_vanilla_additions:blocks/chorus_stem",
-    "east": "slightly_vanilla_additions:blocks/chorus_stem",
-    "south": "slightly_vanilla_additions:blocks/chorus_stem",
-    "west": "slightly_vanilla_additions:blocks/chorus_stem",
+    "north": "slightly_vanilla_additions:blocks/ye",
+    "east": "slightly_vanilla_additions:blocks/ye",
+    "south": "slightly_vanilla_additions:blocks/ye",
+    "west": "slightly_vanilla_additions:blocks/ye",
     "particle": "slightly_vanilla_additions:blocks/stripped_chorus_stem"
   }
 }
