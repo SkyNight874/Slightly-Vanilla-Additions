@@ -1,7 +1,9 @@
 {
   "replace": false,
   "values": [
+    "slightly_vanilla_additions:end_mycelium",
     "slightly_vanilla_additions:poison_nylium",
-    "slightly_vanilla_additions:alterated_nylium"
+    "slightly_vanilla_additions:alterated_nylium",
+    "slightly_vanilla_additions:end_moss"
   ]
 }

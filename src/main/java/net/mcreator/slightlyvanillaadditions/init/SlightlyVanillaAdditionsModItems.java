@@ -22,6 +22,7 @@ import net.mcreator.slightlyvanillaadditions.item.ObsidianHammerItem;
 import net.mcreator.slightlyvanillaadditions.item.FirePearlShootItem;
 import net.mcreator.slightlyvanillaadditions.item.FirePearlItem;
 import net.mcreator.slightlyvanillaadditions.item.EndFarlandsItem;
+import net.mcreator.slightlyvanillaadditions.item.EndCoreItem;
 import net.mcreator.slightlyvanillaadditions.item.DragonSwordItem;
 import net.mcreator.slightlyvanillaadditions.item.DragonShovelItem;
 import net.mcreator.slightlyvanillaadditions.item.DragonScaleItem;
@@ -145,6 +146,7 @@ public class SlightlyVanillaAdditionsModItems {
 	public static final RegistryObject<Item> END_CUBE = REGISTRY.register("end_cube_spawn_egg",
 			() -> new ForgeSpawnEggItem(SlightlyVanillaAdditionsModEntities.END_CUBE, -16777216, -10092442,
 					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> END_CORE = REGISTRY.register("end_core", () -> new EndCoreItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

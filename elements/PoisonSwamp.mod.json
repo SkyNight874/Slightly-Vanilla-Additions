@@ -9,8 +9,26 @@
     "undergroundBlock": {
       "value": "Blocks.END_STONE"
     },
+    "underwaterBlock": {
+      "value": ""
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
     "moodSoundDelay": 0,
     "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
     "particlesProbability": 0.0,
     "biomeCategory": "NONE",
     "rainingPossibility": 0.0,

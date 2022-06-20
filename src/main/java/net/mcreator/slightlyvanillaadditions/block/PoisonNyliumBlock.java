@@ -18,7 +18,7 @@ import java.util.Collections;
 
 public class PoisonNyliumBlock extends Block {
 	public PoisonNyliumBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1f, 10f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRAVEL).strength(1f, 10f).requiresCorrectToolForDrops());
 	}
 
 	@Override

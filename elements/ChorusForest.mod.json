@@ -9,10 +9,32 @@
     "undergroundBlock": {
       "value": "Blocks.END_STONE"
     },
-    "moodSoundDelay": 0,
+    "underwaterBlock": {
+      "value": "CUSTOM:PoisonousFluid"
+    },
+    "airColor": {
+      "value": -3407617,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
     "spawnParticles": false,
-    "particlesProbability": 0.0,
-    "biomeCategory": "NONE",
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particlesProbability": 0.5,
+    "biomeCategory": "JUNGLE",
     "rainingPossibility": 0.5,
     "temperature": 0.5,
     "baseHeight": 0.1,
@@ -20,10 +42,10 @@
     "spawnBiome": false,
     "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 200,
+    "biomeWeight": 10,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 0,
-    "seagrassPerChunk": 20,
+    "seagrassPerChunk": 0,
     "flowersPerChunk": 0,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
@@ -31,10 +53,10 @@
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 3,
+    "treesPerChunk": 6,
     "vanillaTreeType": "Big trees",
     "treeType": 1,
-    "minHeight": 7,
+    "minHeight": 5,
     "treeStem": {
       "value": "CUSTOM:ChorusLog"
     },
@@ -45,7 +67,7 @@
       "value": "CUSTOM:ChorusLeaves"
     },
     "treeFruits": {
-      "value": "Blocks.CAVE_AIR"
+      "value": "Blocks.AIR"
     },
     "spawnStronghold": false,
     "spawnMineshaft": false,
@@ -65,12 +87,22 @@
     "spawnNetherBridge": false,
     "spawnNetherFossil": false,
     "spawnBastionRemnant": false,
-    "spawnEndCity": false,
+    "spawnEndCity": true,
     "spawnRuinedPortal": "NONE",
     "defaultFeatures": [
-      "Structures",
-      "FrozenTopLayer"
+      "Ores",
+      "AmethystGeodes"
     ],
-    "spawnEntries": []
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "CUSTOM:EndCube"
+        },
+        "minGroup": 1,
+        "maxGroup": 1,
+        "weight": 5,
+        "spawnType": "monster"
+      }
+    ]
   }
 }

@@ -12,8 +12,13 @@ import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.monster.RangedAttackMob;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
+import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
+import net.minecraft.world.entity.ai.goal.RangedAttackGoal;
+import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.LeapAtTargetGoal;
@@ -34,12 +39,13 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.slightlyvanillaadditions.procedures.EndCubeOnEntityTickUpdateProcedure;
 import net.mcreator.slightlyvanillaadditions.init.SlightlyVanillaAdditionsModEntities;
 
 import java.util.Set;
 
 @Mod.EventBusSubscriber
-public class EndCubeEntity extends Monster {
+public class EndCubeEntity extends Monster implements RangedAttackMob {
 	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("slightly_vanilla_additions:poison_swamp"),
 			new ResourceLocation("slightly_vanilla_additions:chorus_forest"), new ResourceLocation("slightly_vanilla_additions:crystal_plains"));
 
@@ -68,13 +74,21 @@ public class EndCubeEntity extends Monster {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(2, new WaterAvoidingRandomStrollGoal(this, 0.8));
-		this.goalSelector.addGoal(3, new LeapAtTargetGoal(this, (float) 0.5));
-		this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, false) {
+		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
+			}
+		});
+		this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
+		this.goalSelector.addGoal(3, new LeapAtTargetGoal(this, (float) 0.5));
+		this.goalSelector.addGoal(4, new RandomStrollGoal(this, 0));
+		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
+		this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, Player.class, false, false));
+		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10) {
+			@Override
+			public boolean canContinueToUse() {
+				return this.canUse();
 			}
 		});
 	}
@@ -97,6 +111,23 @@ public class EndCubeEntity extends Monster {
 	@Override
 	public SoundEvent getDeathSound() {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.magma_cube.death"));
+	}
+
+	@Override
+	public void baseTick() {
+		super.baseTick();
+		EndCubeOnEntityTickUpdateProcedure.execute(this.getY(), this);
+	}
+
+	@Override
+	public void performRangedAttack(LivingEntity target, float flval) {
+		EndCubeEntityProjectile entityarrow = new EndCubeEntityProjectile(SlightlyVanillaAdditionsModEntities.END_CUBE_PROJECTILE.get(), this,
+				this.level);
+		double d0 = target.getY() + target.getEyeHeight() - 1.1;
+		double d1 = target.getX() - this.getX();
+		double d3 = target.getZ() - this.getZ();
+		entityarrow.shoot(d1, d0 - entityarrow.getY() + Math.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 1.6F, 12.0F);
+		level.addFreshEntity(entityarrow);
 	}
 
 	public void aiStep() {

@@ -1183,14 +1183,6 @@
       "registry_name": "mossy_mushroom_big"
     },
     {
-      "name": "MossyBush",
-      "type": "structure",
-      "sortid": 129,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mossy_bush"
-    },
-    {
       "name": "AngelicWaterLorsqueLeMobjoueurEntreEnCollisionAvecLeBloc",
       "type": "procedure",
       "sortid": 130,
@@ -1384,28 +1376,32 @@
       "path": "~/Dagger"
     },
     {
-      "name": "PowderSnowEntityWalksOnTheBlock",
+      "name": "EndCubeOnEntityTickUpdate",
       "type": "procedure",
-      "sortid": 1,
+      "sortid": 153,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "powder_snow_entity_walks_on_the_block",
+      "registry_name": "end_cube_on_entity_tick_update",
       "metadata": {
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "y",
+            "type": "number"
           }
         ]
       }
     },
     {
-      "name": "PowderSnow",
-      "type": "block",
-      "sortid": 1,
+      "name": "EndCore",
+      "type": "item",
+      "sortid": 154,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "powder_snow"
+      "registry_name": "end_core"
     }
   ],
   "variable_elements": [],
@@ -1492,7 +1488,7 @@
       "item.slightly_vanilla_additions.poisonous_fluid_bucket": "Poisonous Fluid Bucket",
       "block.slightly_vanilla_additions.mossy_mushroom_block": "Mossy Mushroom Block",
       "item.slightly_vanilla_additions.burned_tree_powder": "Burned Tree Powder",
-      "item.slightly_vanilla_additions.end_farlands": "Dragon Flint And Steel",
+      "item.slightly_vanilla_additions.end_farlands": "End Farlands Portal Igniter",
       "biome.slightly_vanilla_additions.crystal_plains": "Crystal Plains",
       "item.slightly_vanilla_additions.back_pack_item": "BackPack",
       "advancements.best_jungle_ever.descr": "Wow ! You discovered the Mossy Jungle",

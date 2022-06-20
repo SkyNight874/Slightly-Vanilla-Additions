@@ -19,5 +19,6 @@ public class SlightlyVanillaAdditionsModEntityRenderers {
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(SlightlyVanillaAdditionsModEntities.FIRE_PEARL.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SlightlyVanillaAdditionsModEntities.END_CUBE.get(), EndCubeRenderer::new);
+		event.registerEntityRenderer(SlightlyVanillaAdditionsModEntities.END_CUBE_PROJECTILE.get(), ThrownItemRenderer::new);
 	}
 }
