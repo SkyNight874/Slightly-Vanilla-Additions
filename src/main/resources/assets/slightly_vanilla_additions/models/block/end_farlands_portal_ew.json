@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "slightly_vanilla_additions:blocks/end_portal",
-    "portal": "slightly_vanilla_additions:blocks/end_portal"
+    "particle": "slightly_vanilla_additions:blocks/endportalframe",
+    "portal": "slightly_vanilla_additions:blocks/endportalframe"
   },
   "elements": [
     {

@@ -14,6 +14,9 @@
       },
       {
         "value": "CUSTOM:AngelicSwamp"
+      },
+      {
+        "value": "CUSTOM:BurnedDesert"
       }
     ],
     "worldGenType": "End like gen",

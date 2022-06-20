@@ -13,13 +13,17 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.monster.MagmaCube;
+import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
+import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
+import net.minecraft.world.entity.ai.goal.LeapAtTargetGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
@@ -35,9 +39,9 @@ import net.mcreator.slightlyvanillaadditions.init.SlightlyVanillaAdditionsModEnt
 import java.util.Set;
 
 @Mod.EventBusSubscriber
-public class EndCubeEntity extends MagmaCube {
-	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("slightly_vanilla_additions:chorus_forest"),
-			new ResourceLocation("slightly_vanilla_additions:crystal_plains"));
+public class EndCubeEntity extends Monster {
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("slightly_vanilla_additions:poison_swamp"),
+			new ResourceLocation("slightly_vanilla_additions:chorus_forest"), new ResourceLocation("slightly_vanilla_additions:crystal_plains"));
 
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
@@ -64,7 +68,15 @@ public class EndCubeEntity extends MagmaCube {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-
+		this.goalSelector.addGoal(1, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(2, new WaterAvoidingRandomStrollGoal(this, 0.8));
+		this.goalSelector.addGoal(3, new LeapAtTargetGoal(this, (float) 0.5));
+		this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, false) {
+			@Override
+			protected double getAttackReachSqr(LivingEntity entity) {
+				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
+			}
+		});
 	}
 
 	@Override
