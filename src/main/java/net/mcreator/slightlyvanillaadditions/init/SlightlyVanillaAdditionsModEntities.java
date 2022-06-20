@@ -16,6 +16,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.slightlyvanillaadditions.entity.ShulkEntity;
 import net.mcreator.slightlyvanillaadditions.entity.FirePearlEntity;
 import net.mcreator.slightlyvanillaadditions.entity.EndCubeEntityProjectile;
 import net.mcreator.slightlyvanillaadditions.entity.EndCubeEntity;
@@ -36,6 +37,11 @@ public class SlightlyVanillaAdditionsModEntities {
 	public static final RegistryObject<EntityType<EndCubeEntityProjectile>> END_CUBE_PROJECTILE = register("projectile_end_cube",
 			EntityType.Builder.<EndCubeEntityProjectile>of(EndCubeEntityProjectile::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(EndCubeEntityProjectile::new).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<ShulkEntity>> SHULK = register("shulk",
+			EntityType.Builder.<ShulkEntity>of(ShulkEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(ShulkEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -45,11 +51,13 @@ public class SlightlyVanillaAdditionsModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			EndCubeEntity.init();
+			ShulkEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(END_CUBE.get(), EndCubeEntity.createAttributes().build());
+		event.put(SHULK.get(), ShulkEntity.createAttributes().build());
 	}
 }
