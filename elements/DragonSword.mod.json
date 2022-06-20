@@ -3,7 +3,7 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "dragon_sword",
+    "texture": "bone_sword",
     "customModelName": "Normal",
     "name": "Dragon Sword",
     "specialInfo": [],

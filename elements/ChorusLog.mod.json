@@ -4,10 +4,10 @@
   "definition": {
     "texture": "stripped_chorus_stem",
     "textureTop": "stripped_chorus_stem",
-    "textureLeft": "chorus_stem",
-    "textureFront": "chorus_stem",
-    "textureRight": "chorus_stem",
-    "textureBack": "chorus_stem",
+    "textureLeft": "ye",
+    "textureFront": "ye",
+    "textureRight": "ye",
+    "textureBack": "ye",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -58,6 +58,9 @@
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
+    "emittedRedstonePower": {
+      "fixedValue": 15.0
+    },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
@@ -75,6 +78,21 @@
     "isCustomSoundType": false,
     "soundOnStep": {
       "value": "WOOD"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
     },
     "luminance": 0,
     "unbreakable": false,
