@@ -684,7 +684,8 @@
       "sortid": 79,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "fire_pearl"
+      "registry_name": "fire_pearl",
+      "path": "~/Firepearl"
     },
     {
       "name": "FirePearlShoot",
@@ -692,7 +693,8 @@
       "sortid": 80,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "fire_pearl_shoot"
+      "registry_name": "fire_pearl_shoot",
+      "path": "~/Firepearl"
     },
     {
       "name": "CompressedCrystalBlock",
@@ -700,7 +702,8 @@
       "sortid": 81,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "compressed_crystal_block"
+      "registry_name": "compressed_crystal_block",
+      "path": "~/Crystal Plains"
     },
     {
       "name": "CrystalPlains",
@@ -717,7 +720,8 @@
       "sortid": 83,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "crystal"
+      "registry_name": "crystal",
+      "path": "~/Crystal Plains"
     },
     {
       "name": "WarpGUI",
@@ -725,7 +729,8 @@
       "sortid": 84,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "warp_gui"
+      "registry_name": "warp_gui",
+      "path": "~/Warp"
     },
     {
       "name": "WarpOverworld",
@@ -741,7 +746,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Warp"
     },
     {
       "name": "WarpNether",
@@ -757,7 +763,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Warp"
     },
     {
       "name": "WarpEnd",
@@ -773,7 +780,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Warp"
     },
     {
       "name": "WarpEndFarlands",
@@ -789,7 +797,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Warp"
     },
     {
       "name": "WarpQuandUneCommandeEstExecutee",
@@ -821,7 +830,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Warp"
     },
     {
       "name": "Warp",
@@ -829,7 +839,8 @@
       "sortid": 89,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "warp"
+      "registry_name": "warp",
+      "path": "~/Warp"
     },
     {
       "name": "CrystalGem",
@@ -837,7 +848,8 @@
       "sortid": 90,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "crystal_gem"
+      "registry_name": "crystal_gem",
+      "path": "~/Crystal Plains"
     },
     {
       "name": "AnotherDimension",
@@ -845,7 +857,8 @@
       "sortid": 91,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "another_dimension"
+      "registry_name": "another_dimension",
+      "path": "~/Advancements"
     },
     {
       "name": "Achorusforest",
@@ -853,7 +866,8 @@
       "sortid": 92,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "achorusforest"
+      "registry_name": "achorusforest",
+      "path": "~/Advancements"
     },
     {
       "name": "Ilovecrystal",
@@ -861,7 +875,8 @@
       "sortid": 93,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ilovecrystal"
+      "registry_name": "ilovecrystal",
+      "path": "~/Advancements"
     },
     {
       "name": "Ohdisgusting",
@@ -869,7 +884,8 @@
       "sortid": 94,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ohdisgusting"
+      "registry_name": "ohdisgusting",
+      "path": "~/Advancements"
     },
     {
       "name": "CrystalClockGUI",
@@ -877,7 +893,8 @@
       "sortid": 95,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "crystal_clock_gui"
+      "registry_name": "crystal_clock_gui",
+      "path": "~/Crystal Clock"
     },
     {
       "name": "CrystalClock",
@@ -885,7 +902,8 @@
       "sortid": 96,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "crystal_clock"
+      "registry_name": "crystal_clock",
+      "path": "~/Crystal Clock"
     },
     {
       "name": "SetTimeDay",
@@ -901,7 +919,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Set Time"
     },
     {
       "name": "SetTimeNight",
@@ -917,7 +936,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Set Time"
     },
     {
       "name": "SetTimeSunSet",
@@ -933,7 +953,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Set Time"
     },
     {
       "name": "SetTimeSunRise",
@@ -949,7 +970,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Set Time"
     },
     {
       "name": "Drawer",
@@ -957,7 +979,8 @@
       "sortid": 101,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "drawer"
+      "registry_name": "drawer",
+      "path": "~/Drawer"
     },
     {
       "name": "IronDrawerSound",
@@ -985,7 +1008,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Drawer"
     },
     {
       "name": "IronDrawerOpenSound",
@@ -1013,7 +1037,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Drawer"
     },
     {
       "name": "DrawerGUI",
@@ -1021,7 +1046,8 @@
       "sortid": 102,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "drawer_gui"
+      "registry_name": "drawer_gui",
+      "path": "~/Drawer"
     },
     {
       "name": "CrystalClockRecipe",
@@ -1029,7 +1055,8 @@
       "sortid": 104,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "crystal_clock_recipe"
+      "registry_name": "crystal_clock_recipe",
+      "path": "~/Crystal Clock"
     },
     {
       "name": "DrawerRecipe",
@@ -1037,7 +1064,8 @@
       "sortid": 105,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "drawer_recipe"
+      "registry_name": "drawer_recipe",
+      "path": "~/Drawer"
     },
     {
       "name": "Saphir",
@@ -1053,7 +1081,8 @@
       "sortid": 107,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ender_fire"
+      "registry_name": "ender_fire",
+      "path": "~/End Farlands Access"
     },
     {
       "name": "EnderFireQuandLentiteEntreEnCollisionAvecLeBloc",
@@ -1069,7 +1098,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/End Farlands Access"
     },
     {
       "name": "EnderCrown",
@@ -1077,7 +1107,8 @@
       "sortid": 109,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ender_crown"
+      "registry_name": "ender_crown",
+      "path": "~/Chorus Forest "
     },
     {
       "name": "BubblePlant",
@@ -1085,7 +1116,8 @@
       "sortid": 110,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bubble_plant"
+      "registry_name": "bubble_plant",
+      "path": "~/Alterated Forest"
     },
     {
       "name": "BubbleQuandLaNourritureEstMangee",
@@ -1109,7 +1141,8 @@
       "sortid": 112,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "burned_tree_powder"
+      "registry_name": "burned_tree_powder",
+      "path": "~/Burned Desert"
     },
     {
       "name": "BurnedTreeLog",
@@ -1117,7 +1150,8 @@
       "sortid": 112,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "burned_tree_log"
+      "registry_name": "burned_tree_log",
+      "path": "~/Burned Desert"
     },
     {
       "name": "BurnedDesert",
@@ -1142,7 +1176,8 @@
       "sortid": 115,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "crystal_plant"
+      "registry_name": "crystal_plant",
+      "path": "~/Crystal Plains"
     },
     {
       "name": "EndLily",
@@ -1190,7 +1225,8 @@
       "sortid": 121,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "crystal_moss"
+      "registry_name": "crystal_moss",
+      "path": "~/Crystal Plains"
     },
     {
       "name": "MossBlock",
@@ -1355,7 +1391,8 @@
       "sortid": 141,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alterated_fungi"
+      "registry_name": "alterated_fungi",
+      "path": "~/Alterated Forest"
     },
     {
       "name": "Bubble",
@@ -1483,8 +1520,8 @@
       "item.slightly_vanilla_additions.crystal_clock": "Crystal Clock",
       "item.slightly_vanilla_additions.bubble": "Bubble Gum",
       "block.slightly_vanilla_additions.alterated_wood": "Alterated Wood",
-      "block.slightly_vanilla_additions.polished_bluestone_wall": "Polished Bluestone Wall",
       "block.slightly_vanilla_additions.crystal": "Crystal",
+      "block.slightly_vanilla_additions.polished_bluestone_wall": "Polished Bluestone Wall",
       "block.slightly_vanilla_additions.chorus_fence_gate": "Chorus Fence Gate",
       "entity.slightly_vanilla_additions.end_cube": "End Cube",
       "block.slightly_vanilla_additions.chorus_leaves": "Chorus Block",
@@ -1493,8 +1530,8 @@
       "block.slightly_vanilla_additions.bubble_plant": "Bubble Plant",
       "fluid.slightly_vanilla_additions.poisonous_fluid": "Poisonous Fluid",
       "item.slightly_vanilla_additions.dragon_fang": "Dragon Fang",
-      "block.slightly_vanilla_additions.burned_tree_log": "Burned Tree Log",
       "block.slightly_vanilla_additions.chorus_log": "Chorus Log",
+      "block.slightly_vanilla_additions.burned_tree_log": "Burned Tree Log",
       "biome.slightly_vanilla_additions.angelic_swamp": "Angelic Swamp",
       "block.slightly_vanilla_additions.chorus_slab": "Chorus Slab",
       "block.slightly_vanilla_additions.cyan_moss": "Cyan Moss",
@@ -1609,6 +1646,38 @@
       },
       {
         "name": "Alterated Forest",
+        "children": []
+      },
+      {
+        "name": "Firepearl",
+        "children": []
+      },
+      {
+        "name": "Crystal Plains",
+        "children": []
+      },
+      {
+        "name": "Warp",
+        "children": []
+      },
+      {
+        "name": "Advancements",
+        "children": []
+      },
+      {
+        "name": "Crystal Clock",
+        "children": []
+      },
+      {
+        "name": "Drawer",
+        "children": []
+      },
+      {
+        "name": "Burned Desert",
+        "children": []
+      },
+      {
+        "name": "Set Time",
         "children": []
       }
     ]
