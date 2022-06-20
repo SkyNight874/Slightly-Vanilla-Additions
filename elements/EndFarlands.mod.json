@@ -4,7 +4,16 @@
   "definition": {
     "biomesInDimension": [
       {
+        "value": "CUSTOM:ChorusForest"
+      },
+      {
+        "value": "CUSTOM:AlteratedForest"
+      },
+      {
         "value": "CUSTOM:MossyJungle"
+      },
+      {
+        "value": "CUSTOM:AngelicSwamp"
       }
     ],
     "worldGenType": "End like gen",
@@ -14,10 +23,6 @@
     "fluidBlock": {
       "value": "CUSTOM:PoisonousFluid"
     },
-    "airColor": {
-      "value": -15728608,
-      "falpha": 0.0
-    },
     "canRespawnHere": true,
     "hasFog": false,
     "isDark": false,
@@ -25,22 +30,25 @@
     "sleepResult": "BED_EXPLODES",
     "hasSkyLight": false,
     "imitateOverworldBehaviour": false,
+    "onPlayerEntersDimension": {
+      "name": "EndFarlandsPlayerEntersDimension"
+    },
     "portalFrame": {
       "value": "Blocks.END_BRICKS"
     },
     "portalParticles": {
-      "value": "PORTAL"
+      "value": "ENCHANTMENT_TABLE"
     },
     "portalLuminance": 0,
     "portalSound": {
       "value": "block.portal.ambient"
     },
-    "igniterName": "Dragon Flint And Steel",
+    "igniterName": "End Farlands Portal Igniter",
     "igniterTab": {
       "value": "TOOLS"
     },
     "texture": "crystal_flintandsteel",
-    "portalTexture": "end_portal",
+    "portalTexture": "endportalframe",
     "enablePortal": true
   }
 }
