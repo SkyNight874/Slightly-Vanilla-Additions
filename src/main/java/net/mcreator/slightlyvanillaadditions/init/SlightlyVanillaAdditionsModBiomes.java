@@ -102,7 +102,7 @@ public class SlightlyVanillaAdditionsModBiomes {
 							List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
 							surfaceRules.add(1,
 									preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, SNOWY_HIGHLANDS.getId()),
-											SlightlyVanillaAdditionsModBlocks.POWDER_SNOW.get().defaultBlockState(),
+											SlightlyVanillaAdditionsModItems.DELETED_MOD_ELEMENT.get().defaultBlockState(),
 											SlightlyVanillaAdditionsModBlocks.BLUESTONE.get().defaultBlockState(),
 											SlightlyVanillaAdditionsModBlocks.BLUESTONE.get().defaultBlockState()));
 							NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),

@@ -14,7 +14,6 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
-import net.mcreator.slightlyvanillaadditions.block.PowderSnowBlock;
 import net.mcreator.slightlyvanillaadditions.block.PolishedBluestoneWallBlock;
 import net.mcreator.slightlyvanillaadditions.block.PolishedBluestoneStairsBlock;
 import net.mcreator.slightlyvanillaadditions.block.PolishedBluestoneSlabBlock;
@@ -73,7 +72,6 @@ import net.mcreator.slightlyvanillaadditions.SlightlyVanillaAdditionsMod;
 
 public class SlightlyVanillaAdditionsModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, SlightlyVanillaAdditionsMod.MODID);
-	public static final RegistryObject<Block> POWDER_SNOW = REGISTRY.register("powder_snow", () -> new PowderSnowBlock());
 	public static final RegistryObject<Block> BLUESTONE = REGISTRY.register("bluestone", () -> new BluestoneBlock());
 	public static final RegistryObject<Block> POLISHED_BLUESTONE = REGISTRY.register("polished_bluestone", () -> new PolishedBluestoneBlock());
 	public static final RegistryObject<Block> BLUESTONE_SLAB = REGISTRY.register("bluestone_slab", () -> new BluestoneSlabBlock());
