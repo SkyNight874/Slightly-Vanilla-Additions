@@ -2,7 +2,6 @@
 package net.mcreator.slightlyvanillaadditions.world.biome;
 
 import net.minecraft.world.level.levelgen.placement.SurfaceWaterDepthFilter;
-import net.minecraft.world.level.levelgen.placement.RarityFilter;
 import net.minecraft.world.level.levelgen.placement.NoiseThresholdCountPlacement;
 import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
 import net.minecraft.world.level.levelgen.placement.CountPlacement;
@@ -44,22 +43,18 @@ public class AlteratedForestBiome {
 						FeatureUtils.register("slightly_vanilla_additions:tree_alterated_forest", Feature.TREE,
 								new TreeConfiguration.TreeConfigurationBuilder(
 										BlockStateProvider.simple(SlightlyVanillaAdditionsModBlocks.ALTERATED_LOG.get().defaultBlockState()),
-										new StraightTrunkPlacer(7, 2, 0),
+										new StraightTrunkPlacer(5, 2, 0),
 										BlockStateProvider.simple(SlightlyVanillaAdditionsModBlocks.ALTERATED_LEAVES.get().defaultBlockState()),
 										new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3), new TwoLayersFeatureSize(1, 0, 1))
 										.decorators(ImmutableList.of(AlteratedForestLeaveDecorator.INSTANCE, AlteratedForestTrunkDecorator.INSTANCE,
 												AlteratedForestFruitDecorator.INSTANCE))
 										.build()),
-						List.of(CountPlacement.of(3), InSquarePlacement.spread(), SurfaceWaterDepthFilter.forMaxDepth(0),
+						List.of(CountPlacement.of(6), InSquarePlacement.spread(), SurfaceWaterDepthFilter.forMaxDepth(0),
 								PlacementUtils.HEIGHTMAP_OCEAN_FLOOR, PlacementUtils.filteredByBlockSurvival(Blocks.OAK_SAPLING),
 								BiomeFilter.biome())));
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
 				PlacementUtils.register("slightly_vanilla_additions:grass_alterated_forest", VegetationFeatures.PATCH_GRASS,
-						List.of(NoiseThresholdCountPlacement.of(-0.8D, 5, 4), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
-								BiomeFilter.biome())));
-		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
-				PlacementUtils.register("slightly_vanilla_additions:flower_alterated_forest", VegetationFeatures.FLOWER_DEFAULT,
-						List.of(CountPlacement.of(4), RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP,
+						List.of(NoiseThresholdCountPlacement.of(-0.8D, 5, 1), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
 								BiomeFilter.biome())));
 		BiomeDefaultFeatures.addDefaultCarversAndLakes(biomeGenerationSettings);
 		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);

@@ -10,6 +10,12 @@
       },
       {
         "value": "CUSTOM:AlteratedNylium"
+      },
+      {
+        "value": "CUSTOM:EndMoss"
+      },
+      {
+        "value": "CUSTOM:EndMycelium"
       }
     ],
     "functions": [],

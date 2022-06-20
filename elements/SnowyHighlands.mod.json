@@ -4,13 +4,31 @@
   "definition": {
     "name": "Snowy Highlands",
     "groundBlock": {
-      "value": "CUSTOM:PowderSnow"
+      "value": "Blocks.POWDER_SNOW"
     },
     "undergroundBlock": {
       "value": "CUSTOM:Bluestone"
     },
+    "underwaterBlock": {
+      "value": ""
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
     "moodSoundDelay": 0,
     "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
     "particlesProbability": 0.0,
     "biomeCategory": "EXTREME_HILLS",
     "rainingPossibility": 0.5,

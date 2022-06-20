@@ -2,7 +2,6 @@
 package net.mcreator.slightlyvanillaadditions.world.biome;
 
 import net.minecraft.world.level.levelgen.placement.SurfaceWaterDepthFilter;
-import net.minecraft.world.level.levelgen.placement.NoiseThresholdCountPlacement;
 import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
 import net.minecraft.world.level.levelgen.placement.CountPlacement;
 import net.minecraft.world.level.levelgen.placement.BiomeFilter;
@@ -21,7 +20,6 @@ import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
-import net.minecraft.data.worldgen.features.VegetationFeatures;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 
@@ -45,18 +43,14 @@ public class ChorusForestBiome {
 						FeatureUtils.register("slightly_vanilla_additions:tree_chorus_forest", Feature.TREE,
 								new TreeConfiguration.TreeConfigurationBuilder(
 										BlockStateProvider.simple(SlightlyVanillaAdditionsModBlocks.CHORUS_LOG.get().defaultBlockState()),
-										new MegaJungleTrunkPlacer(7, 2, 19),
+										new MegaJungleTrunkPlacer(5, 2, 19),
 										BlockStateProvider.simple(SlightlyVanillaAdditionsModBlocks.CHORUS_LEAVES.get().defaultBlockState()),
 										new MegaJungleFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 2), new TwoLayersFeatureSize(1, 1, 2))
 										.decorators(ImmutableList.of(ChorusForestLeaveDecorator.INSTANCE, ChorusForestTrunkDecorator.INSTANCE,
 												ChorusForestFruitDecorator.INSTANCE))
 										.build()),
-						List.of(CountPlacement.of(4), InSquarePlacement.spread(), SurfaceWaterDepthFilter.forMaxDepth(0),
+						List.of(CountPlacement.of(6), InSquarePlacement.spread(), SurfaceWaterDepthFilter.forMaxDepth(0),
 								PlacementUtils.HEIGHTMAP_OCEAN_FLOOR, PlacementUtils.filteredByBlockSurvival(Blocks.OAK_SAPLING),
-								BiomeFilter.biome())));
-		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
-				PlacementUtils.register("slightly_vanilla_additions:grass_chorus_forest", VegetationFeatures.PATCH_GRASS,
-						List.of(NoiseThresholdCountPlacement.of(-0.8D, 5, 3), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
 								BiomeFilter.biome())));
 		BiomeDefaultFeatures.addDefaultCrystalFormations(biomeGenerationSettings);
 		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
