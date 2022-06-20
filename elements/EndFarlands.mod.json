@@ -10,7 +10,10 @@
         "value": "CUSTOM:AlteratedForest"
       },
       {
-        "value": "CUSTOM:CrystalPlains"
+        "value": "CUSTOM:MossyJungle"
+      },
+      {
+        "value": "CUSTOM:AngelicSwamp"
       }
     ],
     "worldGenType": "End like gen",
@@ -34,7 +37,7 @@
       "value": "Blocks.END_BRICKS"
     },
     "portalParticles": {
-      "value": "PORTAL"
+      "value": "ENCHANTMENT_TABLE"
     },
     "portalLuminance": 0,
     "portalSound": {
@@ -45,7 +48,7 @@
       "value": "TOOLS"
     },
     "texture": "crystal_flintandsteel",
-    "portalTexture": "end_portal",
+    "portalTexture": "endportalframe",
     "enablePortal": true
   }
 }

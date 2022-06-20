@@ -1,8 +1,10 @@
 package net.mcreator.slightlyvanillaadditions.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
-
-import javax.annotation.Nullable;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.damagesource.DamageSource;
 
 public class StealthBladeLivingEntityIsHitWithToolProcedure {
 	public static void execute(Entity entity, Entity sourceentity) {

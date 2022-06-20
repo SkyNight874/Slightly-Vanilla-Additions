@@ -9,18 +9,36 @@
     "undergroundBlock": {
       "value": "Blocks.END_STONE"
     },
+    "underwaterBlock": {
+      "value": ""
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
     "moodSoundDelay": 0,
     "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
     "particlesProbability": 0.0,
     "biomeCategory": "SWAMP",
-    "rainingPossibility": 0.5,
-    "temperature": 0.5,
-    "baseHeight": 0.1,
-    "heightVariation": 0.2,
+    "rainingPossibility": 1.0,
+    "temperature": 2.0,
+    "baseHeight": 1.0,
+    "heightVariation": 1.0,
     "spawnBiome": false,
     "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 100,
+    "biomeWeight": 9,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 4,
     "seagrassPerChunk": 20,
