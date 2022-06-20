@@ -1,10 +1,12 @@
 {
-  "parent": "block/grass_block",
+  "parent": "block/cube",
   "textures": {
-    "bottom": "slightly_vanilla_additions:blocks/endstone",
-    "top": "slightly_vanilla_additions:blocks/poison_nylium_top",
-    "side": "slightly_vanilla_additions:blocks/poison_nylium",
-    "overlay": "slightly_vanilla_additions:blocks/poison_nylium",
+    "down": "slightly_vanilla_additions:blocks/endstone",
+    "up": "slightly_vanilla_additions:blocks/poison_nylium_top",
+    "north": "slightly_vanilla_additions:blocks/poison_nylium",
+    "east": "slightly_vanilla_additions:blocks/poison_nylium",
+    "south": "slightly_vanilla_additions:blocks/poison_nylium",
+    "west": "slightly_vanilla_additions:blocks/poison_nylium",
     "particle": "slightly_vanilla_additions:blocks/endstone"
   }
 }
