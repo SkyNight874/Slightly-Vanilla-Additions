@@ -18,5 +18,6 @@ public class EndFarlandsPlayerEntersDimensionProcedure {
 		world.setBlock(new BlockPos(x + 1, y - 1, z + 1), Blocks.END_STONE.defaultBlockState(), 3);
 		world.setBlock(new BlockPos(x, y - 1, z + 1), Blocks.END_STONE.defaultBlockState(), 3);
 		world.setBlock(new BlockPos(x - 1, y - 1, z + 1), Blocks.END_STONE.defaultBlockState(), 3);
+		world.setBlock(new BlockPos(x, y - 1, z), Blocks.END_STONE.defaultBlockState(), 3);
 	}
 }

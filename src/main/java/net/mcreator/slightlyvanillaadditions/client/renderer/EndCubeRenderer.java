@@ -6,11 +6,11 @@ import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 import net.mcreator.slightlyvanillaadditions.entity.EndCubeEntity;
-import net.mcreator.slightlyvanillaadditions.client.model.Modelcustom_model;
+import net.mcreator.slightlyvanillaadditions.client.model.Modelendcube;
 
-public class EndCubeRenderer extends MobRenderer<EndCubeEntity, Modelcustom_model<EndCubeEntity>> {
+public class EndCubeRenderer extends MobRenderer<EndCubeEntity, Modelendcube<EndCubeEntity>> {
 	public EndCubeRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelcustom_model(context.bakeLayer(Modelcustom_model.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelendcube(context.bakeLayer(Modelendcube.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override
