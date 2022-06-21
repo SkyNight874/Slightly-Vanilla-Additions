@@ -26,7 +26,6 @@ import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RangedAttackGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
-import net.minecraft.world.entity.ai.goal.Goal;
 import net.minecraft.world.entity.ai.control.FlyingMoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -45,15 +44,19 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.slightlyvanillaadditions.init.SlightlyVanillaAdditionsModEntities;
 
+import java.util.Set;
 import java.util.Random;
-import java.util.EnumSet;
 
 @Mod.EventBusSubscriber
 public class EyeOfGuardianEntity extends Monster implements RangedAttackMob {
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("slightly_vanilla_additions:poison_swamp"),
+			new ResourceLocation("slightly_vanilla_additions:chorus_forest"), new ResourceLocation("slightly_vanilla_additions:crystal_plains"));
+
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER)
-				.add(new MobSpawnSettings.SpawnerData(SlightlyVanillaAdditionsModEntities.EYE_OF_GUARDIAN.get(), 20, 4, 4));
+		if (SPAWN_BIOMES.contains(event.getName()))
+			event.getSpawns().getSpawner(MobCategory.MONSTER)
+					.add(new MobSpawnSettings.SpawnerData(SlightlyVanillaAdditionsModEntities.EYE_OF_GUARDIAN.get(), 20, 1, 1));
 	}
 
 	public EyeOfGuardianEntity(PlayMessages.SpawnEntity packet, Level world) {
@@ -80,46 +83,7 @@ public class EyeOfGuardianEntity extends Monster implements RangedAttackMob {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new Goal() {
-			{
-				this.setFlags(EnumSet.of(Goal.Flag.MOVE));
-			}
-
-			public boolean canUse() {
-				if (EyeOfGuardianEntity.this.getTarget() != null && !EyeOfGuardianEntity.this.getMoveControl().hasWanted()) {
-					return true;
-				} else {
-					return false;
-				}
-			}
-
-			@Override
-			public boolean canContinueToUse() {
-				return EyeOfGuardianEntity.this.getMoveControl().hasWanted() && EyeOfGuardianEntity.this.getTarget() != null
-						&& EyeOfGuardianEntity.this.getTarget().isAlive();
-			}
-
-			@Override
-			public void start() {
-				LivingEntity livingentity = EyeOfGuardianEntity.this.getTarget();
-				Vec3 vec3d = livingentity.getEyePosition(1);
-				EyeOfGuardianEntity.this.moveControl.setWantedPosition(vec3d.x, vec3d.y, vec3d.z, 1);
-			}
-
-			@Override
-			public void tick() {
-				LivingEntity livingentity = EyeOfGuardianEntity.this.getTarget();
-				if (EyeOfGuardianEntity.this.getBoundingBox().intersects(livingentity.getBoundingBox())) {
-					EyeOfGuardianEntity.this.doHurtTarget(livingentity);
-				} else {
-					double d0 = EyeOfGuardianEntity.this.distanceToSqr(livingentity);
-					if (d0 < 16) {
-						Vec3 vec3d = livingentity.getEyePosition(1);
-						EyeOfGuardianEntity.this.moveControl.setWantedPosition(vec3d.x, vec3d.y, vec3d.z, 1);
-					}
-				}
-			}
-		});
+		this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, Player.class, true, false));
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 0.8, 20) {
 			@Override
 			protected Vec3 getPosition() {
@@ -130,9 +94,8 @@ public class EyeOfGuardianEntity extends Monster implements RangedAttackMob {
 				return new Vec3(dir_x, dir_y, dir_z);
 			}
 		});
-		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, Player.class, false, false));
-		this.targetSelector.addGoal(4, new HurtByTargetGoal(this));
-		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
+		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
+		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10) {
 			@Override
 			public boolean canContinueToUse() {

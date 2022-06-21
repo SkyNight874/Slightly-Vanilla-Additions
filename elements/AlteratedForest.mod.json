@@ -89,6 +89,25 @@
       "Caves",
       "Ores"
     ],
-    "spawnEntries": []
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "CUSTOM:AlteratedZombie"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 15,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntitySlime"
+        },
+        "minGroup": 1,
+        "maxGroup": 1,
+        "weight": 15,
+        "spawnType": "monster"
+      }
+    ]
   }
 }

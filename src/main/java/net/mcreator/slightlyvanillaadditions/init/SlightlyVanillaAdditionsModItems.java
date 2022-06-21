@@ -153,6 +153,12 @@ public class SlightlyVanillaAdditionsModItems {
 	public static final RegistryObject<Item> ANCIENT_PROTECTOR = REGISTRY.register("ancient_protector_spawn_egg",
 			() -> new ForgeSpawnEggItem(SlightlyVanillaAdditionsModEntities.ANCIENT_PROTECTOR, -16777216, -3381760,
 					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> SHULK_SOLDIER = REGISTRY.register("shulk_soldier_spawn_egg",
+			() -> new ForgeSpawnEggItem(SlightlyVanillaAdditionsModEntities.SHULK_SOLDIER, -6710887, -3407668,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> ALTERATED_ZOMBIE = REGISTRY.register("alterated_zombie_spawn_egg",
+			() -> new ForgeSpawnEggItem(SlightlyVanillaAdditionsModEntities.ALTERATED_ZOMBIE, -16751002, -16751104,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

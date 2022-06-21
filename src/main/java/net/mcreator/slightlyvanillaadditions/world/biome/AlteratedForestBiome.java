@@ -18,6 +18,8 @@ import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.biome.BiomeSpecialEffects;
 import net.minecraft.world.level.biome.BiomeGenerationSettings;
 import net.minecraft.world.level.biome.Biome;
+import net.minecraft.world.entity.MobCategory;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.VegetationFeatures;
@@ -27,6 +29,7 @@ import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 import net.mcreator.slightlyvanillaadditions.world.features.treedecorators.AlteratedForestTrunkDecorator;
 import net.mcreator.slightlyvanillaadditions.world.features.treedecorators.AlteratedForestLeaveDecorator;
 import net.mcreator.slightlyvanillaadditions.world.features.treedecorators.AlteratedForestFruitDecorator;
+import net.mcreator.slightlyvanillaadditions.init.SlightlyVanillaAdditionsModEntities;
 import net.mcreator.slightlyvanillaadditions.init.SlightlyVanillaAdditionsModBlocks;
 
 import java.util.List;
@@ -59,6 +62,9 @@ public class AlteratedForestBiome {
 		BiomeDefaultFeatures.addDefaultCarversAndLakes(biomeGenerationSettings);
 		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
 		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder();
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER,
+				new MobSpawnSettings.SpawnerData(SlightlyVanillaAdditionsModEntities.ALTERATED_ZOMBIE.get(), 15, 1, 2));
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.SLIME, 15, 1, 1));
 		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.NONE).biomeCategory(Biome.BiomeCategory.NONE).temperature(1f).downfall(0f)
 				.specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build()).build();
 	}

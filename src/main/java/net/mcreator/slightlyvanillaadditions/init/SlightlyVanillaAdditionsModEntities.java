@@ -16,11 +16,13 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.slightlyvanillaadditions.entity.ShulkSoldierEntity;
 import net.mcreator.slightlyvanillaadditions.entity.ShulkEntity;
 import net.mcreator.slightlyvanillaadditions.entity.FirePearlEntity;
 import net.mcreator.slightlyvanillaadditions.entity.EyeOfGuardianEntityProjectile;
 import net.mcreator.slightlyvanillaadditions.entity.EyeOfGuardianEntity;
 import net.mcreator.slightlyvanillaadditions.entity.AncientProtectorEntity;
+import net.mcreator.slightlyvanillaadditions.entity.AlteratedZombieEntity;
 import net.mcreator.slightlyvanillaadditions.SlightlyVanillaAdditionsMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -45,6 +47,16 @@ public class SlightlyVanillaAdditionsModEntities {
 	public static final RegistryObject<EntityType<AncientProtectorEntity>> ANCIENT_PROTECTOR = register("ancient_protector",
 			EntityType.Builder.<AncientProtectorEntity>of(AncientProtectorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AncientProtectorEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ShulkSoldierEntity>> SHULK_SOLDIER = register("shulk_soldier",
+			EntityType.Builder.<ShulkSoldierEntity>of(ShulkSoldierEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ShulkSoldierEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<AlteratedZombieEntity>> ALTERATED_ZOMBIE = register("alterated_zombie",
+			EntityType.Builder.<AlteratedZombieEntity>of(AlteratedZombieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AlteratedZombieEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -56,6 +68,8 @@ public class SlightlyVanillaAdditionsModEntities {
 			ShulkEntity.init();
 			EyeOfGuardianEntity.init();
 			AncientProtectorEntity.init();
+			ShulkSoldierEntity.init();
+			AlteratedZombieEntity.init();
 		});
 	}
 
@@ -64,5 +78,7 @@ public class SlightlyVanillaAdditionsModEntities {
 		event.put(SHULK.get(), ShulkEntity.createAttributes().build());
 		event.put(EYE_OF_GUARDIAN.get(), EyeOfGuardianEntity.createAttributes().build());
 		event.put(ANCIENT_PROTECTOR.get(), AncientProtectorEntity.createAttributes().build());
+		event.put(SHULK_SOLDIER.get(), ShulkSoldierEntity.createAttributes().build());
+		event.put(ALTERATED_ZOMBIE.get(), AlteratedZombieEntity.createAttributes().build());
 	}
 }

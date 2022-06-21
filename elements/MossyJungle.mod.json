@@ -42,7 +42,7 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.0,
-    "biomeCategory": "NONE",
+    "biomeCategory": "JUNGLE",
     "rainingPossibility": 1.0,
     "temperature": 0.5,
     "baseHeight": 0.1,
@@ -50,7 +50,7 @@
     "spawnBiome": false,
     "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 9,
+    "biomeWeight": 10,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 4,
     "seagrassPerChunk": 20,

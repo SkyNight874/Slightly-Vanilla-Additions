@@ -17,6 +17,12 @@
       },
       {
         "value": "CUSTOM:BurnedDesert"
+      },
+      {
+        "value": "CUSTOM:CrystalPlains"
+      },
+      {
+        "value": "CUSTOM:PoisonSwamp"
       }
     ],
     "worldGenType": "End like gen",

@@ -24,6 +24,7 @@
   "biome.slightly_vanilla_additions.angelic_swamp": "Angelic Swamp",
   "block.slightly_vanilla_additions.chorus_slab": "Chorus Slab",
   "item.slightly_vanilla_additions.shulk_spawn_egg": "Shulk Spawn Egg",
+  "item.slightly_vanilla_additions.shulk_soldier_spawn_egg": "Shulk Soldier Spawn Egg",
   "block.slightly_vanilla_additions.cyan_moss": "Cyan Moss",
   "item.slightly_vanilla_additions.dragon_hoe": "Dragon Hoe",
   "fluid.slightly_vanilla_additions.angelic_water": "Angelic Water",
@@ -55,6 +56,7 @@
   "item.slightly_vanilla_additions.crystal_gem": "Crystal Gem",
   "biome.slightly_vanilla_additions.mossy_jungle": "Mossy Jungle",
   "advancements.achorusforest.descr": "You discovered the Chorus Forest !",
+  "entity.slightly_vanilla_additions.alterated_zombie": "Alterated Zombie",
   "item.slightly_vanilla_additions.fire_pearl": "Fire Pearl",
   "block.slightly_vanilla_additions.angelic_grass": "Angelic Grass",
   "block.slightly_vanilla_additions.bluestone_wall": "Bluestone Wall",
@@ -71,6 +73,7 @@
   "biome.slightly_vanilla_additions.burned_desert": "Burned Desert",
   "item.slightly_vanilla_additions.poisonous_fluid_bucket": "Poisonous Fluid Bucket",
   "block.slightly_vanilla_additions.mossy_mushroom_block": "Mossy Mushroom Block",
+  "item.slightly_vanilla_additions.alterated_zombie_spawn_egg": "Alterated Zombie Spawn Egg",
   "item.slightly_vanilla_additions.ancient_protector_spawn_egg": "Ancient Protector Spawn Egg",
   "item.slightly_vanilla_additions.burned_tree_powder": "Burned Tree Powder",
   "item.slightly_vanilla_additions.end_farlands": "End Farlands Portal Igniter",
@@ -104,5 +107,6 @@
   "biome.slightly_vanilla_additions.poison_swamp": "Poison Swamp",
   "block.slightly_vanilla_additions.angelic_water": "Angelic Water",
   "block.slightly_vanilla_additions.alterated_leaves": "Alterated Leaves",
-  "biome.slightly_vanilla_additions.alterated_forest": "Alterated Forest"
+  "biome.slightly_vanilla_additions.alterated_forest": "Alterated Forest",
+  "entity.slightly_vanilla_additions.shulk_soldier": "Shulk Soldier"
 }
