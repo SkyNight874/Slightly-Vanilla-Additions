@@ -2,22 +2,22 @@
   "_fv": 28,
   "_type": "livingentity",
   "definition": {
-    "mobName": "End Cube",
+    "mobName": "Eye Of Guardian",
     "mobLabel": "",
-    "mobModelName": "Modelendcube",
-    "mobModelTexture": "magma_cube.png",
+    "mobModelName": "ModelEyeOfGuardian",
+    "mobModelTexture": "eyeoftheguardian.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
-    "modelHeight": 1.95,
+    "modelHeight": 1.8,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -16777216,
+      "value": -10092442,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -10092442,
+      "value": -16751104,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -46,13 +46,13 @@
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 3,
+    "attackStrength": 5,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
     "movementSpeed": 0.3,
     "armorBaseValue": 0.0,
     "trackingRange": 64,
-    "health": 10,
+    "health": 15,
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": true,
@@ -63,47 +63,44 @@
     "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
-    "immuneToFire": false,
-    "immuneToArrows": false,
-    "immuneToFallDamage": false,
+    "immuneToFire": true,
+    "immuneToArrows": true,
+    "immuneToFallDamage": true,
     "immuneToCactus": false,
     "immuneToDrowning": false,
     "immuneToLightning": false,
     "immuneToPotions": false,
     "immuneToPlayer": false,
-    "immuneToExplosion": false,
+    "immuneToExplosion": true,
     "immuneToTrident": false,
     "immuneToAnvil": false,
-    "immuneToWither": false,
+    "immuneToWither": true,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": ""
+      "value": "Items.ENDER_EYE"
     },
     "livingSound": {
-      "value": ""
+      "value": "block.end_portal_frame.fill"
     },
     "hurtSound": {
-      "value": "entity.magmacube.hurt"
+      "value": "entity.generic.hurt"
     },
     "deathSound": {
-      "value": "entity.magmacube.death"
+      "value": "entity.endereye.death"
     },
     "stepSound": {
-      "value": "entity.magmacube.jump"
+      "value": ""
     },
-    "spawnParticles": true,
+    "spawnParticles": false,
     "particleToSpawn": {
-      "value": "PORTAL"
+      "value": "EXPLOSION_NORMAL"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
-    "onMobTickUpdate": {
-      "name": "EndCubeOnEntityTickUpdate"
-    },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"120\" y=\"-8\"><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"fly\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"wander_avoid_water\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"86\" y=\"14\"><next><block type=\"attack_fly\"><field name=\"radius\">16</field><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"fly\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
@@ -116,19 +113,9 @@
     "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
     "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 1,
-    "maxNumberOfMobsPerGroup": 2,
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:ChorusForest"
-      },
-      {
-        "value": "CUSTOM:CrystalPlains"
-      },
-      {
-        "value": "CUSTOM:PoisonSwamp"
-      }
-    ],
+    "minNumberOfMobsPerGroup": 4,
+    "maxNumberOfMobsPerGroup": 4,
+    "restrictionBiomes": [],
     "spawnInDungeons": false
   }
 }

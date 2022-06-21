@@ -1290,14 +1290,6 @@
       "registry_name": "log_blocks"
     },
     {
-      "name": "EndCube",
-      "type": "livingentity",
-      "sortid": 152,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "end_cube"
-    },
-    {
       "name": "MinecraftDirt",
       "type": "tag",
       "sortid": 150,
@@ -1376,26 +1368,6 @@
       "path": "~/Dagger"
     },
     {
-      "name": "EndCubeOnEntityTickUpdate",
-      "type": "procedure",
-      "sortid": 153,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "end_cube_on_entity_tick_update",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "EndCore",
       "type": "item",
       "sortid": 154,
@@ -1426,6 +1398,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "shulk"
+    },
+    {
+      "name": "EyeOfGuardian",
+      "type": "livingentity",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eye_of_guardian"
+    },
+    {
+      "name": "AncientProtector",
+      "type": "livingentity",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_protector"
     }
   ],
   "variable_elements": [],
@@ -1454,7 +1442,6 @@
       "block.slightly_vanilla_additions.crystal": "Crystal",
       "block.slightly_vanilla_additions.polished_bluestone_wall": "Polished Bluestone Wall",
       "block.slightly_vanilla_additions.chorus_fence_gate": "Chorus Fence Gate",
-      "entity.slightly_vanilla_additions.end_cube": "End Cube",
       "block.slightly_vanilla_additions.chorus_leaves": "Chorus Block",
       "block.slightly_vanilla_additions.moss_block": "Moss Block",
       "block.slightly_vanilla_additions.end_mycelium": "End Mycelium",
@@ -1463,12 +1450,14 @@
       "item.slightly_vanilla_additions.dragon_fang": "Dragon Fang",
       "block.slightly_vanilla_additions.chorus_log": "Chorus Log",
       "block.slightly_vanilla_additions.burned_tree_log": "Burned Tree Log",
+      "entity.slightly_vanilla_additions.ancient_protector": "Ancient Protector",
       "biome.slightly_vanilla_additions.angelic_swamp": "Angelic Swamp",
       "block.slightly_vanilla_additions.chorus_slab": "Chorus Slab",
       "item.slightly_vanilla_additions.shulk_spawn_egg": "Shulk Spawn Egg",
       "block.slightly_vanilla_additions.cyan_moss": "Cyan Moss",
       "item.slightly_vanilla_additions.dragon_hoe": "Dragon Hoe",
       "fluid.slightly_vanilla_additions.angelic_water": "Angelic Water",
+      "entity.slightly_vanilla_additions.eye_of_guardian": "Eye Of Guardian",
       "block.slightly_vanilla_additions.alterated_log": "Alterated Log",
       "block.slightly_vanilla_additions.mushroom_lantern": "Mushroom Lantern",
       "biome.slightly_vanilla_additions.chorus_forest": "Chorus Forest",
@@ -1512,6 +1501,7 @@
       "biome.slightly_vanilla_additions.burned_desert": "Burned Desert",
       "item.slightly_vanilla_additions.poisonous_fluid_bucket": "Poisonous Fluid Bucket",
       "block.slightly_vanilla_additions.mossy_mushroom_block": "Mossy Mushroom Block",
+      "item.slightly_vanilla_additions.ancient_protector_spawn_egg": "Ancient Protector Spawn Egg",
       "item.slightly_vanilla_additions.burned_tree_powder": "Burned Tree Powder",
       "item.slightly_vanilla_additions.end_farlands": "End Farlands Portal Igniter",
       "item.slightly_vanilla_additions.end_core": "End Core",
@@ -1522,6 +1512,7 @@
       "block.slightly_vanilla_additions.crystal_plant": "Crystal Plant",
       "block.slightly_vanilla_additions.alterated_fungi": "Alterated Fungi",
       "block.slightly_vanilla_additions.chorus_wood": "Chorus Wood",
+      "item.slightly_vanilla_additions.eye_of_guardian_spawn_egg": "Eye Of Guardian Spawn Egg",
       "block.slightly_vanilla_additions.alterated_nylium": "Alterated Nylium",
       "advancements.best_jungle_ever.title": "Best Jungle Ever !",
       "advancements.ilovecrystal.title": "I love crystal !",
@@ -1533,7 +1524,6 @@
       "block.slightly_vanilla_additions.chorus_planks": "Chorus Planks",
       "block.slightly_vanilla_additions.bluestone_stairs": "Bluestone Stairs",
       "item.slightly_vanilla_additions.dragon_pickaxe": "Dragon Pickaxe",
-      "item.slightly_vanilla_additions.end_cube_spawn_egg": "End Cube Spawn Egg",
       "biome.slightly_vanilla_additions.snowy_highlands": "Snowy Highlands",
       "entity.slightly_vanilla_additions.shulk": "Shulk",
       "block.slightly_vanilla_additions.alterated_planks": "Alterated Planks",

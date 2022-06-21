@@ -12,15 +12,17 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import net.mcreator.slightlyvanillaadditions.client.renderer.ShulkRenderer;
-import net.mcreator.slightlyvanillaadditions.client.renderer.EndCubeRenderer;
+import net.mcreator.slightlyvanillaadditions.client.renderer.EyeOfGuardianRenderer;
+import net.mcreator.slightlyvanillaadditions.client.renderer.AncientProtectorRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class SlightlyVanillaAdditionsModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(SlightlyVanillaAdditionsModEntities.FIRE_PEARL.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(SlightlyVanillaAdditionsModEntities.END_CUBE.get(), EndCubeRenderer::new);
-		event.registerEntityRenderer(SlightlyVanillaAdditionsModEntities.END_CUBE_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SlightlyVanillaAdditionsModEntities.SHULK.get(), ShulkRenderer::new);
+		event.registerEntityRenderer(SlightlyVanillaAdditionsModEntities.EYE_OF_GUARDIAN.get(), EyeOfGuardianRenderer::new);
+		event.registerEntityRenderer(SlightlyVanillaAdditionsModEntities.EYE_OF_GUARDIAN_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SlightlyVanillaAdditionsModEntities.ANCIENT_PROTECTOR.get(), AncientProtectorRenderer::new);
 	}
 }

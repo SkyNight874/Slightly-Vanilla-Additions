@@ -143,12 +143,15 @@ public class SlightlyVanillaAdditionsModItems {
 	public static final RegistryObject<Item> BUBBLE = REGISTRY.register("bubble", () -> new BubbleItem());
 	public static final RegistryObject<Item> STEALTH_BLADE = REGISTRY.register("stealth_blade", () -> new StealthBladeItem());
 	public static final RegistryObject<Item> END_FARLANDS = REGISTRY.register("end_farlands", () -> new EndFarlandsItem());
-	public static final RegistryObject<Item> END_CUBE = REGISTRY.register("end_cube_spawn_egg",
-			() -> new ForgeSpawnEggItem(SlightlyVanillaAdditionsModEntities.END_CUBE, -16777216, -10092442,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> END_CORE = REGISTRY.register("end_core", () -> new EndCoreItem());
 	public static final RegistryObject<Item> SHULK = REGISTRY.register("shulk_spawn_egg",
 			() -> new ForgeSpawnEggItem(SlightlyVanillaAdditionsModEntities.SHULK, -52225, -103,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> EYE_OF_GUARDIAN = REGISTRY.register("eye_of_guardian_spawn_egg",
+			() -> new ForgeSpawnEggItem(SlightlyVanillaAdditionsModEntities.EYE_OF_GUARDIAN, -10092442, -16751104,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> ANCIENT_PROTECTOR = REGISTRY.register("ancient_protector_spawn_egg",
+			() -> new ForgeSpawnEggItem(SlightlyVanillaAdditionsModEntities.ANCIENT_PROTECTOR, -16777216, -3381760,
 					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
