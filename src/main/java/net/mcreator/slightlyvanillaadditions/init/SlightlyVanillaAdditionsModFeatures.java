@@ -31,7 +31,6 @@ import net.mcreator.slightlyvanillaadditions.world.features.plants.AngelicGrassF
 import net.mcreator.slightlyvanillaadditions.world.features.plants.AlteratedFungiFeature;
 import net.mcreator.slightlyvanillaadditions.world.features.lakes.AngelicWaterFeature;
 import net.mcreator.slightlyvanillaadditions.world.features.PoisonMushroomStructureFeature;
-import net.mcreator.slightlyvanillaadditions.world.features.MushroomLanternSmallFeature;
 import net.mcreator.slightlyvanillaadditions.world.features.MushroomLanternMoyenFeature;
 import net.mcreator.slightlyvanillaadditions.world.features.MushroomLanternBigFeature;
 import net.mcreator.slightlyvanillaadditions.world.features.MossyMushroomSmallFeature;

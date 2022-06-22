@@ -11,8 +11,6 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
-import net.mcreator.slightlyvanillaadditions.client.renderer.EndCubeRenderer;
-
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class SlightlyVanillaAdditionsModEntityRenderers {
 	@SubscribeEvent

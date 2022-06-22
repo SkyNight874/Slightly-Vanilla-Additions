@@ -96,7 +96,7 @@
     "spawnEntries": [
       {
         "entity": {
-          "value": "CUSTOM:EndCube"
+          "value": "CUSTOM:Shulk"
         },
         "minGroup": 1,
         "maxGroup": 1,

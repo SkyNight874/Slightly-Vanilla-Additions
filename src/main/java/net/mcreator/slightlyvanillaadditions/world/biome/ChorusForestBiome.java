@@ -55,7 +55,7 @@ public class ChorusForestBiome {
 		BiomeDefaultFeatures.addDefaultCrystalFormations(biomeGenerationSettings);
 		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
 		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder();
-		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(SlightlyVanillaAdditionsModEntities.END_CUBE.get(), 5, 1, 1));
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(SlightlyVanillaAdditionsModEntities.SHULK.get(), 5, 1, 1));
 		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).biomeCategory(Biome.BiomeCategory.JUNGLE).temperature(0.5f)
 				.downfall(0.5f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build())
 				.build();

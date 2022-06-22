@@ -1234,14 +1234,6 @@
       "registry_name": "mushroom_lantern_big"
     },
     {
-      "name": "MushroomLanternSmall",
-      "type": "structure",
-      "sortid": 137,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mushroom_lantern_small"
-    },
-    {
       "name": "MushroomLanternMoyen",
       "type": "structure",
       "sortid": 138,
@@ -1288,14 +1280,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "log_blocks"
-    },
-    {
-      "name": "EndCube",
-      "type": "livingentity",
-      "sortid": 152,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "end_cube"
     },
     {
       "name": "MinecraftDirt",
@@ -1376,32 +1360,112 @@
       "path": "~/Dagger"
     },
     {
-      "name": "EndCubeOnEntityTickUpdate",
-      "type": "procedure",
-      "sortid": 153,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "end_cube_on_entity_tick_update",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          }
-        ]
-      }
-    },
-    {
       "name": "EndCore",
       "type": "item",
       "sortid": 154,
       "compiles": true,
       "locked_code": false,
       "registry_name": "end_core"
+    },
+    {
+      "name": "ShulkEntityDies",
+      "type": "procedure",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shulk_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Shulk",
+      "type": "livingentity",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shulk"
+    },
+    {
+      "name": "EyeOfGuardian",
+      "type": "livingentity",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eye_of_guardian"
+    },
+    {
+      "name": "AncientProtector",
+      "type": "livingentity",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_protector"
+    },
+    {
+      "name": "ShulkSoldier",
+      "type": "livingentity",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shulk_soldier"
+    },
+    {
+      "name": "AlteratedZombie",
+      "type": "livingentity",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alterated_zombie"
+    },
+    {
+      "name": "EndShipwreck",
+      "type": "structure",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_shipwreck"
+    },
+    {
+      "name": "EndBeaconOnStructureInstanceGenerated",
+      "type": "procedure",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_beacon_on_structure_instance_generated",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EndBeacon",
+      "type": "structure",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "end_beacon"
     }
   ],
   "variable_elements": [],
@@ -1430,7 +1494,6 @@
       "block.slightly_vanilla_additions.crystal": "Crystal",
       "block.slightly_vanilla_additions.polished_bluestone_wall": "Polished Bluestone Wall",
       "block.slightly_vanilla_additions.chorus_fence_gate": "Chorus Fence Gate",
-      "entity.slightly_vanilla_additions.end_cube": "End Cube",
       "block.slightly_vanilla_additions.chorus_leaves": "Chorus Block",
       "block.slightly_vanilla_additions.moss_block": "Moss Block",
       "block.slightly_vanilla_additions.end_mycelium": "End Mycelium",
@@ -1439,11 +1502,15 @@
       "item.slightly_vanilla_additions.dragon_fang": "Dragon Fang",
       "block.slightly_vanilla_additions.chorus_log": "Chorus Log",
       "block.slightly_vanilla_additions.burned_tree_log": "Burned Tree Log",
+      "entity.slightly_vanilla_additions.ancient_protector": "Ancient Protector",
       "biome.slightly_vanilla_additions.angelic_swamp": "Angelic Swamp",
       "block.slightly_vanilla_additions.chorus_slab": "Chorus Slab",
+      "item.slightly_vanilla_additions.shulk_spawn_egg": "Shulk Spawn Egg",
+      "item.slightly_vanilla_additions.shulk_soldier_spawn_egg": "Shulk Soldier Spawn Egg",
       "block.slightly_vanilla_additions.cyan_moss": "Cyan Moss",
       "item.slightly_vanilla_additions.dragon_hoe": "Dragon Hoe",
       "fluid.slightly_vanilla_additions.angelic_water": "Angelic Water",
+      "entity.slightly_vanilla_additions.eye_of_guardian": "Eye Of Guardian",
       "block.slightly_vanilla_additions.alterated_log": "Alterated Log",
       "block.slightly_vanilla_additions.mushroom_lantern": "Mushroom Lantern",
       "biome.slightly_vanilla_additions.chorus_forest": "Chorus Forest",
@@ -1471,6 +1538,7 @@
       "item.slightly_vanilla_additions.crystal_gem": "Crystal Gem",
       "biome.slightly_vanilla_additions.mossy_jungle": "Mossy Jungle",
       "advancements.achorusforest.descr": "You discovered the Chorus Forest !",
+      "entity.slightly_vanilla_additions.alterated_zombie": "Alterated Zombie",
       "item.slightly_vanilla_additions.fire_pearl": "Fire Pearl",
       "block.slightly_vanilla_additions.angelic_grass": "Angelic Grass",
       "block.slightly_vanilla_additions.bluestone_wall": "Bluestone Wall",
@@ -1487,8 +1555,11 @@
       "biome.slightly_vanilla_additions.burned_desert": "Burned Desert",
       "item.slightly_vanilla_additions.poisonous_fluid_bucket": "Poisonous Fluid Bucket",
       "block.slightly_vanilla_additions.mossy_mushroom_block": "Mossy Mushroom Block",
+      "item.slightly_vanilla_additions.alterated_zombie_spawn_egg": "Alterated Zombie Spawn Egg",
+      "item.slightly_vanilla_additions.ancient_protector_spawn_egg": "Ancient Protector Spawn Egg",
       "item.slightly_vanilla_additions.burned_tree_powder": "Burned Tree Powder",
       "item.slightly_vanilla_additions.end_farlands": "End Farlands Portal Igniter",
+      "item.slightly_vanilla_additions.end_core": "End Core",
       "biome.slightly_vanilla_additions.crystal_plains": "Crystal Plains",
       "item.slightly_vanilla_additions.back_pack_item": "BackPack",
       "advancements.best_jungle_ever.descr": "Wow ! You discovered the Mossy Jungle",
@@ -1496,6 +1567,7 @@
       "block.slightly_vanilla_additions.crystal_plant": "Crystal Plant",
       "block.slightly_vanilla_additions.alterated_fungi": "Alterated Fungi",
       "block.slightly_vanilla_additions.chorus_wood": "Chorus Wood",
+      "item.slightly_vanilla_additions.eye_of_guardian_spawn_egg": "Eye Of Guardian Spawn Egg",
       "block.slightly_vanilla_additions.alterated_nylium": "Alterated Nylium",
       "advancements.best_jungle_ever.title": "Best Jungle Ever !",
       "advancements.ilovecrystal.title": "I love crystal !",
@@ -1507,8 +1579,8 @@
       "block.slightly_vanilla_additions.chorus_planks": "Chorus Planks",
       "block.slightly_vanilla_additions.bluestone_stairs": "Bluestone Stairs",
       "item.slightly_vanilla_additions.dragon_pickaxe": "Dragon Pickaxe",
-      "item.slightly_vanilla_additions.end_cube_spawn_egg": "End Cube Spawn Egg",
       "biome.slightly_vanilla_additions.snowy_highlands": "Snowy Highlands",
+      "entity.slightly_vanilla_additions.shulk": "Shulk",
       "block.slightly_vanilla_additions.alterated_planks": "Alterated Planks",
       "block.slightly_vanilla_additions.poison_nylium": "Poison Nylium",
       "fluid.poisonous_fluid": "PoisonousFluid",
@@ -1517,7 +1589,8 @@
       "biome.slightly_vanilla_additions.poison_swamp": "Poison Swamp",
       "block.slightly_vanilla_additions.angelic_water": "Angelic Water",
       "block.slightly_vanilla_additions.alterated_leaves": "Alterated Leaves",
-      "biome.slightly_vanilla_additions.alterated_forest": "Alterated Forest"
+      "biome.slightly_vanilla_additions.alterated_forest": "Alterated Forest",
+      "entity.slightly_vanilla_additions.shulk_soldier": "Shulk Soldier"
     }
   },
   "foldersRoot": {

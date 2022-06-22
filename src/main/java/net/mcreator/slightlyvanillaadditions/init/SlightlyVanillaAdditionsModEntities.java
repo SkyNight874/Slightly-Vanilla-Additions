@@ -17,8 +17,6 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.slightlyvanillaadditions.entity.FirePearlEntity;
-import net.mcreator.slightlyvanillaadditions.entity.EndCubeEntityProjectile;
-import net.mcreator.slightlyvanillaadditions.entity.EndCubeEntity;
 import net.mcreator.slightlyvanillaadditions.SlightlyVanillaAdditionsMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)

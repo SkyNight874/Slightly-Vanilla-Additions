@@ -18,20 +18,20 @@ import net.mcreator.slightlyvanillaadditions.init.SlightlyVanillaAdditionsModIte
 import net.mcreator.slightlyvanillaadditions.init.SlightlyVanillaAdditionsModEntities;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
-public class EndCubeEntityProjectile extends AbstractArrow implements ItemSupplier {
-	public EndCubeEntityProjectile(PlayMessages.SpawnEntity packet, Level world) {
-		super(SlightlyVanillaAdditionsModEntities.END_CUBE_PROJECTILE.get(), world);
+public class EyeOfGuardianEntityProjectile extends AbstractArrow implements ItemSupplier {
+	public EyeOfGuardianEntityProjectile(PlayMessages.SpawnEntity packet, Level world) {
+		super(SlightlyVanillaAdditionsModEntities.EYE_OF_GUARDIAN_PROJECTILE.get(), world);
 	}
 
-	public EndCubeEntityProjectile(EntityType<? extends EndCubeEntityProjectile> type, Level world) {
+	public EyeOfGuardianEntityProjectile(EntityType<? extends EyeOfGuardianEntityProjectile> type, Level world) {
 		super(type, world);
 	}
 
-	public EndCubeEntityProjectile(EntityType<? extends EndCubeEntityProjectile> type, double x, double y, double z, Level world) {
+	public EyeOfGuardianEntityProjectile(EntityType<? extends EyeOfGuardianEntityProjectile> type, double x, double y, double z, Level world) {
 		super(type, x, y, z, world);
 	}
 
-	public EndCubeEntityProjectile(EntityType<? extends EndCubeEntityProjectile> type, LivingEntity entity, Level world) {
+	public EyeOfGuardianEntityProjectile(EntityType<? extends EyeOfGuardianEntityProjectile> type, LivingEntity entity, Level world) {
 		super(type, entity, world);
 	}
 
