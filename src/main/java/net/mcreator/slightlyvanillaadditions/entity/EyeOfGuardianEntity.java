@@ -56,7 +56,7 @@ public class EyeOfGuardianEntity extends Monster implements RangedAttackMob {
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		if (SPAWN_BIOMES.contains(event.getName()))
 			event.getSpawns().getSpawner(MobCategory.MONSTER)
-					.add(new MobSpawnSettings.SpawnerData(SlightlyVanillaAdditionsModEntities.EYE_OF_GUARDIAN.get(), 20, 1, 1));
+					.add(new MobSpawnSettings.SpawnerData(SlightlyVanillaAdditionsModEntities.EYE_OF_GUARDIAN.get(), 5, 1, 1));
 	}
 
 	public EyeOfGuardianEntity(PlayMessages.SpawnEntity packet, Level world) {

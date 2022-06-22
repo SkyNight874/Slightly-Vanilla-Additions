@@ -18,6 +18,7 @@ import net.minecraft.world.level.biome.BiomeSpecialEffects;
 import net.minecraft.world.level.biome.BiomeGenerationSettings;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.entity.MobCategory;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.FeatureUtils;
@@ -26,7 +27,6 @@ import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 import net.mcreator.slightlyvanillaadditions.world.features.treedecorators.ChorusForestTrunkDecorator;
 import net.mcreator.slightlyvanillaadditions.world.features.treedecorators.ChorusForestLeaveDecorator;
 import net.mcreator.slightlyvanillaadditions.world.features.treedecorators.ChorusForestFruitDecorator;
-import net.mcreator.slightlyvanillaadditions.init.SlightlyVanillaAdditionsModEntities;
 import net.mcreator.slightlyvanillaadditions.init.SlightlyVanillaAdditionsModBlocks;
 
 import java.util.List;
@@ -55,7 +55,7 @@ public class ChorusForestBiome {
 		BiomeDefaultFeatures.addDefaultCrystalFormations(biomeGenerationSettings);
 		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
 		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder();
-		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(SlightlyVanillaAdditionsModEntities.SHULK.get(), 5, 1, 1));
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.ENDERMAN, 6, 1, 1));
 		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).biomeCategory(Biome.BiomeCategory.JUNGLE).temperature(0.5f)
 				.downfall(0.5f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build())
 				.build();

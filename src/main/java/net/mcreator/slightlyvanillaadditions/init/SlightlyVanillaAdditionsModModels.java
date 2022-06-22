@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.mcreator.slightlyvanillaadditions.client.model.Modelendcube;
 import net.mcreator.slightlyvanillaadditions.client.model.Modelcustom_model;
 import net.mcreator.slightlyvanillaadditions.client.model.ModelShulkSoldier;
+import net.mcreator.slightlyvanillaadditions.client.model.ModelGolemOfGuardian;
 import net.mcreator.slightlyvanillaadditions.client.model.ModelEyeOfGuardian;
 import net.mcreator.slightlyvanillaadditions.client.model.ModelAncient_Protector;
 
@@ -24,5 +25,6 @@ public class SlightlyVanillaAdditionsModModels {
 		event.registerLayerDefinition(Modelcustom_model.LAYER_LOCATION, Modelcustom_model::createBodyLayer);
 		event.registerLayerDefinition(ModelEyeOfGuardian.LAYER_LOCATION, ModelEyeOfGuardian::createBodyLayer);
 		event.registerLayerDefinition(Modelendcube.LAYER_LOCATION, Modelendcube::createBodyLayer);
+		event.registerLayerDefinition(ModelGolemOfGuardian.LAYER_LOCATION, ModelGolemOfGuardian::createBodyLayer);
 	}
 }

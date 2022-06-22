@@ -11,6 +11,7 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.biome.MobSpawnSettings;
+import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
@@ -24,33 +25,41 @@ import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
+import net.minecraft.world.entity.SpawnGroupData;
 import net.minecraft.world.entity.MobType;
+import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.slightlyvanillaadditions.procedures.ShulkSoldierOnInitialEntitySpawnProcedure;
 import net.mcreator.slightlyvanillaadditions.init.SlightlyVanillaAdditionsModItems;
 import net.mcreator.slightlyvanillaadditions.init.SlightlyVanillaAdditionsModEntities;
+
+import javax.annotation.Nullable;
 
 import java.util.Set;
 
 @Mod.EventBusSubscriber
 public class ShulkSoldierEntity extends Monster {
-	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("slightly_vanilla_additions:burned_desert"));
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("slightly_vanilla_additions:chorus_forest"),
+			new ResourceLocation("slightly_vanilla_additions:crystal_plains"));
 
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		if (SPAWN_BIOMES.contains(event.getName()))
 			event.getSpawns().getSpawner(MobCategory.MONSTER)
-					.add(new MobSpawnSettings.SpawnerData(SlightlyVanillaAdditionsModEntities.SHULK_SOLDIER.get(), 20, 1, 2));
+					.add(new MobSpawnSettings.SpawnerData(SlightlyVanillaAdditionsModEntities.SHULK_SOLDIER.get(), 4, 1, 2));
 	}
 
 	public ShulkSoldierEntity(PlayMessages.SpawnEntity packet, Level world) {
@@ -112,6 +121,14 @@ public class ShulkSoldierEntity extends Monster {
 	@Override
 	public SoundEvent getDeathSound() {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.shulker.death"));
+	}
+
+	@Override
+	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason,
+			@Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
+		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
+		ShulkSoldierOnInitialEntitySpawnProcedure.execute(this);
+		return retval;
 	}
 
 	public static void init() {

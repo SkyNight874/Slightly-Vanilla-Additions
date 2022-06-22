@@ -114,11 +114,21 @@
     "rangedItemType": "Default item",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 10,
+    "spawningProbability": 6,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,
-    "maxNumberOfMobsPerGroup": 3,
-    "restrictionBiomes": [],
+    "maxNumberOfMobsPerGroup": 1,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:ChorusForest"
+      },
+      {
+        "value": "CUSTOM:CrystalPlains"
+      },
+      {
+        "value": "CUSTOM:BurnedDesert"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

@@ -85,10 +85,7 @@
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
-    "defaultFeatures": [
-      "Caves",
-      "Ores"
-    ],
+    "defaultFeatures": [],
     "spawnEntries": [
       {
         "entity": {
@@ -96,7 +93,7 @@
         },
         "minGroup": 1,
         "maxGroup": 2,
-        "weight": 15,
+        "weight": 5,
         "spawnType": "monster"
       },
       {
@@ -105,7 +102,7 @@
         },
         "minGroup": 1,
         "maxGroup": 1,
-        "weight": 15,
+        "weight": 4,
         "spawnType": "monster"
       }
     ]

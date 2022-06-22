@@ -10,19 +10,10 @@
         "value": "CUSTOM:AlteratedForest"
       },
       {
-        "value": "CUSTOM:MossyJungle"
-      },
-      {
         "value": "CUSTOM:AngelicSwamp"
       },
       {
-        "value": "CUSTOM:BurnedDesert"
-      },
-      {
         "value": "CUSTOM:CrystalPlains"
-      },
-      {
-        "value": "CUSTOM:PoisonSwamp"
       }
     ],
     "worldGenType": "End like gen",
