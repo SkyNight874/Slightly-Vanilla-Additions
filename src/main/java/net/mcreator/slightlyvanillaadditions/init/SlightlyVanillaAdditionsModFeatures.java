@@ -35,6 +35,8 @@ import net.mcreator.slightlyvanillaadditions.world.features.MushroomLanternMoyen
 import net.mcreator.slightlyvanillaadditions.world.features.MushroomLanternBigFeature;
 import net.mcreator.slightlyvanillaadditions.world.features.MossyMushroomSmallFeature;
 import net.mcreator.slightlyvanillaadditions.world.features.MossyMushroomBigFeature;
+import net.mcreator.slightlyvanillaadditions.world.features.EndShipwreckFeature;
+import net.mcreator.slightlyvanillaadditions.world.features.EndBeaconFeature;
 import net.mcreator.slightlyvanillaadditions.SlightlyVanillaAdditionsMod;
 
 import java.util.function.Supplier;
@@ -78,9 +80,6 @@ public class SlightlyVanillaAdditionsModFeatures {
 	public static final RegistryObject<Feature<?>> MUSHROOM_LANTERN_BIG = register("mushroom_lantern_big", MushroomLanternBigFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, MushroomLanternBigFeature.GENERATE_BIOMES,
 					MushroomLanternBigFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> MUSHROOM_LANTERN_SMALL = register("mushroom_lantern_small", MushroomLanternSmallFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, MushroomLanternSmallFeature.GENERATE_BIOMES,
-					MushroomLanternSmallFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> MUSHROOM_LANTERN_MOYEN = register("mushroom_lantern_moyen", MushroomLanternMoyenFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, MushroomLanternMoyenFeature.GENERATE_BIOMES,
 					MushroomLanternMoyenFeature::placedFeature));
@@ -91,6 +90,10 @@ public class SlightlyVanillaAdditionsModFeatures {
 	public static final RegistryObject<Feature<?>> ALTERATED_FUNGI = register("alterated_fungi", AlteratedFungiFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, AlteratedFungiFeature.GENERATE_BIOMES,
 					AlteratedFungiFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> END_SHIPWRECK = register("end_shipwreck", EndShipwreckFeature::feature, new FeatureRegistration(
+			GenerationStep.Decoration.SURFACE_STRUCTURES, EndShipwreckFeature.GENERATE_BIOMES, EndShipwreckFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> END_BEACON = register("end_beacon", EndBeaconFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, EndBeaconFeature.GENERATE_BIOMES, EndBeaconFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);
