@@ -25,15 +25,15 @@ import net.minecraft.core.BlockPos;
 import java.util.Set;
 import java.util.List;
 
-public class EndShipFeature extends Feature<NoneFeatureConfiguration> {
-	public static EndShipFeature FEATURE = null;
+public class PillarRuins1Feature extends Feature<NoneFeatureConfiguration> {
+	public static PillarRuins1Feature FEATURE = null;
 	public static Holder<ConfiguredFeature<NoneFeatureConfiguration, ?>> CONFIGURED_FEATURE = null;
 	public static Holder<PlacedFeature> PLACED_FEATURE = null;
 
 	public static Feature<?> feature() {
-		FEATURE = new EndShipFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("slightly_vanilla_additions:end_ship", FEATURE, FeatureConfiguration.NONE);
-		PLACED_FEATURE = PlacementUtils.register("slightly_vanilla_additions:end_ship", CONFIGURED_FEATURE, List.of());
+		FEATURE = new PillarRuins1Feature();
+		CONFIGURED_FEATURE = FeatureUtils.register("slightly_vanilla_additions:pillar_ruins_1", FEATURE, FeatureConfiguration.NONE);
+		PLACED_FEATURE = PlacementUtils.register("slightly_vanilla_additions:pillar_ruins_1", CONFIGURED_FEATURE, List.of());
 		return FEATURE;
 	}
 
@@ -41,12 +41,12 @@ public class EndShipFeature extends Feature<NoneFeatureConfiguration> {
 		return PLACED_FEATURE;
 	}
 
-	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
+	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("slightly_vanilla_additions:outer_end"));
 	private final Set<ResourceKey<Level>> generate_dimensions = Set
 			.of(ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("slightly_vanilla_additions:end_farlands")));
 	private StructureTemplate template = null;
 
-	public EndShipFeature() {
+	public PillarRuins1Feature() {
 		super(NoneFeatureConfiguration.CODEC);
 	}
 
@@ -55,18 +55,18 @@ public class EndShipFeature extends Feature<NoneFeatureConfiguration> {
 		if (!generate_dimensions.contains(context.level().getLevel().dimension()))
 			return false;
 		if (template == null)
-			template = context.level().getLevel().getStructureManager().getOrCreate(new ResourceLocation("slightly_vanilla_additions", "endship"));
+			template = context.level().getLevel().getStructureManager()
+					.getOrCreate(new ResourceLocation("slightly_vanilla_additions", "pillar_ruins1"));
 		if (template == null)
 			return false;
 		boolean anyPlaced = false;
-		if ((context.random().nextInt(1000000) + 1) <= 3000) {
-			int count = context.random().nextInt(2) + 1;
+		if ((context.random().nextInt(1000000) + 1) <= 20000) {
+			int count = context.random().nextInt(1) + 1;
 			for (int a = 0; a < count; a++) {
 				int i = context.origin().getX() + context.random().nextInt(16);
 				int k = context.origin().getZ() + context.random().nextInt(16);
-				int j = context.level().getHeight(Heightmap.Types.OCEAN_FLOOR_WG, i, k);
-				j += context.random().nextInt(64) + 16;
-				BlockPos spawnTo = new BlockPos(i + 0, j + 20, k + 0);
+				int j = context.level().getHeight(Heightmap.Types.OCEAN_FLOOR_WG, i, k) - 1;
+				BlockPos spawnTo = new BlockPos(i + 0, j + 0, k + 0);
 				if (template.placeInWorld(context.level(), spawnTo, spawnTo,
 						new StructurePlaceSettings().setMirror(Mirror.values()[context.random().nextInt(2)])
 								.setRotation(Rotation.values()[context.random().nextInt(3)]).setRandom(context.random())

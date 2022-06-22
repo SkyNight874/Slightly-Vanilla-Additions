@@ -32,7 +32,7 @@
     "particlesProbability": 0.5,
     "biomeCategory": "NONE",
     "rainingPossibility": 0.0,
-    "temperature": 0.0,
+    "temperature": 0.5,
     "baseHeight": 0.0,
     "heightVariation": 0.6,
     "spawnBiome": false,

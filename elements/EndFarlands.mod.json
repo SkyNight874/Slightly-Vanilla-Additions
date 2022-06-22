@@ -14,6 +14,9 @@
       },
       {
         "value": "CUSTOM:CrystalPlains"
+      },
+      {
+        "value": "CUSTOM:OuterEnd"
       }
     ],
     "worldGenType": "End like gen",
@@ -23,9 +26,13 @@
     "fluidBlock": {
       "value": "CUSTOM:PoisonousFluid"
     },
+    "airColor": {
+      "value": -16777216,
+      "falpha": 0.0
+    },
     "canRespawnHere": true,
     "hasFog": false,
-    "isDark": false,
+    "isDark": true,
     "doesWaterVaporize": false,
     "sleepResult": "BED_EXPLODES",
     "hasSkyLight": false,

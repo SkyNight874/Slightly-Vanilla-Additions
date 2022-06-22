@@ -40,6 +40,8 @@ public class EndFarlandsDimension {
 			replaceableBlocks.add(Blocks.END_STONE);
 			replaceableBlocks.add(SlightlyVanillaAdditionsModBlocks.ALTERATED_NYLIUM.get());
 			replaceableBlocks.add(Blocks.END_STONE);
+			replaceableBlocks.add(Blocks.END_STONE);
+			replaceableBlocks.add(Blocks.END_STONE);
 			replaceableBlocks.add(SlightlyVanillaAdditionsModBlocks.COMPRESSED_CRYSTAL_BLOCK.get());
 			replaceableBlocks.add(Blocks.END_STONE);
 			replaceableBlocks.add(SlightlyVanillaAdditionsModBlocks.END_MYCELIUM.get());
@@ -58,7 +60,7 @@ public class EndFarlandsDimension {
 			DimensionSpecialEffects customEffect = new DimensionSpecialEffects(Float.NaN, true, DimensionSpecialEffects.SkyType.NONE, false, false) {
 				@Override
 				public Vec3 getBrightnessDependentFogColor(Vec3 color, float sunHeight) {
-					return color;
+					return new Vec3(0, 0, 0);
 				}
 
 				@Override

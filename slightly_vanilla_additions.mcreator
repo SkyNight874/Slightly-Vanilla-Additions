@@ -1498,6 +1498,114 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "purpur_golem"
+    },
+    {
+      "name": "OuterEnd",
+      "type": "biome",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "outer_end"
+    },
+    {
+      "name": "PillarRuins1",
+      "type": "structure",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pillar_ruins_1"
+    },
+    {
+      "name": "PillarRuins2",
+      "type": "structure",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pillar_ruins_2"
+    },
+    {
+      "name": "PillarRuins3",
+      "type": "structure",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pillar_ruins_3"
+    },
+    {
+      "name": "Oldportal",
+      "type": "structure",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oldportal"
+    },
+    {
+      "name": "CursedEndermanEntityIsHurt",
+      "type": "procedure",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_enderman_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CursedEnderman",
+      "type": "livingentity",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_enderman"
+    },
+    {
+      "name": "CursedEndermanOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_enderman_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1524,8 +1632,8 @@
       "item.slightly_vanilla_additions.crystal_clock": "Crystal Clock",
       "item.slightly_vanilla_additions.bubble": "Bubble Gum",
       "block.slightly_vanilla_additions.alterated_wood": "Alterated Wood",
-      "block.slightly_vanilla_additions.crystal": "Crystal",
       "block.slightly_vanilla_additions.polished_bluestone_wall": "Polished Bluestone Wall",
+      "block.slightly_vanilla_additions.crystal": "Crystal",
       "block.slightly_vanilla_additions.chorus_fence_gate": "Chorus Fence Gate",
       "block.slightly_vanilla_additions.chorus_leaves": "Chorus Block",
       "block.slightly_vanilla_additions.moss_block": "Moss Block",
@@ -1533,9 +1641,9 @@
       "block.slightly_vanilla_additions.bubble_plant": "Bubble Plant",
       "fluid.slightly_vanilla_additions.poisonous_fluid": "Poisonous Fluid",
       "item.slightly_vanilla_additions.dragon_fang": "Dragon Fang",
-      "block.slightly_vanilla_additions.chorus_log": "Chorus Log",
-      "block.slightly_vanilla_additions.burned_tree_log": "Burned Tree Log",
       "entity.slightly_vanilla_additions.ancient_protector": "Ancient Protector",
+      "block.slightly_vanilla_additions.burned_tree_log": "Burned Tree Log",
+      "block.slightly_vanilla_additions.chorus_log": "Chorus Log",
       "biome.slightly_vanilla_additions.angelic_swamp": "Angelic Swamp",
       "block.slightly_vanilla_additions.chorus_slab": "Chorus Slab",
       "item.slightly_vanilla_additions.shulk_spawn_egg": "Shulk Spawn Egg",
@@ -1545,6 +1653,7 @@
       "fluid.slightly_vanilla_additions.angelic_water": "Angelic Water",
       "entity.slightly_vanilla_additions.eye_of_guardian": "Eye Of Guardian",
       "block.slightly_vanilla_additions.alterated_log": "Alterated Log",
+      "item.slightly_vanilla_additions.cursed_enderman_spawn_egg": "Cursed Enderman Spawn Egg",
       "block.slightly_vanilla_additions.mushroom_lantern": "Mushroom Lantern",
       "biome.slightly_vanilla_additions.chorus_forest": "Chorus Forest",
       "item.slightly_vanilla_additions.dragon_shovel": "Dragon Shovel",
@@ -1595,6 +1704,7 @@
       "item.slightly_vanilla_additions.end_core": "End Core",
       "biome.slightly_vanilla_additions.crystal_plains": "Crystal Plains",
       "item.slightly_vanilla_additions.back_pack_item": "BackPack",
+      "entity.slightly_vanilla_additions.cursed_enderman": "Cursed Enderman",
       "advancements.best_jungle_ever.descr": "Wow ! You discovered the Mossy Jungle",
       "block.slightly_vanilla_additions.ender_fire": "Ender Fire",
       "block.slightly_vanilla_additions.crystal_plant": "Crystal Plant",
@@ -1613,6 +1723,7 @@
       "item.slightly_vanilla_additions.purpur_golem_spawn_egg": "Purpur Golem Spawn Egg",
       "block.slightly_vanilla_additions.bluestone_stairs": "Bluestone Stairs",
       "item.slightly_vanilla_additions.dragon_pickaxe": "Dragon Pickaxe",
+      "biome.slightly_vanilla_additions.outer_end": "Outer End",
       "biome.slightly_vanilla_additions.snowy_highlands": "Snowy Highlands",
       "entity.slightly_vanilla_additions.shulk": "Shulk",
       "block.slightly_vanilla_additions.alterated_planks": "Alterated Planks",

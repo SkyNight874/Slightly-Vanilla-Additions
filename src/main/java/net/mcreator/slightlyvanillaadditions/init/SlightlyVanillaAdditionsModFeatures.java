@@ -31,6 +31,10 @@ import net.mcreator.slightlyvanillaadditions.world.features.plants.AngelicGrassF
 import net.mcreator.slightlyvanillaadditions.world.features.plants.AlteratedFungiFeature;
 import net.mcreator.slightlyvanillaadditions.world.features.lakes.AngelicWaterFeature;
 import net.mcreator.slightlyvanillaadditions.world.features.PoisonMushroomStructureFeature;
+import net.mcreator.slightlyvanillaadditions.world.features.PillarRuins3Feature;
+import net.mcreator.slightlyvanillaadditions.world.features.PillarRuins2Feature;
+import net.mcreator.slightlyvanillaadditions.world.features.PillarRuins1Feature;
+import net.mcreator.slightlyvanillaadditions.world.features.OldportalFeature;
 import net.mcreator.slightlyvanillaadditions.world.features.MushroomLanternMoyenFeature;
 import net.mcreator.slightlyvanillaadditions.world.features.MushroomLanternBigFeature;
 import net.mcreator.slightlyvanillaadditions.world.features.MossyMushroomSmallFeature;
@@ -97,6 +101,14 @@ public class SlightlyVanillaAdditionsModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, EndBeaconFeature.GENERATE_BIOMES, EndBeaconFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> END_SHIP = register("end_ship", EndShipFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.RAW_GENERATION, EndShipFeature.GENERATE_BIOMES, EndShipFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> PILLAR_RUINS_1 = register("pillar_ruins_1", PillarRuins1Feature::feature, new FeatureRegistration(
+			GenerationStep.Decoration.SURFACE_STRUCTURES, PillarRuins1Feature.GENERATE_BIOMES, PillarRuins1Feature::placedFeature));
+	public static final RegistryObject<Feature<?>> PILLAR_RUINS_2 = register("pillar_ruins_2", PillarRuins2Feature::feature, new FeatureRegistration(
+			GenerationStep.Decoration.SURFACE_STRUCTURES, PillarRuins2Feature.GENERATE_BIOMES, PillarRuins2Feature::placedFeature));
+	public static final RegistryObject<Feature<?>> PILLAR_RUINS_3 = register("pillar_ruins_3", PillarRuins3Feature::feature, new FeatureRegistration(
+			GenerationStep.Decoration.SURFACE_STRUCTURES, PillarRuins3Feature.GENERATE_BIOMES, PillarRuins3Feature::placedFeature));
+	public static final RegistryObject<Feature<?>> OLDPORTAL = register("oldportal", OldportalFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, OldportalFeature.GENERATE_BIOMES, OldportalFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

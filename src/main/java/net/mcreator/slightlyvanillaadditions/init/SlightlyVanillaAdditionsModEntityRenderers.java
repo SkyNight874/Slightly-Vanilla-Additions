@@ -15,6 +15,7 @@ import net.mcreator.slightlyvanillaadditions.client.renderer.ShulkSoldierRendere
 import net.mcreator.slightlyvanillaadditions.client.renderer.ShulkRenderer;
 import net.mcreator.slightlyvanillaadditions.client.renderer.PurpurGolemRenderer;
 import net.mcreator.slightlyvanillaadditions.client.renderer.EyeOfGuardianRenderer;
+import net.mcreator.slightlyvanillaadditions.client.renderer.CursedEndermanRenderer;
 import net.mcreator.slightlyvanillaadditions.client.renderer.AncientProtectorRenderer;
 import net.mcreator.slightlyvanillaadditions.client.renderer.AlteratedZombieRenderer;
 
@@ -30,5 +31,6 @@ public class SlightlyVanillaAdditionsModEntityRenderers {
 		event.registerEntityRenderer(SlightlyVanillaAdditionsModEntities.SHULK_SOLDIER.get(), ShulkSoldierRenderer::new);
 		event.registerEntityRenderer(SlightlyVanillaAdditionsModEntities.ALTERATED_ZOMBIE.get(), AlteratedZombieRenderer::new);
 		event.registerEntityRenderer(SlightlyVanillaAdditionsModEntities.PURPUR_GOLEM.get(), PurpurGolemRenderer::new);
+		event.registerEntityRenderer(SlightlyVanillaAdditionsModEntities.CURSED_ENDERMAN.get(), CursedEndermanRenderer::new);
 	}
 }

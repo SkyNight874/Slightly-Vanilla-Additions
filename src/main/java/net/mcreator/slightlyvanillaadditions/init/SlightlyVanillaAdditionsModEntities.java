@@ -22,6 +22,7 @@ import net.mcreator.slightlyvanillaadditions.entity.PurpurGolemEntity;
 import net.mcreator.slightlyvanillaadditions.entity.FirePearlEntity;
 import net.mcreator.slightlyvanillaadditions.entity.EyeOfGuardianEntityProjectile;
 import net.mcreator.slightlyvanillaadditions.entity.EyeOfGuardianEntity;
+import net.mcreator.slightlyvanillaadditions.entity.CursedEndermanEntity;
 import net.mcreator.slightlyvanillaadditions.entity.AncientProtectorEntity;
 import net.mcreator.slightlyvanillaadditions.entity.AlteratedZombieEntity;
 import net.mcreator.slightlyvanillaadditions.SlightlyVanillaAdditionsMod;
@@ -61,6 +62,11 @@ public class SlightlyVanillaAdditionsModEntities {
 	public static final RegistryObject<EntityType<PurpurGolemEntity>> PURPUR_GOLEM = register("purpur_golem",
 			EntityType.Builder.<PurpurGolemEntity>of(PurpurGolemEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PurpurGolemEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<CursedEndermanEntity>> CURSED_ENDERMAN = register("cursed_enderman",
+			EntityType.Builder.<CursedEndermanEntity>of(CursedEndermanEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CursedEndermanEntity::new)
+
+					.sized(0.6f, 2.9f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -75,6 +81,7 @@ public class SlightlyVanillaAdditionsModEntities {
 			ShulkSoldierEntity.init();
 			AlteratedZombieEntity.init();
 			PurpurGolemEntity.init();
+			CursedEndermanEntity.init();
 		});
 	}
 
@@ -86,5 +93,6 @@ public class SlightlyVanillaAdditionsModEntities {
 		event.put(SHULK_SOLDIER.get(), ShulkSoldierEntity.createAttributes().build());
 		event.put(ALTERATED_ZOMBIE.get(), AlteratedZombieEntity.createAttributes().build());
 		event.put(PURPUR_GOLEM.get(), PurpurGolemEntity.createAttributes().build());
+		event.put(CURSED_ENDERMAN.get(), CursedEndermanEntity.createAttributes().build());
 	}
 }

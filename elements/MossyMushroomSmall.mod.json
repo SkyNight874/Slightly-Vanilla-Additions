@@ -5,7 +5,7 @@
     "structure": "mossy_mushroom_small",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 700000,
+    "spawnProbability": 200000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",

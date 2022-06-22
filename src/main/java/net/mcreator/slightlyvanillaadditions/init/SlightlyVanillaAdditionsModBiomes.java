@@ -32,6 +32,7 @@ import net.minecraft.core.Holder;
 
 import net.mcreator.slightlyvanillaadditions.world.biome.SnowyHighlandsBiome;
 import net.mcreator.slightlyvanillaadditions.world.biome.PoisonSwampBiome;
+import net.mcreator.slightlyvanillaadditions.world.biome.OuterEndBiome;
 import net.mcreator.slightlyvanillaadditions.world.biome.MossyJungleBiome;
 import net.mcreator.slightlyvanillaadditions.world.biome.CrystalPlainsBiome;
 import net.mcreator.slightlyvanillaadditions.world.biome.ChorusForestBiome;
@@ -57,6 +58,7 @@ public class SlightlyVanillaAdditionsModBiomes {
 	public static final RegistryObject<Biome> BURNED_DESERT = REGISTRY.register("burned_desert", () -> BurnedDesertBiome.createBiome());
 	public static final RegistryObject<Biome> MOSSY_JUNGLE = REGISTRY.register("mossy_jungle", () -> MossyJungleBiome.createBiome());
 	public static final RegistryObject<Biome> ANGELIC_SWAMP = REGISTRY.register("angelic_swamp", () -> AngelicSwampBiome.createBiome());
+	public static final RegistryObject<Biome> OUTER_END = REGISTRY.register("outer_end", () -> OuterEndBiome.createBiome());
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
@@ -69,6 +71,7 @@ public class SlightlyVanillaAdditionsModBiomes {
 			BurnedDesertBiome.init();
 			MossyJungleBiome.init();
 			AngelicSwampBiome.init();
+			OuterEndBiome.init();
 		});
 	}
 

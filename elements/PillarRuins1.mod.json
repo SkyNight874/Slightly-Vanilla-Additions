@@ -2,10 +2,10 @@
   "_fv": 28,
   "_type": "structure",
   "definition": {
-    "structure": "mossy_mushroom_big",
+    "structure": "pillar_ruins1",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 100000,
+    "spawnProbability": 20000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
@@ -15,19 +15,12 @@
     "spawnWorldTypes": [
       "CUSTOM:EndFarlands"
     ],
-    "restrictionBlocks": [
-      {
-        "value": "CUSTOM:EndMycelium"
-      },
-      {
-        "value": "Blocks.END_STONE"
-      }
-    ],
+    "restrictionBlocks": [],
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:AngelicSwamp"
+        "value": "CUSTOM:OuterEnd"
       }
     ],
-    "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK"
+    "ignoreBlocks": "STRUCTURE_BLOCK"
   }
 }
