@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.slightlyvanillaadditions.entity.FirePearlEntity;
+import net.mcreator.slightlyvanillaadditions.entity.EndCubeEntityProjectile;
 import net.mcreator.slightlyvanillaadditions.entity.EndCubeEntity;
 import net.mcreator.slightlyvanillaadditions.SlightlyVanillaAdditionsMod;
 
@@ -32,6 +33,9 @@ public class SlightlyVanillaAdditionsModEntities {
 					.setUpdateInterval(3).setCustomClientFactory(EndCubeEntity::new)
 
 					.sized(0.6f, 1.95f));
+	public static final RegistryObject<EntityType<EndCubeEntityProjectile>> END_CUBE_PROJECTILE = register("projectile_end_cube",
+			EntityType.Builder.<EndCubeEntityProjectile>of(EndCubeEntityProjectile::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(EndCubeEntityProjectile::new).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

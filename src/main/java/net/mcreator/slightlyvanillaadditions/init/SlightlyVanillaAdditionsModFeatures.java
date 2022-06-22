@@ -74,8 +74,6 @@ public class SlightlyVanillaAdditionsModFeatures {
 	public static final RegistryObject<Feature<?>> MOSSY_MUSHROOM_BIG = register("mossy_mushroom_big", MossyMushroomBigFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, MossyMushroomBigFeature.GENERATE_BIOMES,
 					MossyMushroomBigFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> MOSSY_BUSH = register("mossy_bush", MossyBushFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, MossyBushFeature.GENERATE_BIOMES, MossyBushFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> ANGELIC_WATER = register("angelic_water", AngelicWaterFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.LAKES, AngelicWaterFeature.GENERATE_BIOMES, AngelicWaterFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> MUSHROOM_LANTERN_BIG = register("mushroom_lantern_big", MushroomLanternBigFeature::feature,
