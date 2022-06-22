@@ -42,6 +42,7 @@ import net.mcreator.slightlyvanillaadditions.world.features.MossyMushroomBigFeat
 import net.mcreator.slightlyvanillaadditions.world.features.EndShipwreckFeature;
 import net.mcreator.slightlyvanillaadditions.world.features.EndShipFeature;
 import net.mcreator.slightlyvanillaadditions.world.features.EndBeaconFeature;
+import net.mcreator.slightlyvanillaadditions.world.features.AlteratedTree1Feature;
 import net.mcreator.slightlyvanillaadditions.SlightlyVanillaAdditionsMod;
 
 import java.util.function.Supplier;
@@ -101,6 +102,9 @@ public class SlightlyVanillaAdditionsModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, EndBeaconFeature.GENERATE_BIOMES, EndBeaconFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> END_SHIP = register("end_ship", EndShipFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.RAW_GENERATION, EndShipFeature.GENERATE_BIOMES, EndShipFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> ALTERATED_TREE_1 = register("alterated_tree_1", AlteratedTree1Feature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, AlteratedTree1Feature.GENERATE_BIOMES,
+					AlteratedTree1Feature::placedFeature));
 	public static final RegistryObject<Feature<?>> PILLAR_RUINS_1 = register("pillar_ruins_1", PillarRuins1Feature::feature, new FeatureRegistration(
 			GenerationStep.Decoration.SURFACE_STRUCTURES, PillarRuins1Feature.GENERATE_BIOMES, PillarRuins1Feature::placedFeature));
 	public static final RegistryObject<Feature<?>> PILLAR_RUINS_2 = register("pillar_ruins_2", PillarRuins2Feature::feature, new FeatureRegistration(

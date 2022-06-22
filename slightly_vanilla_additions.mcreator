@@ -1500,20 +1500,12 @@
       "registry_name": "purpur_golem"
     },
     {
-      "name": "OuterEnd",
-      "type": "biome",
-      "sortid": 165,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "outer_end"
-    },
-    {
-      "name": "PillarRuins1",
+      "name": "PillarRuins3",
       "type": "structure",
-      "sortid": 166,
+      "sortid": 168,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "pillar_ruins_1"
+      "registry_name": "pillar_ruins_3"
     },
     {
       "name": "PillarRuins2",
@@ -1524,48 +1516,12 @@
       "registry_name": "pillar_ruins_2"
     },
     {
-      "name": "PillarRuins3",
+      "name": "PillarRuins1",
       "type": "structure",
-      "sortid": 168,
+      "sortid": 166,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "pillar_ruins_3"
-    },
-    {
-      "name": "Oldportal",
-      "type": "structure",
-      "sortid": 169,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "oldportal"
-    },
-    {
-      "name": "CursedEndermanEntityIsHurt",
-      "type": "procedure",
-      "sortid": 170,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cursed_enderman_entity_is_hurt",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          }
-        ]
-      }
+      "registry_name": "pillar_ruins_1"
     },
     {
       "name": "CursedEnderman",
@@ -1606,6 +1562,58 @@
           }
         ]
       }
+    },
+    {
+      "name": "OuterEnd",
+      "type": "biome",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "outer_end"
+    },
+    {
+      "name": "Oldportal",
+      "type": "structure",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oldportal"
+    },
+    {
+      "name": "CursedEndermanEntityIsHurt",
+      "type": "procedure",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_enderman_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AlteratedTree1",
+      "type": "structure",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alterated_tree_1"
     }
   ],
   "variable_elements": [],

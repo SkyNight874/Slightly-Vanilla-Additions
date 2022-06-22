@@ -49,7 +49,7 @@
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 6,
+    "treesPerChunk": 0,
     "vanillaTreeType": "Default",
     "treeType": 1,
     "minHeight": 5,
@@ -85,26 +85,10 @@
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
-    "defaultFeatures": [],
-    "spawnEntries": [
-      {
-        "entity": {
-          "value": "CUSTOM:AlteratedZombie"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 5,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntitySlime"
-        },
-        "minGroup": 1,
-        "maxGroup": 1,
-        "weight": 4,
-        "spawnType": "monster"
-      }
-    ]
+    "defaultFeatures": [
+      "Caves",
+      "Ores"
+    ],
+    "spawnEntries": []
   }
 }

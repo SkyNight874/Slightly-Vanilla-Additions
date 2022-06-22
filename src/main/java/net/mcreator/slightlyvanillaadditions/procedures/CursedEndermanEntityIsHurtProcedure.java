@@ -1,10 +1,8 @@
 package net.mcreator.slightlyvanillaadditions.procedures;
 
-import net.minecraft.world.entity.Entity;
-import net.minecraft.util.Mth;
-import net.minecraft.server.level.ServerPlayer;
+import net.minecraftforge.eventbus.api.Event;
 
-import java.util.Random;
+import javax.annotation.Nullable;
 
 public class CursedEndermanEntityIsHurtProcedure {
 	public static void execute(double x, double y, double z, Entity entity) {
