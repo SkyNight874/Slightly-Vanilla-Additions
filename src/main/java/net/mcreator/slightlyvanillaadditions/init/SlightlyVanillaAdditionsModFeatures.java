@@ -36,6 +36,7 @@ import net.mcreator.slightlyvanillaadditions.world.features.MushroomLanternBigFe
 import net.mcreator.slightlyvanillaadditions.world.features.MossyMushroomSmallFeature;
 import net.mcreator.slightlyvanillaadditions.world.features.MossyMushroomBigFeature;
 import net.mcreator.slightlyvanillaadditions.world.features.EndShipwreckFeature;
+import net.mcreator.slightlyvanillaadditions.world.features.EndShipFeature;
 import net.mcreator.slightlyvanillaadditions.world.features.EndBeaconFeature;
 import net.mcreator.slightlyvanillaadditions.SlightlyVanillaAdditionsMod;
 
@@ -94,6 +95,8 @@ public class SlightlyVanillaAdditionsModFeatures {
 			GenerationStep.Decoration.SURFACE_STRUCTURES, EndShipwreckFeature.GENERATE_BIOMES, EndShipwreckFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> END_BEACON = register("end_beacon", EndBeaconFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, EndBeaconFeature.GENERATE_BIOMES, EndBeaconFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> END_SHIP = register("end_ship", EndShipFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.RAW_GENERATION, EndShipFeature.GENERATE_BIOMES, EndShipFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

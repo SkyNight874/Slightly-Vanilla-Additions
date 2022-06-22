@@ -19,7 +19,6 @@ public class AlteratedZombieRenderer extends HumanoidMobRenderer<AlteratedZombie
 
 	@Override
 	public ResourceLocation getTextureLocation(AlteratedZombieEntity entity) {
-		return new ResourceLocation(
-				"slightly_vanilla_additions:textures/jungle-zombie-minecraft-dungeons-jungle-awakens-dlc-on-planetminecraft-com.png");
+		return new ResourceLocation("slightly_vanilla_additions:textures/alterated_zombie.png");
 	}
 }

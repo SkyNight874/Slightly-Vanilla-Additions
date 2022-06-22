@@ -159,6 +159,9 @@ public class SlightlyVanillaAdditionsModItems {
 	public static final RegistryObject<Item> ALTERATED_ZOMBIE = REGISTRY.register("alterated_zombie_spawn_egg",
 			() -> new ForgeSpawnEggItem(SlightlyVanillaAdditionsModEntities.ALTERATED_ZOMBIE, -16751002, -16751104,
 					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> PURPUR_GOLEM = REGISTRY.register("purpur_golem_spawn_egg",
+			() -> new ForgeSpawnEggItem(SlightlyVanillaAdditionsModEntities.PURPUR_GOLEM, -10092442, -16737946,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

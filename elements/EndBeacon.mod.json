@@ -15,7 +15,26 @@
     "spawnWorldTypes": [
       "CUSTOM:EndFarlands"
     ],
-    "restrictionBlocks": [],
+    "restrictionBlocks": [
+      {
+        "value": "CUSTOM:PoisonNylium"
+      },
+      {
+        "value": "Blocks.END_STONE"
+      },
+      {
+        "value": "CUSTOM:AlteratedNylium"
+      },
+      {
+        "value": "CUSTOM:EndMoss"
+      },
+      {
+        "value": "CUSTOM:EndMycelium"
+      },
+      {
+        "value": "CUSTOM:CompressedCrystalBlock"
+      }
+    ],
     "restrictionBiomes": [],
     "ignoreBlocks": "STRUCTURE_BLOCK",
     "onStructureGenerated": {

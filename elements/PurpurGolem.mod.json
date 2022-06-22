@@ -2,10 +2,10 @@
   "_fv": 28,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Alterated Zombie",
+    "mobName": "Purpur Golem",
     "mobLabel": "",
-    "mobModelName": "Biped",
-    "mobModelTexture": "alterated_zombie.png",
+    "mobModelName": "ModelGolemOfGuardian",
+    "mobModelTexture": "iron_golem.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,
@@ -13,11 +13,11 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -16751002,
+      "value": -10092442,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -16751104,
+      "value": -16737946,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -46,13 +46,13 @@
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 6,
+    "attackStrength": 14,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
-    "movementSpeed": 0.3,
-    "armorBaseValue": 0.0,
+    "movementSpeed": 0.19999999999999998,
+    "armorBaseValue": 4.0,
     "trackingRange": 64,
-    "health": 20,
+    "health": 50,
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": false,
@@ -63,21 +63,21 @@
     "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
-    "immuneToFire": false,
-    "immuneToArrows": false,
-    "immuneToFallDamage": false,
-    "immuneToCactus": false,
-    "immuneToDrowning": false,
-    "immuneToLightning": false,
-    "immuneToPotions": false,
+    "immuneToFire": true,
+    "immuneToArrows": true,
+    "immuneToFallDamage": true,
+    "immuneToCactus": true,
+    "immuneToDrowning": true,
+    "immuneToLightning": true,
+    "immuneToPotions": true,
     "immuneToPlayer": false,
-    "immuneToExplosion": false,
-    "immuneToTrident": false,
-    "immuneToAnvil": false,
-    "immuneToWither": false,
-    "immuneToDragonBreath": false,
+    "immuneToExplosion": true,
+    "immuneToTrident": true,
+    "immuneToAnvil": true,
+    "immuneToWither": true,
+    "immuneToDragonBreath": true,
     "mobDrop": {
-      "value": "CUSTOM:AlteratedFungi"
+      "value": "Blocks.PURPUR_BLOCK"
     },
     "livingSound": {
       "value": ""
@@ -86,10 +86,10 @@
       "value": "entity.generic.hurt"
     },
     "deathSound": {
-      "value": "entity.generic.death"
+      "value": "entity.endereye.death"
     },
     "stepSound": {
-      "value": ""
+      "value": "entity.irongolem.step"
     },
     "spawnParticles": false,
     "particleToSpawn": {
@@ -99,8 +99,8 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "hasAI": true,
-    "aiBase": "Zombie",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aiBase": "(none)",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"93\" y=\"55\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
@@ -109,17 +109,13 @@
       "value": ""
     },
     "rangedItemType": "Default item",
-    "spawnThisMob": true,
+    "spawnThisMob": false,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 15,
+    "spawningProbability": 2,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,
-    "maxNumberOfMobsPerGroup": 3,
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:AlteratedForest"
-      }
-    ],
+    "maxNumberOfMobsPerGroup": 1,
+    "restrictionBiomes": [],
     "spawnInDungeons": false
   }
 }

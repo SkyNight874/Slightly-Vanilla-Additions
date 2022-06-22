@@ -43,15 +43,20 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.slightlyvanillaadditions.procedures.ShulkEntityDiesProcedure;
 import net.mcreator.slightlyvanillaadditions.init.SlightlyVanillaAdditionsModEntities;
 
+import java.util.Set;
 import java.util.Random;
 import java.util.EnumSet;
 
 @Mod.EventBusSubscriber
 public class ShulkEntity extends Monster {
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("slightly_vanilla_additions:burned_desert"),
+			new ResourceLocation("slightly_vanilla_additions:chorus_forest"), new ResourceLocation("slightly_vanilla_additions:crystal_plains"));
+
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER)
-				.add(new MobSpawnSettings.SpawnerData(SlightlyVanillaAdditionsModEntities.SHULK.get(), 10, 1, 3));
+		if (SPAWN_BIOMES.contains(event.getName()))
+			event.getSpawns().getSpawner(MobCategory.MONSTER)
+					.add(new MobSpawnSettings.SpawnerData(SlightlyVanillaAdditionsModEntities.SHULK.get(), 6, 1, 1));
 	}
 
 	public ShulkEntity(PlayMessages.SpawnEntity packet, Level world) {
