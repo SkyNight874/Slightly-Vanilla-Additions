@@ -7,6 +7,33 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
+          "biome": "slightly_vanilla_additions:burned_desert",
+          "parameters": {
+            "temperature": [
+              -0.142857142857,
+              0.142857142857
+            ],
+            "humidity": [
+              -1.142857142857,
+              -0.857142857143
+            ],
+            "continentalness": [
+              0.367142857143,
+              0.652857142857
+            ],
+            "weirdness": [
+              -1.062623869453,
+              -0.776909583739
+            ],
+            "erosion": [
+              -0.142857142857,
+              0.142857142857
+            ],
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
           "biome": "slightly_vanilla_additions:chorus_forest",
           "parameters": {
             "temperature": [
@@ -28,6 +55,33 @@
             "erosion": [
               0.657142857143,
               0.942857142857
+            ],
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "slightly_vanilla_additions:mossy_jungle",
+          "parameters": {
+            "temperature": [
+              -0.128571428571,
+              0.128571428571
+            ],
+            "humidity": [
+              0.871428571429,
+              1.128571428571
+            ],
+            "continentalness": [
+              0.381428571429,
+              0.638571428571
+            ],
+            "weirdness": [
+              -1.048338155167,
+              -0.791195298025
+            ],
+            "erosion": [
+              -1.128571428571,
+              -0.871428571429
             ],
             "depth": 0,
             "offset": 0
@@ -61,54 +115,27 @@
           }
         },
         {
-          "biome": "slightly_vanilla_additions:crystal_plains",
-          "parameters": {
-            "temperature": [
-              -0.44761904762,
-              -0.219047619048
-            ],
-            "humidity": [
-              -1.114285714286,
-              -0.885714285714
-            ],
-            "continentalness": [
-              0.385714285714,
-              0.614285714286
-            ],
-            "weirdness": [
-              -1.034052440882,
-              -0.80548101231
-            ],
-            "erosion": [
-              0.285714285714,
-              0.514285714286
-            ],
-            "depth": 0,
-            "offset": 0
-          }
-        },
-        {
           "biome": "slightly_vanilla_additions:angelic_swamp",
           "parameters": {
             "temperature": [
-              0.857142857143,
-              1.142857142857
+              0.871428571429,
+              1.128571428571
             ],
             "humidity": [
-              0.857142857143,
-              1.142857142857
+              0.871428571429,
+              1.128571428571
             ],
             "continentalness": [
-              0.457142857143,
-              0.742857142857
+              0.471428571429,
+              0.728571428571
             ],
             "weirdness": [
-              -1.062623869453,
-              -0.776909583739
+              -1.048338155167,
+              -0.791195298025
             ],
             "erosion": [
-              -0.142857142857,
-              0.142857142857
+              -0.128571428571,
+              0.128571428571
             ],
             "depth": 0,
             "offset": 0
@@ -225,6 +252,72 @@
             "if_true": {
               "type": "minecraft:biome",
               "biome_is": [
+                "slightly_vanilla_additions:burned_desert"
+              ]
+            },
+            "then_run": {
+              "type": "minecraft:sequence",
+              "sequence": [
+                {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:stone_depth",
+                    "surface_type": "floor",
+                    "add_surface_depth": false,
+                    "secondary_depth_range": 0,
+                    "offset": 0
+                  },
+                  "then_run": {
+                    "type": "minecraft:sequence",
+                    "sequence": [
+                      {
+                        "type": "minecraft:condition",
+                        "if_true": {
+                          "type": "minecraft:water",
+                          "offset": -1,
+                          "surface_depth_multiplier": 0,
+                          "add_stone_depth": false
+                        },
+                        "then_run": {
+                          "type": "minecraft:block",
+                          "result_state": {
+                            "Name": "minecraft:sand"
+                          }
+                        }
+                      },
+                      {
+                        "type": "minecraft:block",
+                        "result_state": {
+                          "Name": "minecraft:sand"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:stone_depth",
+                    "surface_type": "floor",
+                    "add_surface_depth": true,
+                    "secondary_depth_range": 0,
+                    "offset": 0
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "minecraft:sand"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "minecraft:condition",
+            "if_true": {
+              "type": "minecraft:biome",
+              "biome_is": [
                 "slightly_vanilla_additions:chorus_forest"
               ]
             },
@@ -294,7 +387,7 @@
             "if_true": {
               "type": "minecraft:biome",
               "biome_is": [
-                "slightly_vanilla_additions:alterated_forest"
+                "slightly_vanilla_additions:mossy_jungle"
               ]
             },
             "then_run": {
@@ -323,7 +416,7 @@
                         "then_run": {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "slightly_vanilla_additions:alterated_nylium"
+                            "Name": "slightly_vanilla_additions:end_moss"
                           }
                         }
                       },
@@ -360,7 +453,7 @@
             "if_true": {
               "type": "minecraft:biome",
               "biome_is": [
-                "slightly_vanilla_additions:crystal_plains"
+                "slightly_vanilla_additions:alterated_forest"
               ]
             },
             "then_run": {
@@ -389,7 +482,7 @@
                         "then_run": {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "slightly_vanilla_additions:compressed_crystal_block"
+                            "Name": "slightly_vanilla_additions:alterated_nylium"
                           }
                         }
                       },

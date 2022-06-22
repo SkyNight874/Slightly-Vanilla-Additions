@@ -1498,6 +1498,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "purpur_golem"
+    },
+    {
+      "name": "AlteratedTree1",
+      "type": "structure",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alterated_tree_1"
     }
   ],
   "variable_elements": [],

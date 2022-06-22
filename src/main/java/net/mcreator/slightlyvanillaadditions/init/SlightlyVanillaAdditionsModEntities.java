@@ -18,6 +18,7 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.slightlyvanillaadditions.entity.ShulkSoldierEntity;
 import net.mcreator.slightlyvanillaadditions.entity.ShulkEntity;
+import net.mcreator.slightlyvanillaadditions.entity.PurpurGolemEntity;
 import net.mcreator.slightlyvanillaadditions.entity.FirePearlEntity;
 import net.mcreator.slightlyvanillaadditions.entity.EyeOfGuardianEntityProjectile;
 import net.mcreator.slightlyvanillaadditions.entity.EyeOfGuardianEntity;
@@ -57,6 +58,9 @@ public class SlightlyVanillaAdditionsModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AlteratedZombieEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<PurpurGolemEntity>> PURPUR_GOLEM = register("purpur_golem",
+			EntityType.Builder.<PurpurGolemEntity>of(PurpurGolemEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PurpurGolemEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -70,6 +74,7 @@ public class SlightlyVanillaAdditionsModEntities {
 			AncientProtectorEntity.init();
 			ShulkSoldierEntity.init();
 			AlteratedZombieEntity.init();
+			PurpurGolemEntity.init();
 		});
 	}
 
@@ -80,5 +85,6 @@ public class SlightlyVanillaAdditionsModEntities {
 		event.put(ANCIENT_PROTECTOR.get(), AncientProtectorEntity.createAttributes().build());
 		event.put(SHULK_SOLDIER.get(), ShulkSoldierEntity.createAttributes().build());
 		event.put(ALTERATED_ZOMBIE.get(), AlteratedZombieEntity.createAttributes().build());
+		event.put(PURPUR_GOLEM.get(), PurpurGolemEntity.createAttributes().build());
 	}
 }
