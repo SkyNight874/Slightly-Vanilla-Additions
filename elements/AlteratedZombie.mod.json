@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Alterated Zombie",
     "mobLabel": "",
-    "mobModelName": "Biped",
+    "mobModelName": "ModelAlteratedZombie",
     "mobModelTexture": "alterated_zombie.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
@@ -80,16 +80,16 @@
       "value": "CUSTOM:AlteratedFungi"
     },
     "livingSound": {
-      "value": ""
+      "value": "entity.zombie.ambient"
     },
     "hurtSound": {
-      "value": "entity.generic.hurt"
+      "value": "entity.zombie.hurt"
     },
     "deathSound": {
-      "value": "entity.generic.death"
+      "value": "entity.zombie.death"
     },
     "stepSound": {
-      "value": ""
+      "value": "entity.zombie.step"
     },
     "spawnParticles": false,
     "particleToSpawn": {

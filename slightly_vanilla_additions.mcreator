@@ -1127,14 +1127,6 @@
       "registry_name": "moss_block"
     },
     {
-      "name": "MossyJungle",
-      "type": "biome",
-      "sortid": 122,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mossy_jungle"
-    },
-    {
       "name": "BestJungleEver",
       "type": "achievement",
       "sortid": 123,
@@ -1614,6 +1606,72 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "alterated_tree_1"
+    },
+    {
+      "name": "CursedEndermanOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_enderman_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MossyJungle",
+      "type": "biome",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mossy_jungle"
+    },
+    {
+      "name": "MossyGlare",
+      "type": "livingentity",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mossy_glare"
+    },
+    {
+      "name": "AlteratedNetherrack",
+      "type": "block",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alterated_netherrack",
+      "path": "~/Nether"
+    },
+    {
+      "name": "AlteratedForestNether",
+      "type": "biome",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alterated_forest_nether",
+      "path": "~/Nether"
     }
   ],
   "variable_elements": [],
@@ -1663,6 +1721,7 @@
       "block.slightly_vanilla_additions.alterated_log": "Alterated Log",
       "item.slightly_vanilla_additions.cursed_enderman_spawn_egg": "Cursed Enderman Spawn Egg",
       "block.slightly_vanilla_additions.mushroom_lantern": "Mushroom Lantern",
+      "biome.slightly_vanilla_additions.alterated_forest_nether": "Alterated Forest Nether",
       "biome.slightly_vanilla_additions.chorus_forest": "Chorus Forest",
       "item.slightly_vanilla_additions.dragon_shovel": "Dragon Shovel",
       "block.slightly_vanilla_additions.alterated_fence": "Alterated Fence",
@@ -1678,16 +1737,18 @@
       "block.slightly_vanilla_additions.crystal_block": "Crystal Block",
       "block.slightly_vanilla_additions.bluestone_slab": "Bluestone Slab",
       "block.slightly_vanilla_additions.poison_mushroom": "Poison Mushroom Block",
+      "block.slightly_vanilla_additions.alterated_netherrack": "Alterated Netherrack",
       "block.slightly_vanilla_additions.alterated_stairs": "Alterated Stairs",
       "block.slightly_vanilla_additions.crystal_moss": "Crystal Moss",
       "block.slightly_vanilla_additions.poison_fungi": "Poison Fungi",
       "block.slightly_vanilla_additions.mossy_fungi": "Mossy Fungi",
       "item.slightly_vanilla_additions.dragon_sword": "Dragon Sword",
       "item.slightly_vanilla_additions.fire_pearl_shoot": "Fire Pearl Shoot",
+      "item.slightly_vanilla_additions.mossy_glare_spawn_egg": "Mossy Glare Spawn Egg",
       "block.slightly_vanilla_additions.alterated_slab": "Alterated Slab",
       "item.slightly_vanilla_additions.crystal_gem": "Crystal Gem",
-      "biome.slightly_vanilla_additions.mossy_jungle": "Mossy Jungle",
       "advancements.achorusforest.descr": "You discovered the Chorus Forest !",
+      "biome.slightly_vanilla_additions.mossy_jungle": "Mossy Jungle",
       "entity.slightly_vanilla_additions.alterated_zombie": "Alterated Zombie",
       "item.slightly_vanilla_additions.fire_pearl": "Fire Pearl",
       "block.slightly_vanilla_additions.angelic_grass": "Angelic Grass",
@@ -1732,6 +1793,7 @@
       "block.slightly_vanilla_additions.bluestone_stairs": "Bluestone Stairs",
       "item.slightly_vanilla_additions.dragon_pickaxe": "Dragon Pickaxe",
       "biome.slightly_vanilla_additions.outer_end": "Outer End",
+      "entity.slightly_vanilla_additions.mossy_glare": "Mossy Glare",
       "biome.slightly_vanilla_additions.snowy_highlands": "Snowy Highlands",
       "entity.slightly_vanilla_additions.shulk": "Shulk",
       "block.slightly_vanilla_additions.alterated_planks": "Alterated Planks",
@@ -1783,6 +1845,10 @@
       },
       {
         "name": "Crystal Plains",
+        "children": []
+      },
+      {
+        "name": "Nether",
         "children": []
       }
     ]

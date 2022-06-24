@@ -12,6 +12,22 @@
     "underwaterBlock": {
       "value": ""
     },
+    "airColor": {
+      "value": -16751002,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -16711681,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -16711681,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -16711681,
+      "falpha": 0.0
+    },
     "ambientSound": {
       "value": ""
     },
@@ -30,11 +46,11 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.0,
-    "biomeCategory": "SWAMP",
+    "biomeCategory": "NONE",
     "rainingPossibility": 1.0,
     "temperature": 0.5,
     "baseHeight": 1.0,
-    "heightVariation": 1.0,
+    "heightVariation": 0.8,
     "spawnBiome": false,
     "spawnBiomeNether": false,
     "spawnInCaves": false,

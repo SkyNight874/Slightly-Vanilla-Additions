@@ -10,61 +10,53 @@
       "value": "Blocks.END_STONE"
     },
     "underwaterBlock": {
-      "value": ""
+      "value": "CUSTOM:MossBlock"
     },
-    "foliageColor": {
-      "value": -13369345,
-      "falpha": 0.0
-    },
-    "waterColor": {
-      "value": -13369345,
-      "falpha": 0.0
-    },
-    "waterFogColor": {
-      "value": -6684673,
+    "airColor": {
+      "value": -16737895,
       "falpha": 0.0
     },
     "ambientSound": {
-      "value": ""
+      "value": "ambient.warped_forest.loop"
     },
     "additionsSound": {
-      "value": ""
+      "value": "ambient.warped_forest.additions"
     },
     "music": {
       "value": ""
     },
     "moodSound": {
-      "value": ""
+      "value": "ambient.warped_forest.mood"
     },
-    "moodSoundDelay": 0,
-    "spawnParticles": false,
+    "moodSoundDelay": 6000,
+    "spawnParticles": true,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "WATER_BUBBLE"
     },
-    "particlesProbability": 0.0,
-    "biomeCategory": "JUNGLE",
-    "rainingPossibility": 1.0,
+    "particlesProbability": 0.1,
+    "biomeCategory": "NONE",
+    "rainingPossibility": 0.0,
     "temperature": 0.5,
     "baseHeight": 0.1,
-    "heightVariation": 2.0,
+    "heightVariation": 0.9,
     "spawnBiome": false,
     "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 10,
+    "biomeWeight": 8,
     "biomeDictionaryTypes": [],
-    "grassPerChunk": 4,
-    "seagrassPerChunk": 20,
-    "flowersPerChunk": 4,
+    "grassPerChunk": 0,
+    "seagrassPerChunk": 0,
+    "flowersPerChunk": 0,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
     "sandPatchesPerChunk": 0,
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 4,
+    "treesPerChunk": 7,
     "vanillaTreeType": "Default",
     "treeType": 1,
-    "minHeight": 10,
+    "minHeight": 8,
     "treeStem": {
       "value": "Blocks.LOG#3"
     },
@@ -75,7 +67,7 @@
       "value": "CUSTOM:MossBlock"
     },
     "treeFruits": {
-      "value": "CUSTOM:AngelicSlimeBlock"
+      "value": "CUSTOM:MushroomLantern"
     },
     "spawnStronghold": false,
     "spawnMineshaft": false,
@@ -97,11 +89,7 @@
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
-    "defaultFeatures": [
-      "Structures",
-      "Lakes",
-      "FrozenTopLayer"
-    ],
+    "defaultFeatures": [],
     "spawnEntries": []
   }
 }

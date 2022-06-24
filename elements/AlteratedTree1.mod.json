@@ -5,7 +5,7 @@
     "structure": "alterated_tree_1",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 9985,
+    "spawnProbability": 500985,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
@@ -15,7 +15,11 @@
     "spawnWorldTypes": [
       "CUSTOM:EndFarlands"
     ],
-    "restrictionBlocks": [],
+    "restrictionBlocks": [
+      {
+        "value": "CUSTOM:AlteratedNylium"
+      }
+    ],
     "restrictionBiomes": [
       {
         "value": "CUSTOM:AlteratedForest"

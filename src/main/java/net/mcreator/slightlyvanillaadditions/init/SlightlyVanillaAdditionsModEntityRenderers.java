@@ -14,6 +14,7 @@ import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.mcreator.slightlyvanillaadditions.client.renderer.ShulkSoldierRenderer;
 import net.mcreator.slightlyvanillaadditions.client.renderer.ShulkRenderer;
 import net.mcreator.slightlyvanillaadditions.client.renderer.PurpurGolemRenderer;
+import net.mcreator.slightlyvanillaadditions.client.renderer.MossyGlareRenderer;
 import net.mcreator.slightlyvanillaadditions.client.renderer.EyeOfGuardianRenderer;
 import net.mcreator.slightlyvanillaadditions.client.renderer.CursedEndermanRenderer;
 import net.mcreator.slightlyvanillaadditions.client.renderer.AncientProtectorRenderer;
@@ -32,5 +33,6 @@ public class SlightlyVanillaAdditionsModEntityRenderers {
 		event.registerEntityRenderer(SlightlyVanillaAdditionsModEntities.ALTERATED_ZOMBIE.get(), AlteratedZombieRenderer::new);
 		event.registerEntityRenderer(SlightlyVanillaAdditionsModEntities.PURPUR_GOLEM.get(), PurpurGolemRenderer::new);
 		event.registerEntityRenderer(SlightlyVanillaAdditionsModEntities.CURSED_ENDERMAN.get(), CursedEndermanRenderer::new);
+		event.registerEntityRenderer(SlightlyVanillaAdditionsModEntities.MOSSY_GLARE.get(), MossyGlareRenderer::new);
 	}
 }

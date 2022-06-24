@@ -63,6 +63,7 @@ import net.mcreator.slightlyvanillaadditions.block.AlteratedStairsBlock;
 import net.mcreator.slightlyvanillaadditions.block.AlteratedSlabBlock;
 import net.mcreator.slightlyvanillaadditions.block.AlteratedPlanksBlock;
 import net.mcreator.slightlyvanillaadditions.block.AlteratedNyliumBlock;
+import net.mcreator.slightlyvanillaadditions.block.AlteratedNetherrackBlock;
 import net.mcreator.slightlyvanillaadditions.block.AlteratedLogBlock;
 import net.mcreator.slightlyvanillaadditions.block.AlteratedLeavesBlock;
 import net.mcreator.slightlyvanillaadditions.block.AlteratedFungiBlock;
@@ -130,6 +131,7 @@ public class SlightlyVanillaAdditionsModBlocks {
 	public static final RegistryObject<Block> MOSSY_FUNGI = REGISTRY.register("mossy_fungi", () -> new MossyFungiBlock());
 	public static final RegistryObject<Block> ALTERATED_FUNGI = REGISTRY.register("alterated_fungi", () -> new AlteratedFungiBlock());
 	public static final RegistryObject<Block> END_FARLANDS_PORTAL = REGISTRY.register("end_farlands_portal", () -> new EndFarlandsPortalBlock());
+	public static final RegistryObject<Block> ALTERATED_NETHERRACK = REGISTRY.register("alterated_netherrack", () -> new AlteratedNetherrackBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

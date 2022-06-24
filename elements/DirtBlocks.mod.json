@@ -22,6 +22,9 @@
       },
       {
         "value": "Blocks.END_STONE"
+      },
+      {
+        "value": "CUSTOM:AlteratedNetherrack"
       }
     ],
     "functions": [],

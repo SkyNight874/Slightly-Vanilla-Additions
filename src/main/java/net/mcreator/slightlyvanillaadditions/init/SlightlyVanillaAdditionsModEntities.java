@@ -19,6 +19,7 @@ import net.minecraft.world.entity.Entity;
 import net.mcreator.slightlyvanillaadditions.entity.ShulkSoldierEntity;
 import net.mcreator.slightlyvanillaadditions.entity.ShulkEntity;
 import net.mcreator.slightlyvanillaadditions.entity.PurpurGolemEntity;
+import net.mcreator.slightlyvanillaadditions.entity.MossyGlareEntity;
 import net.mcreator.slightlyvanillaadditions.entity.FirePearlEntity;
 import net.mcreator.slightlyvanillaadditions.entity.EyeOfGuardianEntityProjectile;
 import net.mcreator.slightlyvanillaadditions.entity.EyeOfGuardianEntity;
@@ -67,6 +68,11 @@ public class SlightlyVanillaAdditionsModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CursedEndermanEntity::new)
 
 					.sized(0.6f, 2.9f));
+	public static final RegistryObject<EntityType<MossyGlareEntity>> MOSSY_GLARE = register("mossy_glare",
+			EntityType.Builder.<MossyGlareEntity>of(MossyGlareEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MossyGlareEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -82,6 +88,7 @@ public class SlightlyVanillaAdditionsModEntities {
 			AlteratedZombieEntity.init();
 			PurpurGolemEntity.init();
 			CursedEndermanEntity.init();
+			MossyGlareEntity.init();
 		});
 	}
 
@@ -94,5 +101,6 @@ public class SlightlyVanillaAdditionsModEntities {
 		event.put(ALTERATED_ZOMBIE.get(), AlteratedZombieEntity.createAttributes().build());
 		event.put(PURPUR_GOLEM.get(), PurpurGolemEntity.createAttributes().build());
 		event.put(CURSED_ENDERMAN.get(), CursedEndermanEntity.createAttributes().build());
+		event.put(MOSSY_GLARE.get(), MossyGlareEntity.createAttributes().build());
 	}
 }

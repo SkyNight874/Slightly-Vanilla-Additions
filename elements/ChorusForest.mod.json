@@ -13,7 +13,7 @@
       "value": "CUSTOM:PoisonousFluid"
     },
     "airColor": {
-      "value": -3407617,
+      "value": -10092442,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -34,7 +34,7 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "JUNGLE",
+    "biomeCategory": "NONE",
     "rainingPossibility": 0.5,
     "temperature": 0.5,
     "baseHeight": 0.1,
@@ -54,9 +54,9 @@
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
     "treesPerChunk": 6,
-    "vanillaTreeType": "Big trees",
+    "vanillaTreeType": "Default",
     "treeType": 1,
-    "minHeight": 5,
+    "minHeight": 8,
     "treeStem": {
       "value": "CUSTOM:ChorusLog"
     },

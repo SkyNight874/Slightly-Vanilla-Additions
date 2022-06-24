@@ -12,6 +12,10 @@
     "underwaterBlock": {
       "value": ""
     },
+    "airColor": {
+      "value": -16738048,
+      "falpha": 0.0
+    },
     "ambientSound": {
       "value": ""
     },
@@ -38,7 +42,7 @@
     "spawnBiome": false,
     "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 9,
+    "biomeWeight": 10,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 1,
     "seagrassPerChunk": 0,
@@ -49,7 +53,7 @@
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 0,
+    "treesPerChunk": 2,
     "vanillaTreeType": "Default",
     "treeType": 1,
     "minHeight": 5,
@@ -89,6 +93,25 @@
       "Caves",
       "Ores"
     ],
-    "spawnEntries": []
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "EntitySlime"
+        },
+        "minGroup": 1,
+        "maxGroup": 3,
+        "weight": 5,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:AlteratedZombie"
+        },
+        "minGroup": 1,
+        "maxGroup": 4,
+        "weight": 6,
+        "spawnType": "monster"
+      }
+    ]
   }
 }

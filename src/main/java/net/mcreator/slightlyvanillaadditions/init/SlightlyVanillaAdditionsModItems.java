@@ -165,6 +165,11 @@ public class SlightlyVanillaAdditionsModItems {
 	public static final RegistryObject<Item> CURSED_ENDERMAN = REGISTRY.register("cursed_enderman_spawn_egg",
 			() -> new ForgeSpawnEggItem(SlightlyVanillaAdditionsModEntities.CURSED_ENDERMAN, -16777216, -16737895,
 					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MOSSY_GLARE = REGISTRY.register("mossy_glare_spawn_egg",
+			() -> new ForgeSpawnEggItem(SlightlyVanillaAdditionsModEntities.MOSSY_GLARE, -16711681, -13312,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> ALTERATED_NETHERRACK = block(SlightlyVanillaAdditionsModBlocks.ALTERATED_NETHERRACK,
+			CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

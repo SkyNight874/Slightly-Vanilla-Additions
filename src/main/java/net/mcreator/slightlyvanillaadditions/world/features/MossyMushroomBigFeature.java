@@ -13,7 +13,6 @@ import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Mirror;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.resources.ResourceLocation;
@@ -53,7 +52,7 @@ public class MossyMushroomBigFeature extends Feature<NoneFeatureConfiguration> {
 
 	public MossyMushroomBigFeature() {
 		super(NoneFeatureConfiguration.CODEC);
-		base_blocks = List.of(SlightlyVanillaAdditionsModBlocks.END_MYCELIUM.get(), Blocks.END_STONE);
+		base_blocks = List.of(SlightlyVanillaAdditionsModBlocks.END_MYCELIUM.get());
 	}
 
 	@Override
@@ -66,7 +65,7 @@ public class MossyMushroomBigFeature extends Feature<NoneFeatureConfiguration> {
 		if (template == null)
 			return false;
 		boolean anyPlaced = false;
-		if ((context.random().nextInt(1000000) + 1) <= 100000) {
+		if ((context.random().nextInt(1000000) + 1) <= 300000) {
 			int count = context.random().nextInt(1) + 1;
 			for (int a = 0; a < count; a++) {
 				int i = context.origin().getX() + context.random().nextInt(16);

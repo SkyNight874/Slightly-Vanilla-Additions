@@ -13,7 +13,6 @@ import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Mirror;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.resources.ResourceLocation;
@@ -54,8 +53,7 @@ public class MushroomLanternBigFeature extends Feature<NoneFeatureConfiguration>
 
 	public MushroomLanternBigFeature() {
 		super(NoneFeatureConfiguration.CODEC);
-		base_blocks = List.of(SlightlyVanillaAdditionsModBlocks.END_MYCELIUM.get(), SlightlyVanillaAdditionsModBlocks.END_MOSS.get(),
-				Blocks.END_STONE);
+		base_blocks = List.of(SlightlyVanillaAdditionsModBlocks.END_MYCELIUM.get(), SlightlyVanillaAdditionsModBlocks.END_MOSS.get());
 	}
 
 	@Override

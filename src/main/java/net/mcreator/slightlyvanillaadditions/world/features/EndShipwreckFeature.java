@@ -13,6 +13,8 @@ import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Mirror;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
@@ -21,6 +23,8 @@ import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 import net.minecraft.core.BlockPos;
+
+import net.mcreator.slightlyvanillaadditions.init.SlightlyVanillaAdditionsModBlocks;
 
 import java.util.Set;
 import java.util.List;
@@ -44,10 +48,13 @@ public class EndShipwreckFeature extends Feature<NoneFeatureConfiguration> {
 	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
 	private final Set<ResourceKey<Level>> generate_dimensions = Set
 			.of(ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("slightly_vanilla_additions:end_farlands")));
+	private final List<Block> base_blocks;
 	private StructureTemplate template = null;
 
 	public EndShipwreckFeature() {
 		super(NoneFeatureConfiguration.CODEC);
+		base_blocks = List.of(SlightlyVanillaAdditionsModBlocks.POISON_NYLIUM.get(), SlightlyVanillaAdditionsModBlocks.ALTERATED_NYLIUM.get(),
+				Blocks.END_STONE, SlightlyVanillaAdditionsModBlocks.END_MOSS.get(), SlightlyVanillaAdditionsModBlocks.END_MYCELIUM.get());
 	}
 
 	@Override
@@ -66,6 +73,8 @@ public class EndShipwreckFeature extends Feature<NoneFeatureConfiguration> {
 				int i = context.origin().getX() + context.random().nextInt(16);
 				int k = context.origin().getZ() + context.random().nextInt(16);
 				int j = context.level().getHeight(Heightmap.Types.WORLD_SURFACE_WG, i, k) - 1;
+				if (!base_blocks.contains(context.level().getBlockState(new BlockPos(i, j, k)).getBlock()))
+					continue;
 				BlockPos spawnTo = new BlockPos(i + 0, j + 0, k + 0);
 				if (template.placeInWorld(context.level(), spawnTo, spawnTo,
 						new StructurePlaceSettings().setMirror(Mirror.values()[context.random().nextInt(2)])

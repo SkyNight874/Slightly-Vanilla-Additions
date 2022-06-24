@@ -15,7 +15,11 @@
     "spawnWorldTypes": [
       "CUSTOM:EndFarlands"
     ],
-    "restrictionBlocks": [],
+    "restrictionBlocks": [
+      {
+        "value": "Blocks.END_STONE"
+      }
+    ],
     "restrictionBiomes": [
       {
         "value": "CUSTOM:OuterEnd"

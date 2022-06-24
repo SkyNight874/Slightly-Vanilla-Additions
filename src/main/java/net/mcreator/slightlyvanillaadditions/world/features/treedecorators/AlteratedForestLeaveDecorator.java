@@ -1,12 +1,24 @@
 package net.mcreator.slightlyvanillaadditions.world.features.treedecorators;
 
+import net.minecraftforge.registries.ForgeRegistries;
+
+import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType;
+import net.minecraft.world.level.levelgen.feature.treedecorators.LeaveVineDecorator;
+import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.LevelSimulatedReader;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.slightlyvanillaadditions.init.SlightlyVanillaAdditionsModBlocks;
+
+import java.util.function.BiConsumer;
+import java.util.Random;
+import java.util.List;
+
 public class AlteratedForestLeaveDecorator extends LeaveVineDecorator {
-
 	public static final AlteratedForestLeaveDecorator INSTANCE = new AlteratedForestLeaveDecorator();
-
 	public static com.mojang.serialization.Codec<LeaveVineDecorator> codec;
 	public static TreeDecoratorType<?> tdt;
-
 	static {
 		codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
 		tdt = new TreeDecoratorType<>(codec);
@@ -29,7 +41,6 @@ public class AlteratedForestLeaveDecorator extends LeaveVineDecorator {
 					addVine(level, bp, biConsumer);
 				}
 			}
-
 		});
 	}
 
@@ -40,7 +51,5 @@ public class AlteratedForestLeaveDecorator extends LeaveVineDecorator {
 			biConsumer.accept(blockpos, SlightlyVanillaAdditionsModBlocks.ALTERATED_LEAVES.get().defaultBlockState());
 			blockpos = blockpos.below();
 		}
-
 	}
-
 }

@@ -49,7 +49,7 @@ public class MossyJungleFruitDecorator extends CocoaDecorator {
 						Direction direction1 = direction.getOpposite();
 						BlockPos blockpos = p_161728_.offset(direction1.getStepX(), 0, direction1.getStepZ());
 						if (Feature.isAir(level, blockpos)) {
-							biConsumer.accept(blockpos, SlightlyVanillaAdditionsModBlocks.ANGELIC_SLIME_BLOCK.get().defaultBlockState());
+							biConsumer.accept(blockpos, SlightlyVanillaAdditionsModBlocks.MUSHROOM_LANTERN.get().defaultBlockState());
 						}
 					}
 				}

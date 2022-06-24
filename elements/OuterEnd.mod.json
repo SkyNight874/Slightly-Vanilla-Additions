@@ -46,15 +46,15 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "DESERT",
+    "biomeCategory": "NONE",
     "rainingPossibility": 0.0,
     "temperature": 0.5,
     "baseHeight": 0.1,
-    "heightVariation": 2.0,
+    "heightVariation": 0.5,
     "spawnBiome": false,
     "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 8,
+    "biomeWeight": 10,
     "biomeDictionaryTypes": [
       "END"
     ],
@@ -104,16 +104,6 @@
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
     "defaultFeatures": [],
-    "spawnEntries": [
-      {
-        "entity": {
-          "value": "CUSTOM:CursedEnderman"
-        },
-        "minGroup": 1,
-        "maxGroup": 1,
-        "weight": 1,
-        "spawnType": "monster"
-      }
-    ]
+    "spawnEntries": []
   }
 }

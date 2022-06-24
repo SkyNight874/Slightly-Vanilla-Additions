@@ -17,6 +17,9 @@
       },
       {
         "value": "CUSTOM:OuterEnd"
+      },
+      {
+        "value": "CUSTOM:MossyJungle"
       }
     ],
     "worldGenType": "End like gen",
@@ -30,9 +33,9 @@
       "value": -16777216,
       "falpha": 0.0
     },
-    "canRespawnHere": true,
-    "hasFog": false,
-    "isDark": true,
+    "canRespawnHere": false,
+    "hasFog": true,
+    "isDark": false,
     "doesWaterVaporize": false,
     "sleepResult": "BED_EXPLODES",
     "hasSkyLight": false,

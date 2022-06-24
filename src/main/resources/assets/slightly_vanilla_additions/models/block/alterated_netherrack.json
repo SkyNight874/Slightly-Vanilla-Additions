@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "slightly_vanilla_additions:blocks/https_3a_2f_2flh3.googleusercontent",
+    "up": "slightly_vanilla_additions:blocks/alterated_nylium_top",
+    "north": "slightly_vanilla_additions:blocks/alteratednetherrack",
+    "east": "slightly_vanilla_additions:blocks/alteratednetherrack",
+    "south": "slightly_vanilla_additions:blocks/alteratednetherrack",
+    "west": "slightly_vanilla_additions:blocks/alteratednetherrack",
+    "particle": "slightly_vanilla_additions:blocks/https_3a_2f_2flh3.googleusercontent"
+  }
+}

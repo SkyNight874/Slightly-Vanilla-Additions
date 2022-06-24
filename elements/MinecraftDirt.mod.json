@@ -16,6 +16,9 @@
       },
       {
         "value": "CUSTOM:EndMycelium"
+      },
+      {
+        "value": "CUSTOM:AlteratedNetherrack"
       }
     ],
     "functions": [],
